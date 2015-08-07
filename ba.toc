@@ -1,0 +1,69 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Einleitung}{6}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Biologische Grundlagen}{7}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Allgemein Gehirnstruktur}{7}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Elektrische und magnetische Eigenschaften der Nervenzellen}{8}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ERP und ERF}{8}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Auditorischer Kortex}{9}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Grundlagen der Magnetenzephalographie}{10}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{SQUIDs}{10}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Gradiometer und Magnetometer}{12}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Artefakte und Rauschen}{13}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Rauschunterdr\IeC {\"u}ckung w\IeC {\"a}hrend der Messung}{13}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Rauschunterdr\IeC {\"u}ckung mit SSP, SSS und MC}{14}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Grundlagen der Quelllokalisation mit MEG}{15}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Superposition}{15}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Segmentierung}{16}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Koregistrierung}{16}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Volumenleiter und Quellraum}{17}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Vorw\IeC {\"a}rtsmodell - BEM und FEM}{17}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{BEM-Netz und Headmodel}{18}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{19}{section*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Methoden zur Bestimmung des R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{19}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Verteilte Dipolmodelle}{20}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{R\IeC {\"a}umliche Filterung}{21}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Leadfieldmatrix bei Beamformer und Minimum Norm}{24}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Methodik}{27}{section*.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Verwendete Daten}{27}{section*.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{MEG-Hardware}{28}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{MRT-Hardware}{28}{section*.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Software zur Analyse}{28}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Verfahren}{28}{section*.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Ergebnisse}{29}{section*.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Signal-Rausch-Verh\IeC {\"a}ltnis}{29}{section*.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literaturverzeichnis}{32}{section*.39}

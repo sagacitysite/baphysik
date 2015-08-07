@@ -1,0 +1,531 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{apa}
+    \entry{berger1929elektrenkephalogramm}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=0d12317a8172b314c2978d4b10649fde}{Berger}{B\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0d12317a8172b314c2978d4b10649fde}{Berger}{B\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0d12317a8172b314c2978d4b10649fde}
+      \strng{fullhash}{0d12317a8172b314c2978d4b10649fde}
+      \field{sortinit}{B}
+      \field{labelyear}{1929}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Über das elektrenkephalogramm des menschen}
+      \field{journaltitle}{European Archives of Psychiatry and Clinical Neuroscience}
+      \field{number}{1}
+      \field{title}{Über das elektrenkephalogramm des menschen}
+      \field{volume}{87}
+      \field{year}{1929}
+      \field{pages}{527\bibrangedash 570}
+    \endentry
+    \entry{binder1994functional}{article}{}
+      \true{morelabelname}
+      \name{labelname}{10}{}{%
+        {{uniquename=0,hash=2f7dd9624e01afd72ed65d0cb4b16eaa}{Binder}{B\bibinitperiod}{Jeffrey\bibnamedelima R}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=15cd5f732c0fcda33e055dce5f9ee0d9}{Rao}{R\bibinitperiod}{Stephen\bibnamedelima M}{S\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a84bcda3ba79a7f86643e23cba76a572}{Hammeke}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5aa6aaa7a5330b2adf5d9666eef38aac}{Yetkin}{Y\bibinitperiod}{FZ}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e6631502486e10f2bacfe7ab00ae26ae}{Jesmanowicz}{J\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2180c04890f856e0ea49d99bc578b469}{Bandettini}{B\bibinitperiod}{PA}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=af7b4867e7f4d02b432a1a3890c4f850}{Wong}{W\bibinitperiod}{EC}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3fe6836c19e7197ac199ac1e20036ed2}{Estkowski}{E\bibinitperiod}{LD}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c3c593400da7af67a6e36a2d36fb335e}{Goldstein}{G\bibinitperiod}{MD}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=722acb7073c2dec803452b5fd2e8b30f}{Haughton}{H\bibinitperiod}{VM}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=2f7dd9624e01afd72ed65d0cb4b16eaa}{Binder}{B\bibinitperiod}{Jeffrey\bibnamedelima R}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=15cd5f732c0fcda33e055dce5f9ee0d9}{Rao}{R\bibinitperiod}{Stephen\bibnamedelima M}{S\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a84bcda3ba79a7f86643e23cba76a572}{Hammeke}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5aa6aaa7a5330b2adf5d9666eef38aac}{Yetkin}{Y\bibinitperiod}{FZ}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e6631502486e10f2bacfe7ab00ae26ae}{Jesmanowicz}{J\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2180c04890f856e0ea49d99bc578b469}{Bandettini}{B\bibinitperiod}{PA}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=af7b4867e7f4d02b432a1a3890c4f850}{Wong}{W\bibinitperiod}{EC}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3fe6836c19e7197ac199ac1e20036ed2}{Estkowski}{E\bibinitperiod}{LD}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c3c593400da7af67a6e36a2d36fb335e}{Goldstein}{G\bibinitperiod}{MD}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=722acb7073c2dec803452b5fd2e8b30f}{Haughton}{H\bibinitperiod}{VM}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{08cb058610ef44a5f432e014767bf8d8}
+      \strng{fullhash}{c6a9e801d2458d2c7bca30220d06a1d1}
+      \field{sortinit}{B}
+      \field{labelyear}{1994}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Functional magnetic resonance imaging of human auditory cortex}
+      \field{journaltitle}{Annals of neurology}
+      \field{number}{6}
+      \field{title}{Functional magnetic resonance imaging of human auditory cortex}
+      \field{volume}{35}
+      \field{year}{1994}
+      \field{pages}{662\bibrangedash 672}
+    \endentry
+    \entry{cohen1968magnetoencephalography}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=4c413160abaa666575a0b3ecf9260ef6}{Cohen}{C\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4c413160abaa666575a0b3ecf9260ef6}{Cohen}{C\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{4c413160abaa666575a0b3ecf9260ef6}
+      \strng{fullhash}{4c413160abaa666575a0b3ecf9260ef6}
+      \field{sortinit}{C}
+      \field{labelyear}{1968}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Magnetoencephalography: evidence of magnetic fields produced by alpha-rhythm currents}
+      \field{journaltitle}{Science}
+      \field{number}{3843}
+      \field{title}{Magnetoencephalography: evidence of magnetic fields produced by alpha-rhythm currents}
+      \field{volume}{161}
+      \field{year}{1968}
+      \field{pages}{784\bibrangedash 786}
+    \endentry
+    \entry{hahne2002differential}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=4975b525b95c5b49a4a19e807fb821f1}{Hahne}{H\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d23d4cc3c0ce3b88950b3b5e49064396}{Friederici}{F\bibinitperiod}{Angela\bibnamedelima D}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4975b525b95c5b49a4a19e807fb821f1}{Hahne}{H\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d23d4cc3c0ce3b88950b3b5e49064396}{Friederici}{F\bibinitperiod}{Angela\bibnamedelima D}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{493e948725876baeb5f3a473b6085dd3}
+      \strng{fullhash}{493e948725876baeb5f3a473b6085dd3}
+      \field{sortinit}{H}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Differential task effects on semantic and syntactic processes as revealed by ERPs}
+      \field{journaltitle}{Cognitive Brain Research}
+      \field{number}{3}
+      \field{title}{Differential task effects on semantic and syntactic processes as revealed by ERPs}
+      \field{volume}{13}
+      \field{year}{2002}
+      \field{pages}{339\bibrangedash 356}
+    \endentry
+    \entry{hansen2010meg}{book}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=3f65e78614f1c666f1d2a0237ed248a2}{Hansen}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9f073d0311d8b8d13fd2df0e13f388da}{Kringelbach}{K\bibinitperiod}{Morten}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a82ce04226e81a05cde3ed3ef606b7ad}{Salmelin}{S\bibinitperiod}{Riitta}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=3f65e78614f1c666f1d2a0237ed248a2}{Hansen}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9f073d0311d8b8d13fd2df0e13f388da}{Kringelbach}{K\bibinitperiod}{Morten}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a82ce04226e81a05cde3ed3ef606b7ad}{Salmelin}{S\bibinitperiod}{Riitta}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford university press}%
+      }
+      \strng{namehash}{8e43f0ae9aecd76534c60babef0fa635}
+      \strng{fullhash}{db2e54aa7a90944e152d5e132b4e1f5e}
+      \field{sortinit}{H}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{MEG: an introduction to methods}
+      \field{title}{MEG: an introduction to methods}
+      \field{year}{2010}
+    \endentry
+    \entry{herrmann2011syntactic}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=a6079fa6473849953e98580379e377ea}{Herrmann}{H\bibinitperiod}{Björn}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ff4383cf625eeabcfc2018bdaf8f69af}{Maess}{M\bibinitperiod}{Burkhard}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4975b525b95c5b49a4a19e807fb821f1}{Hahne}{H\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bff133cef44b76591dae36c4e6c30761}{Schröger}{S\bibinitperiod}{Erich}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d23d4cc3c0ce3b88950b3b5e49064396}{Friederici}{F\bibinitperiod}{Angela\bibnamedelima D}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=a6079fa6473849953e98580379e377ea}{Herrmann}{H\bibinitperiod}{Björn}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ff4383cf625eeabcfc2018bdaf8f69af}{Maess}{M\bibinitperiod}{Burkhard}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4975b525b95c5b49a4a19e807fb821f1}{Hahne}{H\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bff133cef44b76591dae36c4e6c30761}{Schröger}{S\bibinitperiod}{Erich}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d23d4cc3c0ce3b88950b3b5e49064396}{Friederici}{F\bibinitperiod}{Angela\bibnamedelima D}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{48168811207bee1361be4e0840a402d6}
+      \strng{fullhash}{97da0c650144833c4fe1c9c50ad5caf6}
+      \field{sortinit}{H}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Syntactic and auditory spatial processing in the human temporal cortex: an MEG study}
+      \field{journaltitle}{NeuroImage}
+      \field{number}{2}
+      \field{title}{Syntactic and auditory spatial processing in the human temporal cortex: an MEG study}
+      \field{volume}{57}
+      \field{year}{2011}
+      \field{pages}{624\bibrangedash 633}
+    \endentry
+    \entry{jaaskelainen2004human}{article}{}
+      \true{morelabelname}
+      \name{labelname}{10}{}{%
+        {{uniquename=0,hash=ff3c631d437f8d11641dc52a1db880c0}{Jääskeläinen}{J\bibinitperiod}{Iiro\bibnamedelima P}{I\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=440cb4d917640b0503a13d51e31313bc}{Ahveninen}{A\bibinitperiod}{Jyrki}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a4c2c4cc2b29c3fb475180b6e5383185}{Bonmassar}{B\bibinitperiod}{Giorgio}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4c0934671eb92a253ab3915f2b3b15e1}{Dale}{D\bibinitperiod}{Anders\bibnamedelima M}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=b3a8ce3f232875cf375f8b54cb4ad94c}{Ilmoniemi}{I\bibinitperiod}{Risto\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8319a95e618e449eecd5ac33ffbd961f}{Levänen}{L\bibinitperiod}{Sari}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e20ccfd590bda953fda7ef2cd093bc4d}{Lin}{L\bibinitperiod}{Fa-Hsuan}{F\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f5c30e55de30a6c74b0f674f77b29a44}{May}{M\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5845228664c0638332d17648cb46d773}{Melcher}{M\bibinitperiod}{Jennifer}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3a0c63223acf58de8cf05b11d3597a3}{Stufflebeam}{S\bibinitperiod}{Steven}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=ff3c631d437f8d11641dc52a1db880c0}{Jääskeläinen}{J\bibinitperiod}{Iiro\bibnamedelima P}{I\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=440cb4d917640b0503a13d51e31313bc}{Ahveninen}{A\bibinitperiod}{Jyrki}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a4c2c4cc2b29c3fb475180b6e5383185}{Bonmassar}{B\bibinitperiod}{Giorgio}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4c0934671eb92a253ab3915f2b3b15e1}{Dale}{D\bibinitperiod}{Anders\bibnamedelima M}{A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=b3a8ce3f232875cf375f8b54cb4ad94c}{Ilmoniemi}{I\bibinitperiod}{Risto\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8319a95e618e449eecd5ac33ffbd961f}{Levänen}{L\bibinitperiod}{Sari}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e20ccfd590bda953fda7ef2cd093bc4d}{Lin}{L\bibinitperiod}{Fa-Hsuan}{F\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f5c30e55de30a6c74b0f674f77b29a44}{May}{M\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5845228664c0638332d17648cb46d773}{Melcher}{M\bibinitperiod}{Jennifer}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3a0c63223acf58de8cf05b11d3597a3}{Stufflebeam}{S\bibinitperiod}{Steven}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{4a338869be3a88def85542b2919e0a67}
+      \strng{fullhash}{a1453dafb5fbe0ac1b4c9f8bb82e2e93}
+      \field{sortinit}{J}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Human posterior auditory cortex gates novel sounds to consciousness}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{number}{17}
+      \field{title}{Human posterior auditory cortex gates novel sounds to consciousness}
+      \field{volume}{101}
+      \field{year}{2004}
+      \field{pages}{6809\bibrangedash 6814}
+    \endentry
+    \entry{jaklevic1964quantum}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=32a67a029ed0605b6ef8ac7ebebbbbc0}{Jaklevic}{J\bibinitperiod}{RC}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9d5f4025d2ab556b394af3f06eab372d}{Lambe}{L\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=01143b81ed4d527acda187f0476e4699}{Silver}{S\bibinitperiod}{AH}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b5d2b590b29f9493ebb6f6ef824f3a1c}{Mercereau}{M\bibinitperiod}{JE}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=32a67a029ed0605b6ef8ac7ebebbbbc0}{Jaklevic}{J\bibinitperiod}{RC}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9d5f4025d2ab556b394af3f06eab372d}{Lambe}{L\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=01143b81ed4d527acda187f0476e4699}{Silver}{S\bibinitperiod}{AH}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b5d2b590b29f9493ebb6f6ef824f3a1c}{Mercereau}{M\bibinitperiod}{JE}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{5dd5020755e0fa616156b930197a952c}
+      \strng{fullhash}{5c58957d61bcb8430d33a4eacffea511}
+      \field{sortinit}{J}
+      \field{labelyear}{1964}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Quantum interference effects in Josephson tunneling}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{7}
+      \field{title}{Quantum interference effects in Josephson tunneling}
+      \field{volume}{12}
+      \field{year}{1964}
+      \field{pages}{159}
+    \endentry
+    \entry{josephson1962possible}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=8f9aa958c81938b38c91d3ba2fc29264}{Josephson}{J\bibinitperiod}{Brian\bibnamedelima David}{B\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=8f9aa958c81938b38c91d3ba2fc29264}{Josephson}{J\bibinitperiod}{Brian\bibnamedelima David}{B\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8f9aa958c81938b38c91d3ba2fc29264}
+      \strng{fullhash}{8f9aa958c81938b38c91d3ba2fc29264}
+      \field{sortinit}{J}
+      \field{labelyear}{1962}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Possible new effects in superconductive tunnelling}
+      \field{journaltitle}{Physics letters}
+      \field{number}{7}
+      \field{title}{Possible new effects in superconductive tunnelling}
+      \field{volume}{1}
+      \field{year}{1962}
+      \field{pages}{251\bibrangedash 253}
+    \endentry
+    \entry{logothetis2007vivo}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=ce68898a5ee1f1183ffd6331edea1272}{Logothetis}{L\bibinitperiod}{Nikos\bibnamedelima K}{N\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=24fe42ecb3f2980f7427313507b5b665}{Kayser}{K\bibinitperiod}{Christoph}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=64f0f9573f702817cc5f885d54e69d8b}{Oeltermann}{O\bibinitperiod}{Axel}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=ce68898a5ee1f1183ffd6331edea1272}{Logothetis}{L\bibinitperiod}{Nikos\bibnamedelima K}{N\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=24fe42ecb3f2980f7427313507b5b665}{Kayser}{K\bibinitperiod}{Christoph}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=64f0f9573f702817cc5f885d54e69d8b}{Oeltermann}{O\bibinitperiod}{Axel}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3ba3190b1b8a0e76a97712908b1746bd}
+      \strng{fullhash}{142194f30f052209b51e6abb4b1c67c7}
+      \field{sortinit}{L}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{In vivo measurement of cortical impedance spectrum in monkeys: implications for signal propagation}
+      \field{journaltitle}{Neuron}
+      \field{number}{5}
+      \field{title}{In vivo measurement of cortical impedance spectrum in monkeys: implications for signal propagation}
+      \field{volume}{55}
+      \field{year}{2007}
+      \field{pages}{809\bibrangedash 823}
+    \endentry
+    \entry{malmivuo2012comparison}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=4b6069415d285c1eb6703f9c6077d1c0}{Malmivuo}{M\bibinitperiod}{Jaakko}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4b6069415d285c1eb6703f9c6077d1c0}{Malmivuo}{M\bibinitperiod}{Jaakko}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4b6069415d285c1eb6703f9c6077d1c0}
+      \strng{fullhash}{4b6069415d285c1eb6703f9c6077d1c0}
+      \field{sortinit}{M}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Comparison of the properties of EEG and MEG in detecting the electric activity of the brain}
+      \field{journaltitle}{Brain topography}
+      \field{number}{1}
+      \field{title}{Comparison of the properties of EEG and MEG in detecting the electric activity of the brain}
+      \field{volume}{25}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 19}
+    \endentry
+    \entry{naatanen2004mismatch}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=021b3c73937c1f6d82a4b00b77e7dcea}{Pakarinen}{P\bibinitperiod}{Satu}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=41dae80c39e83e80db0c52024b807a1f}{Rinne}{R\bibinitperiod}{Teemu}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d0a709df129003c4c48560c76b6ac913}{Takegata}{T\bibinitperiod}{Rika}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=021b3c73937c1f6d82a4b00b77e7dcea}{Pakarinen}{P\bibinitperiod}{Satu}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=41dae80c39e83e80db0c52024b807a1f}{Rinne}{R\bibinitperiod}{Teemu}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d0a709df129003c4c48560c76b6ac913}{Takegata}{T\bibinitperiod}{Rika}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fec651ab65aaa01709911b8392492c7b}
+      \strng{fullhash}{34d07db30b40288670044892c8f6c134}
+      \field{sortinit}{N}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{The mismatch negativity (MMN): towards the optimal paradigm}
+      \field{journaltitle}{Clinical Neurophysiology}
+      \field{number}{1}
+      \field{title}{The mismatch negativity (MMN): towards the optimal paradigm}
+      \field{volume}{115}
+      \field{year}{2004}
+      \field{pages}{140\bibrangedash 144}
+    \endentry
+    \entry{parkkonen1999interference}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=bc1943cf7b7d8013647d4d36aa7a5313}{Parkkonen}{P\bibinitperiod}{LT}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7703676010181bd293a69775397726a7}{Simola}{S\bibinitperiod}{JT}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cb848019980f425274ab6ca70492d3c9}{Tuoriniemi}{T\bibinitperiod}{JT}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3e6d5fcceca932b59ac42b6600eaaf0}{Ahonen}{A\bibinitperiod}{AI}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=bc1943cf7b7d8013647d4d36aa7a5313}{Parkkonen}{P\bibinitperiod}{LT}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7703676010181bd293a69775397726a7}{Simola}{S\bibinitperiod}{JT}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cb848019980f425274ab6ca70492d3c9}{Tuoriniemi}{T\bibinitperiod}{JT}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3e6d5fcceca932b59ac42b6600eaaf0}{Ahonen}{A\bibinitperiod}{AI}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Tohoku University Press, Sendai}%
+      }
+      \strng{namehash}{653fbad97525c39a5a23ea93992cb33e}
+      \strng{fullhash}{1a184b92e966711d937bf1494e5649c5}
+      \field{sortinit}{P}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{An interference suppression system for multichannel magnetic field detector arrays}
+      \field{journaltitle}{Recent advances in biomagnetism}
+      \field{title}{An interference suppression system for multichannel magnetic field detector arrays}
+      \field{year}{1999}
+      \field{pages}{13\bibrangedash 16}
+    \endentry
+    \entry{taulu2005presentation}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=844ebae575295c63805015ebcdc66be1}{Taulu}{T\bibinitperiod}{Samu}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a4114098ee994ecd8c68c798732bc0e}{Kajola}{K\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=844ebae575295c63805015ebcdc66be1}{Taulu}{T\bibinitperiod}{Samu}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a4114098ee994ecd8c68c798732bc0e}{Kajola}{K\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{2dfbd2235432d6424ef5b1b993fccbd4}
+      \strng{fullhash}{2dfbd2235432d6424ef5b1b993fccbd4}
+      \field{sortinit}{T}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Presentation of electromagnetic multichannel data: the signal space separation method}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{number}{12}
+      \field{title}{Presentation of electromagnetic multichannel data: the signal space separation method}
+      \field{volume}{97}
+      \field{year}{2005}
+      \field{pages}{124905}
+    \endentry
+    \entry{taulu2004suppression}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=844ebae575295c63805015ebcdc66be1}{Taulu}{T\bibinitperiod}{Samu}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a4114098ee994ecd8c68c798732bc0e}{Kajola}{K\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d55a6e38ec9d76ff5125757322b84f97}{Simola}{S\bibinitperiod}{Juha}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=844ebae575295c63805015ebcdc66be1}{Taulu}{T\bibinitperiod}{Samu}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a4114098ee994ecd8c68c798732bc0e}{Kajola}{K\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d55a6e38ec9d76ff5125757322b84f97}{Simola}{S\bibinitperiod}{Juha}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{537ffe046f9dcb59810663f182a10c25}
+      \strng{fullhash}{e6e7d240e9ebf4dae26d19565778106a}
+      \field{sortinit}{T}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Suppression of interference and artifacts by the signal space separation method}
+      \field{journaltitle}{Brain topography}
+      \field{number}{4}
+      \field{title}{Suppression of interference and artifacts by the signal space separation method}
+      \field{volume}{16}
+      \field{year}{2004}
+      \field{pages}{269\bibrangedash 275}
+    \endentry
+    \entry{uusitalo1997signal}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=bf92bdbd52c68ab9214ee955530571e8}{Uusitalo}{U\bibinitperiod}{MA}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=bf92bdbd52c68ab9214ee955530571e8}{Uusitalo}{U\bibinitperiod}{MA}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3e2244540e094216772b06e468e09229}
+      \strng{fullhash}{3e2244540e094216772b06e468e09229}
+      \field{sortinit}{U}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Signal-space projection method for separating MEG or EEG into components}
+      \field{journaltitle}{Medical and Biological Engineering and Computing}
+      \field{number}{2}
+      \field{title}{Signal-space projection method for separating MEG or EEG into components}
+      \field{volume}{35}
+      \field{year}{1997}
+      \field{pages}{135\bibrangedash 140}
+    \endentry
+    \entry{vigario1998independent}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=c3ea7c6f40e7c5bd05de5b73a44cf99d}{Vigário}{V\bibinitperiod}{Ricardo}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=16642e36954f0b02c92ce00b6ed8408e}{Jousmäki}{J\bibinitperiod}{Veikko}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0cac7d48298569981f2ac574efb652f6}{Hämäläninen}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f9e707701040b6c7bb7aaf329afc5a41}{Haft}{H\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d2ed0997ec1c0ceecf1f302a65c3e0c9}{Oja}{O\bibinitperiod}{Erkki}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=c3ea7c6f40e7c5bd05de5b73a44cf99d}{Vigário}{V\bibinitperiod}{Ricardo}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=16642e36954f0b02c92ce00b6ed8408e}{Jousmäki}{J\bibinitperiod}{Veikko}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0cac7d48298569981f2ac574efb652f6}{Hämäläninen}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f9e707701040b6c7bb7aaf329afc5a41}{Haft}{H\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d2ed0997ec1c0ceecf1f302a65c3e0c9}{Oja}{O\bibinitperiod}{Erkki}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {MORGAN KAUFMANN PUBLISHERS}%
+      }
+      \strng{namehash}{f74646f0f79164410829f4439aeaed2a}
+      \strng{fullhash}{d7b2f9cd5733b148abf2a4951d28b58d}
+      \field{sortinit}{V}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Independent component analysis for identification of artifacts in magnetoencephalographic recordings}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Independent component analysis for identification of artifacts in magnetoencephalographic recordings}
+      \field{year}{1998}
+      \field{pages}{229\bibrangedash 235}
+    \endentry
+    \entry{vigario2000independent}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=c3ea7c6f40e7c5bd05de5b73a44cf99d}{Vigário}{V\bibinitperiod}{Ricardo}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5d7785b9449213275e32c234674551e6}{Särelä}{S\bibinitperiod}{Jaakko}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3f393f08e2e7936b93977874846e2f18}{Jousmiki}{J\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e1476d8bde26ebfe9960d8438fa96f4f}{Hämäläinen}{H\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d2ed0997ec1c0ceecf1f302a65c3e0c9}{Oja}{O\bibinitperiod}{Erkki}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=c3ea7c6f40e7c5bd05de5b73a44cf99d}{Vigário}{V\bibinitperiod}{Ricardo}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5d7785b9449213275e32c234674551e6}{Särelä}{S\bibinitperiod}{Jaakko}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3f393f08e2e7936b93977874846e2f18}{Jousmiki}{J\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e1476d8bde26ebfe9960d8438fa96f4f}{Hämäläinen}{H\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d2ed0997ec1c0ceecf1f302a65c3e0c9}{Oja}{O\bibinitperiod}{Erkki}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f74646f0f79164410829f4439aeaed2a}
+      \strng{fullhash}{561671c8f56e12b390900c9e31d3246f}
+      \field{sortinit}{V}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Independent component approach to the analysis of EEG and MEG recordings}
+      \field{journaltitle}{Biomedical Engineering, IEEE Transactions on}
+      \field{number}{5}
+      \field{title}{Independent component approach to the analysis of EEG and MEG recordings}
+      \field{volume}{47}
+      \field{year}{2000}
+      \field{pages}{589\bibrangedash 593}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
