@@ -128,13 +128,20 @@ eingereicht worden.
 
 \section{Einleitung}
 
-Auf der Suche nach dem Verstehen des eigenen menschlichen Geistes, kam es in den letzten Jahren - ca. seit Mitte der 1990er Jahre - zu einer beschleunigten Entwicklung von Verfahren zur Messung der Gehirnaktivität, was bereits zu einem deutlich besseren Verständnis der dort ablaufenden Prozesse beigetragen hat. Vor allem der rasant zunehmenden und günstiger werdenden Computertechnologie ist es zu verdanken, dass heute Berechnungen möglich sind, die selbst vor 10 Jahren noch nahezu undenkbar waren. Es wird immer mehr deutlich, dass diese Entwicklung erst am Beginn steht. Neuere Tendenzen der Berechnung neuronaler Netzwerke, z.B. mittels Deep Learning, scheinen diese These zu bestätigen (?? ist der Satz richtig? Quelle? ??).
+Auf dem Weg des Verstehens des eigenen menschlichen Geistes, kam es in den letzten Jahren - ca. seit Mitte der 1990er Jahre - zu einer beschleunigten Entwicklung von Verfahren und Methoden zur Messung der Gehirnaktivität, was seit dem zu einem deutlich besseren Verständnis der zerebralen Prozesse beigetragen hat. Vor allem der rasant zunehmenden und günstiger werdenden Computertechnologie ist es zu verdanken, dass heute Berechnungen möglich sind, die selbst vor 10 Jahren noch nahezu undenkbar waren. Es wird jedoch immer deutlicher, dass diese Entwicklung erst am Anfang steht. Neben der direkten Messung zerebraler Aktivitäten - wie es in dieser Arbeit der Fall ist - wird es zunehmend auch zu Simulation von Lernprozessen kommen, was durch den aktuellen Aufschwung künstlicher neuronaler Netzwerke, insbesondere durch Deep Learning derzeit deutlich wird \parencite[z.B.][]{ciresan2012multi}.
 
-Die Suche nach den Quellen (Orte) und den Aktivitäten (Energien, Felder oder Dipole ??) ist eine zentrale Fragestellung bei der Untersuchung des Gehirns. Eine Bildgebung, also die Bestimmung der physikalischen Quellen im Gehirn, war zunächst nur mit klassischen bildgebenden Verfahren durch direkte Messung möglich (z.B. Magnet-Resonanz-Tomographie (MRT) oder Computertomographie (CT)). Mit zunehmender Rechenkapazität und entsprechenden Modellen lassen sich inzwischen auch mit ???-Verfahren (z.B. Elektroenzephalographie (EEG) oder Magnetenzephalographie (MEG)) die Quellen der Aktivität bestimmten, deren Messung eigentlich nur an der Oberfläche des Kopfes und somit indirekt erfolgt. Diese Verfahren haben den entscheidenden Vorteil, dass ihre zeitliche Auflösung meist enorm hoch ist, sie können Veränderungen im Gehirn noch im Millisekundenbereich messen. Zum Vergleich: Bildgebende funktionelle Verfahren - wie die funktionelle Magnet-Resonanz-Tomographie (fMRT) - liegen hier meist nur im Bereich von Sekunden. Auch wenn die ???-Verfahren in der zeitlichen Auflösung sehr schnell sind, der Nachteil der ???-Verfahren bleibt nach wie vor die noch unpräzise Lokalisationsfähigkeit. Bei MEG-Messungen kommt erschwerend die hohe Verrauschung der Daten hinzu. Während die Messgrößen im Bereich von Femto-Tesla liegen, ist selbst der Herzschlag am Gehirn noch im Bereich von Picotesla messbar. Netzstrom und die Vielfachen dessen Eigenschwingung ($50\,Hz$, $100\,Hz$, $150\,Hz$, etc.), sowie die Schwingung des Bahnnetzes ($16,67\,Hz$) am konkreten Standort des Max-Planck-Insituts für kognitive Neurowissenschaften in Leipzig sind trotz starker Abschirmung deutlich messbare Größen in jeder MEG-Messung. Diese Frequenzen lassen sich gut mit Hilfe einer Fourier-Analyse darstellen, siehe Abbildung ???.
+Die Quellen (Orte) und Aktivitäten (Potentiale ??) sind die zentralen Größen bei der Untersuchung des Gehirns. Unterschiedliche Verfahren eigenen sich entsprechend ihrer Eigenschaften eher um Quellen in hoher räumlicher Auflösung oder Aktivitäten in hoher zeitlicher Auflösung zu messen. Dabei werden im Folgenden nur nicht-invasiven Verfahren betrachtet. Eine Bildgebung, also die Bestimmung der physikalischen Quellen im Gehirn mit möglichst hoher räumlicher Auflösung, wird klassisch mit tomographischen Verfahren ermöglicht, z.B. Magnet-Resonanz-Tomographie (MRT) und Computertomographie (CT). Enzephalografische Verfahren sind auf eine hohe zeitliche Auflösung der zerebralen Aktivität spezialisiert. Zu diesen gehören Elektroenzephalographie (EEG) und Magnetenzephalographie (MEG).
 
-Verschiedene Einflussfaktoren beeinflussen folglich die Messung. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} die Software \emph{Maxfilter} (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}) mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist, soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von Maxfiter gegenübergestellt. Die These ist, dass Beamformer (siehe Abschnitt ???) relativ stabil gegenüber Rauschen sein müsste und eine Anwendung von Maxfilter nicht nötig ist, um eine gute Quelllokalisation zu erreichen, während Mimum Norm Estimate (siehe Abschnitt ???) ohne vorherige Anwendung von Maxfilter eher zu unpräziseren Ergebnissen führen sollte. ?? Mathematische Begründung für die These ??
+Mit zunehmender Rechenkapazität und entsprechenden Modellen lassen sich inzwischen auch mit enzephalografischen Verfahren (z.B. EEG, MEG) die Quellen der Aktivität bestimmten. Die Messung erfolgt dabei nur an der Oberfläche des Kopfes, eine Lokalisation erfolgt somit indirekt. Diese Verfahren haben den entscheidenden Vorteil, dass ihre zeitliche Auflösung meist enorm hoch ist, sie können Veränderungen im Gehirn noch im Millisekundenbereich erfassen. Zum Vergleich: Bildgebende funktionelle Verfahren, welche zusätzlich zur Bildgebung auch die Aktivität erfassen können - wie die funktionelle Magnet-Resonanz-Tomographie (fMRT) - liegen hier meist nur im Bereich von Sekunden. Auch wenn die enzephalografischen Verfahren in der zeitlichen Auflösung sehr schnell sind, ihr Nachteil bleibt nach wie vor noch eher unpräzise Lokalisationsfähigkeit. Bei MEG-Messungen kommt erschwerend die hohe Verrauschung der Daten hinzu. Während die Messgrößen im Bereich von Femto-Tesla liegen, ist selbst der Herzschlag am Gehirn noch im Bereich von Picotesla messbar. Netzstrom und die Vielfachen dessen Eigenschwingung ($50\,Hz$, $100\,Hz$, $150\,Hz$, etc.), sowie die Schwingung des Bahnnetzes ($16,67\,Hz$) am konkreten Standort des Max-Planck-Insituts für kognitive Neurowissenschaften in Leipzig sind trotz starker Abschirmung deutlich messbare Größen in jeder MEG-Messung (siehe auch Abschnitt \nameref{sec:rauschen} auf Seite \pageref{sec:rauschen}). Die Frequenzen der Artefarkte in den Rohdaten lassen sich mit Hilfe einer Fourier-Analyse berechnen, siehe Abbildung ???.
 
-Im Folgenden werden zunächst das generelle Messverfahren und die Auswertungsverfahren theoretisch erläutert. In Abschnitt ?? werden dann die verwendeten Verfahren und deren konkrete Implementierung genauer beschrieben. In Abschnitt ?? werden die resultierenden Ergebnisse vorgestellt und anschließend diskutiert.
+Verschiedene Faktoren beeinflussen folglich die Messung, die niemals unter idealen Bedingungen statt findet. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} die Software \emph{Maxfilter} mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}), soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von Maxfiter gegenübergestellt. Die Hypothese ist, dass Beamformer (siehe Abschnitt ???) relativ stabil gegenüber Rauschen sein müsste und eine Anwendung von Maxfilter nicht nötig ist, um eine gute Quelllokalisation zu erreichen, während Minimum Norm Estimate (siehe Abschnitt ???) ohne vorherige Anwendung von Maxfilter eher zu unpräziseren Ergebnissen führen sollte. ?? Mathematische Begründung für die These ??? (evtl. auf das Ende der Einleitung verweisen? Dort wird die These evtl. nochmal präziser formuliert???). Zusammengefasst:
+
+\begin{itemize}
+\item Hauptthese: LCMV Beamformer ist robust gegen Rauschen (intrinsische Rauschunterdrückung)
+\item Nebenthese: Minimum Norm Estimate ist nicht robust gegen Rauschen
+\end{itemize}
+
+Im Folgenden werden zunächst die Grundlagen zur Biologie, zum Messverfahren und Rauschen erläutert. Anschließend soll noch innerhalb der Einleitung auf die Quelllokalisation und die dafür benötigten Modelle eingegangen werden. Im Abschnitt \nameref{sec:methodik} ab Seite \pageref{sec:methodik} wird dann beschrieben wie die formulierte These geprüft wurde, deren Ergebnisse dann im Abschnitt \nameref{sec:ergebnisse} und \nameref{sec:diskussion} ab den Seiten \pageref{sec:ergebnisse} und \pageref{sec:diskussion} vorgestellt und diskutiert werden.
 
 % #################################
 % ##### GRUNDLAGEN BIOLOGISCH #####
@@ -245,6 +252,7 @@ Gradiometer besitzen einen zusätzlichen SQUID-Ring. Die zwei Ringe eines Gradio
 Wie bereits im Abschnitt \nameref{sec:squids} auf Seite \pageref{sec:squids} deutlich wurde, ist das MEG ein äußerst empfindliches Messinstrument, welche im Bereich einzelner Flussquanten $\Phi_0$ messen kann. Ziel ist es nur die Gehirnsignale zur weiteren Berechnung zu verwenden und alle anderen Störfaktoren auszuschließen. Dafür kann eine Reihe von Maßnahmen getroffen und entsprechende Software eingesetzt werden, die im Folgenden erläutert wird.
 
 \subsubsection{Allgemeine Rauschunterdrückung}
+\label{sec:rauschen}
 
 Prinzipiell können unterschiedliche Artefakte und Rauschfaktoren ausgemacht werden. Grob können drei Bereiche klassifiziert werden: (1) Umwelt, (2) Versuchsperson und (3) Messtechnik.
 
@@ -495,6 +503,7 @@ Eine zweite Möglichkeit ist das Mitteln der Quellaktivität. Für jeden Block k
 \newpage
 
 \section{Methodik}
+\label{sec:methodik}
 
 \subsection{Verwendete Daten}
 
@@ -530,6 +539,7 @@ Zur Verarbeitung der vorliegenden Daten wurde verschiedene Software verwendet. G
 MRT Separation, Koregistrierung, Roh/SSS/MC, MNE/LCMV + Grafik
 
 \section{Ergebnisse}
+\label{sec:ergebnisse}
 
 \subsection{Signal-Rausch-Verhältnis}
 \label{sec:snr}
@@ -603,6 +613,9 @@ Block & pa07 & pa10 \\
 \end{table}
 
 Die Ergebnisse sind in Tabelle \ref{tab:snr} dargestellt. Deutlich wird, dass das Signal-Rausch-Verhältnis um den Wert von $3$ liegt. Während \texttt{pa07} eher leicht unterhalb von $3$ liegt, sind die Werte von \texttt{pa10} gut oberhalb von $3$. Das Signal-Rausch-Verhältnis spricht dafür, dass die Daten zur Lokalisation geeignet sein sollten, die Ergebnisse jedoch etwas verrauscht werden könnten.
+
+\section{Diskussion}
+\label{sec:diskussion}
 
 \newpage
 \section{Literaturverzeichnis}

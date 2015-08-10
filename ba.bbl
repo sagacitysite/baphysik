@@ -85,6 +85,31 @@
       \field{year}{1994}
       \field{pages}{662\bibrangedash 672}
     \endentry
+    \entry{ciresan2012multi}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=cd6ef5fb82fb12a1d0800140a64d272e}{Ciresan}{C\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=be71dea014b345d130231579ad7a5115}{Meier}{M\bibinitperiod}{Ueli}{U\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{Schmidhuber}{S\bibinitperiod}{Jürgen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=cd6ef5fb82fb12a1d0800140a64d272e}{Ciresan}{C\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=be71dea014b345d130231579ad7a5115}{Meier}{M\bibinitperiod}{Ueli}{U\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{Schmidhuber}{S\bibinitperiod}{Jürgen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4242381a53d56e5c164a22681033f291}
+      \strng{fullhash}{dcde94f7e32d1971b31d681895497bb3}
+      \field{sortinit}{C}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Multi-column deep neural networks for image classification}
+      \field{booktitle}{Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on}
+      \field{title}{Multi-column deep neural networks for image classification}
+      \field{year}{2012}
+      \field{pages}{3642\bibrangedash 3649}
+    \endentry
     \entry{cohen1968magnetoencephalography}{article}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=4c413160abaa666575a0b3ecf9260ef6}{Cohen}{C\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%

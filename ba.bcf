@@ -2087,27 +2087,28 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">logothetis2007vivo</bcf:citekey>
-    <bcf:citekey order="2">binder1994functional</bcf:citekey>
-    <bcf:citekey order="3">jaaskelainen2004human</bcf:citekey>
-    <bcf:citekey order="4">berger1929elektrenkephalogramm</bcf:citekey>
-    <bcf:citekey order="5">cohen1968magnetoencephalography</bcf:citekey>
-    <bcf:citekey order="6">malmivuo2012comparison</bcf:citekey>
-    <bcf:citekey order="7">jaklevic1964quantum</bcf:citekey>
-    <bcf:citekey order="8">josephson1962possible</bcf:citekey>
-    <bcf:citekey order="9">hansen2010meg</bcf:citekey>
+    <bcf:citekey order="1">ciresan2012multi</bcf:citekey>
+    <bcf:citekey order="2">logothetis2007vivo</bcf:citekey>
+    <bcf:citekey order="3">binder1994functional</bcf:citekey>
+    <bcf:citekey order="4">jaaskelainen2004human</bcf:citekey>
+    <bcf:citekey order="5">berger1929elektrenkephalogramm</bcf:citekey>
+    <bcf:citekey order="6">cohen1968magnetoencephalography</bcf:citekey>
+    <bcf:citekey order="7">malmivuo2012comparison</bcf:citekey>
+    <bcf:citekey order="8">jaklevic1964quantum</bcf:citekey>
+    <bcf:citekey order="9">josephson1962possible</bcf:citekey>
     <bcf:citekey order="10">hansen2010meg</bcf:citekey>
-    <bcf:citekey order="11">vigario1998independent</bcf:citekey>
-    <bcf:citekey order="12">vigario2000independent</bcf:citekey>
-    <bcf:citekey order="13">hansen2010meg</bcf:citekey>
-    <bcf:citekey order="14">uusitalo1997signal</bcf:citekey>
-    <bcf:citekey order="15">parkkonen1999interference</bcf:citekey>
-    <bcf:citekey order="16">taulu2004suppression</bcf:citekey>
-    <bcf:citekey order="17">taulu2005presentation</bcf:citekey>
-    <bcf:citekey order="18">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="19">hahne2002differential</bcf:citekey>
-    <bcf:citekey order="20">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="21">naatanen2004mismatch</bcf:citekey>
+    <bcf:citekey order="11">hansen2010meg</bcf:citekey>
+    <bcf:citekey order="12">vigario1998independent</bcf:citekey>
+    <bcf:citekey order="13">vigario2000independent</bcf:citekey>
+    <bcf:citekey order="14">hansen2010meg</bcf:citekey>
+    <bcf:citekey order="15">uusitalo1997signal</bcf:citekey>
+    <bcf:citekey order="16">parkkonen1999interference</bcf:citekey>
+    <bcf:citekey order="17">taulu2004suppression</bcf:citekey>
+    <bcf:citekey order="18">taulu2005presentation</bcf:citekey>
+    <bcf:citekey order="19">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="20">hahne2002differential</bcf:citekey>
+    <bcf:citekey order="21">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="22">naatanen2004mismatch</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="apa">
   <bcf:sorting>

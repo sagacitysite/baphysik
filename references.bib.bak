@@ -105,6 +105,18 @@
   Publisher                = {Elsevier}
 }
 
+@Article{logothetis2007vivo,
+  Title                    = {In vivo measurement of cortical impedance spectrum in monkeys: implications for signal propagation},
+  Author                   = {Logothetis, Nikos K and Kayser, Christoph and Oeltermann, Axel},
+  Journal                  = {Neuron},
+  Year                     = {2007},
+  Number                   = {5},
+  Pages                    = {809--823},
+  Volume                   = {55},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{malmivuo2012comparison,
   Title                    = {Comparison of the properties of EEG and MEG in detecting the electric activity of the brain},
   Author                   = {Malmivuo, Jaakko},
