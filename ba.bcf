@@ -2105,10 +2105,16 @@
     <bcf:citekey order="16">parkkonen1999interference</bcf:citekey>
     <bcf:citekey order="17">taulu2004suppression</bcf:citekey>
     <bcf:citekey order="18">taulu2005presentation</bcf:citekey>
-    <bcf:citekey order="19">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="20">hahne2002differential</bcf:citekey>
-    <bcf:citekey order="21">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="22">naatanen2004mismatch</bcf:citekey>
+    <bcf:citekey order="19">scherg1990fundamentals</bcf:citekey>
+    <bcf:citekey order="20">hamalainen1984interpreting</bcf:citekey>
+    <bcf:citekey order="21">ilmoniemi1985forward</bcf:citekey>
+    <bcf:citekey order="22">sarvas1987basic</bcf:citekey>
+    <bcf:citekey order="23">hamalainen1994interpreting</bcf:citekey>
+    <bcf:citekey order="24">hamalainen1993magnetoencephalography</bcf:citekey>
+    <bcf:citekey order="25">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="26">hahne2002differential</bcf:citekey>
+    <bcf:citekey order="27">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="28">naatanen2004mismatch</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="apa">
   <bcf:sorting>

@@ -34,6 +34,8 @@
 \DeclareLanguageMapping{ngerman}{ngerman-apa}
 \DefineBibliographyStrings{ngerman}{andothers={et\ al\adddot}}
 
+\setlength{\pltopsep}{1em}
+\newcommand{\mx}[1]{\mathbf{#1}}
 \renewcommand{\arraystretch}{1.2}
 
 \bibliography{references}
@@ -149,9 +151,10 @@ Im Folgenden werden zunächst die Grundlagen zur Biologie, zum Messverfahren und
 
 \subsection{Biologische Grundlagen}
 
-\subsubsection{Allgemein Gehirnstruktur}
+\subsubsection{Kopf- und Gehirnstruktur}
+\label{sec:head-struct}
 
-Der Kopf als Träger des Gehirns besteht aus mehreren Komponenten, deren Begriffe im Folgenden regelmäßig verwenden werden. Die Kopfoberfläche bzw. Kopfhaut (scalp) ist der äußerste Bereich. An diesem liegen bei EEG- und MEG-Messungen die Sensoren zur Messung an (bzw. kurz darüber). Unterhalb der Kopfoberfläche befindet sich der Schädelknochen, welcher das darin liegende Gehirn schützt. Das Gehirn wiederum ist von einer Bindegewebsschichten umgeben, der Hirnhaut. Die Gehirnmasse selbst, lässt sich grob in zwei Bereiche einteilen, die graue Substanz und die weiße Substanz. Während die graue Substanz eine hohe Dichte an Zellkörpern und eher weniger myelinisierte Axone enthält, enthält die weiße Substanz entsprechend viele lange und myelinisierte Axone und eher weniger Zellkörper. Im Gehirn liegt die graue Substanz eher in äußeren Bereichen und umhüllt die weiße Substanz. Die beiden groben Typen der Gehirnmasse weisen unterschiedliche messtechnische Eigenschaften auf, so ist die Leitfähigkeit der grauen Substanz isotrop, während die der weißen Substanz anisotrop ist \parencite{logothetis2007vivo}.
+Der Kopf als Träger des Gehirns besteht aus mehreren Komponenten, deren Begriffe im Folgenden regelmäßig verwenden werden. Die Kopfoberfläche (head shape) bzw. Kopfhaut (scalp) ist der äußerste Bereich. An diesem liegen bei EEG- und MEG-Messungen die Sensoren zur Messung an (bzw. kurz darüber). Unterhalb der Kopfoberfläche befindet sich der Schädelknochen, welcher das darin liegende Gehirn schützt. Das Gehirn wiederum ist von einer Bindegewebsschichten umgeben, der Hirnhaut. Die Gehirnmasse selbst, lässt sich grob in zwei Bereiche einteilen, die graue Substanz und die weiße Substanz. Während die graue Substanz eine hohe Dichte an Zellkörpern und eher weniger myelinisierte Axone enthält, enthält die weiße Substanz entsprechend viele lange und myelinisierte Axone und eher weniger Zellkörper. Im Gehirn liegt die graue Substanz eher in äußeren Bereichen und umhüllt die weiße Substanz. Die beiden groben Typen der Gehirnmasse weisen unterschiedliche messtechnische Eigenschaften auf, so ist die Leitfähigkeit der grauen Substanz isotrop, während die der weißen Substanz anisotrop ist \parencite{logothetis2007vivo}.
 
 \subsubsection{Elektrische und magnetische Eigenschaften der Nervenzellen}
 
@@ -175,13 +178,13 @@ Ein klassisches Beispiel eines ERP bzw. ERF ist die MMN, die so genannte \emph{m
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \fbox{\includegraphics[width=\textwidth]{einleitung/stg.png}}
-    \subcaption{Gyrus temporalis superior (STG), enthält den auditorischen Kortex. Verwendet von Auditory cortex. (18. März 2015). In Wikipedia, The Free Encyclopedia. Abgerufen 19:47, 04. August 2015, von \url{https://en.wikipedia.org/w/index.php?title=Auditory_cortex&oldid=653871107}}
+    \subcaption{Gyrus temporalis superior (STG), enthält den auditorischen Kortex.\\ Verwendet von \glqq Auditory cortex\grqq .\\ (18. März 2015). In Wikipedia, The Free Encyclopedia. Abgerufen 19:47, 04. August 2015, von \url{https://en.wikipedia.org/w/index.php?title=Auditory_cortex&oldid=653871107}}
     \label{img:gyrustemp}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \fbox{\includegraphics[width=\textwidth]{einleitung/brodmann-41-42.png}}
-    \subcaption{Auditorischer Kortex in den Brodmann Arealen 41 und 42. Verwendet von Superior temporal gyrus. (20. Juli 2015). In Wikipedia, The Free Encyclopedia. Abgerufen 19:57, 04. August 2015, von \url{https://en.wikipedia.org/w/index.php?title=Superior_temporal_gyrus&oldid=672262435}}
+    \subcaption{Auditorischer Kortex in den Brodmann Arealen 41 und 42.\\ Verwendet von \glqq Superior temporal gyrus\grqq.\\ (20. Juli 2015). In Wikipedia, The Free Encyclopedia. Abgerufen 19:57, 04. August 2015, von \url{https://en.wikipedia.org/w/index.php?title=Superior_temporal_gyrus&oldid=672262435}}
     \label{img:audicort}
   \end{subfigure}
   %
@@ -247,6 +250,8 @@ Magnetometer besitzen nur einen SQUID-Ring und messen den absoluten Wert der mag
 
 Gradiometer besitzen einen zusätzlichen SQUID-Ring. Die zwei Ringe eines Gradiometers können axial oder planar angeordnet sein. Die zwei Spule messen einen räumlichen Gradienten, der Gradient der magnetische Flussdichte $G_x = dB_z/dx$ bzw. $G_y = dB_z/dy$ wird in $T/m$ angegeben. Die Annahme ist, dass weit entfernte Quellen ein relativ homogenes Feld erzeugen. Da die zwei SQUIDs des Gradiometers mit einem entgegengesetzten Strom durchflossen werden und die gemessenen magnetischen Flussdichten voneinander subtrahiert werden, verschwindet der Gradient für weit entfernte Quellen im Idealfall, so dass nur nahe Quellen erfasst werden \parencite{hansen2010meg}.
 
+Im Falle des verwendeten MEG-Systems (\emph{Vectorview by Elekta-Neuromag Oy, Helsinki}) enthält jeder der 102 Sensoren drei Kanäle mit einem Magnetometer und zwei Gradiometern, die je in $x$- und $y$-Richtung ausgerichtet sind.
+
 \subsection{Artefakte und Rauschen}
 
 Wie bereits im Abschnitt \nameref{sec:squids} auf Seite \pageref{sec:squids} deutlich wurde, ist das MEG ein äußerst empfindliches Messinstrument, welche im Bereich einzelner Flussquanten $\Phi_0$ messen kann. Ziel ist es nur die Gehirnsignale zur weiteren Berechnung zu verwenden und alle anderen Störfaktoren auszuschließen. Dafür kann eine Reihe von Maßnahmen getroffen und entsprechende Software eingesetzt werden, die im Folgenden erläutert wird.
@@ -262,7 +267,14 @@ Auch die Versuchsperson (2) hat einen großen Einfluss auf die Messung. Bewegung
 
 Letztlich hat auch die Messtechnik (3) in Form klassischen Rauschens einen entscheidenden Einfluss, maßgeblich durch Sensorrauschen.
 
-\textcite{vigario1998independent} und \textcite{vigario2000independent} fassten mit Hilfe einer ICA (Independent Component Analysis) die wichtigsten Faktoren für Rauschen und Artefakte bei MEG-Messungen zusammen.
+\textcite{vigario1998independent} und \textcite{vigario2000independent} fassten mit Hilfe einer ICA (Independent Component Analysis) die wichtigsten Faktoren für Rauschen und Artefakte bei MEG-Messungen zusammen. Es ergaben sich folgende allgemeine Faktoren für Artefakte der Versuchsperson (2):
+
+\begin{compactitem}
+\item Gebiss-Muskulatur
+\item Horizontale Augenbewegung und Blinzeln
+\item Herzmuskel
+\item Atmung
+\end{compactitem}
 
 \subsubsection{Softwareseitige Rauschunterdrückung}
 \label{sec:maxfilter}
@@ -279,97 +291,130 @@ SSS wurde wenige Jahr später von \textcite{taulu2004suppression} und \textcite{
 % ##### GRUNDLAGEN LOKALISATION  #####
 % ####################################
 
-\subsection{Grundlagen der Quelllokalisation mit MEG}
+\newpage
+\section{Hintergrund zur Quelllokalisation}
 
-Die Messung der magnetischen Signale ausschließlich über die außerhalb des Kopfes befindlichen Sensoren. Die entscheidende Frage ist also: Wie ist es möglich anhand der magnetischen Signale außerhalb des Gehirns auf die physiologischen Quellen innerhalb des Gehirns zu schließen? Um diese Frage zu beantworten wird zunächst etwas Theorie eingeführt und anschließend die Vorwärts-Lösung, sowie verschiedene Methoden der inversen Lösung erläutert.
+Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhalb des Kopfes befindlichen Sensoren. Die entscheidende Frage ist also: Wie ist es möglich anhand der magnetischen Signale außerhalb des Gehirns auf die physiologischen Quellen innerhalb des Gehirns zu schließen? Um diese Frage zu beantworten wird zunächst etwas Theorie eingeführt und anschließend die Vorwärts-Lösung, sowie verschiedene Methoden der inversen Lösung erläutert.
+
+\subsection{Grundlagen und Vorwärtsmodell}
 
 \subsubsection{Superposition}
 
 Jede Quelle im Gehirn wirkt auf alle Sensoren an der Kopfoberfläche, jeder Sensor empfängt also Signale jeder einzelnen Aktivität im Gehirn. Es liegt eine Superposition der Quellaktivität vor (siehe Abbildung ???). Ähnlich einer Unterhaltung mit 10 sprechenden Personen und 5 aufnehmenden Mikrofonen. Jedes Mikrofon empfängt aus einer anderen Perspektive alle 10 Gespräche. Wünschenswert wäre es nun ein einzelnes Gespräch zu isolieren \emph{und} zu lokalisieren. Übertragen auf das Gehirn soll versucht werden die Quellen der Aktivitäten zu identifizieren und deren spezifische Aktivitäten über die Zeit zu erhalten. Die Quellen werden durch Dipole beschrieben und diskretisiert. Entsprechend soll für jeden angenommenen Dipol (an einem bestimmten Ort im Gehirn) ein Aktivitätsverlauf über die Zeit berechnet werden.
 
-\subsubsection{Segmentierung}
+\subsubsection{Segmentierung und Volumenleiter}
 
-Die Quellbestimmung ist nur an bestimmten Stellen innerhalb des Kopfes wirklich sinnvoll, außerhalb des Gehirns ist kein magnetischer Dipol zu erwarten. Außerdem ist es wünschenswert die Aktivität im Gehirn nicht auf eine standardisierte mathematische Form (z.B. auf eine Kugel) zu berechnen, sondern ein echtes Gehirn zu verwenden, im Idealfall das tatsächliche Gehirn der entsprechenden Versuchsperson. Dafür muss zunächst ein bildgebendes Verfahren eingesetzt werden. Überlicherweise eignet sich dafür ein MRT-Scan des Kopfes.
+Die Quellbestimmung ist nur an bestimmten Stellen innerhalb des Kopfes wirklich sinnvoll, außerhalb des Gehirns ist kein magnetischer Dipol zu erwarten. Außerdem ist es wünschenswert die Aktivität im Gehirn nicht auf eine standardisierte mathematische Form (z.B. auf eine Kugel) zu berechnen, sondern ein echtes Gehirn zu verwenden, im Idealfall das tatsächliche Gehirn der entsprechenden Versuchsperson. Dafür muss zunächst ein bildgebendes Verfahren eingesetzt werden. Üblicherweise eignet sich dafür ein MRT-Scan des Kopfes.
 
-Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologische Bestandteile. Mit dem Softwarepaket Freesurfer ??? kann das Bild des Kopfes in seine Segmente zerlegt werden. Es wird unterschieden zwischen der Kopfhaut, dem Knochen, dem Bindegewebe und dem Gehirn ???. Innerhalb des Gehirns werden Gyri und Sulki ???, sowie graue und weiße Substanz ??? getrennt.
+Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologische Bestandteile. Mit dem Softwarepaket Freesurfer (mehr Info ???) kann das Bild des Kopfes in seine Segmente zerlegt werden (siehe auch \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct}). Es wird unterschieden zwischen der Kopfoberfläche bzw. Kopfhaut, dem Schädel und dem Gehirn. Innerhalb des Gehirns werden graue und weiße Substanz getrennt.
+
+\begin{figure}[t]
+  \centering
+%  \captionsetup{justification=centering}
+  %
+  \fbox{\includegraphics[width=0.5\textwidth]{einleitung/bem.png}}
+  %
+  \vspace*{3mm}
+  \caption[Volumenleiter, berechnet mittels Boundary Element Model (BEM)]{Volumenleiter, berechnet mittels Boundary Element Model (BEM). Darstellung der drei segmentierten Bereiche: Gehirn (grün), Schädel (weiß), Kophaut (grau).\\ Verwendet von \glqq Creating a volume conduction model of the head for source-reconstruction of EEG data\grqq . (01. April 2015). In FieldTrip wiki. Abgerufen 15:02, 10. August 2015, von \url{http://www.fieldtriptoolbox.org/tutorial/headmodel_eeg}}
+  \label{img:bem}
+\end{figure}
+
+Anschließend wird ein Kopfmodell (head model) berechnet, welches die verschiedenen Gewebetypen beinhaltet. Dafür können numerische Verfahren wie z.B. das \emph{Boundary Element Model} (BEM) verwendet werden. Das BEM-Verfahren modelliert die Ränder der segmentierten Volumina. Dabei wird angenommen, dass die Leitfähigkeit innerhalb der Volumen isotrop ist. Dies stellt eine Idealisierung da. Im Abschnitt \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct} wurde bereits deutlich, dass eine vollständige homogene Leitfähigkeit nicht der Realität entspricht bzw. nur für die graue Substanz gültig ist. Da die graue Substanz jedoch außen liegt und meist auch nur die Aktivitäten im Außenbereich berechnet werden, ist die Näherung meist gerechtfertigt.
+
+Die Auflösung der Modellierung sollte nicht zu gering ausfallen, da die Dipole (diskretisierte Quellen im Gehirn) nahe der Oberfläche bzw. nahe des BEM-Netzes bei der numerischen Berechnung fehlerhaft berechnet werden können.
+??? warum ???
+Eine höhere Auflösung ermöglicht eine höhere Fehlerfreiheit für Dipole nahe der Volumen-Oberfläche.
+
+Im Gegensatz zum BEM-Modell wird im FEM-Modell (\emph{Finite Element Model}) angenommen, dass die Leitfähigkeit anisotrop ist. Dies entspricht mehr der Realität und lohnt sich vor allem bei einer Lokalisation, welche auch das innere des Gehirns berücksichtigt, da die weiße Substanz mit ihrer anisotropen Leitfähigkeit präziser modelliert wird.
+
+Nach der Berechnung des Kopfmodells liegt der Volumenleiter (volume conductor) vor, der in Abbildung \ref{img:bem} dargestellt ist. Dabei wird nur beschrieben wie sich elektrische Aktivität im Gehirn verteilen kann, der Volumenleiter trifft keine Aussage über mögliche Ursprünge elektrischer oder magnetischer Aktivität.
 
 \subsubsection{Koregistrierung}
 
-Die Daten der Physiologie aus der MRT-Messung und die Daten der Aktivität aus der MEG-Messung werden in unterschiedlichen Räumen erhoben, da beide Verfahren mit unterschiedlichen Geräten und unterschiedlichen Standards arbeiten (auch herstellerspezifisch). Dies macht sich bei der Verarbeitung der Daten vor allem in der Wahl des Koordinatensystems bemerkbar.
+Die Daten der Physiologie aus der MRT-Messung und die Daten der Aktivität aus der MEG-Messung werden in unterschiedlichen Koordinatensystemen erhoben, da beide Verfahren mit unterschiedlichen Geräten und unterschiedlichen Standards arbeiten (auch herstellerspezifisch). Bei der \emph{Koregistrierung} wird eine Koordinatentransformation durchgeführt, so dass beide Datensätze möglichst gut zueinander passen. Die Transformation kann nicht fehlerfrei durchgeführt werden, die Abweichungen nach der Transformation liegen im Bereich von wenigen Millimetern ???.
 
-Die physiologischen Daten des MRT lagen im ???-Koordinatensystem vor, während die Aktivitätsdaten des MEG im ???-Koordinatensystem vorlagen. ?? Koordinatensysteme beschreiben, evtl. auch andere ??
+Die Koordinatensysteme bei MEG- und EEG-Messungen orientieren sich meist an äußeren anatomischen Merkmalen, wie dem Nasion oder den preauricularen Punkten. Bei bildgebenden Verfahren werden üblicherweise innere anatomische Merkmale, wie die anteriore und posteriore Kommissur. Um eine Vergleichbarkeit zwischen unterschiedlichen Gehirnen zu gewährleisten wird zusätzlich häufig eine Standardisierung der Gehirn-Größe vorgenommen. Dafür wird das Talairach-Tournoux Gehirn oder Vorlagen vom Montreal Neurological Institute (MNI) verwendet.
 
-Bei der \emph{Koregistrierung} wird eine Koordinatentransformaition durchgeführt, so dass beide Datensätze möglichst gut zueinander passen. Die Abweichungen liegen im Bereich von ???.
+\subsubsection{Quellraum und Vorwärtsmodell}
 
-\subsubsection{Volumenleiter und Quellraum}
+Das \emph{Vorwärtsmodell} (\emph{forward solution}) berechnet aus angenommenen Quellen innerhalb des Gehirns die Auswirkung auf die Sensoren außerhalb des Gehirns. Innerhalb des Gehirns werden Dipole modelliert. Das sich ergebende Modell des Gehirns mit den Dipolen wird als \emph{Quellraum} (source space) bezeichnet. Für jeden der gesetzten Dipole wird unter Berücksichtigung der Leitfähigkeit und des Randes (BEM-Netz) die Wirkung auf die Sensoren außerhalb des Gehirns bestimmt. Somit kann für viele Positionen im Gehirn die Wirkung außerhalb des Gehirns abgeschätzt werden.
 
-Begrifflich wird strikt getrennt zwischen den Sensoren (sensors), welche über der Kopfoberfläche liegen und die Signale aufnehmen. Die Sensoren werden auch als Kanäle (channels) bezeichnet, vor allem dann wenn es um die mathematische Auswertung geht. Die Kopfoberfläche (headshape) bezeichnet den äußeren Rand des Kopfes. In diesem Zusammenhang wird auch der Begriff des Kopfmodells (head model) verwendet, welcher ein gesamtes Modell des Kopfrandes darstellt. Oft ist es sinnvoll auch diesen darzustellen, um z.B. die Korrektheit der Positionen von Sensoren und Kopf oder Gehirn und Kopf einschätzen zu können. Der Volumenleiter besteht ausschließlich aus dem Gehirnvolumen. Alle weiteren Teile des Kopfes wurden nach der Segmentierung verworfen. Es wird beim Volumenleiter also nur der Bereich des Kopfes betrachtet, in dem elektrische bzw. magnetische Signalquellen erwartet werden, also ein Volumen elektrisch leitenden Gewebes. Dabei wird nur beschrieben wie sich elektrische Aktivität im Gehirn verteilen kann, der Volumenleiter trifft keine Aussage über mögliche Ursprünge elektrischer Aktivität. Für jede Stelle im Gewebe wird angegeben wie hoch die Leitfähigkeit ist. Der Volumenleiter ist Resultat der Segmentierung ???.
+Die Daten des Vorwärtsmodells werden in einer \emph{Leadfield-Matrix} dargestellt. Sie enthält die Abbildung der Dipole auf die Sensoren. Zur Bestimmung könne wir von folgender Gleichung ausgehen:
 
-?? Quellraum ???
+\begin{equation}
+y_i = \int_V \mx{L}_i (\mx{r}) \cdot \mx{j} (\mx{r})\, dV
+\label{eq:leadfield}
+\end{equation}
 
-?? Zusammenbringen mit nächsten Abschnitt ??
+Das Potential~$y_i$ am Sensor~$i$ ergibt sich durch Integration des Leadfield-Operators~$\mx{L}_i(\mx{r})$ multipliziert mit der elektrischen Stromdichteverteilung~$\mx{j}(\mx{r})$, jeweils an der Stelle~$\mx{r}$. $\mx{j}(\mx{r})$~ergibt sich aus der Aktivität einer Nervenzelle bzw. der Nervenzellen in unmittelbarer Nähe des betrachteten Punktes und bildet die Ursache für die entstehenden elektrischen und magnetischen Felder.
 
-\subsubsection{Vorwärtsmodell - BEM und FEM}
+Die Quelle kann durch diskrete Dipole modelliert werden. Mit Hilfe diese Modellierung kann die Stromdichteverteilung mit Delta-Distributonen beschrieben werden:
 
-Das \emph{Vorwärtsmodell} (\emph{forward solution}) berechnet aus angenommenen Quellen innerhalb des Gehirns die Auswirkung auf die Sensoren außerhalb des Gehirns. Der Rand des modellierten Gehirns wird dabei als \emph{BEM-Netz} mit Dreiecken modelliert. Die Auflösung der Modellierung sollte nicht zu gering ausfallen, da die Dipole (elementare Quellen im Gehirn) nahe der Oberfläche (bzw. nahe des BEM-Netzes) bei der numerischen Berechnung fehlerhaft berechnet werden können ?? warum ??. Eine höhere Auflösung ermöglicht eine höhere Fehlerfreiheit für Dipole nahe der Volumen-Oberfläche. In dieser Analyse wurde ein Auflösung von XXXX gewählt. ?? letzter Satz evtl. erst in Methodik ??
+\begin{equation}
+\mx{j} (\mx{r}) = \mx{S}(\mx{r})\,\delta(\mx{r}-\mx{r}_S)
+\end{equation}
 
-Innerhalb der Oberfläche befindet sich das Gehirngewebe. Die Leitfähigkeit des Gehirns wird im BEM-Modell als homogen und isotrop angenommen. Dies stellt eine Idealisierung da, im Abschnitt XX (Gehirnstruktur) wurde bereits deutlich, dass eine homogene Leitfähigkeit nicht der Realität entspricht bzw. nur für die graue Substanz gültig ist. Da die graue Substanz jedoch außen liegt und meist auch nur die Aktivitäten im Außenbereich berechnet werden, ist die Näherung meist gerechtfertigt.
+Eingesetzt in Gleichung~\ref{eq:leadfield} ergibt sich:
 
-Innerhalb des Volumenleiters werden Dipole modelliert (hier 10242 pro Hemisphäre ?? evtl. erst in Methodik ??). Für jeden der gesetzten Dipole wird unter Berücksichtigung der Leitfähigkeit und des Randes die Wirkung auf die Sensoren außerhalb des Gehirns bestimmt. Somit kann für viele Positionen im Gehirn die Wirkung außerhalb des Gehirns abgeschätzt werden.
+\begin{equation}
+\label{eq:leadfield2}
+y_i(\mx{r}_S) = \int_V \mx{L}_i (\mx{r}) \cdot \mx{S}(\mx{r})\,\delta(\mx{r}-\mx{r}_S)\, dV = \mx{S}(\mx{r}_S) \cdot \mx{L}_i(\mx{r}_S)
+\end{equation}
 
-Die Daten des Vorwärtsmodells werden in einer \emph{Leadfield-Matrix} gespeichert. Sie enthält die Abbildung der Dipole auf die Sensoren (numSensoren X numDipole). Durch sie wird die Berechnung des Rückwärtsmodells möglich (siehe Abschnitt ???).
+Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols an der Stelle~$\mx{r}_S$, dies entspricht der Quelle. Jeder Datenpunkt kann also mit einem entsprechenden Leadfield-Eintrag und der zugehörigen Quellstärke beschrieben werden.
 
-\[ L = S \times D ?? \]
-
-Im Gegensatz zum BEM-Modell wird im FEM-Modell (\emph{Finite Element Model}) angenommen, dass die Leitfähigkeit anisotrop ist. Dies entspricht mehr der Realität und lohnt sich vor allem bei einer Lokalisation, welche auch das innere des Gehirns berücksichtigt, da die weiße Substanz mit ihrer anisotropen Leitfähigkeit besser modelliert  wird.
-
-\subsubsection{BEM-Netz und Headmodel}
-
-?? Wo hin damit ??
-
-Während das BEM-Netz eine glatte Oberfläche der Begrenzung des Gehirns darstellt (quasi die Kopfhaut), wird im Headmodel der Kortex mit seinen Faltungen dargestellt. Die Daten des Headmodels bilden den Sourcepace (oder Quellraum), also dasjenige Volumen, in welchem das Gewebe des Gehirns liegt und in welchem Aktivitäten dargestellt werden sollen.
+% Eigentlich ist S und L ein Vektor?
+% Die Gleichung ist nur für einen Zeitpunkt und einen Kanal i, sie varriert nur in den Orten
+% Oder einfach y zum Vektor machen? Und die Kanäle direkt mit rein nehmen?
 
 \subsection{Rückwärtsmodell}
 
-Das \emph{Rückwärtsmodell} (\emph{inverse solution}) schätzt die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt das Vorwärtsmodell voraus. Nur wenn bekannt ist wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden wie bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. In dieser Untersuchung werden die zwei Verfahren “Minimum Norm” und “Beamforming” verglichen.
-Datenmodell
-% Echte Formeln (mit Nummern) verwenden
-\begin{equation}
-X = h_1 s_1 + h_2 s_2 + ... + h_n s_n + R
-\end{equation}
-
-$X$ bezeichnet die Gesamtheit der Daten. Diese setzte sich zusammen aus einer linearen Summe der Quellaktivitäten si multipliziert mit den jeweils passenden Leadfield-Werten hi (siehe Abschnitt XX, Vorwärtsmodell) und dem Rest-Rauschen R.
+Das \emph{Rückwärtsmodell} (\emph{inverse solution}) schätzt auf Basis der Leadfield-Matrix die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt entsprechend das Vorwärtsmodell voraus. Nur wenn bekannt ist wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden wie umgekehrt bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. Besondere Aufmerksamkeit wird den Methoden \emph{Minimum Norm Estimate} und \emph{Beamforming} gewidmet. Das Datenmodell der inversen Lösung aus Gleichung \ref{sec:leadfield2} bildet den Ausgangspunkt.
 
 \subsubsection{Methoden zur Bestimmung des Rückwärtsmodell}
 
-Es gibt drei Verfahren zur Bestimmung des Rückwärtsmodells (siehe auch Abbildung XX):
+Es gibt drei Verfahren zur Bestimmung des Rückwärtsmodells (siehe auch Abbildung ???):
 
-\begin{itemize}
+\begin{compactitem}
 \item Einfache und multiple Dipolmodelle (single and multiple dipole models)
 \item Verteilte Dipolmodelle (distributed dipole models)
 \item Räumliche Filterung (spatial filtering)
-\item Einfache und multiple Dipolmodelle
-\end{itemize}
+\end{compactitem}
 
-In den einfachen und multiplen Dipolmodellen (single and multiple dipole models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklärt. Es wird zunächst ein Diopol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Lokalisationen können vorgenommen werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden neuen einzelnen Dipol immer geringer, weshalb es sich nur lohnt eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen.
+\subsubsection{Einfache und multiple Dipolmodelle}
 
-In dieser Methode wird versucht den Fehler $R$ zwischen Daten $X$ und Modell $\sum^n_1{h_i s_i}$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Dabei wird versucht $n$ klein zu halten.
+In den \emph{einfachen und multiplen Dipolmodellen} (single and multiple dipole models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklärt \parencite{scherg1990fundamentals}. Es wird zunächst ein Dipol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Lokalisationen können vorgenommen werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden neuen einzelnen Dipol immer geringer, weshalb es sich nur lohnt eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen. In dieser Methode wird zusätzlich zu Gleichung \ref{eq:leadfield2} ein Fehler~$R$ berücksichtigt, der als Term wie folgt ergänzt wird:
 
 \begin{equation}
-X - h_1 s_1 - h_2 s_2 - ... - h_n s_n = R
+y_i(\mx{r}_S) = \mx{S}(\mx{r}_S) \cdot \mx{L}_i(\mx{r}_S) + R
+\end{equation}
+
+In Summenschreibweise ergibt sich:
+
+\begin{equation}
+\label{sec:leadfield-error-sum}
+y_i = \left( \sum_{j=1}^n S_j \cdot L_j \right) + R
+\end{equation}
+
+Es wird versucht den Fehler $R$ zwischen Daten $y_i$ und Modell $\left( \sum_{j=1}^n S_j \cdot L_{ij} \right)$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Dabei wird versucht $n$ klein zu halten.
+
+\begin{equation}
+R = y_i - \left( \sum_{j=1}^n S_j \cdot L_{ij} \right)
 \end{equation}
 
 \subsubsection{Verteilte Dipolmodelle}
 
-Im verteilten Dipolmodellen (distributed dipole models) wird davon ausgegangen, dass die Aktivität überall auftritt. Es wird nach der Verteilung der Aktivität im gesamten Gehirn gesucht.
+In verteilten Dipolmodellen (distributed dipole models) wird davon ausgegangen, dass die Aktivität überall auftritt. Es wird nach der Verteilung der Aktivität im gesamten Gehirn gesucht. Erste Vorschläge zum \emph{minimum norm estimate} (MNE) wurden von \textcite{hamalainen1984interpreting}, \textcite{ilmoniemi1985forward}, \textcite{sarvas1987basic}, sowie \textcite{hamalainen1994interpreting} ausgearbeitet. Einen Überblick gibt \textcite{hamalainen1993magnetoencephalography}.
 
-Mit der Leadfield-Matrix $H$ und den Daten ergibt sich direkt die Quellaktivitätsmatrix S:
+% hier sind wir!
+
+Mit der Leadfield-Matrix $H$ und den Daten ergibt sich direkt die Quellaktivitätsmatrix~S:
 
 \begin{equation}
 H^{-1} ( X - R ) = S
 \end{equation}
 
-Bei den verteilten Dipolmodellen werden sehr viele Quellen betrachtet, deutlich mehr als Sensoren verfügbar sind. Damit ergeben sich unendlich viele exakte Lösungen. Um physikalisch sinnvolle Lösungen zu finden müssen Nebenbedingungen aufgestellt werden. Übliche Nebenbedingungen sind:
+Bei den \emph{verteilten Dipolmodellen} werden sehr viele Quellen betrachtet, deutlich mehr als Sensoren verfügbar sind. Damit ergeben sich unendlich viele exakte Lösungen. Um physikalisch sinnvolle Lösungen zu finden müssen Nebenbedingungen aufgestellt werden. Übliche Nebenbedingungen sind:
 
 \begin{itemize}
 \item Maximale Glättung, LORETA (maximal smoothness)
@@ -537,6 +582,13 @@ Zur Verarbeitung der vorliegenden Daten wurde verschiedene Software verwendet. G
 \subsection{Verfahren}
 
 MRT Separation, Koregistrierung, Roh/SSS/MC, MNE/LCMV + Grafik
+
+Die physiologischen Daten des MRT lagen im ???-Koordinatensystem vor, während die Aktivitätsdaten des MEG im ???-Koordinatensystem vorlagen. Abweichungen in mm angeben.
+
+BEM-Netz: In dieser Analyse wurde ein Auflösung von XXXX gewählt.
+Berechnung der Quellen nur am Außenbereich, daher BEM (isotrop, graue Substanz außen) ok.
+
+Anzahl der modellierten Dipole im Source Space (Vorwärtsmodell): 10242 pro Hemisphäre
 
 \section{Ergebnisse}
 \label{sec:ergebnisse}

@@ -3,7 +3,7 @@
 
 
 @Article{berger1929elektrenkephalogramm,
-  Title                    = {{\"U}ber das elektrenkephalogramm des menschen},
+  Title                    = {{\"U}ber das Elektrenkephalogramm des Menschen},
   Author                   = {Berger, Hans},
   Journal                  = {European Archives of Psychiatry and Clinical Neuroscience},
   Year                     = {1929},
@@ -26,6 +26,15 @@
   Publisher                = {Wiley Online Library}
 }
 
+@InProceedings{ciresan2012multi,
+  Title                    = {Multi-column deep neural networks for image classification},
+  Author                   = {Ciresan, Dan and Meier, Ueli and Schmidhuber, J{\"u}rgen},
+  Booktitle                = {Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on},
+  Year                     = {2012},
+  Organization             = {IEEE},
+  Pages                    = {3642--3649}
+}
+
 @Article{cohen1968magnetoencephalography,
   Title                    = {Magnetoencephalography: evidence of magnetic fields produced by alpha-rhythm currents},
   Author                   = {Cohen, David},
@@ -36,6 +45,38 @@
   Volume                   = {161},
 
   Publisher                = {American Association for the Advancement of Science}
+}
+
+@Article{hamalainen1993magnetoencephalography,
+  Title                    = {Magnetoencephalography—theory, instrumentation, and applications to noninvasive studies of the working human brain},
+  Author                   = {H{\"a}m{\"a}l{\"a}inen, Matti and Hari, Riitta and Ilmoniemi, Risto J and Knuutila, Jukka and Lounasmaa, Olli V},
+  Journal                  = {Reviews of modern Physics},
+  Year                     = {1993},
+  Number                   = {2},
+  Pages                    = {413},
+  Volume                   = {65},
+
+  Publisher                = {APS}
+}
+
+@Article{hamalainen1994interpreting,
+  Title                    = {Interpreting magnetic fields of the brain: minimum norm estimates},
+  Author                   = {H{\"a}m{\"a}l{\"a}inen, Matti S and Ilmoniemi, RJ},
+  Journal                  = {Medical \& biological engineering \& computing},
+  Year                     = {1994},
+  Number                   = {1},
+  Pages                    = {35--42},
+  Volume                   = {32},
+
+  Publisher                = {Springer}
+}
+
+@Article{hamalainen1984interpreting,
+  Title                    = {Interpreting measured magnetic fields of the brain: estimates of current distributions},
+  Author                   = {H{\"a}m{\"a}l{\"a}inen, Matti S and Ilmoniemi, RJ},
+  Journal                  = {Helsinki University of Technology},
+  Year                     = {1984},
+  Volume                   = {TKK-F-A559}
 }
 
 @Article{hahne2002differential,
@@ -67,6 +108,14 @@
   Volume                   = {57},
 
   Publisher                = {Elsevier}
+}
+
+@Article{ilmoniemi1985forward,
+  Title                    = {The forward and inverse problems in the spherical model},
+  Author                   = {Ilmoniemi, RJ and H{\"a}m{\"a}l{\"a}inen, MS and Knuutila, J},
+  Year                     = {1985},
+
+  Publisher                = {Biomagnetism: Applications and Theory (H. Weinberg, G. Stroink, and T. Katila, eds.), Pergamon Press, New York}
 }
 
 @Article{jaaskelainen2004human,
@@ -149,6 +198,29 @@
   Pages                    = {13--16},
 
   Publisher                = {Tohoku University Press, Sendai}
+}
+
+@Article{sarvas1987basic,
+  Title                    = {Basic mathematical and electromagnetic concepts of the biomagnetic inverse problem},
+  Author                   = {Sarvas, Jukka},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {1987},
+  Number                   = {1},
+  Pages                    = {11},
+  Volume                   = {32},
+
+  Publisher                = {IOP Publishing}
+}
+
+@Article{scherg1990fundamentals,
+  Title                    = {Fundamentals of dipole source potential analysis},
+  Author                   = {Scherg, Michael},
+  Journal                  = {Auditory evoked magnetic fields and electric potentials. Advances in audiology},
+  Year                     = {1990},
+  Pages                    = {40--69},
+  Volume                   = {6},
+
+  Publisher                = {Karger Basel}
 }
 
 @Article{taulu2005presentation,

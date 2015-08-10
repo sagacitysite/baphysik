@@ -34,10 +34,10 @@
       \field{sortinit}{B}
       \field{labelyear}{1929}
       \field{datelabelsource}{year}
-      \field{labeltitle}{Über das elektrenkephalogramm des menschen}
+      \field{labeltitle}{Über das Elektrenkephalogramm des Menschen}
       \field{journaltitle}{European Archives of Psychiatry and Clinical Neuroscience}
       \field{number}{1}
-      \field{title}{Über das elektrenkephalogramm des menschen}
+      \field{title}{Über das Elektrenkephalogramm des Menschen}
       \field{volume}{87}
       \field{year}{1929}
       \field{pages}{527\bibrangedash 570}
@@ -158,6 +158,82 @@
       \field{year}{2002}
       \field{pages}{339\bibrangedash 356}
     \endentry
+    \entry{hamalainen1984interpreting}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=1,hash=2fb572d21ce639c1cac2ee2262cee886}{Hämäläinen}{H\bibinitperiod}{Matti\bibnamedelima S}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=1,hash=2fb572d21ce639c1cac2ee2262cee886}{Hämäläinen}{H\bibinitperiod}{Matti\bibnamedelima S}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{28dc02a96d18b1df6eb52d1d319238d8}
+      \strng{fullhash}{28dc02a96d18b1df6eb52d1d319238d8}
+      \field{sortinit}{H}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Interpreting measured magnetic fields of the brain: estimates of current distributions}
+      \field{journaltitle}{Helsinki University of Technology}
+      \field{title}{Interpreting measured magnetic fields of the brain: estimates of current distributions}
+      \field{volume}{TKK-F-A559}
+      \field{year}{1984}
+    \endentry
+    \entry{hamalainen1994interpreting}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=1,hash=2fb572d21ce639c1cac2ee2262cee886}{Hämäläinen}{H\bibinitperiod}{Matti\bibnamedelima S}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=1,hash=2fb572d21ce639c1cac2ee2262cee886}{Hämäläinen}{H\bibinitperiod}{Matti\bibnamedelima S}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{28dc02a96d18b1df6eb52d1d319238d8}
+      \strng{fullhash}{28dc02a96d18b1df6eb52d1d319238d8}
+      \field{sortinit}{H}
+      \field{labelyear}{1994}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Interpreting magnetic fields of the brain: minimum norm estimates}
+      \field{journaltitle}{Medical \& biological engineering \& computing}
+      \field{number}{1}
+      \field{title}{Interpreting magnetic fields of the brain: minimum norm estimates}
+      \field{volume}{32}
+      \field{year}{1994}
+      \field{pages}{35\bibrangedash 42}
+    \endentry
+    \entry{hamalainen1993magnetoencephalography}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=1,hash=e1476d8bde26ebfe9960d8438fa96f4f}{Hämäläinen}{H\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e742ef7e2493a8d48ce1e526dac3ff35}{Hari}{H\bibinitperiod}{Riitta}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3a8ce3f232875cf375f8b54cb4ad94c}{Ilmoniemi}{I\bibinitperiod}{Risto\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d7a0cedeed99c95a110a20d6bca85419}{Knuutila}{K\bibinitperiod}{Jukka}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3a939e3505304aff68c40a845bb1112f}{Lounasmaa}{L\bibinitperiod}{Olli\bibnamedelima V}{O\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=1,hash=e1476d8bde26ebfe9960d8438fa96f4f}{Hämäläinen}{H\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e742ef7e2493a8d48ce1e526dac3ff35}{Hari}{H\bibinitperiod}{Riitta}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3a8ce3f232875cf375f8b54cb4ad94c}{Ilmoniemi}{I\bibinitperiod}{Risto\bibnamedelima J}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d7a0cedeed99c95a110a20d6bca85419}{Knuutila}{K\bibinitperiod}{Jukka}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3a939e3505304aff68c40a845bb1112f}{Lounasmaa}{L\bibinitperiod}{Olli\bibnamedelima V}{O\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{52b073b0dfc19a887fc00b2e35532d38}
+      \strng{fullhash}{607b70ef9016fe747d5119d929df2959}
+      \field{sortinit}{H}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Magnetoencephalography—theory, instrumentation, and applications to noninvasive studies of the working human brain}
+      \field{journaltitle}{Reviews of modern Physics}
+      \field{number}{2}
+      \field{title}{Magnetoencephalography—theory, instrumentation, and applications to noninvasive studies of the working human brain}
+      \field{volume}{65}
+      \field{year}{1993}
+      \field{pages}{413}
+    \endentry
     \entry{hansen2010meg}{book}{}
       \name{labelname}{3}{}{%
         {{uniquename=0,hash=3f65e78614f1c666f1d2a0237ed248a2}{Hansen}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
@@ -211,6 +287,31 @@
       \field{volume}{57}
       \field{year}{2011}
       \field{pages}{624\bibrangedash 633}
+    \endentry
+    \entry{ilmoniemi1985forward}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3129173adf5a6ebd7cd7a8c4f0f6c4c8}{Hämäläinen}{H\bibinitperiod}{MS}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9350427babcdde4d84f5b78cb14669d7}{Knuutila}{K\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3129173adf5a6ebd7cd7a8c4f0f6c4c8}{Hämäläinen}{H\bibinitperiod}{MS}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9350427babcdde4d84f5b78cb14669d7}{Knuutila}{K\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{3}{%
+        {Biomagnetism: Applications}%
+        {Theory (H. Weinberg, G. Stroink,}%
+        {T. Katila, eds.), Pergamon Press, New York}%
+      }
+      \strng{namehash}{3dcaca9c47d42b6bcc6e9d142c0af795}
+      \strng{fullhash}{d3aab012d4f020da7423a9ae6d74cebe}
+      \field{sortinit}{I}
+      \field{labelyear}{1985}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{The forward and inverse problems in the spherical model}
+      \field{title}{The forward and inverse problems in the spherical model}
+      \field{year}{1985}
     \endentry
     \entry{jaaskelainen2004human}{article}{}
       \true{morelabelname}
@@ -412,6 +513,51 @@
       \field{title}{An interference suppression system for multichannel magnetic field detector arrays}
       \field{year}{1999}
       \field{pages}{13\bibrangedash 16}
+    \endentry
+    \entry{sarvas1987basic}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9ca8cc83cbca24b256296b5b3f06ebf9}{Sarvas}{S\bibinitperiod}{Jukka}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9ca8cc83cbca24b256296b5b3f06ebf9}{Sarvas}{S\bibinitperiod}{Jukka}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{9ca8cc83cbca24b256296b5b3f06ebf9}
+      \strng{fullhash}{9ca8cc83cbca24b256296b5b3f06ebf9}
+      \field{sortinit}{S}
+      \field{labelyear}{1987}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Basic mathematical and electromagnetic concepts of the biomagnetic inverse problem}
+      \field{journaltitle}{Physics in medicine and biology}
+      \field{number}{1}
+      \field{title}{Basic mathematical and electromagnetic concepts of the biomagnetic inverse problem}
+      \field{volume}{32}
+      \field{year}{1987}
+      \field{pages}{11}
+    \endentry
+    \entry{scherg1990fundamentals}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=b7046ad28ad8dac99e1f2f849e6369db}{Scherg}{S\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b7046ad28ad8dac99e1f2f849e6369db}{Scherg}{S\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Karger Basel}%
+      }
+      \strng{namehash}{b7046ad28ad8dac99e1f2f849e6369db}
+      \strng{fullhash}{b7046ad28ad8dac99e1f2f849e6369db}
+      \field{sortinit}{S}
+      \field{labelyear}{1990}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Fundamentals of dipole source potential analysis}
+      \field{journaltitle}{Auditory evoked magnetic fields and electric potentials. Advances in audiology}
+      \field{title}{Fundamentals of dipole source potential analysis}
+      \field{volume}{6}
+      \field{year}{1990}
+      \field{pages}{40\bibrangedash 69}
     \endentry
     \entry{taulu2005presentation}{article}{}
       \name{labelname}{2}{}{%
