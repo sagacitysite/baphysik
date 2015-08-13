@@ -110,6 +110,17 @@
   Publisher                = {Elsevier}
 }
 
+@Article{hillebrand2005beamformer,
+  Title                    = {Beamformer analysis of MEG data},
+  Author                   = {Hillebrand, Arjan and Barnes, Gareth R},
+  Journal                  = {International review of neurobiology},
+  Year                     = {2005},
+  Pages                    = {149--171},
+  Volume                   = {68},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{ilmoniemi1985forward,
   Title                    = {The forward and inverse problems in the spherical model},
   Author                   = {Ilmoniemi, RJ and H{\"a}m{\"a}l{\"a}inen, MS and Knuutila, J},
@@ -257,6 +268,18 @@
   Volume                   = {35},
 
   Publisher                = {Springer}
+}
+
+@Article{van1997localization,
+  Title                    = {Localization of brain electrical activity via linearly constrained minimum variance spatial filtering},
+  Author                   = {Van Veen, Barry D and Van Drongelen, Wim and Yuchtman, Moshe and Suzuki, Akifumi},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
+  Year                     = {1997},
+  Number                   = {9},
+  Pages                    = {867--880},
+  Volume                   = {44},
+
+  Publisher                = {IEEE}
 }
 
 @Article{vigario1998independent,

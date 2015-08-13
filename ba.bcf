@@ -2111,10 +2111,15 @@
     <bcf:citekey order="22">sarvas1987basic</bcf:citekey>
     <bcf:citekey order="23">hamalainen1994interpreting</bcf:citekey>
     <bcf:citekey order="24">hamalainen1993magnetoencephalography</bcf:citekey>
-    <bcf:citekey order="25">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="26">hahne2002differential</bcf:citekey>
-    <bcf:citekey order="27">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="28">naatanen2004mismatch</bcf:citekey>
+    <bcf:citekey order="25">hillebrand2005beamformer</bcf:citekey>
+    <bcf:citekey order="26">hillebrand2005new</bcf:citekey>
+    <bcf:citekey order="27">van1997localization</bcf:citekey>
+    <bcf:citekey order="28">van1997localization</bcf:citekey>
+    <bcf:citekey order="29">van1997localization</bcf:citekey>
+    <bcf:citekey order="30">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="31">hahne2002differential</bcf:citekey>
+    <bcf:citekey order="32">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="33">naatanen2004mismatch</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="apa">
   <bcf:sorting>

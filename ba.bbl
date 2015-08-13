@@ -288,6 +288,61 @@
       \field{year}{2011}
       \field{pages}{624\bibrangedash 633}
     \endentry
+    \entry{hillebrand2005beamformer}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=a224ae51cdbf0b6d1749d3eea4976e91}{Hillebrand}{H\bibinitperiod}{Arjan}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=90f294d06e6dc6a930d1cd753694923b}{Barnes}{B\bibinitperiod}{Gareth\bibnamedelima R}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=a224ae51cdbf0b6d1749d3eea4976e91}{Hillebrand}{H\bibinitperiod}{Arjan}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=90f294d06e6dc6a930d1cd753694923b}{Barnes}{B\bibinitperiod}{Gareth\bibnamedelima R}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{16b94693b8dabab860dd62210117edb7}
+      \strng{fullhash}{16b94693b8dabab860dd62210117edb7}
+      \field{sortinit}{H}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Beamformer analysis of MEG data}
+      \field{journaltitle}{International review of neurobiology}
+      \field{title}{Beamformer analysis of MEG data}
+      \field{volume}{68}
+      \field{year}{2005}
+      \field{pages}{149\bibrangedash 171}
+    \endentry
+    \entry{hillebrand2005new}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=a224ae51cdbf0b6d1749d3eea4976e91}{Hillebrand}{H\bibinitperiod}{Arjan}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c5454944433a7e7b00f0586e5e84bd13}{Singh}{S\bibinitperiod}{Krish\bibnamedelima D}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e889bb44a9ade9feeebd4dbb78b35890}{Holliday}{H\bibinitperiod}{Ian\bibnamedelima E}{I\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=eba8821d0f6f320cf3e5ce7fb3fa618f}{Furlong}{F\bibinitperiod}{Paul\bibnamedelima L}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=90f294d06e6dc6a930d1cd753694923b}{Barnes}{B\bibinitperiod}{Gareth\bibnamedelima R}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=a224ae51cdbf0b6d1749d3eea4976e91}{Hillebrand}{H\bibinitperiod}{Arjan}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c5454944433a7e7b00f0586e5e84bd13}{Singh}{S\bibinitperiod}{Krish\bibnamedelima D}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e889bb44a9ade9feeebd4dbb78b35890}{Holliday}{H\bibinitperiod}{Ian\bibnamedelima E}{I\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=eba8821d0f6f320cf3e5ce7fb3fa618f}{Furlong}{F\bibinitperiod}{Paul\bibnamedelima L}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=90f294d06e6dc6a930d1cd753694923b}{Barnes}{B\bibinitperiod}{Gareth\bibnamedelima R}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{22beb220701da315c19376f6fcf542bc}
+      \strng{fullhash}{aaa8d1079dcc853cd173f94460aaa3bd}
+      \field{sortinit}{H}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{A new approach to neuroimaging with magnetoencephalography}
+      \field{journaltitle}{Human brain mapping}
+      \field{number}{2}
+      \field{title}{A new approach to neuroimaging with magnetoencephalography}
+      \field{volume}{25}
+      \field{year}{2005}
+      \field{pages}{199\bibrangedash 211}
+    \endentry
     \entry{ilmoniemi1985forward}{article}{}
       \name{labelname}{3}{}{%
         {{uniquename=1,hash=88809e89f2df0623fa7f3a495edae5b5}{Ilmoniemi}{I\bibinitperiod}{RJ}{R\bibinitperiod}{}{}{}{}}%
@@ -635,6 +690,35 @@
       \field{volume}{35}
       \field{year}{1997}
       \field{pages}{135\bibrangedash 140}
+    \endentry
+    \entry{van1997localization}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=98453a7ec73b9c2cd1d283764119ffd4}{Van\bibnamedelima Veen}{V\bibinitperiod\bibinitdelim V\bibinitperiod}{Barry\bibnamedelima D}{B\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8989e75fd91092f693bee4f5841eb4cf}{Van\bibnamedelima Drongelen}{V\bibinitperiod\bibinitdelim D\bibinitperiod}{Wim}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cd64b05096234d99b5dec53593e31476}{Yuchtman}{Y\bibinitperiod}{Moshe}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0b71b6aca49508a27f30696f52caf871}{Suzuki}{S\bibinitperiod}{Akifumi}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=98453a7ec73b9c2cd1d283764119ffd4}{Van\bibnamedelima Veen}{V\bibinitperiod\bibinitdelim V\bibinitperiod}{Barry\bibnamedelima D}{B\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8989e75fd91092f693bee4f5841eb4cf}{Van\bibnamedelima Drongelen}{V\bibinitperiod\bibinitdelim D\bibinitperiod}{Wim}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cd64b05096234d99b5dec53593e31476}{Yuchtman}{Y\bibinitperiod}{Moshe}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0b71b6aca49508a27f30696f52caf871}{Suzuki}{S\bibinitperiod}{Akifumi}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ed9b44c9c3f6e9987074d8f8fa37f9c5}
+      \strng{fullhash}{d42a57799669e7c14ea310f0a6766abb}
+      \field{sortinit}{V}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Localization of brain electrical activity via linearly constrained minimum variance spatial filtering}
+      \field{journaltitle}{Biomedical Engineering, IEEE Transactions on}
+      \field{number}{9}
+      \field{title}{Localization of brain electrical activity via linearly constrained minimum variance spatial filtering}
+      \field{volume}{44}
+      \field{year}{1997}
+      \field{pages}{867\bibrangedash 880}
     \endentry
     \entry{vigario1998independent}{article}{}
       \name{labelname}{5}{}{%
