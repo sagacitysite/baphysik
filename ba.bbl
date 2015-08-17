@@ -780,6 +780,26 @@
       \field{year}{2000}
       \field{pages}{589\bibrangedash 593}
     \endentry
+    \entry{weinstock2012squid}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=e3751d5c177d541f38dd60c971a364d5}{Weinstock}{W\bibinitperiod}{Harold}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e3751d5c177d541f38dd60c971a364d5}{Weinstock}{W\bibinitperiod}{Harold}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{e3751d5c177d541f38dd60c971a364d5}
+      \strng{fullhash}{e3751d5c177d541f38dd60c971a364d5}
+      \field{sortinit}{W}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{SQUID sensors: fundamentals, fabrication and applications}
+      \field{title}{SQUID sensors: fundamentals, fabrication and applications}
+      \field{volume}{329}
+      \field{year}{2012}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

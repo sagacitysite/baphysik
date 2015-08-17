@@ -121,6 +121,18 @@
   Publisher                = {Elsevier}
 }
 
+@Article{hillebrand2005new,
+  Title                    = {A new approach to neuroimaging with magnetoencephalography},
+  Author                   = {Hillebrand, Arjan and Singh, Krish D and Holliday, Ian E and Furlong, Paul L and Barnes, Gareth R},
+  Journal                  = {Human brain mapping},
+  Year                     = {2005},
+  Number                   = {2},
+  Pages                    = {199--211},
+  Volume                   = {25},
+
+  Publisher                = {Wiley Online Library}
+}
+
 @Article{ilmoniemi1985forward,
   Title                    = {The forward and inverse problems in the spherical model},
   Author                   = {Ilmoniemi, RJ and H{\"a}m{\"a}l{\"a}inen, MS and Knuutila, J},
@@ -302,5 +314,13 @@
   Volume                   = {47},
 
   Publisher                = {IEEE}
+}
+
+@Book{weinstock2012squid,
+  Title                    = {SQUID sensors: fundamentals, fabrication and applications},
+  Author                   = {Weinstock, Harold},
+  Publisher                = {Springer Science \& Business Media},
+  Year                     = {2012},
+  Volume                   = {329}
 }
 

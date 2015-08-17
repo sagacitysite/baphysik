@@ -95,7 +95,7 @@ Zweitgutachter: Herr Prof. Dr. Jürgen Haase
 
 \vfill
 
-Dieses Dokument ist unter folgender Lizenz veröffentlicht:\\ \href{http://creativecommons.org/licenses/by/3.0/de/}{Creative Commons (CC BY 3.0 DE)}
+Dieses Dokument ist unter folgender Lizenz veröffentlicht:\\ \href{http://creativecommons.org/licenses/by-sa/4.0/}{Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)}
 
 \end{center}
 \end{spacing}
@@ -244,13 +244,27 @@ Ein SQUID basiert auf diesem Prinzip und enthält zwei Josephson-Kontakte, in we
 \Phi_0 = \frac{h}{2e} \approx 2,068\,Tm^2
 \end{equation}
 
-Die magnetische Flussdichte der Gehirnaktivität liegt im Bereich von wenigen $10^{-15}\,T$ und kann daher nur mit hochsensiblen Sensoren gemessen werden. Zum Einsatz kommen daher SQUIDs. Diese werden als Gradiometer oder Magnetometer eingesetzt.
+Die magnetische Flussdichte der Gehirnaktivität liegt im Bereich von wenigen $10^{-15}\,T$ und kann daher nur mit hochsensiblen Sensoren gemessen werden. Zum Einsatz kommen daher SQUIDs.
 
-\subsubsection{Gradiometer und Magnetometer}
+\subsubsection{Flux-Transformator}
 
-Magnetometer besitzen nur einen SQUID-Ring und messen den absoluten Wert der magnetischen Flussdichte in radiale Richtung $B_z$ in $T$. Neben der hohen Sensitivität gegenüber nahen Quellen, wie magnetische Aktivität im Gehirn, erfassen Magnetometer auch Signale aus weiter Entfernung und damit ungewünschte Aktivität aus der Umgebung \parencite{hansen2010meg}.
+\begin{figure}[t]
+  \centering
+  \setlength{\fboxsep}{8mm}
+  \fbox{\includegraphics[width=0.6\textwidth]{einleitung/koppelspule.eps}}
+  %
+  \vspace*{3mm}
+  \caption[Prinzip eines Flux-Transformators]{Prinzip eines Flux-Transformators. An der Aufnahmespule wird vom magnetischen Feld ein Strom induziert. Die Koppelspule erzeugt ein äquivalentes magnetisches Feld in unmittelbarer Nähe des SQUID.}
+  \label{img:flux-trafo}
+\end{figure}
 
-Gradiometer besitzen einen zusätzlichen SQUID-Ring. Die zwei Ringe eines Gradiometers können axial oder planar angeordnet sein. Die zwei Spule messen einen räumlichen Gradienten, der Gradient der magnetische Flussdichte $G_x = dB_z/dx$ bzw. $G_y = dB_z/dy$ wird in $T/m$ angegeben. Die Annahme ist, dass weit entfernte Quellen ein relativ homogenes Feld erzeugen. Da die zwei SQUIDs des Gradiometers mit einem entgegengesetzten Strom durchflossen werden und die gemessenen magnetischen Flussdichten voneinander subtrahiert werden, verschwindet der Gradient für weit entfernte Quellen im Idealfall, so dass nur nahe Quellen erfasst werden \parencite{hansen2010meg}.
+Um die Signale zu erfassen wird ein \emph{Flux-Transformator} eingesetzt, welcher das Signal an einen SQUID weiterleitet. Der Flux-Transormator wird so nah wie möglich an den Kopf der Versuchsperson gebracht (im Bereich von ca. $2\,cm$). Ein vom Gehirn der Versuchsperson erzeugtes magnetisches Feld erzeugt an einer Aufnahmespule einen Strom. Dieser wird über eine Koppelspule wieder in ein äquivalentes Magnetfeld zurückgeführt. Die Koppelspule befindet sich in unmittelbarer Nähe des SQUID, an dem das Signal letztlich messbar wird. Der Sachverhalt ist in Abbildung \ref{img:flux-trafo} dargestellt. Der Flux-Transformator wird in zwei verschiedenen Varianten verwendet, dem Magnetometer und dem Gradiometer.
+
+\subsubsection{Magnetometer und Gradiometer}
+
+Magnetometer besitzen nur einen Ring an der Aufnahmespule des Flux-Transformators, sie messen den absoluten Wert der magnetischen Flussdichte in radiale Richtung $B_z$ in $T$. Neben der hohen Sensitivität gegenüber nahen Quellen, wie magnetische Aktivität im Gehirn, erfassen Magnetometer auch Signale aus weiter Entfernung und damit ungewünschte Aktivität aus der Umgebung \parencite{hansen2010meg}. Beispielsweise erreicht ein fahrendes Auto in $2\,km$ Entfernung eine Signalstärke, die mit dem der Gehirnaktivität äquivalent ist \parencite{weinstock2012squid}.
+
+Gradiometer besitzen zwei Aufnahmespule am Flux-Transformator. Die zwei Ringe eines Gradiometers können axial oder planar angeordnet sein. Die zwei Spule messen einen räumlichen Gradienten. Der Gradient der magnetische Flussdichte $G_x = dB_z/dx$ bzw. $G_y = dB_z/dy$ wird in $T/m$ angegeben. Die Annahme ist, dass weit entfernte Quellen ein relativ homogenes Feld erzeugen. Da die zwei Aufnahmespulen des Gradiometers mit einem entgegengesetzten Strom durchflossen werden und die gemessenen magnetischen Flussdichten voneinander subtrahiert werden, verschwindet der Gradient für weit entfernte Quellen im Idealfall, so dass nur nahe Quellen erfasst werden \parencite{hansen2010meg}.
 
 Im Falle des verwendeten MEG-Systems (\emph{Vectorview by Elekta-Neuromag Oy, Helsinki}) enthält jeder der 102 Sensoren drei Kanäle mit einem Magnetometer und zwei Gradiometern, die je in $x$- und $y$-Richtung ausgerichtet sind.
 
@@ -287,7 +301,40 @@ Der Signalraum (signal-space) ist ein $n$-dimensionaler Raum, wobei $n$ der Anza
 
 SSP wurde Ende der 90er Jahre von \textcite{uusitalo1997signal} und \textcite{parkkonen1999interference} entwickelt. Die Methode basiert auf dem Vorliegen einer Leerraummessung. In einer kurzen Messung werden die üblichen magnetischen Aktivitäten im Messraum aufgezeichnet, ohne dass eine Versuchsperson anwesend ist. Das Ergebnis entspricht den Umwelt-Artefakten, die als zeitlich konstant angesehen werden und zu jeder späteren Messung vorhanden sind. Wird eine Messung mit Versuchsperson durchgeführt, so bildet die Leerraummessung einen Unterraum des gewöhnlichen Signalraums. Durch eine orthogonale Projektion des Signalraums auf den Unterraum der Leerraumessung, ergibt sich ein weiterer Unterraum, der die Signale ohne die Umwelteinflüsse enthalten sollte. Jegliche äußeren Artefakte werden damit entfernt oder zumindest drastisch reduziert.
 
-SSS wurde wenige Jahr später von \textcite{taulu2004suppression} und \textcite{taulu2005presentation} entwickelt. Dabei wird das gemessene Magnetfeld in einer Reihenentwicklung beschrieben. Die Entwicklung trennt sich in positive und negative Terme. Die negativen Terme ??? entsprechen im Idealfall den äußeren Signalen und können ausgelassen werden. Das Signal wird separiert in einen inneren Teil (innerhalb des MEG-Helms) und einen äußeren Teil (außerhalb des MEG-Helms). Der innere Teil wird als rauschfrei angenommen. Diese Methode ist deutlich rechenaufwändiger, führt jedoch zu deutlich rauschfreieren Ergebnissen. Zusätzlich ist keine Leerraummessung notwendig. Die Methode kann durch die angesprochene Movement Correction (MC) erweitert werden. Im normalen SSS-Verfahren wird angenommen, dass die Versuchsperson während eines Durchgangs (Block) unbewegt sitzen bleibt. Die Kopfpositionen werden nur zwischen den Blöcken auf die Position zu Beginn der Messung korrigiert. Bei der zusätzlichen MC-Berechnung wird die Kopfposition für jeden Zeitpunkt korrigiert. Zur Erfassung der Kopfposition sind Spulen am Kopf angebracht, welche zu jedem Zeitpunkt die Position der Versuchsperson erfassen. Eine zusätzliche nachträgliche Korrektur der Kopfposition ist vor allem dann sinnvoll, wenn sich die Versuchsperson sehr viel bewegt hat. Die Notwendigkeit dieses Rechenschritts kann mit Bewegungsprofilen abgeschätzt werden.
+SSS wurde wenige Jahr später von \textcite{taulu2004suppression} und \textcite{taulu2005presentation} entwickelt. Dabei wird das gemessene Magnetfeld in einer Reihenentwicklung beschrieben. Jedes harmonische Potential $V(\mx{r})$ kann beschrieben werden mit:
+
+\begin{equation}
+V(\mx{r}) = \sum_{l=1}^\infty \sum_{m=-l}^l \alpha_{lm} \frac{Y_{lm}(\Theta, \varphi)}{r^{l+1}} + \sum_{l=1}^\infty \sum_{m=-l}^l \beta_{lm} r^l Y_{lm}(\Theta, \varphi) 
+\label{eq:sss-pot}
+\end{equation}
+
+Die Entwicklung in der ersten Summe ist im Ursprung singulär, in der zweiten Summe divergiert sie für unendliches $l$. $Y_{lm}$ ist die normalisierte harmonische Funktion mit den sphärischen Koordinaten $\Theta, \varphi$ und $r$:
+
+\begin{equation}
+Y_{lm}(\Theta, \varphi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!}}\, P_{lm}(\cos{\Theta})\,e^{im\varphi}
+\end{equation}
+
+Wobei $P_{lm}(\cos{\Theta})$ Legendre-Polynome sind. Das magnetische Potential kann analog entwickelt werden:
+
+\begin{equation}
+\Phi = \sum_{l=1}^\infty \sum_{m=-l}^l \alpha_{lm} \mx{a}_{lm} + \sum_{l=1}^\infty \sum_{m=-l}^l \beta_{lm} \mx{b}_{lm}
+\label{eq:sss-magpot}
+\end{equation}
+
+Die Vektoren $\mx{a}_{lm}$ und $\mx{b}_{lm}$ entsprechen den Termen $Y_{lm}(\Theta, \varphi)/r^{l+1}$ und $r^l Y_{lm}(\Theta, \varphi)$ aus Gleichung \ref{eq:sss-pot}. $\Phi$~kann als Signalvektor interpretiert werden. Bezeichne $n$ weiterhin die Anzahl der Kanäle, dann bilden $n$ linear unabhängige Signalvektoren $\Phi$ den Signalraum. Die SSS-Methode basiert auf diesem Koordinatensystem. Es gilt:
+
+\begin{equation}
+\Phi = \mx{S}\,\mx{x} = \left( \mx{S}_{\text{innen}}, \mx{S}_{\text{außen}} \right) \left( \mx{x}_{\text{innen}} \atop \mx{x}_{\text{außen}} \right)
+\end{equation}
+
+$\mx{S}_{\text{innen}}$ und $\mx{S}_{\text{außen}}$ werden mit den Basen $\mx{a}_{lm}$ und $\mx{b}_{lm}$ beschrieben, während $\mx{x}_{\text{innen}}$ und $\mx{x}_{\text{außen}}$ von $\alpha_{lm}$ und $\beta_{lm}$ beschrieben werden. Mit Hilfe des aufgestellten Koordinatensystems kann eine räumliche Filterung vorgenommen werden, die in zwei Aspekten von Bedeutung ist:
+
+\begin{compactitem}
+\item Vollständig unkorrelierte Signale, wie Artefakte an einzelnen Kanälen oder zufälliges Rauschen der Gerätekomponenten werden sowohl von Termen mit niedrigen, wie auch von Termen mit hohen Indizes beschrieben. Signale von realen Quellen sind in Termen mit hohen Indizes nicht mehr vertreten. Wird die Reihenentwicklung abgebrochen, sobald der Beitrag der realen Quellen nicht mehr relevant ist, kann ein Großteil des Rauschens und der Artefakte, welches auf messtechnischer Ebene entsteht, herausgefiltert werden.
+\item Man kann zeigen, dass externe Quellen außerhalb des MEG-Helms mit den Termen in der zweiten Summe von Gleichung \ref{eq:sss-magpot} zusammenhängen. Umgekehrt sind Signale, welche vom Inneren des MEG-Helmes (respektive vom Gehirn) stammen mit den Termen der ersten Summe verknüpft. Intuitiv wird dies in Gleichung \ref{eq:sss-pot} deutlich. Der erste Term enthält - wie bereits angesprochen - eine Singularität im Ursprung, die zweite Summe divergiert für unendlich große $l$. Durch einfaches Weglassen der zweiten Summe werden die Einflüsse der externen Quellen deutlich verringert.
+\end{compactitem}
+
+Die SSS-Methode ist zwar deutlich rechenaufwändiger als SSP, führt jedoch im Gegenzug zu deutlich rauschfreieren Ergebnissen. Zusätzlich ist keine Leerraummessung notwendig. Die Methode kann durch die angesprochene Movement Correction (MC) erweitert werden. Im normalen SSS-Verfahren wird angenommen, dass die Versuchsperson während eines Durchgangs bzw. Blocks unbewegt sitzen bleibt. Die Kopfpositionen werden nur zwischen den Blöcken auf die Position zu Beginn der gesamten Messung korrigiert. Bei der zusätzlichen MC-Berechnung wird die Kopfposition für jeden Zeitpunkt korrigiert. Zur Erfassung der Kopfposition sind Spulen am Kopf angebracht, welche zu jedem Zeitpunkt die Position der Versuchsperson erfassen. Eine zusätzliche nachträgliche Korrektur der Kopfposition ist vor allem dann sinnvoll, wenn sich die Versuchsperson sehr viel bewegt hat. Die Notwendigkeit dieses Rechenschritts kann mit Bewegungsprofilen abgeschätzt werden.
 
 % ####################################
 % ##### GRUNDLAGEN LOKALISATION  #####
@@ -363,8 +410,8 @@ Die Quelle kann durch diskrete Dipole modelliert werden. Mit Hilfe diese Modelli
 Eingesetzt in Gleichung~\ref{eq:leadfield} ergibt sich:
 
 \begin{equation}
-\label{eq:leadfield2}
 y_i(\mx{r}_S) = \int_V \mx{L}_i (\mx{r}) \cdot \mx{S}(\mx{r})\,\delta(\mx{r}-\mx{r}_S)\, dV = \mx{S}(\mx{r}_S) \cdot \mx{L}_i(\mx{r}_S)
+\label{eq:leadfield2}
 \end{equation}
 
 Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols an der Stelle~$\mx{r}_S$, dies entspricht der Quelle. Jeder Datenpunkt kann also mit einem entsprechenden Leadfield-Eintrag und der zugehörigen Quellstärke beschrieben werden.
@@ -380,7 +427,7 @@ Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols an der Stelle~$\mx{r}
 
 \subsection{Rückwärtsmodell}
 
-Das \emph{Rückwärtsmodell} (\emph{inverse solution}) schätzt auf Basis der Leadfield-Matrix die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt entsprechend das Vorwärtsmodell voraus. Nur wenn bekannt ist wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden wie umgekehrt bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. Besondere Aufmerksamkeit wird den Methoden \emph{Minimum Norm Estimate} und \emph{Beamforming} gewidmet. Das Datenmodell der inversen Lösung aus Gleichung \ref{sec:leadfield2} bildet den Ausgangspunkt.
+Das \emph{Rückwärtsmodell} (\emph{inverse solution}) schätzt auf Basis der Leadfield-Matrix die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt entsprechend das Vorwärtsmodell voraus. Nur wenn bekannt ist wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden wie umgekehrt bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. Besondere Aufmerksamkeit wird den Methoden \emph{Minimum Norm Estimate} und \emph{Beamforming} gewidmet. Gleichung \ref{eq:leadfield2} bildet den Ausgangspunkt für das Datenmodell der inversen Lösung.
 
 \subsubsection{Methoden zur Bestimmung des Rückwärtsmodell}
 
@@ -562,13 +609,13 @@ Neben den Sensoren zur Messung der Gehirnsignale werden weitere Sensoren zu Mess
 \subsubsection{Software zur Analyse}
 \label{sec:software}
 
-Zur Verarbeitung der vorliegenden Daten wurde verschiedene Software verwendet. Gearbeitet wurde auf einem \emph{GNU/Linux}-System mit \emph{Kubuntu} in Version ???. Die Auswertung der bildgebenden Daten des MRT erfolgte mit \emph{Freesurfer} in Version ???. Die Signal Space Separation (SSS) und Movement Correction (MC) wurde mit \emph{Maxfilter} in Version ??? durchgeführt (siehe auch Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}). Alle weiteren Analysen erfolgten mit der Open Source Paket \emph{FieldTrip} in Version ???, welches in Matlab (Version ???) verwendet wurde.
+Zur Verarbeitung der vorliegenden Daten wurde verschiedene Software verwendet. Gearbeitet wurde auf einem \emph{GNU/Linux}-System mit \emph{Ubuntu} in Version 12.04.5 LTS. Die Auswertung der bildgebenden Daten des MRT erfolgte mit \emph{Freesurfer} in Version 5.3.0. Die Signal Space Separation (SSS) und Movement Correction (MC) wurde mit \emph{MNE} in Version 2.7.5-3435 durchgeführt (siehe auch Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}). MNE basiert auf dem \emph{Neuromag} Softwarepaket in Version 6. Alle weiteren Analysen erfolgten mit der Open Source Paket \emph{FieldTrip} in Version 20150225, welches in \emph{Matlab R2015a} verwendet wurde.
 
-\emph{MNE} in Version ??? und \emph{Neuromag} in Version ??? 
+% Ist das so korrekt ???
 
 \subsection{Verfahren}
 
-MRT Separation, Koregistrierung, Roh/SSS/MC, MNE/LCMV + Grafik
+MRT Separation, Koregistrierung, Roh/SSS/MC, MNE/LCMV + Grafik, Bewegungsintensive/Bewegungsarme Versuchsperson
 
 Die physiologischen Daten des MRT lagen im ???-Koordinatensystem vor, während die Aktivitätsdaten des MEG im ???-Koordinatensystem vorlagen. Abweichungen in mm angeben.
 
@@ -584,7 +631,7 @@ Die Liedfield-Matrix wird für eine bestimmte Kopfposition bestimmt. Da Probande
 Vor allem bei der Bewertung des Beamformer-Verfahrens muss dieser Aspekt zwingend beachtet werden, da hier mit den Rohdaten gerechnet wird. Um einen aussagekräftigeren Vergleich zu erhalten, wäre hier eine Bewegungskorrektur nötig, die explizit keine Rauschunterdrückung durchführt. Maxfilter kann in diesem Fall also nicht verwendet werden, da die Bewegungskorrektur mit Rauschunterdrückung einher geht. Eine Implementierung eines solchen Bewegungs-Korrektur-Verfahrens könnte die Beamformer-Lösung verbessern, vor allem bei solchen Probanden, die sich viel bewegen.
 Kopfkorrektur bei Rohdaten und rauschunterdrückten Daten
 
-Das SSS-Verfahren(Signal-Space Separation) von Maxfilter beinhaltet neben der Trennung der Signale in einen inneren und einen äußeren Bereich auch eine Kopfkorrektur, da ein absolutes Stillhalten der Versuchspersonen keinen realen Versuchsbedingungen entspricht. Dabei wird die Position des Kopfes bezüglich den Sensoren standardisiert, die Kopfposition zu Beginn des ersten Blocks wird als Standard definiert. Die Signale die aus dem Gehirn kommen müssen von der gleichen Quelle aus immer auch die gleichen Sensoren ansprechen, andernfalls kommt es in der späteren Berechnung zu Fehlern. Wird eine falsche Kopfposition angenommen, werden gemessene Signale an den Sensoren später einer falschen bzw. verschobenen Quelle zugeordnet.
+Das SSS-Verfahren von Maxfilter beinhaltet neben der Trennung der Signale in einen inneren und einen äußeren Bereich auch eine Kopfkorrektur, da ein absolutes Stillhalten der Versuchspersonen keinen realen Versuchsbedingungen entspricht. Dabei wird die Position des Kopfes bezüglich den Sensoren standardisiert, die Kopfposition zu Beginn des ersten Blocks wird als Standard definiert. Die Signale die aus dem Gehirn kommen müssen von der gleichen Quelle aus immer auch die gleichen Sensoren ansprechen, andernfalls kommt es in der späteren Berechnung zu Fehlern. Wird eine falsche Kopfposition angenommen, werden gemessene Signale an den Sensoren später einer falschen bzw. verschobenen Quelle zugeordnet.
 
 Während bei MC (movement correction) angenommen wird, dass der Kopf sich innerhalb eines Blocks bewegt, wird bei SSS angenommen, dass der Kopf innerhalb eines Blockes an der gleichen Position bleibt. Zwischen den Blöcken wird jedoch auch bei SSS korrigiert. Alle späteren Blöcke werden am Startpunkt auf die Position des ersten Blocks gesetzt, die Positionen der Sensoren (??) werden entsprechend umgerechnet.
 
@@ -595,6 +642,10 @@ Theoretisch gibt es zwei Möglichkeiten mit Rohdaten umzugehen:
 Eine Möglichkeit ist die Korrektur der Kopfpositionen, ohne jedoch eine Rauschunterdrückung vorzunehmen. So bietet FieldTrip z.B. die Funktion \texttt{ft\_megrealign}. Die Korrektur der Kopfposition erfolgt durch eine Projektion. Es wird zunächst eine grobe Quellrekonstruktion durchgeführt und es werden Standard-Positionen der Sensoren festgelegt, zum Beispiel vom Beginn des ersten Blocks. Die zeit-gemittelten Daten werden dann mit Hilfe der rekonstruierten Quelle projiziert (???). Die dabei entstehenden Signale für die standardisierte Position werden anschließend neu berechnet. Bei diesem Verfahren kommt es wegen der enthaltenen Quellrekonstruktion zu Fehlern in den Daten, die Daten sind lediglich interpoliert und enthalten nach der Korrektur nicht mehr die vollständigen Informationen. Es handelt sich nicht mehr um reine Rohdaten, weshalb dieses Verfahren nur einen Kompromiss darstellen würde.
 
 Eine zweite Möglichkeit ist das Mitteln der Quellaktivität. Für jeden Block kann eine eigene Leadfield-Matrix für das Vorwärtsmodell bestimmt werden. Nach anschließender Quelllokalisation können die Aktivitäten an den Quellen gemittelt werden. Der Rechenaufwand ist zwar etwas erhöht, da für jeden Block die Leadfield-Matrix bestimmt werden muss, gleichzeitig bietet dieses Verfahren jedoch den Vorteil, dass es auch auf die rauschunterdrückten Daten von Maxfilter (SSS, MC) angewendet werden kann. Auch hier kann im Preprocessing absichtlich auf eine Mittelung zwischen den Blöcken verzichtet werden. Die Leadfield-Matrizen können dann auch hier blockweise bestimmt und die Quellaktivitäten am Ende gemittelt werden. Diese Möglichkeit bietet damit eine optimale Vergleichbarkeit zwischen der Verwendung von Rodaten und rauschunterdrückten Daten, unabhängig vom verwendeten Lokalisationsverfahren.
+
+\subsection{Vergleichbarkeit der Amplituden}
+
+
 
 \newpage
 \section{Ergebnisse}
