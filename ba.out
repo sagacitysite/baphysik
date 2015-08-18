@@ -9,9 +9,14 @@
 \BOOKMARK [1][-]{section*.33}{Methodik}{}% 9
 \BOOKMARK [2][-]{section*.34}{Grundlage}{section*.33}% 10
 \BOOKMARK [2][-]{section*.38}{Verfahren}{section*.33}% 11
-\BOOKMARK [2][-]{section*.39}{Leadfieldmatrix bei Beamformer und Minimum Norm}{section*.33}% 12
-\BOOKMARK [2][-]{section*.40}{Vergleichbarkeit der Amplituden}{section*.33}% 13
-\BOOKMARK [1][-]{section*.41}{Ergebnisse}{}% 14
-\BOOKMARK [2][-]{section*.42}{Signal-Rausch-Verh\344ltnis}{section*.41}% 15
-\BOOKMARK [1][-]{section*.44}{Diskussion}{}% 16
-\BOOKMARK [1][-]{section*.45}{Literaturverzeichnis}{}% 17
+\BOOKMARK [2][-]{section*.39}{Vorverarbeitung}{section*.33}% 12
+\BOOKMARK [2][-]{section*.40}{Leadfieldmatrix bei Beamformer und Minimum Norm}{section*.33}% 13
+\BOOKMARK [2][-]{section*.41}{R\374ckw\344rtsmodell}{section*.33}% 14
+\BOOKMARK [2][-]{section*.42}{Vergleichbarkeit der Amplituden}{section*.33}% 15
+\BOOKMARK [1][-]{section*.43}{Ergebnisse}{}% 16
+\BOOKMARK [2][-]{section*.44}{Bewegungsprofile}{section*.43}% 17
+\BOOKMARK [2][-]{section*.45}{Signal-Rausch-Verh\344ltnis}{section*.43}% 18
+\BOOKMARK [2][-]{section*.47}{Quellrekonstruktionen und Zeitverl\344ufe}{section*.43}% 19
+\BOOKMARK [2][-]{section*.48}{Anpassungsg\374te}{section*.43}% 20
+\BOOKMARK [1][-]{section*.49}{Diskussion}{}% 21
+\BOOKMARK [1][-]{section*.50}{Literaturverzeichnis}{}% 22

@@ -598,7 +598,7 @@ Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben mit Rohdaten u
 
 \subsection{Grundlage}
 
-\subsubsection{Verwendete Daten}
+\subsubsection{Verwendeter Datensatz}
 
 Die verwendeten Daten wurden aus einem Experiment von \textcite{herrmann2011syntactic} übernommen. Dabei sollten die neuronalen Prozesse bei der Satzverarbeitung des menschlichen Gehirns untersucht werden. Die Sätze wurden dabei vorgelesen und per Kopfhörer von den Pobanden angehört. Zum einen wurden die Effekte einer syntaktischen Verarbeitung betrachtet. Sätze wurden in einer korrekten grammatikalischen Reihenfolge (Standard) oder einer falschen Reihenfolge (Deviant) präsentiert. Dabei wurde in früheren Experimenten ein ELAN (Early Left Anterior Negativity) Potential beobachtet, sofern die grammatikalische Wortfolge falsch war. Zum anderen wurden die Effekte einer räumlichen Abweichung gesprochener Sätze betrachtet. Die interaurale Laufzeit (Interaureal Time, ITD) wurde entsprechend variiert, so dass der Lautsprecher an einem Ohr relativ zum Lautsprecher am anderen Ohr die Sätze verzögert ausgab. In früheren Experimenten wurde hier eine MMN (Mismatch Negativity) beobachtet (siehe auch Abschnitt \nameref{sec:erf} auf Seite \pageref{sec:erf}).
 
@@ -627,16 +627,40 @@ Zur Verarbeitung der vorliegenden Daten wurde verschiedene Software verwendet. G
 
 \subsection{Verfahren}
 
-MRT Separation, Koregistrierung, Roh/SSS/MC, MNE/LCMV + Grafik, Bewegungsintensive/Bewegungsarme Versuchsperson
+Um die Hypothese zu überprüfen wurden die Daten aus dem oben genannten Datensatz verwendet. Die Quellrekonstruktion der MMN-Aktivität sollte mit LCMV Beamformer und Minimum Norm Estimate durchgeführt werden. Dazu wurden die Daten von zwei Versuchspersonen verwendet. Eine Versuchsperson (im Folgenden als \texttt{pa07} bezeichnet), wies ein sehr ruhiges Verhalten auf. Es kam nur zu wenigen Kopfbewegungen während des Versuchs. Die andere ausgewählte Versuchsperson \texttt{pa10} bewegte ihren Kopf sehr viel. Deren Daten dürften daher zu einer fehlerhafteren Rekonstruktion führen. Die entsprechende Bewegungsanalyse wird im Abschnittes \nameref{sec:bewegung} auf Seite \pageref{sec:bewegung} beschrieben.
 
-Die physiologischen Daten des MRT lagen im ???-Koordinatensystem vor, während die Aktivitätsdaten des MEG im ???-Koordinatensystem vorlagen. Abweichungen in mm angeben.
+Von beiden Versuchspersonen lagen 4 Blöcke in entsprechenden Versuchsbedingungen vor. Die Daten der 4 Blöcke wurden zusammen genommen und gemeinsam verrechnet. Dabei mussten die spezifischen Eigenschaften der Quellrekonstruktionsverfahren beachtet werden. Entsprechende Betrachtungen wurden in den folgenden Abschnitten \nameref{sec:lead-beam-mne} und \nameref{sec:amplitud} vorgenommen.
+
+Die Rekonstruktion wurde in folgenden Bedingungen für beide Versuchspersonen durchgeführt:
+
+\begin{compactitem}
+\item LCMV Beamformer auf Basis von Rohdaten
+\item LCMV Beamformer auf Basis von SSS-korrigierten Daten
+\item LCMV Beamformer auf Basis von MC-korrigierten Daten
+\item Minimum Norm Estimate auf Basis von Rohdaten
+\item Minimum Norm Estimate auf Basis von SSS-korrigierten Daten
+\item Minimum Norm Estimate auf Basis von MC-korrigierten Daten
+\end{compactitem}
+
+Bei Versuchsperson \texttt{pa10} sollten auf Grund der Bewegungskorrektur deutlich bessere Ergebnisse bei MC-korrigierten Daten zu erwarten sein, im Vergleich zu Roh- und SSS-korrigierten Daten.
+
+\subsection{Vorverarbeitung}
+
+Grafik zum Verfahren!
+
+Zur Verwendung kam ein MEG-Datensatz mit den oben beschriebenen Daten und ein MRT-Datensatz, der einen einfachen Scan des Gehirns der Versuchspersonen enthielt. Für den MRT-Datensatz wurde zunächst eine Separation mittels Freesurfer durchgeführt. Während die physiologischen Informationen des MRT-Datensatzes im ??-Koordinatensystem vorlagen .. Die physiologischen Daten des MRT lagen im ???-Koordinatensystem vor, während die Aktivitätsdaten des MEG im ???-Koordinatensystem vorlagen. Wie sind die Korrdinatensysteme definiert?? Abweichungen in mm angeben.
 
 BEM-Netz: In dieser Analyse wurde ein Auflösung von XXXX gewählt.
 Berechnung der Quellen nur am Außenbereich, daher BEM (isotrop, graue Substanz außen) ok.
 
 Anzahl der modellierten Dipole im Source Space (Vorwärtsmodell): 10242 pro Hemisphäre
 
-\subsection{Leadfieldmatrix bei Beamformer und Minimum Norm}
+Preprocessing: Filter, Rejection, Definition (Baseline), etc.
+
+Averaging blockwise
+
+\subsection{Leadfieldmatrix bei Beamformer und Minimum Norm} % "Vorwärtsmodell berechnen" -> Umbenennen?
+\label{sec:lead-beam-mne}
 
 Die Liedfield-Matrix wird für eine bestimmte Kopfposition bestimmt. Da Probanden ihren Kopf nie exakt an einem Ort halten, muss genau genommen für jede vorkommende Kopfposition bestimmt werden, wie sich in diesem Fall die Quellen auf die Sensoren auswirken (Vorwärtsmodell). Während bei den SSS- und den MC- Daten kein Problem auftritt, da hier die Kopfposition korrigiert wird, ist dies bei den Rohdaten problematischer. Bei Verwendung der Rohdaten muss also berücksichtigt werden, dass die Leadfield-Matrix nur für die initiale Kopfposition korrekt ist, alle anderen Kopfpositionen enthalten im Rückwärtsmodell entsprechende Fehler.
 
@@ -655,7 +679,10 @@ Eine Möglichkeit ist die Korrektur der Kopfpositionen, ohne jedoch eine Rauschu
 
 Eine zweite Möglichkeit ist das Mitteln der Quellaktivität. Für jeden Block kann eine eigene Leadfield-Matrix für das Vorwärtsmodell bestimmt werden. Nach anschließender Quelllokalisation können die Aktivitäten an den Quellen gemittelt werden. Der Rechenaufwand ist zwar etwas erhöht, da für jeden Block die Leadfield-Matrix bestimmt werden muss, gleichzeitig bietet dieses Verfahren jedoch den Vorteil, dass es auch auf die rauschunterdrückten Daten von Maxfilter (SSS, MC) angewendet werden kann. Auch hier kann im Preprocessing absichtlich auf eine Mittelung zwischen den Blöcken verzichtet werden. Die Leadfield-Matrizen können dann auch hier blockweise bestimmt und die Quellaktivitäten am Ende gemittelt werden. Diese Möglichkeit bietet damit eine optimale Vergleichbarkeit zwischen der Verwendung von Rodaten und rauschunterdrückten Daten, unabhängig vom verwendeten Lokalisationsverfahren.
 
+\subsection{Rückwärtsmodell}
+
 \subsection{Vergleichbarkeit der Amplituden}
+\label{sec:amplitud}
 
 % #######################
 % ##### ERGEBNISSE  #####
@@ -664,6 +691,13 @@ Eine zweite Möglichkeit ist das Mitteln der Quellaktivität. Für jeden Block k
 \newpage
 \section{Ergebnisse}
 \label{sec:ergebnisse}
+
+Was kam raus?
+
+\subsection{Bewegungsprofile}
+\label{sec:bewegung}
+
+Bewegungen
 
 \subsection{Signal-Rausch-Verhältnis}
 \label{sec:snr}
@@ -738,6 +772,14 @@ Block & pa07 & pa10 \\
 
 Die Ergebnisse sind in Tabelle \ref{tab:snr} dargestellt. Deutlich wird, dass das Signal-Rausch-Verhältnis um den Wert von $3$ liegt. Während \texttt{pa07} eher leicht unterhalb von $3$ liegt, sind die Werte von \texttt{pa10} gut oberhalb von $3$. Das Signal-Rausch-Verhältnis spricht dafür, dass die Daten zur Lokalisation geeignet sein sollten, die Ergebnisse jedoch etwas verrauscht werden könnten.
 
+\subsection{Quellrekonstruktionen und Zeitverläufe}
+
+Bilder
+
+\subsection{Anpassungsgüte}
+
+Nur für MNE?
+
 % #######################
 % ##### DISKUSSION  #####
 % #######################
@@ -751,6 +793,8 @@ Präsentation: Therefore, uncorrelated noise (e.g., random system noise) will be
 
 MEG-Buch S. 164: Since the adaptive spatial fi lters computed using Equation (7–3) are dependent on the leadfi eld matrix G , beamforming—like the MNE/MCE methods for distributed source modeling—does not provide accurate estimates of deep sources. This is essentially due to the fact that the fi eld patterns at the scalp of neighboring dipole sources approaching the center of the head are generally more similar to each other (i.e., more spatially correlated) than164
 MEG: An Introduction to Methods the fi elds of neighboring dipoles close to the surface. Particularly in the presence of noise, this leads to larger localization errors. Primarily because of this “spatial leakage,” beamformers tend to overestimate the signal power of deeplying sources, which makes it diffi cult to interpret the “raw” beamformer signal amplitude estimates.
+
+Ist Unterschied Roh/SSS zu MC größer bei pa10?
 
 \newpage
 \section{Literaturverzeichnis}
