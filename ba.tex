@@ -138,12 +138,9 @@ Die Quellen (Orte) und Aktivitäten (Potentiale ??) sind die zentralen Größen 
 
 Mit zunehmender Rechenkapazität und entsprechenden Modellen lassen sich inzwischen auch mit enzephalografischen Verfahren (z.B. EEG, MEG) die Quellen der Aktivität bestimmten. Die Messung erfolgt dabei nur an der Oberfläche des Kopfes, eine Lokalisation erfolgt somit indirekt. Diese Verfahren haben den entscheidenden Vorteil, dass ihre zeitliche Auflösung meist enorm hoch ist, sie können Veränderungen im Gehirn noch im Millisekundenbereich erfassen. Zum Vergleich: Bildgebende funktionelle Verfahren, welche zusätzlich zur Bildgebung auch die Aktivität erfassen können - wie die funktionelle Magnet-Resonanz-Tomographie (fMRT) - liegen hier meist nur im Bereich von Sekunden. Auch wenn die enzephalografischen Verfahren in der zeitlichen Auflösung sehr schnell sind, ihr Nachteil bleibt nach wie vor noch eher unpräzise Lokalisationsfähigkeit. Bei MEG-Messungen kommt erschwerend die hohe Verrauschung der Daten hinzu. Während die Messgrößen im Bereich von Femto-Tesla liegen, ist selbst der Herzschlag am Gehirn noch im Bereich von Picotesla messbar. Netzstrom und die Vielfachen dessen Eigenschwingung ($50\,Hz$, $100\,Hz$, $150\,Hz$, etc.), sowie die Schwingung des Bahnnetzes ($16,67\,Hz$) am konkreten Standort des Max-Planck-Insituts für kognitive Neurowissenschaften in Leipzig sind trotz starker Abschirmung deutlich messbare Größen in jeder MEG-Messung (siehe auch Abschnitt \nameref{sec:rauschen} auf Seite \pageref{sec:rauschen}). Die Frequenzen der Artefarkte in den Rohdaten lassen sich mit Hilfe einer Fourier-Analyse berechnen, siehe Abbildung ???.
 
-Verschiedene Faktoren beeinflussen folglich die Messung, die niemals unter idealen Bedingungen statt findet. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} die Software \emph{Maxfilter} mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}), soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von Maxfiter gegenübergestellt. Die Hypothese ist, dass Beamformer (siehe Abschnitt ???) relativ stabil gegenüber Rauschen sein müsste und eine Anwendung von Maxfilter nicht nötig ist, um eine gute Quelllokalisation zu erreichen, während Minimum Norm Estimate (siehe Abschnitt ???) ohne vorherige Anwendung von Maxfilter eher zu unpräziseren Ergebnissen führen sollte. ?? Mathematische Begründung für die These ??? (evtl. auf das Ende der Einleitung verweisen? Dort wird die These evtl. nochmal präziser formuliert???). Zusammengefasst:
+Verschiedene Faktoren beeinflussen folglich die Messung, die niemals unter idealen Bedingungen statt findet. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} die Software \emph{Maxfilter} mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}), soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von Maxfiter gegenübergestellt.
 
-\begin{itemize}
-\item Hauptthese: LCMV Beamformer ist robust gegen Rauschen (intrinsische Rauschunterdrückung)
-\item Nebenthese: Minimum Norm Estimate ist nicht robust gegen Rauschen
-\end{itemize}
+Die Hypothese soll lauten, dass Beamformer relativ stabil gegenüber Rauschen sein müsste und eine Anwendung softwareseitiger Filterverfahren nicht nötig ist, um eine gute Quelllokalisation zu erreichen, während Minimum Norm Estimate ohne vorherige Anwendung von Filterverfahren eher zu unpräziseren Ergebnissen führen sollte. Die Hypothese wird im entsprechenden Abschnitt auf Seite \pageref{sec:hypo} formuliert und begründet.
 
 Im Folgenden werden zunächst die Grundlagen zur Biologie, zum Messverfahren und Rauschen erläutert. Anschließend soll noch innerhalb der Einleitung auf die Quelllokalisation und die dafür benötigten Modelle eingegangen werden. Im Abschnitt \nameref{sec:methodik} ab Seite \pageref{sec:methodik} wird dann beschrieben wie die formulierte These geprüft wurde, deren Ergebnisse dann im Abschnitt \nameref{sec:ergebnisse} und \nameref{sec:diskussion} ab den Seiten \pageref{sec:ergebnisse} und \pageref{sec:diskussion} vorgestellt und diskutiert werden.
 
@@ -357,7 +354,7 @@ Jede Quelle im Gehirn wirkt auf alle Sensoren an der Kopfoberfläche, jeder Sens
 
 Die Quellbestimmung ist nur an bestimmten Stellen innerhalb des Kopfes wirklich sinnvoll, außerhalb des Gehirns ist kein magnetischer Dipol zu erwarten. Außerdem ist es wünschenswert die Aktivität im Gehirn nicht auf eine standardisierte mathematische Form (z.B. auf eine Kugel) zu berechnen, sondern ein echtes Gehirn zu verwenden, im Idealfall das tatsächliche Gehirn der entsprechenden Versuchsperson. Dafür muss zunächst ein bildgebendes Verfahren eingesetzt werden. Üblicherweise eignet sich dafür ein MRT-Scan des Kopfes.
 
-Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologische Bestandteile. Mit dem Softwarepaket Freesurfer (mehr Info ???) kann das Bild des Kopfes in seine Segmente zerlegt werden (siehe auch \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct}). Es wird unterschieden zwischen der Kopfoberfläche bzw. Kopfhaut, dem Schädel und dem Gehirn. Innerhalb des Gehirns werden graue und weiße Substanz getrennt.
+Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologische Bestandteile. Mit dem Softwarepaket Freesurfer kann das Bild des Kopfes in seine Segmente zerlegt werden (siehe auch \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct}). Es wird unterschieden zwischen der Kopfoberfläche bzw. Kopfhaut, dem Schädel und dem Gehirn. Innerhalb des Gehirns werden graue und weiße Substanz getrennt.
 
 \begin{figure}[t]
   \centering
@@ -429,7 +426,7 @@ Das \emph{Rückwärtsmodell} (\emph{inverse solution}) schätzt auf Basis der Le
 
 \subsubsection{Methoden zur Bestimmung des Rückwärtsmodell}
 
-Es gibt drei Verfahren zur Bestimmung des Rückwärtsmodells (siehe auch Abbildung ???):
+Es existieren prinzipiell drei Verfahren zur Bestimmung des Rückwärtsmodells:
 
 \begin{compactitem}
 \item Einfache und multiple Dipolmodelle (single and multiple dipole models)
@@ -581,10 +578,16 @@ $\mx{C}^{-1}$ bezeichnet die Inverse der Kovarianzmatrix der gemessenen Signale 
 \end{equation}
 
 \subsection{Hypothese}
+\label{sec:hypo}
 
 Wie in der Einleitung bereits erwähnt, sagt die Hypothese eine relativ hohe Stabilität des LCMV Beamformer-Vefahrens gegen Rauschen voraus. Grundlage der Hypothese ist die Eigenschaft des Beamforer-Vefahrens, dass korrelierte Quellen unterdrückt werden, da es das Ziel ist, eine minimale Varianz zu erreichen \parencite{van1997localization}. Gerade aber Artefakte und Rauschen (insbesondere externe Einflüsse wie die des Stromnetzes) haben die Eigenschaften relativ Konstant über alle Kanäle hinweg aufzutreten. Entsprechend müsste hier eine hohe Korrelation der Signale vorliegen, was zu einer systematischen Unterdrückung des Rauschens durch den LCMV Beamformer-Ansatz führen sollte.
 
-Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben mit Rohdaten umgehen zu können. Die in den Rohdaten nicht unterdrückten äußeren Quellen dürften den Versuch der Minimierung der Energie (bzw. der L2-Norm) deutlich verfälschen. Äußere Signale könnten bei der Kalkulation berücksichtigt werden, obwohl sie eigentlich nicht berücksichtigt werden sollen.
+Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben mit Rohdaten umgehen zu können. Die in den Rohdaten nicht unterdrückten äußeren Quellen dürften den Versuch der Minimierung der Energie (bzw. der L2-Norm) deutlich verfälschen. Äußere Signale könnten bei der Kalkulation berücksichtigt werden, obwohl sie eigentlich nicht berücksichtigt werden sollen. Zusammengefasst:
+
+\begin{compactitem}
+\item Hauptthese: LCMV Beamformer ist robust gegen Rauschen (intrinsische Rauschunterdrückung)
+\item Nebenthese: Minimum Norm Estimate ist nicht robust gegen Rauschen
+\end{compactitem}
 
 % #####################
 % ##### METHODIK  #####
