@@ -278,6 +278,34 @@
       \field{title}{MEG: an introduction to methods}
       \field{year}{2010}
     \endentry
+    \entry{haueisen1997effect}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=d198197ff8f3f42702d4c3d5fea8477b}{Haueisen}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e0805a90d68d937edf79704e9b697366}{Boettner}{B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=38ef3f81594ae2b5ee48ae47e1bef91c}{Funke}{F\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=28df81dc672f4278fd8abf94a938cefb}{Brauer}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cfd414b017e2413e688916b01544104e}{Nowak}{N\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=d198197ff8f3f42702d4c3d5fea8477b}{Haueisen}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e0805a90d68d937edf79704e9b697366}{Boettner}{B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=38ef3f81594ae2b5ee48ae47e1bef91c}{Funke}{F\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=28df81dc672f4278fd8abf94a938cefb}{Brauer}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cfd414b017e2413e688916b01544104e}{Nowak}{N\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1f1a5e0be5f21ea07e5b4bd57615c1ac}
+      \strng{fullhash}{5edb88822df793628a0e6c211b3ba835}
+      \field{sortinit}{H}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{[Effect of boundary element discretization on forward calculation and the inverse problem in electroencephalography and magnetoencephalography]}
+      \field{journaltitle}{Biomedizinische Technik. Biomedical engineering}
+      \field{number}{9}
+      \field{title}{[Effect of boundary element discretization on forward calculation and the inverse problem in electroencephalography and magnetoencephalography]}
+      \field{volume}{42}
+      \field{year}{1997}
+      \field{pages}{240\bibrangedash 248}
+    \endentry
     \entry{haykin2008adaptive}{book}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=2378a62ada30f57d112f341446d1bd6b}{Haykin}{H\bibinitperiod}{Simon\bibnamedelima S}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%

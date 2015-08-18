@@ -2107,23 +2107,24 @@
     <bcf:citekey order="18">parkkonen1999interference</bcf:citekey>
     <bcf:citekey order="19">taulu2004suppression</bcf:citekey>
     <bcf:citekey order="20">taulu2005presentation</bcf:citekey>
-    <bcf:citekey order="21">maurits2011neurology</bcf:citekey>
-    <bcf:citekey order="22">scherg1990fundamentals</bcf:citekey>
-    <bcf:citekey order="23">hamalainen1984interpreting</bcf:citekey>
-    <bcf:citekey order="24">ilmoniemi1985forward</bcf:citekey>
-    <bcf:citekey order="25">sarvas1987basic</bcf:citekey>
-    <bcf:citekey order="26">hamalainen1994interpreting</bcf:citekey>
-    <bcf:citekey order="27">hamalainen1993magnetoencephalography</bcf:citekey>
-    <bcf:citekey order="28">hillebrand2005beamformer</bcf:citekey>
-    <bcf:citekey order="29">hillebrand2005new</bcf:citekey>
-    <bcf:citekey order="30">van1997localization</bcf:citekey>
+    <bcf:citekey order="21">haueisen1997effect</bcf:citekey>
+    <bcf:citekey order="22">maurits2011neurology</bcf:citekey>
+    <bcf:citekey order="23">scherg1990fundamentals</bcf:citekey>
+    <bcf:citekey order="24">hamalainen1984interpreting</bcf:citekey>
+    <bcf:citekey order="25">ilmoniemi1985forward</bcf:citekey>
+    <bcf:citekey order="26">sarvas1987basic</bcf:citekey>
+    <bcf:citekey order="27">hamalainen1994interpreting</bcf:citekey>
+    <bcf:citekey order="28">hamalainen1993magnetoencephalography</bcf:citekey>
+    <bcf:citekey order="29">hillebrand2005beamformer</bcf:citekey>
+    <bcf:citekey order="30">hillebrand2005new</bcf:citekey>
     <bcf:citekey order="31">van1997localization</bcf:citekey>
-    <bcf:citekey order="32">haykin2008adaptive</bcf:citekey>
-    <bcf:citekey order="33">van1997localization</bcf:citekey>
-    <bcf:citekey order="34">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="35">hahne2002differential</bcf:citekey>
-    <bcf:citekey order="36">herrmann2011syntactic</bcf:citekey>
-    <bcf:citekey order="37">naatanen2004mismatch</bcf:citekey>
+    <bcf:citekey order="32">van1997localization</bcf:citekey>
+    <bcf:citekey order="33">haykin2008adaptive</bcf:citekey>
+    <bcf:citekey order="34">van1997localization</bcf:citekey>
+    <bcf:citekey order="35">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="36">hahne2002differential</bcf:citekey>
+    <bcf:citekey order="37">herrmann2011syntactic</bcf:citekey>
+    <bcf:citekey order="38">naatanen2004mismatch</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="apa">
   <bcf:sorting>

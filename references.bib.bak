@@ -208,6 +208,13 @@
   Publisher                = {Springer}
 }
 
+@Book{maurits2011neurology,
+  Title                    = {From Neurology to Methodology and Back: An Introduction to Clinical Neuroengineering},
+  Author                   = {Maurits, Natasha},
+  Publisher                = {Springer Science \& Business Media},
+  Year                     = {2011}
+}
+
 @Article{naatanen2004mismatch,
   Title                    = {The mismatch negativity (MMN): towards the optimal paradigm},
   Author                   = {N{\"a}{\"a}t{\"a}nen, Risto and Pakarinen, Satu and Rinne, Teemu and Takegata, Rika},
