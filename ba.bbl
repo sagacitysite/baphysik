@@ -133,6 +133,27 @@
       \field{year}{1968}
       \field{pages}{784\bibrangedash 786}
     \endentry
+    \entry{da1998biophysical}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=5c201f9d8b3497018d331dd50c10cf10}{Silva}{S\bibinitperiod}{FH\bibnamedelima Lopes}{F\bibinitperiod\bibinitdelim L\bibinitperiod}{da}{d\bibinitperiod}{}{}}%
+        {{uniquename=0,hash=61fe0eca8523ededc5b20ebd34a352e2}{Van\bibnamedelima Rotterdam}{V\bibinitperiod\bibinitdelim R\bibinitperiod}{AB}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=5c201f9d8b3497018d331dd50c10cf10}{Silva}{S\bibinitperiod}{FH\bibnamedelima Lopes}{F\bibinitperiod\bibinitdelim L\bibinitperiod}{da}{d\bibinitperiod}{}{}}%
+        {{uniquename=0,hash=61fe0eca8523ededc5b20ebd34a352e2}{Van\bibnamedelima Rotterdam}{V\bibinitperiod\bibinitdelim R\bibinitperiod}{AB}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Williams \& Wilkins}%
+      }
+      \strng{namehash}{f4bcd3d46a1ee1cba6d56b2162d7d3c6}
+      \strng{fullhash}{f4bcd3d46a1ee1cba6d56b2162d7d3c6}
+      \field{sortinit}{d}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Biophysical aspects of EEG and magnetoencephalogram generation}
+      \field{title}{Biophysical aspects of EEG and magnetoencephalogram generation}
+      \field{year}{1998}
+    \endentry
     \entry{hahne2002differential}{article}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=4975b525b95c5b49a4a19e807fb821f1}{Hahne}{H\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
@@ -256,6 +277,25 @@
       \field{labeltitle}{MEG: an introduction to methods}
       \field{title}{MEG: an introduction to methods}
       \field{year}{2010}
+    \endentry
+    \entry{haykin2008adaptive}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=2378a62ada30f57d112f341446d1bd6b}{Haykin}{H\bibinitperiod}{Simon\bibnamedelima S}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2378a62ada30f57d112f341446d1bd6b}{Haykin}{H\bibinitperiod}{Simon\bibnamedelima S}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education India}%
+      }
+      \strng{namehash}{2378a62ada30f57d112f341446d1bd6b}
+      \strng{fullhash}{2378a62ada30f57d112f341446d1bd6b}
+      \field{sortinit}{H}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Adaptive filter theory}
+      \field{title}{Adaptive filter theory}
+      \field{year}{2008}
     \endentry
     \entry{herrmann2011syntactic}{article}{}
       \name{labelname}{5}{}{%
@@ -512,6 +552,25 @@
       \field{volume}{25}
       \field{year}{2012}
       \field{pages}{1\bibrangedash 19}
+    \endentry
+    \entry{maurits2011neurology}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=7a62379119a634adb365c2f5a4e7207d}{Maurits}{M\bibinitperiod}{Natasha}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7a62379119a634adb365c2f5a4e7207d}{Maurits}{M\bibinitperiod}{Natasha}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{7a62379119a634adb365c2f5a4e7207d}
+      \strng{fullhash}{7a62379119a634adb365c2f5a4e7207d}
+      \field{sortinit}{M}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{From Neurology to Methodology and Back: An Introduction to Clinical Neuroengineering}
+      \field{title}{From Neurology to Methodology and Back: An Introduction to Clinical Neuroengineering}
+      \field{year}{2011}
     \endentry
     \entry{naatanen2004mismatch}{article}{}
       \name{labelname}{4}{}{%

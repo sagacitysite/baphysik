@@ -160,9 +160,7 @@ Der Kopf als Träger des Gehirns besteht aus mehreren Komponenten, deren Begriff
 
 \subsubsection{Elektrische und magnetische Eigenschaften der Nervenzellen}
 
-Alle Nervenzellen des Körpers kommunizieren durch kleine elektrische Ströme. Sobald eine gewisse Schwelle innerhalb einer Nervenzelle, das Aktionspotential, überschritten ist, ist die Anregung hoch genug um eine weitere Verbreitung eines Signals zu starten. Die Signalübertragung zwischen den Nervenzellen erfolgt über Verbindungsstellen, so genannte Synapsen, bei denen es durch Ausschüttung von Neurotransmittern zur Übertragung des Signals kommt. Entscheidend für die Geschwindigkeit der Übertragung ist der Grad der Myeliniserung der Axone der Nervenzellen. Je mehr die Axone myelinisiert sind, desto höher ist die Nervenleitgeschwindigkeit.
-
-Vor allem im Zentralnervensystem liegt eine hohe Dichte an Nervenzellen mit stark myelinisierten Axonen vor. In diesem kommunizieren vor allem im Gehirn die Nervenzellen auf äußerst komplexe Art und Weise und nehmen dort vielfältige Ausbreitungsmuster an. Die vom Gehirn erzeugten zeitlich veränderlichen elektrischen Ströme führen - nach Maxwell - ebenso zu Magnetfeldern. Beide können an der Oberfläche, d.h. außerhalb der Kopfhaut, gemessen werden.
+Alle Nervenzellen des Körpers kommunizieren durch kleine elektrische Ströme. Dabei können zwei unterschiedliche Arten der elektrischen Aktivität unterschieden werden \parencite{da1998biophysical}. Die \emph{postsynaptischen Potentiale} und die u.U. daraus resultierenden \emph{Aktionspotentiale}. Im Gleichgewicht besitzen Nervenzellen ein \emph{Ruhepotential} im Bereich von ca. $-70\,mV$. Graduelle lokale Änderungen des Membranpotentials werden als \emph{exzitatorisches postsynaptisches Potential} (EPSP) bezeichnet, wenn sie zur Auslösung eines Aktionspotentials beitragen. \emph{Inhibitorische postsynaptisches Potential} (IPSP) bezeichnen im Gegensatz graduelle Potentialveränderungen, die der Auslösung eines Aktionspotentials entgegenwirken. Wird ein bestimmter Potential-Schwellwert, der bei ca. $-55\,mV$ liegt, überschritten, so kommt es zu einer beschleunigten Ausschüttung von Ionen, welches zu einer starken Potential-Verschiebung auf bis zu $+20\,mV$ bis $+30\,mV$ führt. Das Aktionspotential dauert jedoch nur ca. $1\,ms$ bis $2\,ms$ und wird während seiner Ausbreitung über mehrere Nervenzellen schnell wieder abgedämpft. Da zusätzlich die Wahrscheinlichkeit für eine präzise synchrone Ausbreitung sehr gering ist, ist die Messung der elektrischen und magnetischen Felder eines Aktionspotential sehr unwahrscheinlich. Was hingegen gut erfasst werden kann sind die postsynaptischen Potentiale. Die Potentiale breiten sich - verglichen mit dem Aktionspotential - langsamer und gleichmäßiger über größere Nervenzellen-Strukturen aus. Die von ihnen verursachten elektrischen und magnetischen Felder können an der Oberfläche, d.h. außerhalb der Kopfhaut, gemessen werden.
 
 \subsubsection{ERP und ERF}
 \label{sec:erf}
@@ -392,7 +390,7 @@ Die Koordinatensysteme bei MEG- und EEG-Messungen orientieren sich meist an äu�
 
 Das \emph{Vorwärtsmodell} (\emph{forward solution}) berechnet aus angenommenen Quellen innerhalb des Gehirns die Auswirkung auf die Sensoren außerhalb des Gehirns. Innerhalb des Gehirns werden Dipole modelliert. Das sich ergebende Modell des Gehirns mit den Dipolen wird als \emph{Quellraum} (source space) bezeichnet. Für jeden der gesetzten Dipole wird unter Berücksichtigung der Leitfähigkeit und des Randes (BEM-Netz) die Wirkung auf die Sensoren außerhalb des Gehirns bestimmt. Somit kann für viele Positionen im Gehirn die Wirkung außerhalb des Gehirns abgeschätzt werden.
 
-Die Daten des Vorwärtsmodells werden in einer \emph{Leadfield-Matrix} dargestellt. Sie enthält die Abbildung der Dipole auf die Sensoren. Zur Bestimmung könne wir von folgender Gleichung ausgehen:
+Die Daten des Vorwärtsmodells werden in einer \emph{Leadfield-Matrix} dargestellt. Sie enthält die Abbildung der Dipole auf die Sensoren. Zur Bestimmung könne wir von folgender Gleichung ausgehen \parencite{maurits2011neurology}:
 
 \begin{equation}
 y_i = \int_V \mx{L}_i (\mx{r}) \cdot \mx{j} (\mx{r})\, dV
@@ -407,14 +405,14 @@ Die Quelle kann durch diskrete Dipole modelliert werden. Mit Hilfe diese Modelli
 \mx{j} (\mx{r}) = \mx{S}(\mx{r})\,\delta(\mx{r}-\mx{r}_S)
 \end{equation}
 
-Eingesetzt in Gleichung~\ref{eq:leadfield} ergibt sich:
+Einsetzen in Gleichung~\ref{eq:leadfield} ergibt:
 
 \begin{equation}
-y_i(\mx{r}_S) = \int_V \mx{L}_i (\mx{r}) \cdot \mx{S}(\mx{r})\,\delta(\mx{r}-\mx{r}_S)\, dV = \mx{S}(\mx{r}_S) \cdot \mx{L}_i(\mx{r}_S)
+y_i = \int_V \mx{L}_i (\mx{r}) \cdot \mx{S}(\mx{r})\,\delta(\mx{r}-\mx{r}_S)\, dV = \mx{S}(\mx{r}_S) \cdot \mx{L}_i(\mx{r}_S)
 \label{eq:leadfield2}
 \end{equation}
 
-Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols an der Stelle~$\mx{r}_S$, dies entspricht der Quelle. Jeder Datenpunkt kann also mit einem entsprechenden Leadfield-Eintrag und der zugehörigen Quellstärke beschrieben werden.
+Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols am Ort der Quelle $\mx{r}_S$. Jeder Datenpunkt kann also mit einem entsprechenden Leadfield-Eintrag und der zugehörigen Quellstärke beschrieben werden.
 
 % Eigentlich ist S und L ein Vektor?
 % Die Gleichung ist nur für einen Zeitpunkt und einen Kanal i, sie varriert nur in den Orten
@@ -441,24 +439,24 @@ Es gibt drei Verfahren zur Bestimmung des Rückwärtsmodells (siehe auch Abbildu
 
 \subsubsection{Einfache und multiple Dipolmodelle}
 
-In den \emph{einfachen und multiplen Dipolmodellen} (single and multiple dipole models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklärt \parencite{scherg1990fundamentals}. Es wird zunächst ein Dipol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Lokalisationen können vorgenommen werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden neuen einzelnen Dipol immer geringer, weshalb es sich nur lohnt eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen. In dieser Methode wird zusätzlich zu Gleichung \ref{eq:leadfield2} ein Fehler~$R$ berücksichtigt, der als Term wie folgt ergänzt wird:
+In den \emph{einfachen und multiplen Dipolmodellen} (single and multiple dipole models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklärt \parencite{scherg1990fundamentals}. Es wird zunächst ein Dipol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Lokalisationen können vorgenommen werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden neuen einzelnen Dipol immer geringer, weshalb es sich nur lohnt eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen. In dieser Methode wird zusätzlich zu Gleichung \ref{eq:leadfield2} ein Fehler~$R$ berücksichtigt. Des Weiteren wird der gesamte Zeitverlauf berücksichtigt.
 
 \begin{equation}
 \label{eq:leadfield-error}
-y_i(\mx{r}_S) = \mx{S}(\mx{r}_S) \cdot \mx{L}_i(\mx{r}_S) + R
+\mx{y}_i(t) = \mx{S}(\mx{r},t) \cdot \mx{L}_i(\mx{r}) + \mx{R}(t)
 \end{equation}
 
 In Summenschreibweise ergibt sich:
 
 \begin{equation}
 \label{eq:leadfield-error-sum}
-y_i = \left( \sum_{j=1}^n S_j \cdot L_{ij} \right) + R
+\mx{y}_i = \left( \sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij} \right) + \mx{R}
 \end{equation}
 
-Es wird versucht den Fehler $R$ zwischen Daten $y_i$ und Modell $\left( \sum_{j=1}^n S_j \cdot L_{ij} \right)$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Dabei wird versucht $n$ klein zu halten.
+Es wird versucht den Fehler $\mx{R}$ zwischen Daten $\mx{y}_i$ und Modell $\sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij}$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Dabei wird versucht $n$ klein zu halten.
 
 \begin{equation}
-R = y_i - \left( \sum_{j=1}^n S_j \cdot L_{ij} \right)
+\mx{R} = \mx{y}_i - \left( \sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij} \right)
 \end{equation}
 
 \subsubsection{Verteilte Dipolmodelle}
@@ -468,7 +466,7 @@ In verteilten Dipolmodellen (distributed dipole models) wird davon ausgegangen, 
 Wird Gleichung \ref{eq:leadfield-error} umgestellt nach der Quellaktivitätsmatrix~$\mx{S}$ ergibt sich folgende Form:
 
 \begin{equation}
-\mx{S} = \mx{L}_i^{-1} ( y_i - R )
+\mx{S} = \mx{L}_i^{-1} ( \mx{y}_i - \mx{R} )
 \end{equation}
 
 Es werden sehr viele Quellen betrachtet, deutlich mehr als Sensoren verfügbar sind. Damit ergeben sich unendlich viele exakte Lösungen. Um physikalisch sinnvolle Lösungen zu finden müssen Nebenbedingungen aufgestellt werden. Übliche Nebenbedingungen sind:
@@ -482,15 +480,15 @@ Es werden sehr viele Quellen betrachtet, deutlich mehr als Sensoren verfügbar s
 Dabei entspricht $L2$ der $L2$- bzw. der euklidischen Norm:
 
 \begin{equation}
-\|\mx{S}\|_2 = \sqrt{\sum_{k=1}^n |S_k|^2}
+\|\mx{S}\|_2 = \sqrt{\sum_{k=1}^n |\mx{S}_k|^2}
 \end{equation}
 
-Dabei entspricht $S_k$ dem Dipol am Ort $k$. Es wird anschließend diejenige Lösung genommen, für die die euklidische Norm bzw. anschaulich die Gesamtenergie des Gehirns minimal wird.
+Wobei $\mx{S}_k$ dem Dipol am Ort $k$ entspricht. Es wird anschließend diejenige Lösung genommen, für die die euklidische Norm bzw. anschaulich die Gesamtenergie des Gehirns minimal wird.
 
 $L1$ entspricht der $L1$- bzw. Betragssummen-Norm:
 
 \begin{equation}
-\|\mx{S}\|_1 = \sum_{k=1}^n |S_k|
+\|\mx{S}\|_1 = \sum_{k=1}^n |\mx{S}_k|
 \end{equation}
 
 Es wird anschließend diejenige Lösung genommen, für die die Betragssummen-Norm bzw. anschaulich die Gesamtamplitude des Gehirns minimal wird.
@@ -498,7 +496,7 @@ Es wird anschließend diejenige Lösung genommen, für die die Betragssummen-Nor
 \subsubsection{Räumliche Filterung}
 \label{sec:beam}
 
-Bei der \emph{räumlichen Filterung} (spatial filtering) werden die Zeitverläufe der Aktivitäten der einzelnen Dipole als unkorreliert betrachtet. Es wird davon ausgegangen, dass die Dipole sich nicht gegenseitig beeinflussen. Gesucht wird nach der Aktivitätswahrscheinlichkeit an jedem Punkt. Dafür wird das gesamte Gehirn mit Hilfe eines einzigen Dipols abgescannt. Unterschiedliche Verfahren stehen zur Verfügung:
+Bei der \emph{räumlichen Filterung} (spatial filtering) werden die Zeitverläufe der Aktivitäten der einzelnen Dipole als unkorreliert betrachtet, es wird davon ausgegangen, dass die Dipole sich nicht gegenseitig beeinflussen. Gesucht wird dann nach der Aktivitätswahrscheinlichkeit an jedem Punkt. Dafür wird das gesamte Gehirn mit Hilfe eines einzigen Dipols abgescannt. Kernidee ist ein Verfahren aus der allgemeinen Signaltechnik (z.B. bei Radar- oder Sonarsignalen) auch bei der Lokalisation von Gehirnsignalen einzusetzen. Unterschiedliche Verfahren stehen zur Verfügung:
 
 \begin{compactitem}
 \item Beamforming, z.B. LCMV, DICS, SAM
@@ -507,47 +505,47 @@ Bei der \emph{räumlichen Filterung} (spatial filtering) werden die Zeitverläuf
 
 Die Beamforming-Verfahren werden in Reviews von \textcite{hillebrand2005beamformer}, sowie \textcite{hillebrand2005new} betrachtet. Bei der LCMV Methode \parencite{van1997localization} wird der gesamte Zeitbereich (time domain) erfasst. Ähnlich wie bei der Minimum Norm Lösung wird für jeden Zeitpunkt eine Lokalisierung über das gesamte Frequenzspektrum durchgeführt. Bei der DICS (Dynamic Imaging of Coherent Sources) Methode wird nur eine einzige Quelllösung berechnet. Es wird ein bestimmtes Zeit/Frequenz-Intervall (siehe Zeit-Frequenz-Analyse) ausgewählt. Für diesen Bereich lässt sich eine Lokalisierung bestimmen. Der Vorteil dieses Verfahrens liegt darin, dass bestimmte Bänder (z.B. Alpha-Band) genau betrachtet werden können bzgl. Lokalisierung und Aktivität.
 
-Die folgende Betrachtung wird sich auf \emph{LCMV Beamforming} (Linearly Constrained Minimum Variance Beamforming) beschränken, da diese mit Minimum Norm Estimate vergleichbar ist. Kernidee ist ein Verfahren aus der allgemeinen Signaltechnik (z.B. bei Radar- oder Sonarsignalen) auch bei der Lokalisation von Gehirnsignalen einzusetzen. Entscheidend dabei ist, dass nur ein Quellort zu einem Zeitpunkt betrachtet wird, die anderen Orte werden nicht berücksichtigt. Für den ersten Ort ergibt sich mit der Summenschreibweise aus Gleichung \ref{eq:leadfield-error-sum} entsprechend:
+Die folgende Betrachtung wird sich auf \emph{LCMV Beamforming} (Linearly Constrained Minimum Variance Beamforming) beschränken, da diese mit Minimum Norm Estimate vergleichbar ist. Entscheidend dabei ist, dass nur ein Quellort zu einem Zeitpunkt betrachtet wird, die anderen Orte werden nicht berücksichtigt. Für den ersten Ort ergibt sich mit der Summenschreibweise aus Gleichung \ref{eq:leadfield-error-sum} entsprechend:
 
 \begin{equation}
-y_i = L_{i1} \cdot S_1 + N
+\mx{y}_i = \mx{L}_{i1} \cdot \mx{S}_1 + \mx{N}
 \end{equation}
 
-Dabei bezeichnet $N$ diejenige Aktivität, welche von allen anderen Orten außer von $S_1$ erzeugt wird:
+Dabei bezeichnet $\mx{N}$ diejenige Aktivität, welche von allen anderen Orten außer von $\mx{S}_1$ erzeugt wird:
 
 \begin{equation}
-N = L_{i2} \cdot S_2 + \ldots + L_{in} \cdot S_n + R = \left( \sum_{j=2}^n L_{ij} \cdot S_j \right) + R
+\mx{N} = \mx{L}_{i2} \cdot \mx{S}_2 + \ldots + \mx{L}_{in} \cdot \mx{S}_n + \mx{R} = \left( \sum_{j=2}^n \mx{L}_{ij} \cdot \mx{S}_j \right) + \mx{R}
 \end{equation}
 
 Jeder beliebige Dipol kann nun als Ausgangspunkt zur Beschreibung der Gesamtaktivität verwendet werden:
 
 \begin{equation}
 \label{eq:beam}
-y_i = L_{ij} S_j + N
+\mx{y}_i = \mx{L}_{ij} \mx{S}_j + \mx{N}
 \end{equation}
 
 Um jede einzelne räumliche Position betrachten bzw. berechnen zu können, wird ein räumlicher Filter benötigt. Mit diesem lässt sich die Quellaktivität mit den Daten bestimmen. Der räumliche Filter erfüllt maßgeblich zwei Funktionen:
 
 \begin{compactitem}
-\item Alle Aktivität $S_j$ am betrachteten Ort $j$ soll vollständig durchgelassen werden
-\item Rauschen und andere Aktivitäten anderer Orte $N$ soll vollständig unterdrückt werden
+\item Alle Aktivität $\mx{S}_j$ am betrachteten Ort $j$ soll vollständig durchgelassen werden
+\item Rauschen und andere Aktivitäten anderer Orte $\mx{N}$ soll vollständig unterdrückt werden
 \end{compactitem}
 
-Die Zeitverläufe der Aktivität an der Quelle $S_j$ und die der Aktivitäten an allen anderen Quellen $N$ werden als unkorreliert angenommen. Die Funktionen des Filters werden dann nicht mehr erfüllt und die Quellen können nicht mehr hinreichend getrennt werden \parencite{van1997localization}, es kommt zu Unschärfe.
+Die Zeitverläufe der Aktivität an der Quelle $\mx{S}_j$ und die der Aktivitäten an allen anderen Quellen~$\mx{N}$ müssen unkorreliert sein. Die Annahmen des Filters werden im Fall von Korrelationen nicht mehr erfüllt und die Quellen können nicht mehr hinreichend getrennt werden \parencite{van1997localization}, es kommt zu Unschärfe.
 
-Anzumerken ist, dass der räumliche Filter nicht absolut ideal gestaltet sein kann, d.h. das Signal am betrachteten Ort wird nicht vollständig erhalten bleiben und das Signal von allen anderen Orten inkl. Rauschen nicht vollständig unterdrückt werden. Das vorhergesagte Signal ist auf Grund dieser realen Bedingung nicht identisch mit dem ursprünglichen Signal. Das vorgesagte Signal ist gegenüber dem ursprünglichen Signal weniger scharf.
+Anzumerken ist, dass der räumliche Filter nicht absolut ideal gestaltet sein kann, d.h. das Signal am betrachteten Ort wird nicht vollständig erhalten bleiben und das Signal von allen anderen Orten nicht vollständig unterdrückt werden. Das vorhergesagte Signal ist auf Grund dieser realen Bedingung nicht identisch mit dem ursprünglichen Signal. Das vorgesagte Signal ist gegenüber dem ursprünglichen Signal weniger scharf.
 
-Wird der Filter~$w^T$ auf die Daten~$y_i$ angewendet, so führt dies zur vorhergesagten Quellaktivität~$\hat S$:
+Wird der Filter~$\mx{w}^T$ auf die Daten~$\mx{y}_i$ angewendet, so führt dies zur vorhergesagten Quellaktivität~$\mx{\hat S}$:
 
 \begin{equation}
 \label{eq:beam-filter}
-\mx{w}_i^T(\mx{r}) \cdot y_i = \mx{\hat S}(\mx{r})
+\mx{w}_i^T(\mx{r}) \cdot \mx{y}_i = \mx{\hat S}(\mx{r})
 \end{equation}
 
-Ausgangspunkt ist auch hier Gleichung \ref{eq:leadfield}. Entgegen den vorigen Modellen muss das Rauschen hier nicht explizit berücksichtigt werden, das Signal wird als Ganzes verrechnet.
+Entgegen den vorigen Modellen muss das Rauschen hier nicht explizit berücksichtigt werden, das Signal wird als Ganzes verrechnet. Gleichung \ref{eq:leadfield} kann geschrieben werden als:
 
 \begin{equation}
-y_i = \mx{S} \cdot \mx{L}_i
+\mx{y}_i = \mx{S} \cdot \mx{L}_i
 \end{equation}
 
 Eingesetzt in Gleichung \ref{eq:beam-filter} ergibt sich:
@@ -570,14 +568,27 @@ w^T_{ij} \cdot L_{ik} = \delta_{jk}
 
 Wobei $j,k$ die Indizes entsprechender Orte darstellen.
 
-% Eventuell folgenden Abschnitt (Vorteile/Nachteile) raus nehmen?? Wirkt redunant
-%Vorteil des Beamformer-Verfahrens liegt vor allem darin, dass keine a priori Annahme über die Quellkonfiguration erfolgt. Eine wichtige Limitierung liegt vor allem darin, dass Korrelationen zwischen den Quellorten zu einer Verschmelzung der Quellen führt, die einzelnen Orte können nicht mehr unterschieden werden \parencite{van1997localization}.
+Die Bestimmung des Filters erfordert eine gute lineare Schätzung des Zeitverlaufs der Aktivität an einem gegebenen Ort. Eine optimale Gewichtung \parencite[z.B.][]{haykin2008adaptive} wird durch folgenden Filter erreicht:
+
+\begin{equation}
+\mx{w}_i = \frac{\mx{C}^{-1} \mx{L}_i}{\mx{L}^T_i \mx{C}^{-1} \mx{L}_i}
+\end{equation}
+
+$\mx{C}^{-1}$ bezeichnet die Inverse der Kovarianzmatrix der gemessenen Signale $\mx{y}(t)$. Sie wird mit der verlaufenen Zeit $T$ normiert (???).
+
+\begin{equation}
+\mx{C} = \frac{\mx{y}(t)\,\mx{y}(t)^T}{T-1}
+\end{equation}
 
 \subsection{Hypothese}
 
 Wie in der Einleitung bereits erwähnt, sagt die Hypothese eine relativ hohe Stabilität des LCMV Beamformer-Vefahrens gegen Rauschen voraus. Grundlage der Hypothese ist die Eigenschaft des Beamforer-Vefahrens, dass korrelierte Quellen unterdrückt werden, da es das Ziel ist, eine minimale Varianz zu erreichen \parencite{van1997localization}. Gerade aber Artefakte und Rauschen (insbesondere externe Einflüsse wie die des Stromnetzes) haben die Eigenschaften relativ Konstant über alle Kanäle hinweg aufzutreten. Entsprechend müsste hier eine hohe Korrelation der Signale vorliegen, was zu einer systematischen Unterdrückung des Rauschens durch den LCMV Beamformer-Ansatz führen sollte.
 
 Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben mit Rohdaten umgehen zu können. Die in den Rohdaten nicht unterdrückten äußeren Quellen dürften den Versuch der Minimierung der Energie (bzw. der L2-Norm) deutlich verfälschen. Äußere Signale könnten bei der Kalkulation berücksichtigt werden, obwohl sie eigentlich nicht berücksichtigt werden sollen.
+
+% #####################
+% ##### METHODIK  #####
+% #####################
 
 \newpage
 
@@ -645,7 +656,9 @@ Eine zweite Möglichkeit ist das Mitteln der Quellaktivität. Für jeden Block k
 
 \subsection{Vergleichbarkeit der Amplituden}
 
-
+% #######################
+% ##### ERGEBNISSE  #####
+% #######################
 
 \newpage
 \section{Ergebnisse}
@@ -723,6 +736,12 @@ Block & pa07 & pa10 \\
 \end{table}
 
 Die Ergebnisse sind in Tabelle \ref{tab:snr} dargestellt. Deutlich wird, dass das Signal-Rausch-Verhältnis um den Wert von $3$ liegt. Während \texttt{pa07} eher leicht unterhalb von $3$ liegt, sind die Werte von \texttt{pa10} gut oberhalb von $3$. Das Signal-Rausch-Verhältnis spricht dafür, dass die Daten zur Lokalisation geeignet sein sollten, die Ergebnisse jedoch etwas verrauscht werden könnten.
+
+% #######################
+% ##### DISKUSSION  #####
+% #######################
+
+\newpage
 
 \section{Diskussion}
 \label{sec:diskussion}

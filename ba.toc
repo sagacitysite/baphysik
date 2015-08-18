@@ -14,19 +14,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Auditorischer Kortex}{10}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Grundlagen der Magnetenzephalographie}{10}{section*.12}
+\contentsline {subsection}{Grundlagen der Magnetenzephalographie}{11}{section*.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{SQUIDs}{11}{section*.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Flux-Transformator}{13}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Magnetometer und Gradiometer}{13}{section*.16}
+\contentsline {subsubsection}{Magnetometer und Gradiometer}{14}{section*.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Artefakte und Rauschen}{14}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Allgemeine Rauschunterdr\IeC {\"u}ckung}{14}{section*.18}
+\contentsline {subsubsection}{Allgemeine Rauschunterdr\IeC {\"u}ckung}{15}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Softwareseitige Rauschunterdr\IeC {\"u}ckung}{15}{section*.19}
+\contentsline {subsubsection}{Softwareseitige Rauschunterdr\IeC {\"u}ckung}{16}{section*.19}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Hintergrund zur Quelllokalisation}{19}{section*.20}
 \defcounter {refsection}{0}\relax 
@@ -52,26 +52,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Hypothese}{28}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Methodik}{29}{section*.33}
+\contentsline {section}{Methodik}{30}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Grundlage}{29}{section*.34}
+\contentsline {subsection}{Grundlage}{30}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verwendete Daten}{29}{section*.35}
+\contentsline {subsubsection}{Verwendete Daten}{30}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verwendete Ger\IeC {\"a}te}{30}{section*.36}
+\contentsline {subsubsection}{Verwendete Ger\IeC {\"a}te}{31}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Software zur Analyse}{30}{section*.37}
+\contentsline {subsubsection}{Software zur Analyse}{31}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Verfahren}{30}{section*.38}
+\contentsline {subsection}{Verfahren}{31}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Leadfieldmatrix bei Beamformer und Minimum Norm}{31}{section*.39}
+\contentsline {subsection}{Leadfieldmatrix bei Beamformer und Minimum Norm}{32}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Vergleichbarkeit der Amplituden}{33}{section*.40}
+\contentsline {subsection}{Vergleichbarkeit der Amplituden}{34}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Ergebnisse}{34}{section*.41}
+\contentsline {section}{Ergebnisse}{35}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Signal-Rausch-Verh\IeC {\"a}ltnis}{34}{section*.42}
+\contentsline {subsection}{Signal-Rausch-Verh\IeC {\"a}ltnis}{35}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Diskussion}{37}{section*.44}
+\contentsline {section}{Diskussion}{38}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literaturverzeichnis}{38}{section*.45}
+\contentsline {section}{Literaturverzeichnis}{39}{section*.45}
