@@ -17,6 +17,7 @@
 \usepackage[backend=biber,style=apa]{biblatex}
 \usepackage[titles]{tocloft}
 \usepackage{subcaption}
+\usepackage{nicefrac}
 
 \hypersetup{hidelinks}
 \usepackage{letltxmacro}
@@ -88,7 +89,7 @@
 
 \setlength{\parskip}{3em}
 
-Erstgutachterin: Herr Dr. Burkhard Maess
+Erstgutachter: Herr Dr. Burkhard Maess
 
 \setlength{\parskip}{0.3em}
 Zweitgutachter: Herr Prof. Dr. Jürgen Haase
@@ -132,17 +133,17 @@ eingereicht worden.
 
 \section{Einleitung}
 
-Auf dem Weg des Verstehens des eigenen menschlichen Geistes, kam es in den letzten Jahren - ca. seit Mitte der 1990er Jahre - zu einer beschleunigten Entwicklung von Verfahren und Methoden zur Messung der Gehirnaktivität, was seit dem zu einem deutlich besseren Verständnis der zerebralen Prozesse beigetragen hat. Vor allem der rasant zunehmenden und günstiger werdenden Computertechnologie ist es zu verdanken, dass heute Berechnungen möglich sind, die selbst vor 10 Jahren noch nahezu undenkbar waren. Es wird jedoch immer deutlicher, dass diese Entwicklung erst am Anfang steht. Neben der direkten Messung zerebraler Aktivitäten - wie es in dieser Arbeit der Fall ist - wird es zunehmend auch zu Simulation von Lernprozessen kommen, was durch den aktuellen Aufschwung künstlicher neuronaler Netzwerke, insbesondere durch Deep Learning derzeit deutlich wird \parencite[z.B.][]{ciresan2012multi}.
+Auf dem Weg des Verstehens des eigenen menschlichen Geistes, kam es in den letzten Jahren - ca. seit Mitte der 1990er Jahre - zu einer beschleunigten Entwicklung von Verfahren und Methoden zur Messung der Gehirnaktivität, was seit dem zu einem deutlich besseren Verständnis der zerebralen Prozesse beigetragen hat. Vor allem der rasant zunehmenden und günstiger werdenden Computertechnologie ist es zu verdanken, dass heute Berechnungen möglich sind, die selbst vor 10 Jahren noch nahezu undenkbar waren. Es wird jedoch immer deutlicher, dass diese Entwicklung erst am Anfang steht. Neben der direkten Messung zerebraler Aktivitäten - wie es in dieser Arbeit der Fall ist - wird es zunehmend auch zu Simulation von neuronalen Prozessen kommen, was durch den aktuellen Aufschwung künstlicher neuronaler Netzwerke, insbesondere durch Deep Learning derzeit deutlich wird \parencite[z.B.][]{ciresan2012multi}. Das zeigt, dass auch in den traditionellen Neurowissenschaften künftig deutlich komplexere Modelle verwendet werden können.
 
-Die Quellen (Orte) und Aktivitäten (Potentiale ??) sind die zentralen Größen bei der Untersuchung des Gehirns. Unterschiedliche Verfahren eigenen sich entsprechend ihrer Eigenschaften eher um Quellen in hoher räumlicher Auflösung oder Aktivitäten in hoher zeitlicher Auflösung zu messen. Dabei werden im Folgenden nur nicht-invasiven Verfahren betrachtet. Eine Bildgebung, also die Bestimmung der physikalischen Quellen im Gehirn mit möglichst hoher räumlicher Auflösung, wird klassisch mit tomographischen Verfahren ermöglicht, z.B. Magnet-Resonanz-Tomographie (MRT) und Computertomographie (CT). Enzephalografische Verfahren sind auf eine hohe zeitliche Auflösung der zerebralen Aktivität spezialisiert. Zu diesen gehören Elektroenzephalographie (EEG) und Magnetenzephalographie (MEG).
+Bei der Untersuchung des Gehirns bilden die Quellen (Orte) und Aktivitäten (Potentiale) die zentralen Größen. Unterschiedliche Verfahren eigenen sich entsprechend ihrer Eigenschaften eher um Orte in hoher räumlicher Auflösung oder Aktivitäten in hoher zeitlicher Auflösung zu messen. Dabei werden im Folgenden nur nicht-invasiven Verfahren betrachtet. Eine Bildgebung, also die Bestimmung der Physiologie oder bei funktionellen Verfahren auch der physiologischen Quellen einer Aktivität mit möglichst hoher räumlicher Auflösung wird klassisch mit tomographischen Verfahren ermöglicht, z.B. Magnet-Resonanz-Tomographie~(MRT) und Computertomographie~(CT). Enzephalografische Verfahren sind hingegen auf eine hohe zeitliche Auflösung der zerebralen Aktivität spezialisiert. Zu diesen gehören Elektroenzephalographie~(EEG) und Magnetenzephalographie~(MEG).
 
-Mit zunehmender Rechenkapazität und entsprechenden Modellen lassen sich inzwischen auch mit enzephalografischen Verfahren (z.B. EEG, MEG) die Quellen der Aktivität bestimmten. Die Messung erfolgt dabei nur an der Oberfläche des Kopfes, eine Lokalisation erfolgt somit indirekt. Diese Verfahren haben den entscheidenden Vorteil, dass ihre zeitliche Auflösung meist enorm hoch ist, sie können Veränderungen im Gehirn noch im Millisekundenbereich erfassen. Zum Vergleich: Bildgebende funktionelle Verfahren, welche zusätzlich zur Bildgebung auch die Aktivität erfassen können - wie die funktionelle Magnet-Resonanz-Tomographie (fMRT) - liegen hier meist nur im Bereich von Sekunden. Auch wenn die enzephalografischen Verfahren in der zeitlichen Auflösung sehr schnell sind, ihr Nachteil bleibt nach wie vor noch eher unpräzise Lokalisationsfähigkeit. Bei MEG-Messungen kommt erschwerend die hohe Verrauschung der Daten hinzu. Während die Messgrößen im Bereich von Femto-Tesla liegen, ist selbst der Herzschlag am Gehirn noch im Bereich von Picotesla messbar. Netzstrom und die Vielfachen dessen Eigenschwingung ($50\,Hz$, $100\,Hz$, $150\,Hz$, etc.), sowie die Schwingung des Bahnnetzes ($16,67\,Hz$) am konkreten Standort des Max-Planck-Insituts für kognitive Neurowissenschaften in Leipzig sind trotz starker Abschirmung deutlich messbare Größen in jeder MEG-Messung (siehe auch Abschnitt \nameref{sec:rauschen} auf Seite \pageref{sec:rauschen}). Die Frequenzen der Artefarkte in den Rohdaten lassen sich mit Hilfe einer Fourier-Analyse berechnen, siehe Abbildung ???.
+Mit zunehmender Rechenkapazität und entsprechenden Modellen lassen sich inzwischen auch mit enzephalografischen Verfahren (z.B. EEG, MEG) die Quellen der Aktivität bestimmten. Die Messung erfolgt dabei nur an der Oberfläche des Kopfes, eine Lokalisation erfolgt somit indirekt. Diese Verfahren haben den entscheidenden Vorteil, dass ihre zeitliche Auflösung meist so hoch ist, dass sie Veränderungen im Gehirn noch im Millisekundenbereich erfassen können. Zum Vergleich: Bildgebende funktionelle Verfahren, welche zusätzlich zur Bildgebung auch die Aktivität erfassen können - wie die funktionelle Magnet-Resonanz-Tomographie (fMRT) - liegen hier meist nur im Bereich von Sekunden. Auch wenn die enzephalografischen Verfahren in der zeitlichen Auflösung sehr gut sind, ihr Nachteil bleibt nach wie vor eine noch eher unpräzise Lokalisationsfähigkeit. Bei MEG-Messungen kommt erschwerend die hohe Verrauschung der Daten hinzu. Während die Messgrößen im Bereich von Femto-Tesla liegen, ist selbst der Herzschlag am Gehirn noch im Bereich von Picotesla messbar. Netzstrom mit $50\,Hz$ und die Schwingung des Bahnnetzes mit $16,67\,Hz$, sowie deren Harmonische sind beispielsweise am Standort des Max-Planck-Insituts für kognitive Neurowissenschaften in Leipzig trotz starker Abschirmung deutlich messbare Größen in jeder MEG-Messung (siehe auch Abschnitt \nameref{sec:rauschen} auf Seite \pageref{sec:rauschen}). Die Frequenzen der genannten Artefarkte in den Rohdaten lassen sich mit Hilfe einer Fourier-Analyse abschätzen, wie in Abbildung~\ref{img:freq-analy} auf Seite~\pageref{img:freq-analy} dargestellt.
 
-Verschiedene Faktoren beeinflussen folglich die Messung, die niemals unter idealen Bedingungen statt findet. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} das Programm \emph{MaxFilter} als Teil der \emph{Neuromag}-Software mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}), soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von Maxfiter gegenübergestellt.
+Verschiedene Faktoren beeinflussen folglich die Messung, die niemals unter idealen Bedingungen statt findet. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} das Programm \emph{MaxFilter} als Teil der \emph{Neuromag}-Software mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}), soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von MaxFiter gegenübergestellt.
 
-Die Hypothese soll lauten, dass Beamformer relativ stabil gegenüber Rauschen sein müsste und eine Anwendung softwareseitiger Filterverfahren nicht nötig ist, um eine gute Quelllokalisation zu erreichen, während Minimum Norm Estimate ohne vorherige Anwendung von Filterverfahren eher zu unpräziseren Ergebnissen führen sollte. Die Hypothese wird im entsprechenden Abschnitt auf Seite \pageref{sec:hypo} formuliert und begründet.
+Die Hypothese soll lauten, dass das Quellrekonstruktionsverfahren Beamformer relativ stabil gegenüber Rauschen sein müsste und eine Anwendung softwareseitiger Filterverfahren nicht nötig ist, um eine gute Lokalisation zu erreichen, während das Quellrekonstruktionsverfahren Minimum Norm Estimate ohne vorherige Anwendung von Filterverfahren eher zu unpräziseren Ergebnissen führen sollte. Die Hypothese wird im entsprechenden Abschnitt auf Seite \pageref{sec:hypo} formuliert und begründet.
 
-Im Folgenden werden zunächst die Grundlagen zur Biologie, zum Messverfahren und Rauschen erläutert. Anschließend soll noch innerhalb der Einleitung auf die Quelllokalisation und die dafür benötigten Modelle eingegangen werden. Im Abschnitt \nameref{sec:methodik} ab Seite \pageref{sec:methodik} wird dann beschrieben wie die formulierte These geprüft wurde, deren Ergebnisse dann im Abschnitt \nameref{sec:ergebnisse} und \nameref{sec:diskussion} ab den Seiten \pageref{sec:ergebnisse} und \pageref{sec:diskussion} vorgestellt und diskutiert werden.
+Im Folgenden werden zunächst die Grundlagen zur Biologie, zum Messverfahren und Rauschen erläutert. Anschließend soll im Abschnitt \nameref{sec:hinter} auf die Quelllokalisation und die dafür benötigten Modelle eingegangen werden. Im Abschnitt \nameref{sec:methodik} ab Seite \pageref{sec:methodik} wird dann beschrieben wie die formulierte These geprüft wurde. Das Ergebnisse wird dann im Abschnitt \nameref{sec:ergebnisse} und \nameref{sec:diskussion} ab den Seiten \pageref{sec:ergebnisse} bzw. \pageref{sec:diskussion} vorgestellt und diskutiert werden.
 
 % #################################
 % ##### GRUNDLAGEN BIOLOGISCH #####
@@ -153,18 +154,18 @@ Im Folgenden werden zunächst die Grundlagen zur Biologie, zum Messverfahren und
 \subsubsection{Kopf- und Gehirnstruktur}
 \label{sec:head-struct}
 
-Der Kopf als Träger des Gehirns besteht aus mehreren Komponenten, deren Begriffe im Folgenden regelmäßig verwenden werden. Die Kopfoberfläche (head shape) bzw. Kopfhaut (scalp) ist der äußerste Bereich. An diesem liegen bei EEG- und MEG-Messungen die Sensoren zur Messung an (bzw. kurz darüber). Unterhalb der Kopfoberfläche befindet sich der Schädelknochen, welcher das darin liegende Gehirn schützt. Das Gehirn wiederum ist von einer Bindegewebsschichten umgeben, der Hirnhaut. Die Gehirnmasse selbst, lässt sich grob in zwei Bereiche einteilen, die graue Substanz und die weiße Substanz. Während die graue Substanz eine hohe Dichte an Zellkörpern und eher weniger myelinisierte Axone enthält, enthält die weiße Substanz entsprechend viele lange und myelinisierte Axone und eher weniger Zellkörper. Im Gehirn liegt die graue Substanz eher in äußeren Bereichen und umhüllt die weiße Substanz. Die beiden groben Typen der Gehirnmasse weisen unterschiedliche messtechnische Eigenschaften auf, so ist die Leitfähigkeit der grauen Substanz isotrop, während die der weißen Substanz anisotrop ist \parencite{logothetis2007vivo}.
+Der Kopf als Träger des Gehirns besteht aus mehreren Komponenten, welche zum messtechnischen Verständnis von großer Relevanz sind. Die Kopfoberfläche (head shape) bzw. Kopfhaut (scalp) ist der äußerste Bereich. An diesem liegen bei EEG- und MEG-Messungen die Sensoren zur Messung an (bzw. ca. $2\,cm$ darüber). Unterhalb der Kopfoberfläche befindet sich der Schädelknochen (skull), welcher das darin liegende Gehirn schützt. Das Gehirn wiederum ist von einer Bindegewebsschichten umgeben, der Hirnhaut. Die Gehirnmasse selbst, lässt sich grob in zwei Bereiche einteilen, die graue Substanz und die weiße Substanz. Während die graue Substanz eine hohe Dichte an Zellkörpern und eher weniger myelinisierte Axone enthält, enthält die weiße Substanz entsprechend viele lange und myelinisierte Axone und eher weniger Zellkörper. Im Gehirn liegt die graue Substanz eher in äußeren Bereichen und umhüllt die weiße Substanz. Die beiden groben Typen der Gehirnmasse weisen unterschiedliche messtechnische Eigenschaften auf, so ist die Leitfähigkeit der grauen Substanz isotrop, während die der weißen Substanz anisotrop ist \parencite{logothetis2007vivo}.
 
 \subsubsection{Elektrische und magnetische Eigenschaften der Nervenzellen}
 
-Alle Nervenzellen des Körpers kommunizieren durch kleine elektrische Ströme. Dabei können zwei unterschiedliche Arten der elektrischen Aktivität unterschieden werden \parencite{da1998biophysical}. Die \emph{postsynaptischen Potentiale} und die u.U. daraus resultierenden \emph{Aktionspotentiale}. Im Gleichgewicht besitzen Nervenzellen ein \emph{Ruhepotential} im Bereich von ca. $-70\,mV$. Graduelle lokale Änderungen des Membranpotentials werden als \emph{exzitatorisches postsynaptisches Potential} (EPSP) bezeichnet, wenn sie zur Auslösung eines Aktionspotentials beitragen. \emph{Inhibitorische postsynaptisches Potential} (IPSP) bezeichnen im Gegensatz graduelle Potentialveränderungen, die der Auslösung eines Aktionspotentials entgegenwirken. Wird ein bestimmter Potential-Schwellwert, der bei ca. $-55\,mV$ liegt, überschritten, so kommt es zu einer beschleunigten Ausschüttung von Ionen, welches zu einer starken Potential-Verschiebung auf bis zu $+20\,mV$ bis $+30\,mV$ führt. Das Aktionspotential dauert jedoch nur ca. $1\,ms$ bis $2\,ms$ und wird während seiner Ausbreitung über mehrere Nervenzellen schnell wieder abgedämpft. Da zusätzlich die Wahrscheinlichkeit für eine präzise synchrone Ausbreitung sehr gering ist, ist die Messung der elektrischen und magnetischen Felder eines Aktionspotential sehr unwahrscheinlich. Was hingegen gut erfasst werden kann sind die postsynaptischen Potentiale. Die Potentiale breiten sich - verglichen mit dem Aktionspotential - langsamer und gleichmäßiger über größere Nervenzellen-Strukturen aus. Die von ihnen verursachten elektrischen und magnetischen Felder können an der Oberfläche, d.h. außerhalb der Kopfhaut, gemessen werden.
+Alle Nervenzellen des Körpers kommunizieren durch kleine elektrische Ströme. Dabei können zwei unterschiedliche Arten der elektrischen Aktivität unterschieden werden \parencite{da1998biophysical}. Die \emph{postsynaptischen Potentiale} und die u.U. daraus resultierenden \emph{Aktionspotentiale}. Im Gleichgewicht besitzen Nervenzellen ein \emph{Ruhepotential} im Bereich von ca. $-70\,mV$. Graduelle lokale Änderungen des Membranpotentials werden als \emph{exzitatorisches postsynaptisches Potential} (EPSP) bezeichnet, wenn sie zur Auslösung eines Aktionspotentials beitragen. \emph{Inhibitorische postsynaptisches Potential} (IPSP) bezeichnen im Gegensatz graduelle Potentialveränderungen, die der Auslösung eines Aktionspotentials entgegenwirken. Wird an der Zellmembran ein bestimmter Potentialschwellwert, der bei ca. $-55\,mV$ liegt, überschritten, so kommt es zu einer beschleunigten Ausschüttung von Ionen. Der in Folge auftretende Ionenstrom resultiert in einer starken Potentialverschiebung auf bis zu $+20\,mV$ bis $+30\,mV$ führt. Das Aktionspotential dauert jedoch nur ca. $1$-$2\,ms$ und wird während seiner Ausbreitung über mehrere Nervenzellen schnell wieder abgedämpft. Da zusätzlich die Wahrscheinlichkeit für eine präzise synchrone Ausbreitung sehr gering ist, ist die Messung der elektrischen und magnetischen Felder eines Aktionspotential sehr unwahrscheinlich. Was hingegen gut erfasst werden kann sind die postsynaptischen Potentiale, welche die Ursache für ein Aktionspotential bilden können. Die Potentiale breiten sich - verglichen mit dem Aktionspotential - langsamer und gleichmäßiger über größere Nervenzellen-Strukturen aus. Die von ihnen verursachten elektrischen und magnetischen Felder können an der Oberfläche, d.h. außerhalb der Kopfhaut, gemessen werden.
 
 \subsubsection{ERP und ERF}
 \label{sec:erf}
 
-Das \emph{event-related potential} (Ereigniskorreliertes Potential, ERP) bezeichnet ein elektrisches Potential, welches im Gehirn auftritt und mit einem EEG (Elektroenzephalogramm) detektiert werden kann \parencite{luck2014introduction}. Es tritt leicht verzögert mit einem bestimmten Ereignis in der Umwelt auf. Da im MEG (Magnetenzephalogramm) im Gegensatz zum EEG keine Potentiale, sondern nur Felder und deren Verteilungen und Intensität gemessen werden kann, wird dort der Begriff des \emph{event-related field} (Ereigniskorreliertes Feld, ERF) eingeführt \parencite{brown1999neurocognition}.
+Das \emph{ereigniskorrelierte Potential} (event-related potential, ERP) bezeichnet ein elektrisches Potential, welches im Gehirn auftritt und mit einem EEG (Elektroenzephalogramm) detektiert werden kann \parencite{luck2014introduction}. Es tritt leicht verzögert mit einem bestimmten Ereignis in der Umwelt auf. Da im MEG (Magnetenzephalogramm) im Gegensatz zum EEG keine Potentiale, sondern nur Felder und deren Verteilungen und Intensität gemessen werden kann, wird dort der Begriff des \emph{ereigniskorrelierten Feldes} (event-related field, ERF) eingeführt \parencite{brown1999neurocognition}.
 
-Ein klassisches Beispiel eines ERP bzw. ERF ist die MMN, die so genannte \emph{mismatch negativity}. Das Ereignis ist in diesem Fall die Änderung eines zuvor geregelten Stimulus. Werden z.B. hinreichend viele Töne gleicher Höhe, Länge und Lautstärke am gleichen Ohr abgespielt und folgt dann eine Änderung des Stimulus, z.B. andere Höhe, Länge, Lautstärke oder eine Präsentation am anderen Ohr, so folgt auf dieses Ereignis eine Änderung des elektrischen Potentials im Gehirn bzw. eine Änderung des magnetischen Feldes im Gehirn im Abstand von ca. $150-250\,ms$ zum Stimulus. Das experimentelle Design wird als \emph{Oddball-Paradigma} bezeichnet \parencite{squires1975two,naatanen1989event,paavilainen1991right}. Das Ereignis (``anderer Ton'') ist korreliert mit dem Auftreten eines Potentials (ERP) bzw. eines Feldes (ERF) im Gehirn, der MMN \parencite{naatanen1978early} oder MMNm als äquivalent magnetischer Messungen.
+Ein klassisches Beispiel eines ERP bzw. ERF ist die MMN, die so genannte \emph{Mismatch Negativity}. Das Ereignis ist in diesem Fall die Änderung eines zuvor geregelten Stimulus. Werden z.B. hinreichend viele Töne gleicher Höhe, Länge und Lautstärke am gleichen Ohr abgespielt und folgt dann eine Änderung des Stimulus, z.B. andere Höhe, Länge, Lautstärke oder eine Präsentation am anderen Ohr, so folgt auf dieses Ereignis eine Änderung des elektrischen Potentials im Gehirn bzw. eine Änderung des magnetischen Feldes im Gehirn im Abstand von ca. $150$-$250\,ms$ zum Stimulus. Das experimentelle Design, welches eine einfache Abweichung unter vielen gleichen Stimuli  vorsieht, wird als \emph{Oddball-Paradigma} bezeichnet \parencite{squires1975two,naatanen1989event,paavilainen1991right}. Das Ereignis (\glqq anderer Ton\grqq) ist korreliert mit dem Auftreten eines Potentials (ERP) bzw. eines Feldes (ERF) im Gehirn, der MMN \parencite{naatanen1978early} oder MMNm als äquivalent magnetischer Messungen.
 
 \subsubsection{Auditorischer Kortex}
 \label{sec:audicort}
@@ -190,9 +191,9 @@ Ein klassisches Beispiel eines ERP bzw. ERF ist die MMN, die so genannte \emph{m
   \label{img:audi}
 \end{figure}
 
-Der auditorische Kortex ist ein bestimmter Bereich des Gehirns. Er befindet sich an den Brodmann Arealen 41 und 42, dargestellt in Abbildung \ref{img:audicort}. Der auditorische Kortex ist Teil des Gyrus temporalis superior (STG, sieh Abbildung \ref{img:gyrustemp}), welcher bei jeglicher auditiver Stimulation aktiviert wird \parencite{binder1994functional}. Im auditorischen Kortex erfolgt dann das Bewusstwerden akustischer Signale \parencite{jaaskelainen2004human}.
+Der auditorische Kortex ist ein bestimmter Bereich des Gehirns. Er befindet sich an den Brodmann Arealen 41 und 42, dargestellt in Abbildung~\ref{img:audicort}. Der auditorische Kortex ist Teil des Gyrus temporalis superior~(STG) in Abbildung~\ref{img:gyrustemp}, welcher bei jeglicher auditiver Stimulation aktiviert wird \parencite{binder1994functional}. Im auditorischen Kortex erfolgt dann das Bewusstwerden akustischer Signale \parencite{jaaskelainen2004human}.
 
-In den vorliegenden Daten handelt es sich um ein auditives Experiment, weshalb die ERF (v.a. die MMN) im auditorischen Kortex erwartet werden.
+In den vorliegenden Daten handelt es sich um ein auditives Experiment, weshalb die ERF bzw. konkret die MMNm im auditorischen Kortex erwartet werden.
 
 % ###########################
 % ##### GRUNDLAGEN MEG  #####
@@ -200,30 +201,30 @@ In den vorliegenden Daten handelt es sich um ein auditives Experiment, weshalb d
 
 \subsection{Grundlagen der Magnetenzephalographie}
 
-Das MEG (Magnetenzephalographie) misst die magnetischen Aktivität des Gehirns. Es ist das zweitjüngste Verfahren zur Messung der Gehirnströme. Nachdem in den 1920er Jahren das EEG durch Hans Berger entwickelt und 1929 erstmals publiziert wurde \parencite{berger1929elektrenkephalogramm}, folgte das MEG erst 1968 \parencite{cohen1968magnetoencephalography}, war damit aber noch vor anderen Verfahren zur Vermessung des Gehirns, wie dem CT (Computertomographie) oder dem MRT (Magnet-Resonanz Tomographie). Trotzdem ist das MEG auf Grund seiner hohen Empfindlichkeit, seiner damit verbundenen hohen Rauschanfälligkeit und ebenso auf Grund seines noch unausgeschöpften Lokalisations-Potentials auch heute noch ein Verfahren, welches sich in einem kontinuierlichen Optimierungsprozess befindet.
+Das MEG (Magnetenzephalographie) misst die magnetischen Aktivität des Gehirns. Es ist das zweitjüngste Verfahren zur Messung der Gehirnströme. Nachdem in den 1920er Jahren das EEG durch Hans Berger entwickelt und 1929 erstmals publiziert wurde \parencite{berger1929elektrenkephalogramm}, folgte das MEG erst 1968 \parencite{cohen1968magnetoencephalography}, war damit aber noch vor anderen Verfahren zur Vermessung des Gehirns, wie dem CT (Computertomographie) oder dem MRT (Magnet-Resonanz Tomographie). Trotzdem ist das MEG auf Grund seiner hohen Empfindlichkeit, seiner damit verbundenen hohen Rauschanfälligkeit und ebenso auf Grund seines noch unausgeschöpften Lokalisationspotentials auch heute noch ein Verfahren welches sich in einem kontinuierlichen Optimierungsprozess befindet.
 
-Da die Kosten eines MEG deutlich über denen eines EEG liegen, stellt sich die berechtigte Frage warum überhaupt die magnetische Komponente der Nervenzellen-Aktivität gemessen wird, zumal Ergebnisse aus EEG-Messungen mit denen aus MEG-Messungen weitestgehend vergleichbar sind \parencite{huotilainen1998combined}. Zusätzlich lassen sich mit MEG nur die tangentialen Komponenten der Aktivität messen, während EEG sowohl tangentiale, als auch radiale Aktivität erfassen kann. Die Vorteile des MEG liegen jedoch in einer geringeren Störung der magnetischen Signale durch den Schädel und die Kopfhaut, und einer damit verbundenen höheren räumliche Auflösung. Während das EEG also mehr Aktivität erfassen kann, ist das MEG präziser in der Erfassung und ermöglicht eine genauere Lokalisation. Zusätzlich sind die zeitliche Auflösung unterhalb einer Millisekunde $< 10^{-3}\,s$, die hohe Anzahl der Kanäle und die genaue Kenntnis über die Position der Kanäle (auf Grund des starren MEG-Helms) wichtige Vorteile des MEG zur Lokalisation der Quellen  \parencite{malmivuo2012comparison}.
+Da die Kosten eines MEG deutlich über denen eines EEG liegen, stellt sich die berechtigte Frage warum überhaupt die magnetische Komponente der Nervenzellen-Aktivität gemessen wird, zumal Ergebnisse aus EEG-Messungen mit denen aus MEG-Messungen weitestgehend vergleichbar sind \parencite{huotilainen1998combined}. Zusätzlich lassen sich mit MEG nur die tangentialen Komponenten der Aktivität messen, während EEG sowohl tangentiale, als auch radiale Aktivität erfassen kann. Die Vorteile des MEG liegen jedoch in einer geringeren Störung der magnetischen Signale durch den Schädel und die Kopfhaut, und einer damit verbundenen höheren räumliche Auflösung. Während das EEG also mehr Aktivität erfassen kann, ist das MEG präziser in der Erfassung und ermöglicht eine genauere Lokalisation. Zusätzlich sind die zeitliche Auflösung unterhalb einer Millisekunde~$\Delta t < 10^{-3}\,s$, die hohe Anzahl der Kanäle und die genaue Kenntnis über die Position der Kanäle (auf Grund des starren MEG-Helms) wichtige Vorteile des MEG zur Lokalisation der Quellen  \parencite{malmivuo2012comparison}.
 
 \subsubsection{SQUIDs}
 \label{sec:squids}
 
 Technische Grundlage der Magnetenzephalographie bilden SQUIDs (Superconducting Quantum Interference Device, dt.: Supraleitende Quanteninterferenzeinheit), welche 1964 in den Ford Research Labs entwickelt wurden \parencite{jaklevic1964quantum}. Sie basieren auf dem Josephson Effekt, der bereits 1962 von Brian D. Josephson vorhergesagt wurde \parencite{josephson1962possible}. Josephson sagte voraus, dass zwei Supraleiter, welche durch eine wenige Nanometer dicke nicht-supraleitende Schicht getrennt werden (Josephson-Kontakt) und mit einem geringen elektrischen Strom durchflossen werden, von Cooper-Paaren derart durchtunnelt werden können, dass sich der Josphson-Kontakt wie ein unterbrechungsfreier Supraleiter verhält. Die Cooper-Paare tunneln in dem Fall widerstandsfrei.
-Auf Grund der Cooper-Paare sind die Wellenfunktion zweier Elektronen gekoppelt (abhängig von der dicke der Schicht). Mit den Wellenfunktionen $\Psi_1$, $\Psi_2$ und den Hamilton-Operatoren $H_1$, $H_2$, sowie dem Kopplungskoeffizienten $T$ gilt:
+Auf Grund der Cooper-Paare sind die Wellenfunktion zweier Elektronen gekoppelt (abhängig von der Dicke der Schicht). Mit den Wellenfunktionen $\Psi_1$, $\Psi_2$ und den Hamilton-Operatoren $H_1$, $H_2$, sowie dem Kopplungskoeffizienten $T$ gilt:
 
 \begin{subequations}
 \label{eq:cooper}
-  \begin{equation} i\hbar \frac{\partial \Psi_1}{\partial t} = H \Psi_1 + T \Psi_2 \end{equation}
-   \begin{equation} i\hbar \frac{\partial \Psi_2}{\partial t} = H \Psi_2 + T \Psi_1 \end{equation}
+  \begin{equation} i\hbar \frac{\partial \Psi_1}{\partial t} = H \Psi_1 + T \Psi_2 \label{eq:cooper1}\end{equation}
+   \begin{equation} i\hbar \frac{\partial \Psi_2}{\partial t} = H \Psi_2 + T \Psi_1 \label{eq:cooper2}\end{equation}
 \end{subequations}
 
-Die erste Josphson-Gleichung beschreibt die Abhängigkeit des Stroms im Supraleiter $I_S$ vom kritischen Strom $I_0$, wobei $\Delta \phi$ die Phasendifferenz zwischen den zwei Wellengleichungen \ref{eq:cooper} bezeichnet.
+Die erste Josphson-Gleichung (Gleichung \ref{eq:joseph}) beschreibt die Abhängigkeit des Stroms im Supraleiter $I_S$ vom kritischen Strom $I_0$, wobei $\Delta \phi$ die Phasendifferenz zwischen den zwei Wellengleichungen \ref{eq:cooper1} und \ref{eq:cooper2} bezeichnet.
 
 \begin{equation}
 \label{eq:joseph}
 I_S = I_0\,\sin{\Delta \varphi}
 \end{equation}
 
-Gleichung \ref{eq:joseph} gilt jedoch nur für Prozesse ohne Magnetfeld. Sobald ein Magnetfeld anliegt, muss die Gleichung korrigiert werden. Es liegt eine Abhängigkeit des Strom im Supraleiter $I_S$ vom anliegenden Magnetfeld $\vec{B}$ bzw. vom zugehörigen magnetischen Vektorpotential $\vec{A}$ vor:
+Die Josphson-Gleichung gilt jedoch nur für Prozesse ohne Magnetfeld. Sobald ein Magnetfeld anliegt, muss die Gleichung korrigiert werden. Es liegt eine Abhängigkeit des Strom im Supraleiter $I_S$ vom anliegenden Magnetfeld $\vec{B}$ bzw. vom zugehörigen magnetischen Vektorpotential $\vec{A}$ vor:
 
 \begin{equation}
 \label{eq:josephfeld}
@@ -253,32 +254,32 @@ Die magnetische Flussdichte der Gehirnaktivität liegt im Bereich von wenigen $1
   \label{img:flux-trafo}
 \end{figure}
 
-Um die Signale zu erfassen wird ein \emph{Flux-Transformator} eingesetzt, welcher das Signal an einen SQUID weiterleitet. Der Flux-Transormator wird so nah wie möglich an den Kopf der Versuchsperson gebracht (im Bereich von ca. $2\,cm$). Ein vom Gehirn der Versuchsperson erzeugtes magnetisches Feld erzeugt an einer Aufnahmespule einen Strom. Dieser wird über eine Koppelspule wieder in ein äquivalentes Magnetfeld zurückgeführt. Die Koppelspule befindet sich in unmittelbarer Nähe des SQUID, an dem das Signal letztlich messbar wird. Der Sachverhalt ist in Abbildung \ref{img:flux-trafo} dargestellt. Der Flux-Transformator wird in zwei verschiedenen Varianten verwendet, dem Magnetometer und dem Gradiometer.
+Um die Signale zu erfassen wird ein \emph{Flux-Transformator} eingesetzt, welcher das Signal an einen SQUID weiterleitet. Der Flux-Transormator wird so nah wie möglich an den Kopf der Versuchsperson gebracht (im Bereich von ca.~$2\,cm$). Ein vom Gehirn der Versuchsperson erzeugtes magnetisches Feld erzeugt an einer Aufnahmespule einen Strom. Dieser wird über eine Koppelspule wieder in ein äquivalentes Magnetfeld zurückgeführt. Die Koppelspule befindet sich in unmittelbarer Nähe des SQUID an dem das Signal letztlich messbar wird. Der Sachverhalt ist in Abbildung~\ref{img:flux-trafo} dargestellt. Der Flux-Transformator wird in zwei verschiedenen Varianten verwendet, dem Magnetometer und dem Gradiometer.
 
 \subsubsection{Magnetometer und Gradiometer}
 
 Magnetometer besitzen nur einen Ring an der Aufnahmespule des Flux-Transformators, sie messen den absoluten Wert der magnetischen Flussdichte in radiale Richtung $B_z$ in $T$. Neben der hohen Sensitivität gegenüber nahen Quellen, wie magnetische Aktivität im Gehirn, erfassen Magnetometer auch Signale aus weiter Entfernung und damit ungewünschte Aktivität aus der Umgebung \parencite{hansen2010meg}. Beispielsweise erreicht ein fahrendes Auto in $2\,km$ Entfernung eine Signalstärke, die mit dem der Gehirnaktivität äquivalent ist \parencite{weinstock2012squid}.
 
-Gradiometer besitzen zwei Aufnahmespule am Flux-Transformator. Die zwei Ringe eines Gradiometers können axial oder planar angeordnet sein. Die zwei Spule messen einen räumlichen Gradienten. Der Gradient der magnetische Flussdichte $G_x = dB_z/dx$ bzw. $G_y = dB_z/dy$ wird in $T/m$ angegeben. Die Annahme ist, dass weit entfernte Quellen ein relativ homogenes Feld erzeugen. Da die zwei Aufnahmespulen des Gradiometers mit einem entgegengesetzten Strom durchflossen werden und die gemessenen magnetischen Flussdichten voneinander subtrahiert werden, verschwindet der Gradient für weit entfernte Quellen im Idealfall, so dass nur nahe Quellen erfasst werden \parencite{hansen2010meg}.
+Gradiometer besitzen zwei entgegengesetzt angebrachte Ringe an der Aufnahmespule des Flux-Transformators. Die zwei Ringe eines Gradiometers können axial oder planar angeordnet sein. Die zwei Ringe messen einen räumlichen Gradienten. Der Gradient der magnetische Flussdichte $G_x = dB_z/dx$ bzw. $G_y = dB_z/dy$ wird in $T/m$ angegeben. Die Annahme ist, dass weit entfernte Quellen ein relativ homogenes Feld erzeugen. Da die zwei Aufnahmespulen des Gradiometers mit einem entgegengesetzten Strom durchflossen werden und die gemessenen magnetischen Flussdichten voneinander subtrahiert werden, verschwindet der Gradient für weit entfernte Quellen im Idealfall, so dass nur nahe Quellen erfasst werden \parencite{hansen2010meg}.
 
 Im Falle des verwendeten MEG-Systems (\emph{Vectorview by Elekta-Neuromag Oy, Helsinki}) enthält jeder der 102 Sensoren drei Kanäle mit einem Magnetometer und zwei Gradiometern, die je in $x$- und $y$-Richtung ausgerichtet sind.
 
 \subsection{Artefakte und Rauschen}
 
-Wie bereits im Abschnitt \nameref{sec:squids} auf Seite \pageref{sec:squids} deutlich wurde, ist das MEG ein äußerst empfindliches Messinstrument, welche im Bereich einzelner Flussquanten $\Phi_0$ messen kann. Ziel ist es nur die Gehirnsignale zur weiteren Berechnung zu verwenden und alle anderen Störfaktoren auszuschließen. Dafür kann eine Reihe von Maßnahmen getroffen und entsprechende Software eingesetzt werden, die im Folgenden erläutert wird.
+Wie bereits im Abschnitt \nameref{sec:squids} auf Seite \pageref{sec:squids} deutlich wurde, ist das MEG ein äußerst empfindliches Messinstrument, welches im Bereich einzelner Flussquanten $\Phi_0$ messen kann. Ziel ist es nur die Gehirnsignale zur weiteren Berechnung zu verwenden und alle anderen Störfaktoren auszuschließen. Dafür kann eine Reihe von Maßnahmen getroffen und entsprechende Software eingesetzt werden, die im Folgenden erläutert wird.
 
 \subsubsection{Allgemeine Rauschunterdrückung}
 \label{sec:rauschen}
 
 Prinzipiell können unterschiedliche Artefakte und Rauschfaktoren ausgemacht werden. Grob können drei Bereiche klassifiziert werden: (1) Umwelt, (2) Versuchsperson und (3) Messtechnik.
 
-Am besten zu beeinflussen ist der Faktor der Umwelt (1). Innerhalb von Städten ist beispielsweise viel bewegtes Metall (z.B. Autos, Straßenbahnen), welches zu schwachen, aber deutlich messbaren Magnetfeldern führt. Zusätzliche treten viele periodische elektrische und magnetische Felder auf (z.B. Netzkabel, Oberleitungen). All diese Faktoren können durch eine entsprechende Standortwahl deutlich verringert werden. Die verbleibenden Faktoren können durch ein stark geschirmten Messraum weiter verringert werden. Verbleibende Faktoren sind meist trotzdem deutlich in den Messungen sichtbar (z.B. Netzkabel im Gebäude).
+Am besten zu beeinflussen ist der Faktor der Umwelt (1). Innerhalb von Städten ist beispielsweise viel bewegtes Metall (z.B. Autos, Straßenbahnen), welches zu allgemein schwachen, aber im MEG deutlich messbaren Magnetfeldern führt. Zusätzliche treten viele periodische elektrische und magnetische Felder auf (z.B. Netzkabel, Oberleitungen). All diese Faktoren können durch eine entsprechende Standortwahl deutlich verringert werden. Die verbleibenden Faktoren können durch ein stark geschirmten Messraum weiter verringert werden. Verbleibende Faktoren sind meist trotzdem deutlich in den Messungen sichtbar (z.B. Netzkabel im Gebäude).
 
 Auch die Versuchsperson (2) hat einen großen Einfluss auf die Messung. Bewegung der Augen, Herzschläge und Kopfbewegungen, allgemein jede Kontraktion eines Muskels, führt zu deutlich messbaren mehr oder weniger periodischen Artefakten. Durch ein gutes Versuchsdesign und eine professionelle Einweisung können einige dieser Faktoren verringert werden, letztlich ist die Disziplin der Versuchsperson jedoch der entscheidende Faktor.
 
 Letztlich hat auch die Messtechnik (3) in Form klassischen Rauschens einen entscheidenden Einfluss, maßgeblich durch Sensorrauschen.
 
-\textcite{vigario1998independent} und \textcite{vigario2000independent} fassten mit Hilfe einer ICA (Independent Component Analysis) die wichtigsten Faktoren für Rauschen und Artefakte bei MEG-Messungen zusammen. Es ergaben sich folgende allgemeine Faktoren für Artefakte der Versuchsperson (2):
+\textcite{vigario1998independent} und \textcite{vigario2000independent} fassten mit Hilfe einer ICA (Independent Component Analysis) die wichtigsten Faktoren für Rauschen und Artefakte bei MEG-Messungen zusammen. Es ergaben sich folgende allgemeine Faktoren für Artefakte der Versuchsperson~(2):
 
 \begin{compactitem}
 \item Gebiss-Muskulatur
@@ -290,11 +291,11 @@ Letztlich hat auch die Messtechnik (3) in Form klassischen Rauschens einen entsc
 \subsubsection{Softwareseitige Rauschunterdrückung}
 \label{sec:maxfilter}
 
-Nachdem das Rauschen bereits während der Messung versucht wird so gut wie Möglich zu unterdrücken, kann auch auf Softwareebene nachgearbeitet werden. Eine Möglichkeit bietet die \emph{Signal-space projection} (SSP), für die eine Leerraummessung notwendig ist. Eine andere rechenintensivere Möglichkeit bietet die proprietäre Software Maxfilter von Neuromag (siehe auch Abschnitt \nameref{sec:software} auf Seite \pageref{sec:software}), die \emph{Signal-Space Separation} (SSS) zur Trennung äußerer und innerer Quellen anwendet. Mit \emph{Movement Correction} (MC) können zusätzlich die Bewegungen der Versuchsperson nachträglich korrigiert werden.
+Nachdem das Rauschen bereits während der Messung versucht wird so gut wie Möglich zu unterdrücken, kann auch auf Softwareebene nachgearbeitet werden. Eine Möglichkeit bietet die \emph{Signal-space projection}~(SSP), für die eine Leerraummessung notwendig ist. Eine andere rechenintensivere Möglichkeit bietet die proprietäre Software MaxFilter von Neuromag (siehe auch Abschnitt \nameref{sec:software} auf Seite \pageref{sec:software}), die \emph{Signal-Space Separation}~(SSS) zur Trennung äußerer und innerer Quellen anwendet. Mit \emph{Movement Correction}~(MC) können zusätzlich die Bewegungen der Versuchsperson nachträglich korrigiert werden.
 
-Der Signalraum (signal-space) ist ein $n$-dimensionaler Raum, wobei $n$ der Anzahl der Kanäle entspricht. Ein Vektor bzw. ein Punkt im Signalraum entspricht einem vollständigen Signal zu einem Zeitpunkt. Das räumliche Muster des Signals entspricht der Richtung des Vektors, die Intensität des Signals entspricht dem Betrag des Vektors \parencite{hansen2010meg}.
+Der Signalraum (signal-space) ist ein $n$-dimensionaler Raum, wobei~$n$ der Anzahl der Kanäle entspricht. Ein Vektor bzw. ein Punkt im Signalraum entspricht einem vollständigen Signal zu einem Zeitpunkt. Das räumliche Muster des Signals entspricht der Richtung des Vektors, die Intensität des Signals entspricht dem Betrag des Vektors \parencite{hansen2010meg}.
 
-SSP wurde Ende der 90er Jahre von \textcite{uusitalo1997signal} und \textcite{parkkonen1999interference} entwickelt. Die Methode basiert auf dem Vorliegen einer Leerraummessung. In einer kurzen Messung werden die üblichen magnetischen Aktivitäten im Messraum aufgezeichnet, ohne dass eine Versuchsperson anwesend ist. Das Ergebnis entspricht den Umwelt-Artefakten, die als zeitlich konstant angesehen werden und zu jeder späteren Messung vorhanden sind. Wird eine Messung mit Versuchsperson durchgeführt, so bildet die Leerraummessung einen Unterraum des gewöhnlichen Signalraums. Durch eine orthogonale Projektion des Signalraums auf den Unterraum der Leerraumessung, ergibt sich ein weiterer Unterraum, der die Signale ohne die Umwelteinflüsse enthalten sollte. Jegliche äußeren Artefakte werden damit entfernt oder zumindest drastisch reduziert.
+SSP wurde Ende der 90er Jahre von \textcite{uusitalo1997signal} und \textcite{parkkonen1999interference} entwickelt. Die Methode basiert auf dem Vorliegen einer Leerraummessung. In einer kurzen Messung werden die üblichen magnetischen Aktivitäten im Messraum aufgezeichnet, ohne dass eine Versuchsperson anwesend ist. Das Ergebnis entspricht den Umweltartefakten, die als zeitlich konstant angenommen werden und zu jeder späteren Messung vorhanden sind. Wird eine Messung mit Versuchsperson durchgeführt, so bildet die Leerraummessung einen Unterraum des gewöhnlichen Signalraums. Durch eine orthogonale Projektion des Signalraums auf den Unterraum der Leerraumessung, ergibt sich ein weiterer Unterraum, der die Signale ohne die Umwelteinflüsse enthalten sollte. Jegliche äußeren Artefakte werden damit entfernt oder zumindest drastisch reduziert.
 
 SSS wurde wenige Jahr später von \textcite{taulu2004suppression} und \textcite{taulu2005presentation} entwickelt. Dabei wird das gemessene Magnetfeld in einer Reihenentwicklung beschrieben. Jedes harmonische Potential $V(\mx{r})$ kann beschrieben werden mit:
 
@@ -303,7 +304,7 @@ V(\mx{r}) = \sum_{l=1}^\infty \sum_{m=-l}^l \alpha_{lm} \frac{Y_{lm}(\Theta, \va
 \label{eq:sss-pot}
 \end{equation}
 
-Die Entwicklung in der ersten Summe ist im Ursprung singulär, in der zweiten Summe divergiert sie für unendliches $l$. $Y_{lm}$ ist die normalisierte harmonische Funktion mit den sphärischen Koordinaten $\Theta, \varphi$ und $r$:
+Die Entwicklung in der ersten Summe ist im Ursprung singulär, in der zweiten Summe divergiert sie für unendliches~$l$. $Y_{lm}$~ist die normalisierte harmonische Funktion mit den sphärischen Koordinaten~$\Theta, \varphi$ und~$r$:
 
 \begin{equation}
 Y_{lm}(\Theta, \varphi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!}}\, P_{lm}(\cos{\Theta})\,e^{im\varphi}
@@ -316,7 +317,7 @@ Wobei $P_{lm}(\cos{\Theta})$ Legendre-Polynome sind. Das magnetische Potential k
 \label{eq:sss-magpot}
 \end{equation}
 
-Die Vektoren $\mx{a}_{lm}$ und $\mx{b}_{lm}$ entsprechen den Termen $Y_{lm}(\Theta, \varphi)/r^{l+1}$ und $r^l Y_{lm}(\Theta, \varphi)$ aus Gleichung \ref{eq:sss-pot}. $\Phi$~kann als Signalvektor interpretiert werden. Bezeichne $n$ weiterhin die Anzahl der Kanäle, dann bilden $n$ linear unabhängige Signalvektoren $\Phi$ den Signalraum. Die SSS-Methode basiert auf diesem Koordinatensystem. Es gilt:
+Die Vektoren $\mx{a}_{lm}$ und $\mx{b}_{lm}$ entsprechen den Termen $Y_{lm}(\Theta, \varphi)/r^{l+1}$ und $r^l Y_{lm}(\Theta, \varphi)$ aus Gleichung~\ref{eq:sss-pot}. $\Phi$~kann als Signalvektor interpretiert werden. Bezeichne~$n$ weiterhin die Anzahl der Kanäle, dann bilden~$n$ linear unabhängige Signalvektoren~$\Phi$ den Signalraum. Die SSS-Methode basiert auf diesem Koordinatensystem. Es gilt:
 
 \begin{equation}
 \Phi = \mx{S}\,\mx{x} = \left( \mx{S}_{\text{innen}}, \mx{S}_{\text{außen}} \right) \left( \mx{x}_{\text{innen}} \atop \mx{x}_{\text{außen}} \right)
@@ -326,7 +327,7 @@ $\mx{S}_{\text{innen}}$ und $\mx{S}_{\text{außen}}$ werden mit den Basen $\mx{a
 
 \begin{compactitem}
 \item Vollständig unkorrelierte Signale, wie Artefakte an einzelnen Kanälen oder zufälliges Rauschen der Gerätekomponenten werden sowohl von Termen mit niedrigen, wie auch von Termen mit hohen Indizes beschrieben. Signale von realen Quellen sind in Termen mit hohen Indizes nicht mehr vertreten. Wird die Reihenentwicklung abgebrochen, sobald der Beitrag der realen Quellen nicht mehr relevant ist, kann ein Großteil des Rauschens und der Artefakte, welches auf messtechnischer Ebene entsteht, herausgefiltert werden.
-\item Man kann zeigen, dass externe Quellen außerhalb des MEG-Helms mit den Termen in der zweiten Summe von Gleichung \ref{eq:sss-magpot} zusammenhängen. Umgekehrt sind Signale, welche vom Inneren des MEG-Helmes (respektive vom Gehirn) stammen mit den Termen der ersten Summe verknüpft. Intuitiv wird dies in Gleichung \ref{eq:sss-pot} deutlich. Der erste Term enthält - wie bereits angesprochen - eine Singularität im Ursprung, die zweite Summe divergiert für unendlich große $l$. Durch einfaches Weglassen der zweiten Summe werden die Einflüsse der externen Quellen deutlich verringert.
+\item Man kann zeigen, dass externe Quellen außerhalb des MEG-Helms mit den Termen in der zweiten Summe von Gleichung~\ref{eq:sss-magpot} zusammenhängen. Umgekehrt sind Signale, welche vom Inneren des MEG-Helmes (respektive vom Gehirn) stammen mit den Termen der ersten Summe verknüpft. Intuitiv wird dies in Gleichung~\ref{eq:sss-pot} deutlich. Der erste Term enthält - wie bereits angesprochen - eine Singularität im Ursprung, die zweite Summe divergiert für unendlich große~$l$. Durch einfaches Weglassen der zweiten Summe werden die Einflüsse der externen Quellen deutlich verringert.
 \end{compactitem}
 
 Die SSS-Methode ist zwar deutlich rechenaufwändiger als SSP, führt jedoch im Gegenzug zu deutlich rauschfreieren Ergebnissen. Zusätzlich ist keine Leerraummessung notwendig. Die Methode kann durch die angesprochene Movement Correction (MC) erweitert werden. Im normalen SSS-Verfahren wird angenommen, dass die Versuchsperson während eines Durchgangs bzw. Blocks unbewegt sitzen bleibt. Die Kopfpositionen werden nur zwischen den Blöcken auf die Position zu Beginn der gesamten Messung korrigiert. Bei der zusätzlichen MC-Berechnung wird die Kopfposition für jeden Zeitpunkt korrigiert. Zur Erfassung der Kopfposition sind Spulen am Kopf angebracht, welche zu jedem Zeitpunkt die Position der Versuchsperson erfassen. Eine zusätzliche nachträgliche Korrektur der Kopfposition ist vor allem dann sinnvoll, wenn sich die Versuchsperson sehr viel bewegt hat. Die Notwendigkeit dieses Rechenschritts kann mit Bewegungsprofilen abgeschätzt werden.
@@ -337,6 +338,7 @@ Die SSS-Methode ist zwar deutlich rechenaufwändiger als SSP, führt jedoch im G
 
 \newpage
 \section{Hintergrund zur Quelllokalisation}
+\label{sec:hinter}
 
 Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhalb des Kopfes befindlichen Sensoren. Die entscheidende Frage ist also: Wie ist es möglich anhand der magnetischen Signale außerhalb des Gehirns auf die physiologischen Quellen innerhalb des Gehirns zu schließen? Um diese Frage zu beantworten wird zunächst etwas Theorie eingeführt und anschließend die Vorwärts-Lösung, sowie verschiedene Methoden der inversen Lösung erläutert.
 
@@ -650,6 +652,17 @@ Bei Versuchsperson \texttt{pa10} sollten auf Grund der Bewegungskorrektur deutli
 
 \subsection{Vorverarbeitung}
 
+\begin{figure}
+  \centering
+%  \captionsetup{justification=centering}
+  %
+  \setlength{\fboxsep}{5mm}
+  \fbox{\includegraphics[width=0.65\textwidth]{methodik/verarbeitung.eps}}
+  \vspace*{3mm}
+  \caption[Schema der Datenverarbeitung]{Schema der Datenverarbeitung. Berechnet wurde dieses Verfahren für 2~Versuchspersonen in jeweils 6~Bedingungen.}
+  \label{img:verfahren}
+\end{figure}
+
 Zusätzlich zum MEG-Datensatz mit den Aktivitätsdaten, wurde ein MRT-Datensatz verwendet, der einen einfachen Scan des Gehirns der Versuchspersonen enthielt. Für den MRT-Datensatz wurde zunächst eine Separation mittels Freesurfer durchgeführt. Aus den Daten wurde das BEM-Netz mit 10242 Punkten pro Hemisphäre berechnet. Da nur Aktivität am Außenbereich berechnet wird und nicht im Inneren des Gehirns ist die Berechnung des BEM-Netzes in diesem Fall ausreichen. Am Rand des Gehirns wird überwiegend graue Substanz mit isotroper Leitfähigkeit erwartet (siehe auch Abschnitt \nameref{sec:segment} auf Seite \pageref{sec:segment}).
 
 Die physiologischen Informationen des MRT-Datensatzes lagen im ???-Koordinatensystem vor. Dieses Koordinatensystem eine eine ???-Orientierung. Die jeweiligen Buchstaben bedeuten anterior/posterior (A/P), links/rechts (L/R) und superior/inferior (S/I). Die Aktivitätsdaten des MEG wurden im ???-Koordinatensystem gespeichert. Nach der Koregistrierung lag die Abweichung für \texttt{pa07} bei $???\,mm$, die Abweichung von \texttt{pa10} bei $???,mm$.
@@ -659,7 +672,7 @@ Jeder Durchgang (Trial) innerhalb der Blöcke, d.h. jedes Abspielen eines Tons u
 %%% Anzahl Trials: Gesamt, Standard, Deviant
 %%% Dauer eines Blocks
 
-Zusätzlich zur Auslese der gewünschten Trials, wurden alle Trials mit einem Hochpassfilter von $0,5\,Hz$ und einem Tiefpassfilter von $30\,Hz$ gefiltert. Um Trials in denen starke Störungen auftreten, wie heftige Augenbewegung oder starke Kopfbewegungen, zu verwerfen, wurde eine entsprechende Methode implementiert. In allen Daten sollten solche Signale gefunden werden, welche in den Magnetometern einen Ausschlag über $4\,pT$, in den Gradiometern über $200\,pT/m$ oder im EOG über $100\,\mu V$ aufwiesen. Sofern in einem Trial auch nur ein Datenpunkt mit einem höheren Wert auftrat, wurde der Trial verworfen. Von den ??? Deviants wurden bei \texttt{pa07} insgesamt ??? verworfen, bei \texttt{pa10} insgesamt ???. Die höhere Zahl der verworfenen Trials bei \texttt{pa10} ist auf die stärkere Kopfbewegung zurück zu führen.
+Zusätzlich zur Auslese der gewünschten Trials, wurden alle Trials mit einem Hochpassfilter von $0,5\,Hz$ und einem Tiefpassfilter von $30\,Hz$ gefiltert. Um Trials in denen starke Störungen auftreten, wie heftige Augenbewegung oder starke Kopfbewegungen, zu verwerfen, wurde eine entsprechende Methode implementiert. In allen Daten sollten solche Signale gefunden werden, welche in den Magnetometern einen Ausschlag über $4\,pT$, in den Gradiometern über $200\,pT/m$ oder im EOG über $100\,\mu V$ aufwiesen. Sofern in einem Trial auch nur ein Datenpunkt mit einem höheren Wert auftrat, wurde der Trial verworfen. Von den ??? Deviants wurden bei \texttt{pa07} insgesamt ??? verworfen, bei \texttt{pa10} insgesamt ???. Die höhere Zahl der verworfenen Trials bei \texttt{pa10} ist auf die stärkere Kopfbewegung zurück zu führen. Eine Rauschunterdrückung mittels SSP, welche in FieldTrip enthalten ist, wurde deaktiviert.
 
 %%% Verworfene Trials
 
@@ -667,7 +680,7 @@ Auf Grund der Annahme, dass die Versuchsperson ihren Kopf während eines Blocks 
 
 An dieser Stelle wurden die vorverarbeiteten Daten gespeichert und waren für die Quellrekonstruktion geeignet.
 
-\subsection{Vorwärtsmodell}
+\subsection{Quellrekonstruktion}
 \label{sec:lead-beam-mne}
 
 Zur Berechnung des Vorwärtsmodells, d.h. die Wirkung der Quellen auf die Sensoren wird die Leadfield-Matrix verwendet, die in Abschnitt \nameref{sec:lead} auf Seite \pageref{sec:lead} eingeführt wurde. Die Liedfield-Matrix wird für eine bestimmte Kopfposition bestimmt. Die Signale die aus dem Gehirn kommen müssen von der gleichen Quelle aus immer auch die gleichen Sensoren abgebildet werden, andernfalls kommt es in der späteren Berechnung zu Fehlern. Wird eine falsche Kopfposition angenommen, werden gemessene Signale an den Sensoren später einer falschen bzw. verschobenen Quelle zugeordnet.
@@ -680,14 +693,20 @@ Eine Möglichkeit ist die Korrektur der Kopfpositionen, ohne jedoch eine Rauschu
 
 Eine zweite Möglichkeit ist das Mitteln der rekonstruierten Quellaktivität. Für jeden Block kann eine eigene Leadfield-Matrix für das Vorwärtsmodell bestimmt werden. Nach anschließender Quelllokalisation können die Aktivitäten an den Quellen gemittelt werden. Der Rechenaufwand ist zwar etwas erhöht, da für jeden Block die Leadfield-Matrix bestimmt werden muss, gleichzeitig bietet dieses Verfahren jedoch den Vorteil, dass es auch auf die rauschunterdrückten Daten von Maxfilter (SSS, MC) angewendet werden kann. Auch hier kann in der Vorverarbeitung absichtlich auf eine Mittelung über die Blöcke verzichtet werden. Die Leadfield-Matrizen können dann auch hier blockweise bestimmt und die Quellaktivitäten am Ende gemittelt werden. Diese Möglichkeit bietet damit eine optimale Vergleichbarkeit zwischen der Verwendung von Rodaten und rauschunterdrückten Daten, unabhängig vom verwendeten Lokalisationsverfahren.
 
-Verwendet wurde auf Grund der besseren Vergleichbarkeit der Roh-, SSS- und MC-Daten die zweite Methode.
+Verwendet wurde auf Grund der besseren Vergleichbarkeit der Roh-, SSS- und MC-Daten die zweite Methode. Unabhängig vom Verfahren werden zunächst der Quellraum, der Volumenleiter und die vorverarbeiteten Aktivitätsdaten geladen. Wichtig ist, dass an dieser Stelle die Transformationsmatrix aus der Koregistrierung berücksichtigt wird, um die Koordinatensystem zu vereinen. Anschließend wird für jeden Block die Leadfield-Matrix berechnet. Abhängig von der Methode wird dann über \texttt{ft\_sourceanalysis} jeweils \texttt{beamformer\_lcmv} oder \texttt{minimumnormestimate} aufgerufen um die Quellen zu lokalisieren. Nach der Berechnung aller Blöcke für eine Versuchsperson für den jeweiligen Datensatz (Roh, SSS, MC) wurden die rekonstruierten Quellaktivitäten über alle Blöcke gemittelt und gespeichert. Der Auswertung der Daten erfolgte anschließend über die in Matlab enthaltene Funktion \texttt{plot} für die Zeitverläufe und die FieldTrip Methode \texttt{ft\_plot\_mesh} zur Darstellung der Aktivität.
 
-\subsection{Rückwärtsmodell}
+Die gesamte Verarbeitung der Daten ist in Abbildung \ref{img:verfahren} in einem Schema dargestellt. Das abgebildete Verfahren wurde für die 2 Versuchspersonen in den jeweils 6 Bedingungen berechnet.
 
+\subsection{Weitere Analysen}
 
+Zur Auswertung der Daten wurden weitere Analysen durchgeführt. Die mit Hilfe der Kopfspulen zur Bestimmung der Kopfposition aufgezeichneten Daten wurden in einem Zeitverlauf dargestellt, um das Bewegungsverhalten der Versuchspersonen einschätzen zu können. Eine Frequenzanalyse der Versuchsperson \texttt{pa07} in Block 1 wurde für Roh- und SSS-Daten durchgeführt um das Rauschverhalten abschätzen zu können. Mit dem selben Zweck wurde das Signal-Rausch-Verhältnis für beide Versuchspersonen und alle Blöcke bestimmt. Zuletzt wurde eine Anpassungsgüte der vorhergesagten Daten bestimmt (???).
+
+%%% Kommt das wirklich noch?
 
 \subsection{Vergleichbarkeit der Amplituden}
 \label{sec:amplitud}
+
+%%% Hier noch auf Antwort warten.
 
 % #######################
 % ##### ERGEBNISSE  #####
@@ -697,12 +716,40 @@ Verwendet wurde auf Grund der besseren Vergleichbarkeit der Roh-, SSS- und MC-Da
 \section{Ergebnisse}
 \label{sec:ergebnisse}
 
-Was kam raus?
+Im Ergebnis zeigte sich überraschend das Gegenteil. Während Minimum Norm Estimate überraschend gut mit Rohdaten umgehen konnte und das Rauschen vergleichsweise gut unterdrückte, war Beamformer nicht in der Lage die Rohdaten gut zu verarbeiten. Grundlegender noch hatte Beamformer aber auch generell Probleme mit einer korrekten Rekonsturktion der Daten. Auch unter Verwendung der gefilterten Daten (SSS und MC) zeigte Minimum Norm Estimate deutlich bessere Ergebnisse.
 
 \subsection{Bewegungsprofile}
 \label{sec:bewegung}
 
 Bewegungen
+
+\subsection{Frequenzanalyse}
+\label{sec:freq-analy}
+
+Die Frequenzanalyse wurde nur für Versuchsperson \texttt{pa07} in Block 1 durchgeführt. Das Rauschverhalten sollte für alle Versuchspersonen in allen Blöcken sehr ähnlich sein. In Abbildung \ref{img:freq-analy} ist das Ergebnis dargestellt. In der Grafik \ref{img:freq-analy-raw} ist die Frequenzanalyse auf Basis der Rohdaten, in Grafik \ref{img:freq-analy-sss} auf Basis der SSS-Daten dargestellt. Während in den Rohdaten noch deutlich identifizierbare Artefakte enthalten sind, wie beispielsweise der Netzstrom mit $50\,Hz$ oder die Bahn-Oberleitung und deren Oberschwingungen bei $16\nicefrac{2}{3}\,Hz$, $33\nicefrac{1}{3}\,Hz$, etc., sind diese in den SSS-Daten nicht mehr oder deutlich vermindert. Die äußeren Quellen wurden herausgefiltert. Generell ist die untere Frequenzanalyse deutlich geglätteter, als die auf den Rohdaten basierende. Damit wird deutlich welche Herausforderung die Lokalisationverfahren zu leisten haben um adäquate Ergebnisse hervorzubringen.
+
+%%% Bilder Frequenzanalyse noch durch Schwarz/Weiß und .eps austauschen
+
+\begin{figure}
+  \centering
+%  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.8\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/frequenzanalye_raw.png}}
+    \subcaption{Frequenzanalyse der Rohdaten}
+    \label{img:freq-analy-raw}
+  \end{subfigure}\vspace*{3mm}
+  %
+  \begin{subfigure}[c]{0.8\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/frequenzanalye_ss.png}}
+    \subcaption{Frequenzanalyse der SSS-Daten}
+    \label{img:freq-analy-sss}
+  \end{subfigure}
+  %
+  \vspace*{3mm}
+  \caption[Frequenzanalyse auf Basis eines Blocks]{Frequenzanalyse auf Basis der Daten von Versuchsperson \texttt{pa07} von Block 1. Deutlich wird die Abnahme des Rauschens durch die SSS-Filterung. Vor allem bei $50\,Hz$ (Netzstrom), $16\nicefrac{2}{3}\,Hz$ (Bahn-Oberleitung) und deren Oberschwingungen ist eine Abnahme der Amplitude offensichtlich. Eine Abnahme des Rauschens ist aber bspw. auch im Bereich $0\,Hz$ bis $5\,Hz$ sehr effektiv.}
+  \label{img:freq-analy}
+\end{figure}
 
 \subsection{Signal-Rausch-Verhältnis}
 \label{sec:snr}
