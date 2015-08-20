@@ -7,7 +7,6 @@
 \usepackage[doublespacing]{setspace}
 \usepackage{paralist}
 \usepackage{graphicx}
-\usepackage{tabularx}
 \usepackage{epstopdf}
 \usepackage{wrapfig}
 \usepackage{float}
@@ -139,7 +138,7 @@ Bei der Untersuchung des Gehirns bilden die Quellen (Orte) und Aktivitäten (Pot
 
 Mit zunehmender Rechenkapazität und entsprechenden Modellen lassen sich inzwischen auch mit enzephalografischen Verfahren (z.B. EEG, MEG) die Quellen der Aktivität bestimmten. Die Messung erfolgt dabei nur an der Oberfläche des Kopfes, eine Lokalisation erfolgt somit indirekt. Diese Verfahren haben den entscheidenden Vorteil, dass ihre zeitliche Auflösung meist so hoch ist, dass sie Veränderungen im Gehirn noch im Millisekundenbereich erfassen können. Zum Vergleich: Bildgebende funktionelle Verfahren, welche zusätzlich zur Bildgebung auch die Aktivität erfassen können - wie die funktionelle Magnet-Resonanz-Tomographie (fMRT) - liegen hier meist nur im Bereich von Sekunden. Auch wenn die enzephalografischen Verfahren in der zeitlichen Auflösung sehr gut sind, ihr Nachteil bleibt nach wie vor eine noch eher unpräzise Lokalisationsfähigkeit. Bei MEG-Messungen kommt erschwerend die hohe Verrauschung der Daten hinzu. Während die Messgrößen im Bereich von Femto-Tesla liegen, ist selbst der Herzschlag am Gehirn noch im Bereich von Picotesla messbar. Netzstrom mit $50\,Hz$ und die Schwingung des Bahnnetzes mit $16,67\,Hz$, sowie deren Harmonische sind beispielsweise am Standort des Max-Planck-Insituts für kognitive Neurowissenschaften in Leipzig trotz starker Abschirmung deutlich messbare Größen in jeder MEG-Messung (siehe auch Abschnitt \nameref{sec:rauschen} auf Seite \pageref{sec:rauschen}). Die Frequenzen der genannten Artefarkte in den Rohdaten lassen sich mit Hilfe einer Fourier-Analyse abschätzen, wie in Abbildung~\ref{img:freq-analy} auf Seite~\pageref{img:freq-analy} dargestellt.
 
-Verschiedene Faktoren beeinflussen folglich die Messung, die niemals unter idealen Bedingungen statt findet. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} das Programm \emph{MaxFilter} als Teil der \emph{Neuromag}-Software mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}), soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von MaxFiter gegenübergestellt.
+Verschiedene Faktoren beeinflussen folglich die Messung, die niemals unter idealen Bedingungen statt findet. Es liegen unterschiedliche Möglichkeiten der Vermeidung und Unterdrückung vor. Während der Hersteller des verwendeten Gerätes \emph{Vectorview} (Elekta Neuromag, Elekta Oy, Helsinki, Finland) das Programm \emph{MaxFilter} als Teil der \emph{Neuromag}-Software mit liefert, mit der eine Trennung zwischen äußeren und inneren Quellen möglich ist (siehe Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}), soll es Ziel dieser Bachelorarbeit sein die Robustheit verschiedener Verfahren gegenüber den angesprochenen Rauschgrößen zu erproben. Dabei werden die Verfahren mit und ohne voriger Verwendung von MaxFiter gegenübergestellt.
 
 Die Hypothese soll lauten, dass das Quellrekonstruktionsverfahren Beamformer relativ stabil gegenüber Rauschen sein müsste und eine Anwendung softwareseitiger Filterverfahren nicht nötig ist, um eine gute Lokalisation zu erreichen, während das Quellrekonstruktionsverfahren Minimum Norm Estimate ohne vorherige Anwendung von Filterverfahren eher zu unpräziseren Ergebnissen führen sollte. Die Hypothese wird im entsprechenden Abschnitt auf Seite \pageref{sec:hypo} formuliert und begründet.
 
@@ -262,7 +261,7 @@ Magnetometer besitzen nur einen Ring an der Aufnahmespule des Flux-Transformator
 
 Gradiometer besitzen zwei entgegengesetzt angebrachte Ringe an der Aufnahmespule des Flux-Transformators. Die zwei Ringe eines Gradiometers können axial oder planar angeordnet sein. Die zwei Ringe messen einen räumlichen Gradienten. Der Gradient der magnetische Flussdichte $G_x = dB_z/dx$ bzw. $G_y = dB_z/dy$ wird in $T/m$ angegeben. Die Annahme ist, dass weit entfernte Quellen ein relativ homogenes Feld erzeugen. Da die zwei Aufnahmespulen des Gradiometers mit einem entgegengesetzten Strom durchflossen werden und die gemessenen magnetischen Flussdichten voneinander subtrahiert werden, verschwindet der Gradient für weit entfernte Quellen im Idealfall, so dass nur nahe Quellen erfasst werden \parencite{hansen2010meg}.
 
-Im Falle des verwendeten MEG-Systems (\emph{Vectorview by Elekta-Neuromag Oy, Helsinki}) enthält jeder der 102 Sensoren drei Kanäle mit einem Magnetometer und zwei Gradiometern, die je in $x$- und $y$-Richtung ausgerichtet sind.
+Im Falle des verwendeten MEG-Systems (\emph{Vectorview}, Elekta Neuromag, Elekta Oy, Helsinki, Finland) enthält jeder der 102 Sensoren drei Kanäle mit einem Magnetometer und zwei Gradiometern, die je in $x$- und $y$-Richtung ausgerichtet sind.
 
 \subsection{Artefakte und Rauschen}
 
@@ -340,7 +339,7 @@ Die SSS-Methode ist zwar deutlich rechenaufwändiger als SSP, führt jedoch im G
 \section{Hintergrund zur Quelllokalisation}
 \label{sec:hinter}
 
-Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhalb des Kopfes befindlichen Sensoren. Die entscheidende Frage ist also: Wie ist es möglich anhand der magnetischen Signale außerhalb des Gehirns auf die physiologischen Quellen innerhalb des Gehirns zu schließen? Um diese Frage zu beantworten wird zunächst etwas Theorie eingeführt und anschließend die Vorwärts-Lösung, sowie verschiedene Methoden der inversen Lösung erläutert.
+Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhalb des Kopfes befindlichen Sensoren. Die entscheidende Frage ist also: Wie ist es möglich anhand der magnetischen Signale außerhalb des Gehirns auf die physiologischen Quellen innerhalb des Gehirns zu schließen? Um diese Frage zu beantworten wird zunächst etwas Theorie eingeführt und anschließend das Vorwärtsmodell, sowie verschiedene Methoden zur Bestimmung der inversen Lösung (Rückwärtsmodell) erläutert.
 
 % ###########################
 % ##### VORWÄRTSMODELL  #####
@@ -350,12 +349,24 @@ Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhal
 
 \subsubsection{Superposition}
 
-Jede Quelle im Gehirn wirkt auf alle Sensoren an der Kopfoberfläche, jeder Sensor empfängt also Signale jeder einzelnen Aktivität im Gehirn. Es liegt eine Superposition der Quellaktivität vor (siehe Abbildung ???). Ähnlich einer Unterhaltung mit 10 sprechenden Personen und 5 aufnehmenden Mikrofonen. Jedes Mikrofon empfängt aus einer anderen Perspektive alle 10 Gespräche. Wünschenswert wäre es nun ein einzelnes Gespräch zu isolieren \emph{und} zu lokalisieren. Übertragen auf das Gehirn soll versucht werden die Quellen der Aktivitäten zu identifizieren und deren spezifische Aktivitäten über die Zeit zu erhalten. Die Quellen werden durch Dipole beschrieben und diskretisiert. Entsprechend soll für jeden angenommenen Dipol (an einem bestimmten Ort im Gehirn) ein Aktivitätsverlauf über die Zeit berechnet werden.
+Jede Quelle im Gehirn wirkt auf alle Sensoren an der Kopfoberfläche, jeder Sensor empfängt also Signale jeder einzelnen Aktivität im Gehirn. Es liegt eine Superposition der Quellaktivität vor, wie sie in Abbildung \ref{img:superposition} dargestellt ist. Ähnlich einer Unterhaltung mit 10 sprechenden Personen und 5 aufnehmenden Mikrofonen. Jedes Mikrofon empfängt aus einer anderen Perspektive alle 10 Gespräche. Wünschenswert wäre es nun ein einzelnes Gespräch zu isolieren \emph{und} zu lokalisieren. Übertragen auf das Gehirn soll versucht werden die Quellen der Aktivitäten zu identifizieren und deren spezifische Aktivitäten über die Zeit zu erhalten. Die Quellen werden durch Dipole beschrieben und diskretisiert. Entsprechend soll für jeden angenommenen Dipol an einem bestimmten Ort im Gehirn ein Aktivitätsverlauf über die Zeit berechnet werden.
+
+\begin{figure}
+  \centering
+%  \captionsetup{justification=centering}
+  %
+    \setlength{\fboxsep}{8mm}
+  \fbox{\includegraphics[width=0.5\textwidth]{einleitung/superposition.eps}}
+  %
+  \vspace*{3mm}
+  \caption[Superposition der Quellaktivität an den Sensoren]{Superposition der Quellaktivität an den Sensoren. Die schwarzen Balken symbolisieren die Sensoren, der rote und der blaue Punkt bilden jeweils eine Quelle, deren Signale gestrichelt zu den Sensoren führen. An jedem Sensor liegen die Aktivitätsinformationen aller Quellen vor.\\ Das Kopf-Icon wurde über \url{http://www.flaticon.com} bereitgestellt und von \url{http://www.freepik.com} erstellt. Das Aktivitätsmuster, die Sensoren und die Linien der Signale wurden ergänzt.}
+  \label{img:superposition}
+\end{figure}
 
 \subsubsection{Segmentierung und Volumenleiter}
 \label{sec:segment}
 
-Die Quellbestimmung ist nur an bestimmten Stellen innerhalb des Kopfes wirklich sinnvoll, außerhalb des Gehirns ist kein magnetischer Dipol zu erwarten. Außerdem ist es wünschenswert die Aktivität im Gehirn nicht auf eine standardisierte mathematische Form (z.B. auf eine Kugel) zu berechnen, sondern ein echtes Gehirn zu verwenden, im Idealfall das tatsächliche Gehirn der entsprechenden Versuchsperson. Dafür muss zunächst ein bildgebendes Verfahren eingesetzt werden. Üblicherweise eignet sich dafür ein MRT-Scan des Kopfes.
+Die Quellbestimmung ist nur an bestimmten Stellen innerhalb des Kopfes wirklich sinnvoll, außerhalb des Gehirns ist bspw. kein magnetischer Dipol zu erwarten. Außerdem ist es wünschenswert die Aktivität im Gehirn nicht auf eine standardisierte mathematische Form (z.B. auf eine Kugel) zu berechnen, sondern ein echtes Gehirn zu verwenden, im Idealfall das tatsächliche Gehirn der entsprechenden Versuchsperson. Dafür muss zunächst ein bildgebendes Verfahren eingesetzt werden. Üblicherweise eignet sich dafür ein MRT-Scan des Kopfes.
 
 Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologische Bestandteile. Mit dem Softwarepaket Freesurfer kann das Bild des Kopfes in seine Segmente zerlegt werden (siehe auch \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct}). Es wird unterschieden zwischen der Kopfoberfläche bzw. Kopfhaut, dem Schädel und dem Gehirn. Innerhalb des Gehirns werden graue und weiße Substanz getrennt.
 
@@ -363,14 +374,14 @@ Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologi
   \centering
 %  \captionsetup{justification=centering}
   %
-  \fbox{\includegraphics[width=0.5\textwidth]{einleitung/bem.png}}
+  \fbox{\includegraphics[width=0.6\textwidth]{einleitung/bem.png}}
   %
   \vspace*{3mm}
   \caption[Volumenleiter, berechnet mittels Boundary Element Model (BEM)]{Volumenleiter, berechnet mittels Boundary Element Model (BEM). Darstellung der drei segmentierten Bereiche: Gehirn (grün), Schädel (weiß), Kophaut (grau).\\ Verwendet von \glqq Creating a volume conduction model of the head for source-reconstruction of EEG data\grqq . (01. April 2015). In FieldTrip wiki. Abgerufen 15:02, 10. August 2015, von \url{http://www.fieldtriptoolbox.org/tutorial/headmodel_eeg}}
   \label{img:bem}
 \end{figure}
 
-Anschließend wird ein Kopfmodell (head model) berechnet, welches die verschiedenen Gewebetypen beinhaltet. Dafür können numerische Verfahren wie z.B. das \emph{boundary element model} (BEM) verwendet werden. Das BEM-Verfahren modelliert die Ränder der segmentierten Volumina mit Dreiecksflächen. Dabei wird angenommen, dass die Leitfähigkeit innerhalb der Volumen isotrop ist. Dies stellt eine Idealisierung da. Im Abschnitt \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct} wurde bereits deutlich, dass eine vollständige homogene Leitfähigkeit nicht der Realität entspricht bzw. nur für die graue Substanz gültig ist. Da die graue Substanz jedoch außen liegt und meist auch nur die Aktivitäten im Außenbereich berechnet werden, ist die Näherung meist gerechtfertigt.
+Anschließend wird ein Kopfmodell (head model) berechnet, welches die verschiedenen Gewebetypen beinhaltet. Dafür können numerische Verfahren wie z.B. das \emph{Boundary Element Model} (BEM) verwendet werden. Das BEM-Verfahren modelliert die Ränder der segmentierten Volumina mit Dreiecksflächen. Dabei wird angenommen, dass die Leitfähigkeit innerhalb der Volumen isotrop ist. Dies stellt eine Idealisierung da. Im Abschnitt \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct} wurde bereits deutlich, dass eine vollständige homogene Leitfähigkeit nicht der Realität entspricht bzw. nur für die graue Substanz gültig ist. Da die graue Substanz jedoch außen liegt und meist auch nur die Aktivitäten im Außenbereich berechnet werden, ist die Näherung meist gerechtfertigt.
 
 Die Diskretisierung der Oberfläche im BEM-Modell wirkt sich auf die Quellrekonstruktion aus. Wird die Dichte der Netzpunkt zu gering gewählt kommt es zu Fehlern in der numerischen Berechnung, die Quellen werden fehlerhaft geschätzt. Die Seitenlängen der Dreiecke sollten unterhalb von $10\,mm$ liegen. Zusätzlich sollte das Verhältnis von Dipoltiefe zur Seitenlänge der Dreiecke nicht kleiner als $0,5$ sein \parencite{haueisen1997effect}. Die Anzahl der Netzpunkt muss entsprechend hoch genug gewählt werden.
 
@@ -379,15 +390,16 @@ Im Gegensatz zum BEM-Modell wird im FEM-Modell (\emph{Finite Element Model}) ang
 Nach der Berechnung des Kopfmodells liegt der Volumenleiter (volume conductor) vor, der in Abbildung \ref{img:bem} dargestellt ist. Dabei wird nur beschrieben wie sich elektrische Aktivität im Gehirn verteilen kann, der Volumenleiter trifft keine Aussage über mögliche Ursprünge elektrischer oder magnetischer Aktivität.
 
 \subsubsection{Koregistrierung}
+\label{sec:coreg}
 
-Die Daten der Physiologie aus der MRT-Messung und die Daten der Aktivität aus der MEG-Messung werden in unterschiedlichen Koordinatensystemen erhoben, da beide Verfahren mit unterschiedlichen Geräten und unterschiedlichen Standards arbeiten (auch herstellerspezifisch). Bei der \emph{Koregistrierung} wird eine Koordinatentransformation durchgeführt, so dass beide Datensätze möglichst gut zueinander passen. Die Transformation kann nicht fehlerfrei durchgeführt werden, die Abweichungen nach der Transformation liegen im Bereich von wenigen Millimetern ???.
+Die Daten der Physiologie aus der MRT-Messung und die Daten der Aktivität aus der MEG-Messung werden in unterschiedlichen Koordinatensystemen erhoben, da beide Verfahren mit unterschiedlichen Geräten und unterschiedlichen Standards arbeiten (auch herstellerspezifisch). Bei der \emph{Koregistrierung} wird eine Koordinatentransformation durchgeführt, so dass beide Datensätze möglichst gut zueinander passen. Die Transformation kann nicht fehlerfrei durchgeführt werden, die Abweichungen nach der Transformation liegen im Bereich von wenigen Millimeter \parencite{adjamian2004co,poghosyan2007precise}.
 
-Die Koordinatensysteme bei MEG- und EEG-Messungen orientieren sich meist an äußeren anatomischen Merkmalen, wie dem Nasion oder den preauricularen Punkten. Bei bildgebenden Verfahren werden üblicherweise innere anatomische Merkmale, wie die anteriore und posteriore Kommissur. Um eine Vergleichbarkeit zwischen unterschiedlichen Gehirnen zu gewährleisten wird zusätzlich häufig eine Standardisierung der Gehirn-Größe vorgenommen. Dafür wird das Talairach-Tournoux Gehirn oder Vorlagen vom Montreal Neurological Institute (MNI) verwendet.
+Die Koordinatensysteme bei MEG- und EEG-Messungen orientieren sich meist an äußeren anatomischen Merkmalen, wie dem Nasion oder den präaurikularen  Punkten. Bei bildgebenden Verfahren werden üblicherweise innere anatomische Merkmale, wie die Commissura anterior und Commissura posterior. Um eine Vergleichbarkeit zwischen unterschiedlichen Gehirnen zu gewährleisten wird zusätzlich häufig eine Standardisierung der Gehirn-Größe vorgenommen. Dafür wird das Talairach-Tournoux Gehirn oder Vorlagen vom Montreal Neurological Institute (MNI) verwendet, die entsprechende Koordinatensystem-Definitionen besitzen. Unabhängig von der Messmethode werden Koordinatensysteme anhand ihrer Orientierung klassifiziert. Üblich ist bspw. eine RAS-Orientierung. Die jeweiligen Buchstaben bedeuten anterior/posterior (A/P), links/rechts (L/R) und superior/inferior (S/I).
 
 \subsubsection{Quellraum und Vorwärtsmodell}
 \label{sec:lead}
 
-Das \emph{Vorwärtsmodell} (\emph{forward solution}) berechnet aus angenommenen Quellen innerhalb des Gehirns die Auswirkung auf die Sensoren außerhalb des Gehirns. Innerhalb des Gehirns werden Dipole modelliert. Das sich ergebende Modell des Gehirns mit den Dipolen wird als \emph{Quellraum} (source space) bezeichnet. Für jeden der gesetzten Dipole wird unter Berücksichtigung der Leitfähigkeit und des Randes (BEM-Netz) die Wirkung auf die Sensoren außerhalb des Gehirns bestimmt. Somit kann für viele Positionen im Gehirn die Wirkung außerhalb des Gehirns abgeschätzt werden.
+Das \emph{Vorwärtsmodell} (\emph{forward solution}) berechnet aus angenommenen Quellen innerhalb des Gehirns die Auswirkung auf die Sensoren außerhalb des Gehirns. Innerhalb des Gehirns werden Dipole modelliert. Das sich ergebende Modell des Gehirns mit den Dipolen wird als \emph{Quellraum} (source space) bezeichnet. Für jeden der gesetzten Dipole wird unter Berücksichtigung der Leitfähigkeit und des Randes (BEM-Netz) die Wirkung auf die Sensoren außerhalb des Gehirns bestimmt. Somit kann für die Aktivitäten im Gehirn die Aktivität außerhalb des Gehirns abgeschätzt werden.
 
 Die Daten des Vorwärtsmodells werden in einer \emph{Leadfield-Matrix} dargestellt. Sie enthält die Abbildung der Dipole auf die Sensoren. Zur Bestimmung könne wir von folgender Gleichung ausgehen \parencite{maurits2011neurology}:
 
@@ -411,7 +423,7 @@ y_i = \int_V \mx{L}_i (\mx{r}) \cdot \mx{S}(\mx{r})\,\delta(\mx{r}-\mx{r}_S)\, d
 \label{eq:leadfield2}
 \end{equation}
 
-Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols am Ort der Quelle $\mx{r}_S$. Jeder Datenpunkt kann also mit einem entsprechenden Leadfield-Eintrag und der zugehörigen Quellstärke beschrieben werden.
+Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols am Ort der Quelle~$\mx{r}_S$. Jeder Datenpunkt kann also mit einem entsprechenden Leadfield-Eintrag und der zugehörigen Quellstärke beschrieben werden.
 
 % Eigentlich ist S und L ein Vektor?
 % Die Gleichung ist nur für einen Zeitpunkt und einen Kanal i, sie varriert nur in den Orten
@@ -424,7 +436,7 @@ Dabei bezeichnet~$\mx{S}(\mx{r}_S)$ die Stärke des Dipols am Ort der Quelle $\m
 
 \subsection{Rückwärtsmodell}
 
-Das \emph{Rückwärtsmodell} (\emph{inverse solution}) schätzt auf Basis der Leadfield-Matrix die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt entsprechend das Vorwärtsmodell voraus. Nur wenn bekannt ist wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden wie umgekehrt bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. Besondere Aufmerksamkeit wird den Methoden \emph{Minimum Norm Estimate} und \emph{Beamforming} gewidmet. Gleichung \ref{eq:leadfield2} bildet den Ausgangspunkt für das Datenmodell der inversen Lösung.
+Das \emph{Rückwärtsmodell} (\emph{inverse solution}) schätzt auf Basis der Leadfield-Matrix die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt entsprechend das Vorwärtsmodell voraus. Nur wenn bekannt ist wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden wie umgekehrt bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. Besondere Aufmerksamkeit wird den Methoden \emph{Minimum Norm Estimate} und \emph{Beamforming} gewidmet. Gleichung~\ref{eq:leadfield2} bildet den Ausgangspunkt für das Datenmodell der inversen Lösung.
 
 \subsubsection{Methoden zur Bestimmung des Rückwärtsmodell}
 
@@ -438,7 +450,7 @@ Es existieren prinzipiell drei Verfahren zur Bestimmung des Rückwärtsmodells:
 
 \subsubsection{Einfache und multiple Dipolmodelle}
 
-In den \emph{einfachen und multiplen Dipolmodellen} (single and multiple dipole models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklärt \parencite{scherg1990fundamentals}. Es wird zunächst ein Dipol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Lokalisationen können vorgenommen werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden neuen einzelnen Dipol immer geringer, weshalb es sich nur lohnt eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen. In dieser Methode wird zusätzlich zu Gleichung \ref{eq:leadfield2} ein Fehler~$R$ berücksichtigt. Des Weiteren wird der gesamte Zeitverlauf berücksichtigt.
+In den \emph{einfachen und multiplen Dipolmodellen} (single and multiple dipole models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklärt \parencite{scherg1990fundamentals}. Es wird zunächst ein Dipol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Lokalisationen können vorgenommen werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden neuen einzelnen Dipol immer geringer, weshalb es sich nur lohnt eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen. In dieser Methode wird zusätzlich zu Gleichung~\ref{eq:leadfield2} ein Fehler~$\mx{R}$ berücksichtigt. Des Weiteren wird der gesamte Zeitverlauf berücksichtigt.
 
 \begin{equation}
 \label{eq:leadfield-error}
@@ -452,11 +464,13 @@ In Summenschreibweise ergibt sich:
 \mx{y}_i = \left( \sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij} \right) + \mx{R}
 \end{equation}
 
-Es wird versucht den Fehler $\mx{R}$ zwischen Daten $\mx{y}_i$ und Modell $\sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij}$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Dabei wird versucht $n$ klein zu halten.
+Es wird versucht den Fehler~$\mx{R}$ zwischen Daten~$\mx{y}_i$ und Modell $\sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij}$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Es wird versucht $n$ klein zu halten.
 
 \begin{equation}
 \mx{R} = \mx{y}_i - \left( \sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij} \right)
 \end{equation}
+
+\vspace*{5mm}
 
 \subsubsection{Verteilte Dipolmodelle}
 
@@ -582,7 +596,7 @@ $\mx{C}^{-1}$ bezeichnet die Inverse der Kovarianzmatrix der gemessenen Signale 
 \subsection{Hypothese}
 \label{sec:hypo}
 
-Wie in der Einleitung bereits erwähnt, sagt die Hypothese eine relativ hohe Stabilität des LCMV Beamformer-Vefahrens gegen Rauschen voraus. Grundlage der Hypothese ist die Eigenschaft des Beamforer-Vefahrens, dass korrelierte Quellen unterdrückt werden, da es das Ziel ist, eine minimale Varianz zu erreichen \parencite{van1997localization}. Gerade aber Artefakte und Rauschen (insbesondere externe Einflüsse wie die des Stromnetzes) haben die Eigenschaften relativ Konstant über alle Kanäle hinweg aufzutreten. Entsprechend müsste hier eine hohe Korrelation der Signale vorliegen, was zu einer systematischen Unterdrückung des Rauschens durch den LCMV Beamformer-Ansatz führen sollte.
+Wie in der Einleitung bereits erwähnt, sagt die Hypothese eine relativ hohe Stabilität des LCMV Beamformer-Vefahrens gegen Rauschen voraus. Grundlage der Hypothese ist die Eigenschaft des Beamforer-Vefahrens, dass korrelierte Quellen unterdrückt werden, da es das Ziel ist, eine minimale Varianz zu erreichen \parencite{van1997localization}. Gerade aber Artefakte und Rauschen (insbesondere externe Einflüsse wie die des Stromnetzes) haben die Eigenschaften relativ konstant über alle Kanäle hinweg aufzutreten. Entsprechend müsste hier eine hohe Korrelation der Signale vorliegen, was zu einer systematischen Unterdrückung des Rauschens durch den LCMV Beamformer-Ansatz führen sollte.
 
 Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben mit Rohdaten umgehen zu können. Die in den Rohdaten nicht unterdrückten äußeren Quellen dürften den Versuch der Minimierung der Energie (bzw. der L2-Norm) deutlich verfälschen. Äußere Signale könnten bei der Kalkulation berücksichtigt werden, obwohl sie eigentlich nicht berücksichtigt werden sollen. Zusammengefasst:
 
@@ -610,17 +624,13 @@ Die traditionelle Theorie geht davon aus, dass die regelmäßige Präsentation g
 
 Verwendet wurden Oddball-Blöcke, bei denen zu einem regelmäßigen gleichen Ton (Standard) mit einer bestimmten Wahrscheinlichkeit eine Abweichung vor kam (Deviant). Diese Abweichung erfolgte entweder mit einer höheren oder einer niedrigeren Frequenz. Zusätzlich wurden in Kontrollbedingungen zufällig mehrere verschiedene Frequenzen abgespielt, um die frequenzspezifische Verarbeitung zu überprüfen. Ein Ton wurde $50\,ms$ lang abgespielt. Innerhalb dieser $50\,ms$ wurden innerhalb der ersten $5\,ms$ eine Steigerung des Tons vorgenommen, die letzten $5\,ms$ wurde der Ton wieder ausklingen lassen. Die Versuchsperson wurde angehalten nicht auf die Töne zu achten. Es wurde ein Stummfilm ohne Untertitel gezeigt.
 
-Von den verwendeten Daten war für diese Untersuchung lediglich die MMNm von Interesse, die von den Deviants des Oddball-Paradigmas ausgelöst wurde und im auditorischen Kortex zu erwarten war (siehe auch Abschnitt \nameref{sec:audicort} auf Seite \pageref{sec:audicort}).
+Von den verwendeten Daten war für diese Untersuchung lediglich die MMNm von Interesse, die von den Deviants des Oddball-Paradigmas ausgelöst wurde und im auditorischen Kortex zu erwarten war (siehe auch Abschnitt \nameref{sec:audicort} auf Seite~\pageref{sec:audicort}).
 
 \subsubsection{Verwendete Geräte}
 
-MEG/MRT
+Im verwendeten MEG, dem \emph{Vectorview} der Firma \emph{Elekta Neuromag, Elekta Oy, Helsinki, Finland}, werden insgesamt 306 Kanäle für die Messung der Gehirnsignale verwendet. Davon sind 204 planare Gradiometer und 102 Magnetometer. Die Sensoren bestehen aus DC SQUIDs, welche mittels flüssigem Helium auf~$-269^\circ\,C$ bzw.~$4\,K$ gekühlt werden.
 
-Im verwendeten MEG, dem \emph{Vectorview by Elekta-Neuromag Oy, Helsinki} werden insgesamt 306 Sensoren für die Messung der Gehirnsignale verwendet. Davon sind 204 Gradiometer und 102 Magnetometer. Die Sensoren bestehen aus DC SQUIDs ... Helium ...
-
-Neben den Sensoren zur Messung der Gehirnsignale werden weitere Sensoren zu Messung der Augenbewegung (EOG ???) und ??? verwendet.
-
-%%% Hier fehlt noch einiges!
+Das verwendete MRT ist ein \emph{TIM Trio} der Firma \emph{Siemens, Erlangen, Deutschland}, welches ein Magnetfeld von $3\,T$ aufbauen kann.
 
 \subsubsection{Software zur Analyse}
 \label{sec:software}
@@ -665,14 +675,20 @@ Bei Versuchsperson \texttt{pa10} sollten auf Grund der Bewegungskorrektur deutli
 
 Zusätzlich zum MEG-Datensatz mit den Aktivitätsdaten, wurde ein MRT-Datensatz verwendet, der einen einfachen Scan des Gehirns der Versuchspersonen enthielt. Für den MRT-Datensatz wurde zunächst eine Separation mittels Freesurfer durchgeführt. Aus den Daten wurde das BEM-Netz mit 10242 Punkten pro Hemisphäre berechnet. Da nur Aktivität am Außenbereich berechnet wird und nicht im Inneren des Gehirns ist die Berechnung des BEM-Netzes in diesem Fall ausreichen. Am Rand des Gehirns wird überwiegend graue Substanz mit isotroper Leitfähigkeit erwartet (siehe auch Abschnitt \nameref{sec:segment} auf Seite \pageref{sec:segment}).
 
-Die physiologischen Informationen des MRT-Datensatzes lagen im ???-Koordinatensystem vor. Dieses Koordinatensystem eine eine ???-Orientierung. Die jeweiligen Buchstaben bedeuten anterior/posterior (A/P), links/rechts (L/R) und superior/inferior (S/I). Die Aktivitätsdaten des MEG wurden im ???-Koordinatensystem gespeichert. Nach der Koregistrierung lag die Abweichung für \texttt{pa07} bei $???\,mm$, die Abweichung von \texttt{pa10} bei $???,mm$.
+Die physiologischen Informationen des MRT-Datensatzes lagen in einem Koordinatensystem mit einer RAS-Orientierung vor (siehe auch Abschnitt~\nameref{sec:coreg} aus Seite~\pageref{sec:coreg}). Das Koordinatensystem wird anhand der Commissura anterior und der Commissura posterior definiert. Dabei liegt die $x$-$y$-Ebene so, dass die beiden Kommissuren geschnitten werden. Die z-Achse orientiert sich an der Fissura longitudinalis cerebri, also dem Interhemisphärenspalt. Das Koordinatensystem ist äquivalent zu Talairach und MNI (Montreal Neurological Institute). Die Einheiten liegen in Millimeter vor.
+
+Die Aktivitätsdaten des MEG wurden ebenfalls in einem RAS-orientierten Koordinatensystem gespeichert. Zur Aufstellung des Koordinatensystems werden an den zwei Ohren die präaurikularen Punkte bestimmt (Tragus) und die Nase (Nasion). Diese drei Punkte bilden die $x$-$y$-Ebene. Im Zentrum der drei Punkte wird die $z$-Achse definiert. Die Einheiten werden in Meter angegeben.
+
+Nach der Koregistrierung lag die Abweichung für \texttt{pa07} bei $???\,mm$, die Abweichung von \texttt{pa10} bei $???,mm$.
+
+%%% Koregestirerung Abweichung
 
 Jeder Durchgang (Trial) innerhalb der Blöcke, d.h. jedes Abspielen eines Tons und Aufzeichnen der Aktivitäten umfasste $500\,ms$. Die ersten $100\,ms$ wurden als Baseline genutzt, es wurde das Gehirnrauschen aufgezeichnet. Anschließend wurde der Ton abgespielt. Die darauf folgende Aktivität wurde weitere $400\,ms$ aufgezeichnet. Innerhalb dieser $400\,ms$ erfolgte das Auftreten der MMNm. Pro Block wurden ??? Trials verwendet, was ca. $???\,s$ dauerte. Von denen waren ??? Standards und ??? Deviants. Die Deviant-Ereignisse wurden herausgesammelt, hier sollte die Aktivität gegenüber den Standard-Trials deutlich erhöht sein.
 
 %%% Anzahl Trials: Gesamt, Standard, Deviant
 %%% Dauer eines Blocks
 
-Zusätzlich zur Auslese der gewünschten Trials, wurden alle Trials mit einem Hochpassfilter von $0,5\,Hz$ und einem Tiefpassfilter von $30\,Hz$ gefiltert. Um Trials in denen starke Störungen auftreten, wie heftige Augenbewegung oder starke Kopfbewegungen, zu verwerfen, wurde eine entsprechende Methode implementiert. In allen Daten sollten solche Signale gefunden werden, welche in den Magnetometern einen Ausschlag über $4\,pT$, in den Gradiometern über $200\,pT/m$ oder im EOG über $100\,\mu V$ aufwiesen. Sofern in einem Trial auch nur ein Datenpunkt mit einem höheren Wert auftrat, wurde der Trial verworfen. Von den ??? Deviants wurden bei \texttt{pa07} insgesamt ??? verworfen, bei \texttt{pa10} insgesamt ???. Die höhere Zahl der verworfenen Trials bei \texttt{pa10} ist auf die stärkere Kopfbewegung zurück zu führen. Eine Rauschunterdrückung mittels SSP, welche in FieldTrip enthalten ist, wurde deaktiviert.
+Zusätzlich zur Auslese der gewünschten Trials, wurden alle Trials mit einem Hochpassfilter von $0,5\,Hz$ und einem Tiefpassfilter von $30\,Hz$ gefiltert. Um Trials in denen starke Störungen auftreten, wie heftige Augenbewegung oder starke Kopfbewegungen, zu verwerfen, wurde eine entsprechende Methode implementiert. In allen Daten sollten solche Signale gefunden werden, welche in den Magnetometern einen Ausschlag über $4\,pT$, in den Gradiometern über $200\,pT/m$ oder im EOG (Elektrookulografie, Erfassung der Augenbewegung) über $100\,\mu V$ aufwiesen. Sofern in einem Trial auch nur ein Datenpunkt mit einem höheren Wert auftrat, wurde der Trial verworfen. Von den ??? Deviants wurden bei \texttt{pa07} insgesamt ??? verworfen, bei \texttt{pa10} insgesamt ???. Die höhere Zahl der verworfenen Trials bei \texttt{pa10} ist auf die stärkere Kopfbewegung zurück zu führen. Eine Rauschunterdrückung mittels SSP, welche in FieldTrip enthalten ist, wurde deaktiviert.
 
 %%% Verworfene Trials
 
@@ -703,8 +719,10 @@ Zur Auswertung der Daten wurden weitere Analysen durchgeführt. Die mit Hilfe de
 
 %%% Kommt das wirklich noch?
 
-\subsection{Vergleichbarkeit der Amplituden}
+\subsection{Vergleichbarkeit der Einheiten}
 \label{sec:amplitud}
+
+Die Aktivität der Quellen aus den Rekonstruktionen von LCMV Beamformer und Minimum Norm Estimate unterscheiden sich in ihren Einheiten. Die Stärke der Dipole (Stromdipolmomente) wird in~$A \cdot m$ angegeben. Dies wird von Minimum Norm Estimate als solches berechnet und kann auch als solches interpretiert werden. Bei Beamformer werden die Aktivitäten durch den räumlichen Filter bestimmt. Dieser wirkt in drei Richtungen, entsprechend liegen drei Werte vor. Diese werden ebenfalls in~$A\cdot m$ angegeben. Es wird die Summe der Quadrate der drei Komponenten gebildet. Bei Beamformer ist die Interpretation der Aktivitäten jedoch schwierig, da es sich im Grunde genommen nur um eine Korrelation ???
 
 %%% Hier noch auf Antwort warten.
 
@@ -760,13 +778,15 @@ Das Signal-Rausch-Verhältnis (signal-noise-ration, SNR) gibt das Amplitudenverh
 SNR = \frac{P_S}{P_R}
 \end{equation}
 
-Als Rausch-Anteil wurden die ersten 100 ms gewählt. Dies entspricht der Baseline. Als Signal-Anteil wurde die MMN verwendet, welche im Bereich 150 ms bis 250 ms liegt. Damit ergeben sich zwei Zeitbereiche von je 100 ms, die in den Butterfly-Diagrammen der Rohdaten (siehe Abbildungen ???) dargestellt sind. Verwendet wurden 225 der 13?? Trials pro Block, diese entsprechen der Deviant-Bedingungen, da nur hier ein Signal für die MMN erwartet wird.
+Als Rausch-Anteil wurden die ersten 100 ms gewählt. Dies entspricht der Baseline. Als Signal-Anteil wurde die MMN verwendet, welche im Bereich 150 ms bis 250 ms liegt. Damit ergeben sich zwei Zeitbereiche von je 100 ms, die in den Butterfly-Diagrammen der Rohdaten (siehe Abbildungen ???) dargestellt sind.
+
+%%% Butterfly-Diagramme
 
 Es wurden nur jene Kanäle für die Berechnung verwendet, welche am Ort der Entstehung der MMN entsprechende Signale messen. Dafür wurde zunächst das Amplitudenmaximum aus allen Trials und Zeitpunkten bestimmt. Für die zwei berechneten Versuchspersonen ergaben sich das Maximum an Kanal \texttt{MEG014} für \texttt{pa10} und Kanal \texttt{MEG151} für \texttt{pa07}. Das leicht verschobene Maximum ist auf eine unterschiedliche Position des Kopfes der Versuchsperson im MEG-Helm während des Versuchs zurück zu führen. Nachdem die Maxima bestimmt wurden, wurden die umliegenden Kanäle in die Berechnung des Signals integriert. Die verwendeten Kanäle sind:
 
 \texttt{MEG013}, \texttt{MEG014}, \texttt{MEG021}, \texttt{MEG024}, \texttt{MEG151}, \texttt{MEG154}, \texttt{MEG152}, \texttt{MEG161}
 
-In der Karte (Abbildung ???) wird deutlich, dass die Kanäle wie zu erwarten für die MMN im linken temporalen Bereich liegen (Stimulation erfolgte linksseitig). Von den Kanälen wurden sowohl die Magnetometer, als auch die beiden Gradiometer berücksichtigt.
+In der Sensor-Karte in Abbildung~\ref{img:sensmap} wird deutlich, dass die Kanäle wie zu erwarten für die MMN im temporalen Bereich liegen. Von den Kanälen wurden sowohl die Magnetometer, als auch die beiden Gradiometer berücksichtigt.
 
 Zur Berechnung des SNR wurden die Rohdaten verwendet, was eine erneute Vorverarbeitung nötig macht. Dabei wurde der gesamte Datensatz nach obigen Kriterien in die Trials zerteilt. Jeder Trail wurde anschließend in einen Rausch- und einen Signal-Anteil getrennt. Von der Baseline (Rausch-Anteil) wurde der Mittelwert gebildet.
 
@@ -776,14 +796,24 @@ Zur Berechnung des SNR wurden die Rohdaten verwendet, was eine erneute Vorverarb
 
 Dabei ist $i$ der Index der Kanäle, $j$ der Index der Zeitpunkte und $k$ der Index der Trials. $n_b$ entspricht der Anzahl der Zeitpunkt, die innerhalb der Baseline berücksichtigt werden mit $n_b = 100$. $b_{ijk}$ entspricht einer dreidimensionalen Matrix, welche die Amplituden für alle Trials, Zeitpunkt und Kanäle enthält. Gemittelt über die Zeitpunkt ergibt sich eine zweidimensionale Matrix $b_{ik}$, welche eine mittlere Amplitude für jeden Trial und jeden Kanal enthält.
 
+\begin{figure}
+  \centering
+%  \captionsetup{justification=centering}
+  %
+  \setlength{\fboxsep}{5mm}
+  \fbox{\includegraphics[width=0.9\textwidth]{ergebnisse/sensormap.eps}}
+  \vspace*{3mm}
+  \caption[Karte der Sensoren des \emph{Vectorview} MEG-Gerätes]{Karte der Sensoren des \emph{Vectorview} MEG-Gerätes in zweidimensionaler Darstellung. Im oberen Bereich liegt die Stirn, im unteren Bereich der Hinterkopf der Versuchsperson.}
+  \label{img:sensmap}
+\end{figure}
+
 Dieser Mittelwert wird für jeden einzelnen Zeitpunkt innerhalb der gesamten Aktivität (sowohl für den Rausch-Anteil, als auch für den Signal-Anteil) subtrahiert, um das mittlere Rauschen aus der Aktivität heraus zu rechnen.
 
 \begin{equation}
-\hat{b}_{im} = b_{im} - \bar{b}_{ik}
-\hat{s}_{im} = s_{im} - \bar{b}_{ik}
+\hat{b}_{im} = b_{im} - \bar{b}_{ik} \quad \text{und} \quad \hat{s}_{im} = s_{im} - \bar{b}_{ik}
 \end{equation}
 
-Dabei wurden die Zeitpunkt $j$ und die Trials $k$ zusammengefasst im Index $m$, eine Trennung dieser beiden Indizes ist an der Stelle nicht mehr notwendig, es handelt sich nur noch um eine Anzahl von Trials $m$. $\hat{b}_{im}$ entspricht dem korrigierten Rausch-Anteil und $\hat{s}_{im}$ dem korrigierte Signal-Anteil.
+Dabei wurden die Zeitpunkte~$j$ und die Trials~$k$ zusammengefasst im Index~$m$, eine Trennung dieser beiden Indizes ist an der Stelle nicht mehr notwendig, es handelt sich nur noch um eine Anzahl von Trials~$m$. $\hat{b}_{im}$~entspricht dem korrigierten Rausch-Anteil und $\hat{s}_{im}$~dem korrigierte Signal-Anteil.
 
 Die neuen Matrizen werden anschließend durch die Anzahl der Zeitpunkt geteilt. Dieser formale Schritt ist nötig für den Fall, dass sich die Zeitbereiche der beiden Anteile unterscheiden. In diesem Fall liegen beide bei $n_b = n_s = 100$ Zeitpunkten, so dass dieser Schritt auch ausgelassen werden könnte. Der Vollständigkeit halber:
 
@@ -791,38 +821,39 @@ Die neuen Matrizen werden anschließend durch die Anzahl der Zeitpunkt geteilt. 
 \tilde{b}_{im} = \frac{\hat{b}_{im}}{n_b} \quad \text{und} \quad \tilde{s}_{im} = \frac{\hat{s}_{im}}{n_s}
 \end{equation}
 
-Im folgenden Schritt werden die Kovarianzenfür die beiden Anteile bestimmt.
+\begin{table}[t]
+  \caption{}
+  \label{tab:snr}
+  \vspace*{3mm}
+  \centering
+  \setlength{\tabcolsep}{1cm}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{ccc}
+  Block & pa07 & pa10 \\
+  \hline
+  1 & $3.123$ & $3.915$\\
+  3 & $2.942$ & $3.144$\\
+  4 & $2.589$ & $3.875$\\
+  6 & $2.715$ & $3.348$\\
+  \hline
+  \end{tabular}
+  \vspace*{3mm}
+  \caption*{Signal-Rausch-Verhältnis für zwei Versuchspersonen in jeweils 4 Blöcken. Das Verhältnis sollte im Idealfall einen Wert von $3$ überschreiten.}
+\end{table}
+
+Im folgenden Schritt werden die Kovarianzen für die beiden Anteile bestimmt.
 
 \begin{equation}
 b_{ij} = \tilde{b}_{im} \cdot \tilde{b}_{mj} \quad \text{und} \quad s_{ij} = \tilde{s}_{im} \cdot \tilde{s}_{mj}
 \end{equation}
 
-$b_{mj}$ bzw. $s_{mj}$ entspricht dabei der transponierten Matrix von $b_{im}$ bzw. $s_{im}$, wobei $i$ und $j$ jeweils den Index des Kanals bezeichnet. Die Varianzmatrizen $b_{ij}$ und $s_{ij}$ ist quadratisch und enthält die Varianzen der Amplituden zwischen allen Kanälen. Die Diagonalelemente der Matrizen entsprechen dann den Kovarianzen der Kanäle. Die Kovarianzen werden komponentenweise dividiert und anschließend gemittelt:
+$b_{mj}$ bzw. $s_{mj}$ entspricht dabei der transponierten Matrix von~$b_{im}$ bzw.~$s_{im}$, wobei~$i$ und~$j$ jeweils den Index des Kanals bezeichnet. Die Varianzmatrizen~$b_{ij}$ und~$s_{ij}$ ist quadratisch und enthält die Varianzen der Amplituden zwischen allen Kanälen. Die Diagonalelemente der Matrizen entsprechen dann den Kovarianzen der Kanäle. Die Kovarianzen werden komponentenweise dividiert und anschließend gemittelt:
 
 \begin{equation}
 SNR = \sum_i \delta_{ij} \frac{s_{ij}}{b_{ij}}
 \end{equation}
 
-Für die verwendeten Daten eines auditorischen Experiments, welches auf einer komplexen Satzverarbeitung basiert ist kein sehr hohes SNR zu erwarten, es sollte jedoch oberhalb von $3$ liegen. Dieser Wert wird von der Software \emph{MNE} als Grenzwert vorgeschlagen ???.
-
-\begin{table}[t]
-\caption{}
-\label{tab:snr}
-\vspace*{3mm}
-\begin{tabularx}{\textwidth}{cll}
-Block & pa07 & pa10 \\
-\hline
-1 & $3.123$ & $3.915$\\
-3 & $2.942$ & $3.144$\\
-4 & $2.589$ & $3.875$\\
-6 & $2.715$ & $3.348$\\
-\hline
-\end{tabularx}
-\vspace*{3mm}
-\caption*{Signal-Rausch-Verhältnis für zwei Versuchspersonen in jeweils 4 Blöcken. Das Verhältnis sollte im Idealfall einen Wert von $3$ überschreiten.}
-\end{table}
-
-Die Ergebnisse sind in Tabelle \ref{tab:snr} dargestellt. Deutlich wird, dass das Signal-Rausch-Verhältnis um den Wert von $3$ liegt. Während \texttt{pa07} eher leicht unterhalb von $3$ liegt, sind die Werte von \texttt{pa10} gut oberhalb von $3$. Das Signal-Rausch-Verhältnis spricht dafür, dass die Daten zur Lokalisation geeignet sein sollten, die Ergebnisse jedoch etwas verrauscht werden könnten.
+Die SNR sollte im Idealfall oberhalb von~$3$ liegen. Dieser Wert wird von der Software \emph{MNE} als Grenzwert verwendet (???). Die Ergebnisse sind in Tabelle \ref{tab:snr} dargestellt. Deutlich wird, dass das Signal-Rausch-Verhältnis um den Wert von $3$ liegt. Während \texttt{pa07} eher leicht unterhalb von $3$ liegt, sind die Werte von \texttt{pa10} gut oberhalb von $3$. Das Signal-Rausch-Verhältnis spricht dafür, dass die Daten zur Lokalisation geeignet sein sollten, sie dürften jedoch auf ein gewisses Maß an Rauschen enthalten.
 
 \subsection{Quellrekonstruktionen und Zeitverläufe}
 

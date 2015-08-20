@@ -6,8 +6,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces Prinzip eines Flux-Transformators}}{13}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Volumenleiter, berechnet mittels Boundary Element Model (BEM)}}{21}{figure.caption.24}
+\contentsline {figure}{\numberline {3}{\ignorespaces Superposition der Quellaktivit\IeC {\"a}t an den Sensoren}}{21}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Schema der Datenverarbeitung}}{34}{figure.caption.40}
+\contentsline {figure}{\numberline {4}{\ignorespaces Volumenleiter, berechnet mittels Boundary Element Model (BEM)}}{22}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Frequenzanalyse auf Basis eines Blocks}}{40}{figure.caption.47}
+\contentsline {figure}{\numberline {5}{\ignorespaces Schema der Datenverarbeitung}}{35}{figure.caption.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces Frequenzanalyse auf Basis eines Blocks}}{41}{figure.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces Karte der Sensoren des \emph {Vectorview} MEG-Ger\IeC {\"a}tes}}{43}{figure.caption.50}

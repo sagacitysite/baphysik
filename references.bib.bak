@@ -2,6 +2,18 @@
 % Encoding: UTF-8
 
 
+@Article{adjamian2004co,
+  Title                    = {Co-registration of magnetoencephalography with magnetic resonance imaging using bite-bar-based fiducials and surface-matching},
+  Author                   = {Adjamian, Peyman and Barnes, Gareth R and Hillebrand, Arjan and Holliday, Ian E and Singh, Krish Devi and Furlong, Paul L and Harrington, E and Barclay, CW and Route, PJG},
+  Journal                  = {Clinical neurophysiology},
+  Year                     = {2004},
+  Number                   = {3},
+  Pages                    = {691--698},
+  Volume                   = {115},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{berger1929elektrenkephalogramm,
   Title                    = {{\"U}ber das Elektrenkephalogramm des Menschen},
   Author                   = {Berger, Hans},
@@ -163,6 +175,18 @@
   Volume                   = {101},
 
   Publisher                = {National Acad Sciences}
+}
+
+@Article{jacobsen2001there,
+  Title                    = {Is there pre-attentive memory-based comparison of pitch?},
+  Author                   = {Jacobsen, Thomas and Schr{\"o}ger, Erich},
+  Journal                  = {Psychophysiology},
+  Year                     = {2001},
+  Number                   = {04},
+  Pages                    = {723--727},
+  Volume                   = {38},
+
+  Publisher                = {Cambridge Univ Press}
 }
 
 @Article{jaklevic1964quantum,

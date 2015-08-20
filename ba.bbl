@@ -19,6 +19,45 @@
 
 \refsection{0}
   \sortlist{entry}{apa}
+    \entry{adjamian2004co}{article}{}
+      \name{labelname}{9}{}{%
+        {{uniquename=0,hash=9b08abc129869076739fa6f932eb1fec}{Adjamian}{A\bibinitperiod}{Peyman}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=90f294d06e6dc6a930d1cd753694923b}{Barnes}{B\bibinitperiod}{Gareth\bibnamedelima R}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a224ae51cdbf0b6d1749d3eea4976e91}{Hillebrand}{H\bibinitperiod}{Arjan}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e889bb44a9ade9feeebd4dbb78b35890}{Holliday}{H\bibinitperiod}{Ian\bibnamedelima E}{I\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=091876d69bc9cb482a8a8786e3bcdd39}{Singh}{S\bibinitperiod}{Krish\bibnamedelima Devi}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=eba8821d0f6f320cf3e5ce7fb3fa618f}{Furlong}{F\bibinitperiod}{Paul\bibnamedelima L}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=36103e43e8e1b370e556f156a1b7c8b5}{Harrington}{H\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6430ee77689af5a990ca3306a63d3c4c}{Barclay}{B\bibinitperiod}{CW}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4aefada0ac96edb6d1d314bb4e6f0439}{Route}{R\bibinitperiod}{PJG}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{9}{}{%
+        {{uniquename=0,hash=9b08abc129869076739fa6f932eb1fec}{Adjamian}{A\bibinitperiod}{Peyman}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=90f294d06e6dc6a930d1cd753694923b}{Barnes}{B\bibinitperiod}{Gareth\bibnamedelima R}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a224ae51cdbf0b6d1749d3eea4976e91}{Hillebrand}{H\bibinitperiod}{Arjan}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e889bb44a9ade9feeebd4dbb78b35890}{Holliday}{H\bibinitperiod}{Ian\bibnamedelima E}{I\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=091876d69bc9cb482a8a8786e3bcdd39}{Singh}{S\bibinitperiod}{Krish\bibnamedelima Devi}{K\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=eba8821d0f6f320cf3e5ce7fb3fa618f}{Furlong}{F\bibinitperiod}{Paul\bibnamedelima L}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=36103e43e8e1b370e556f156a1b7c8b5}{Harrington}{H\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6430ee77689af5a990ca3306a63d3c4c}{Barclay}{B\bibinitperiod}{CW}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4aefada0ac96edb6d1d314bb4e6f0439}{Route}{R\bibinitperiod}{PJG}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{00c94f4794314433e446824fde87e9fe}
+      \strng{fullhash}{e4bc6434cd183309c90ae96bfea44466}
+      \field{sortinit}{A}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Co-registration of magnetoencephalography with magnetic resonance imaging using bite-bar-based fiducials and surface-matching}
+      \field{journaltitle}{Clinical neurophysiology}
+      \field{number}{3}
+      \field{title}{Co-registration of magnetoencephalography with magnetic resonance imaging using bite-bar-based fiducials and surface-matching}
+      \field{volume}{115}
+      \field{year}{2004}
+      \field{pages}{691\bibrangedash 698}
+    \endentry
     \entry{berger1929elektrenkephalogramm}{article}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=0d12317a8172b314c2978d4b10649fde}{Berger}{B\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
@@ -823,6 +862,31 @@
       \field{title}{An interference suppression system for multichannel magnetic field detector arrays}
       \field{year}{1999}
       \field{pages}{13\bibrangedash 16}
+    \endentry
+    \entry{poghosyan2007precise}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=8cbf788592822611c9ed2a0ead26593b}{Poghosyan}{P\bibinitperiod}{Vahe}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d384c066745222ef5052a3a8ac5ae8aa}{Ioannides}{I\bibinitperiod}{Andreas\bibnamedelima A}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=8cbf788592822611c9ed2a0ead26593b}{Poghosyan}{P\bibinitperiod}{Vahe}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d384c066745222ef5052a3a8ac5ae8aa}{Ioannides}{I\bibinitperiod}{Andreas\bibnamedelima A}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ca94c2e298517cf8efc7887b70cfabbf}
+      \strng{fullhash}{ca94c2e298517cf8efc7887b70cfabbf}
+      \field{sortinit}{P}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Precise mapping of early visual responses in space and time}
+      \field{journaltitle}{Neuroimage}
+      \field{number}{2}
+      \field{title}{Precise mapping of early visual responses in space and time}
+      \field{volume}{35}
+      \field{year}{2007}
+      \field{pages}{759\bibrangedash 770}
     \endentry
     \entry{sarvas1987basic}{article}{}
       \name{labelname}{1}{}{%
