@@ -82,8 +82,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Quellrekonstruktionen und Zeitverl\IeC {\"a}ufe}{45}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Anpassungsg\IeC {\"u}te}{45}{section*.53}
+\contentsline {subsection}{Anpassungsg\IeC {\"u}te}{46}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Diskussion}{46}{section*.54}
+\contentsline {section}{Diskussion}{50}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literaturverzeichnis}{47}{section*.55}
+\contentsline {section}{Literaturverzeichnis}{51}{section*.58}

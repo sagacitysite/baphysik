@@ -801,7 +801,7 @@ Dabei ist $i$ der Index der Kanäle, $j$ der Index der Zeitpunkte und $k$ der In
 %  \captionsetup{justification=centering}
   %
   \setlength{\fboxsep}{5mm}
-  \fbox{\includegraphics[width=0.9\textwidth]{ergebnisse/sensormap.eps}}
+  \fbox{\includegraphics[width=0.92\textwidth]{ergebnisse/sensormap.eps}}
   \vspace*{3mm}
   \caption[Karte der Sensoren des \emph{Vectorview} MEG-Gerätes]{Karte der Sensoren des \emph{Vectorview} MEG-Gerätes in zweidimensionaler Darstellung. Im oberen Bereich liegt die Stirn, im unteren Bereich der Hinterkopf der Versuchsperson.}
   \label{img:sensmap}
@@ -855,13 +855,203 @@ SNR = \sum_i \delta_{ij} \frac{s_{ij}}{b_{ij}}
 
 Die SNR sollte im Idealfall oberhalb von~$3$ liegen. Dieser Wert wird von der Software \emph{MNE} als Grenzwert verwendet (???). Die Ergebnisse sind in Tabelle \ref{tab:snr} dargestellt. Deutlich wird, dass das Signal-Rausch-Verhältnis um den Wert von $3$ liegt. Während \texttt{pa07} eher leicht unterhalb von $3$ liegt, sind die Werte von \texttt{pa10} gut oberhalb von $3$. Das Signal-Rausch-Verhältnis spricht dafür, dass die Daten zur Lokalisation geeignet sein sollten, sie dürften jedoch auf ein gewisses Maß an Rauschen enthalten.
 
+%%% MNE Grenzwert bei 3?
+
 \subsection{Quellrekonstruktionen und Zeitverläufe}
 
-Bilder
+In Abbildung~\ref{img:pa07:aktiv} und~\ref{img:pa10:aktiv} sind die Aktivitätsdaten der rekonstruierten Quellen für die Versuchspersonen \texttt{pa07} und \texttt{pa10} abgebildet. Recht/Linksseitig (???). Deutlich wird, dass Minimum Norm Estimate (Abbildungen auf der rechten Seite) durchweg eine wesentlich konzentrierte Verteilung aufweisen, als LCMV Beamformer. Zusätzlich scheint Beamformer fälschlicherweise eine Aktivität auf der Gehirnoberseite festzustellen (Warum ???). Diese Aktivität sinkt jedoch mit zunehmender Verwendung rauschunterdrückender Verfahren. Daran wird deutlich, dass Beamformer offensichtlich große Probleme hat Rohdaten korrekt zu verarbeiten. Die These, dass Beamformer gut darin ist Rohdaten zu verarbeiten muss an dieser Stelle verworfen werden.
+
+%%% Warum Aktivität auf der Gehirnoberseite?
+
+Sehr deutlich wird dieses Verhalten auch in den Zeitverläufen in Abbildung~\ref{img:pa07:zeit} und~\ref{img:pa10:zeit}. Der Hauptausschlag der MMNm sollte bei ca. $200$-$250\,ms$ liegen. Während Minimum Norm Estimate selbst bei Verwendung von Rohdaten mit der Amplitude in diesem Bereich liegt und auch nur eine Haupt-Amplitude aufweist, zeigen sich bei Beamformer große Probleme bei der Verarbeitung der Rohdaten. Die Haupt-Amplitude in den Abbildungen~\ref{img:pa07:zeit:raw-lcmv} und~\ref{img:zeit:pa10:raw-lcmv} liegen noch vor $200\,ms$, außerdem kommt es zu einer großen Anzahl an hohen Ausschlägen, für die es auf Basis der zu erwartenden Aktivitäten keine Erklärung gibt. Etwas besser wird es bei Beamformer mit Verwendung von bereits rauschunterdrückten SSS- oder MC-Daten. Dies widerspricht jedoch der eigentlichen These.
+
+Bei pa10 ... Effekte der Bewegung? Ist Unterschied Roh/SSS zu MC größer bei pa10?
 
 \subsection{Anpassungsgüte}
 
 Nur für MNE?
+
+% ##### GRAFIKEN #####
+
+\begin{figure}
+%  \centering
+%  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_lcmv_activity.eps}}
+    \subcaption{Rohdaten / LCMV Beamformer}
+    \label{img:pa07:aktiv:raw-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_mne_activity.eps}}
+    \subcaption{Rohdaten / Minimum Norm Estimate}
+    \label{img:pa07:aktiv:raw-mne}
+  \end{subfigure}\vspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_lcmv_activity.eps}}
+    \subcaption{SSS-Daten / LCMV Beamformer}
+    \label{img:pa07:aktiv:sss-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_mne_activity.eps}}
+    \subcaption{SSS-Daten / Minimum Norm Estimate}
+    \label{img:pa07:aktiv:sss-mne}
+  \end{subfigure}\vspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_lcmv_activity.eps}}
+    \subcaption{MC-Daten / LCMV Beamformer}
+    \label{img:pa07:aktiv:mc-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_mne_activity.eps}}
+    \subcaption{MC-Daten / Minimum Norm Estimate}
+    \label{img:pa07:aktiv:mc-mne}
+  \end{subfigure}
+  %
+  \vspace*{3mm}
+  \caption[Quellaktivität von Versuchsperson \texttt{pa07}]{Quellaktivität von Versuchsperson \texttt{pa07} in allen Bedingungen im linken temporalen Bereich bei $208\,ms$.}
+  \label{img:pa07:aktiv}
+\end{figure}
+
+\begin{figure}
+%  \centering
+%  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse.eps}
+    \subcaption{Rohdaten / LCMV Beamformer}
+    \label{img:pa07:zeit:raw-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_mne_timecourse.eps}
+    \subcaption{Rohdaten / Minimum Norm Estimate}
+    \label{img:pa07:zeit:raw-mne}
+  \end{subfigure}\vspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_lcmv_timecourse.eps}
+    \subcaption{SSS-Daten / LCMV Beamformer}
+    \label{img:pa07:zeit:sss-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_mne_timecourse.eps}
+    \subcaption{SSS-Daten / Minimum Norm Estimate}
+    \label{img:pa07:zeit:sss-mne}
+  \end{subfigure}\vspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_lcmv_timecourse.eps}
+    \subcaption{MC-Daten / LCMV Beamformer}
+    \label{img:pa07:zeit:mc-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_mne_timecourse.eps}
+    \subcaption{MC-Daten / Minimum Norm Estimate}
+    \label{img:pa07:zeit:mc-mne}
+  \end{subfigure}
+  %
+  \vspace*{3mm}
+  \caption[Zeitverlauf der Aktivität von Versuchsperson \texttt{pa07}]{Zeitverlauf der Aktivität von Versuchsperson \texttt{pa07} in allen Bedingungen im Gyrus temporalis superior.}
+  \label{img:pa07:zeit}
+\end{figure}
+
+\begin{figure}
+%  \centering
+%  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_lcmv_activity.eps}}
+    \subcaption{Rohdaten / LCMV Beamformer}
+    \label{img:pa10:aktiv:raw-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_mne_activity.eps}}
+    \subcaption{Rohdaten / Minimum Norm Estimate}
+    \label{img:pa10:aktiv:raw-mne}
+  \end{subfigure}\vspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_lcmv_activity.eps}}
+    \subcaption{SSS-Daten / LCMV Beamformer}
+    \label{img:pa10:aktiv:sss-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_mne_activity.eps}}
+    \subcaption{SSS-Daten / Minimum Norm Estimate}
+    \label{img:pa10:aktiv:sss-mne}
+  \end{subfigure}\vspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_lcmv_activity.eps}}
+    \subcaption{MC-Daten / LCMV Beamformer}
+    \label{img:pa10:aktiv:mc-lcmv}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_mne_activity.eps}}
+    \subcaption{MC-Daten / Minimum Norm Estimate}
+    \label{img:pa10:aktiv:mc-mne}
+  \end{subfigure}
+  %
+  \vspace*{3mm}
+  \caption[Quellaktivität von Versuchsperson \texttt{pa10}]{Quellaktivität von Versuchsperson \texttt{pa10} in allen Bedingungen im rechten (???) temporalen Bereich  bei $208\,ms$.}
+  \label{img:pa10:aktiv}
+\end{figure}
+
+%\begin{figure}
+%%  \centering
+%%  \captionsetup{justification=centering}
+%  %
+%  \begin{subfigure}[c]{0.47\textwidth}
+%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_lcmv_timecourse.eps}
+%    \subcaption{Rohdaten / LCMV Beamformer}
+%    \label{img:pa10:zeit:raw-lcmv}
+%  \end{subfigure}\hspace*{0.04\textwidth}
+%  %
+%  \begin{subfigure}[c]{0.47\textwidth}
+%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_mne_timecourse.eps}
+%    \subcaption{Rohdaten / Minimum Norm Estimate}
+%    \label{img:pa10:zeit:raw-mne}
+%  \end{subfigure}\vspace*{0.04\textwidth}
+%  %
+%  \begin{subfigure}[c]{0.47\textwidth}
+%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_lcmv_timecourse.eps}
+%    \subcaption{SSS-Daten / LCMV Beamformer}
+%    \label{img:pa10:zeit:sss-lcmv}
+%  \end{subfigure}\hspace*{0.04\textwidth}
+%  %
+%  \begin{subfigure}[c]{0.47\textwidth}
+%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_mne_timecourse.eps}
+%    \subcaption{SSS-Daten / Minimum Norm Estimate}
+%    \label{img:pa10:zeit:sss-mne}
+%  \end{subfigure}\vspace*{0.04\textwidth}
+%  %
+%  \begin{subfigure}[c]{0.47\textwidth}
+%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_lcmv_timecourse.eps}
+%    \subcaption{MC-Daten / LCMV Beamformer}
+%    \label{img:pa10:zeit:mc-lcmv}
+%  \end{subfigure}\hspace*{0.04\textwidth}
+%  %
+%  \begin{subfigure}[c]{0.47\textwidth}
+%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_mne_timecourse.eps}
+%    \subcaption{MC-Daten / Minimum Norm Estimate}
+%    \label{img:pa10:zeit:mc-mne}
+%  \end{subfigure}
+%  %
+%  \vspace*{3mm}
+%  \caption[Zeitverlauf der Aktivität von Versuchsperson \texttt{pa10}]{Zeitverlauf der Aktivität von Versuchsperson \texttt{pa10} in allen Bedingungen im Gyrus temporalis superior.}
+%  \label{img:pa10:zeit}
+%\end{figure}
 
 % #######################
 % ##### DISKUSSION  #####
@@ -872,12 +1062,12 @@ Nur für MNE?
 \section{Diskussion}
 \label{sec:diskussion}
 
+Die Ergebnisse haben Fragen aufgeworfen über die Eigenschaften der Verfahren. Eine Interpretation der Ergebnisse 
+
 Präsentation: Therefore, uncorrelated noise (e.g., random system noise) will be amplified by the weights in a non-uniform manner, with increasing distortion with increasing distance from the sensors 
 
 MEG-Buch S. 164: Since the adaptive spatial fi lters computed using Equation (7–3) are dependent on the leadfi eld matrix G , beamforming—like the MNE/MCE methods for distributed source modeling—does not provide accurate estimates of deep sources. This is essentially due to the fact that the fi eld patterns at the scalp of neighboring dipole sources approaching the center of the head are generally more similar to each other (i.e., more spatially correlated) than164
 MEG: An Introduction to Methods the fi elds of neighboring dipoles close to the surface. Particularly in the presence of noise, this leads to larger localization errors. Primarily because of this “spatial leakage,” beamformers tend to overestimate the signal power of deeplying sources, which makes it diffi cult to interpret the “raw” beamformer signal amplitude estimates.
-
-Ist Unterschied Roh/SSS zu MC größer bei pa10?
 
 \newpage
 \section{Literaturverzeichnis}

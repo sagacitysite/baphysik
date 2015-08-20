@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.17)  20 AUG 2015 18:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.17)  20 AUG 2015 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1200,7 +1200,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 128.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 128.
- [4] (./ba.lof)
+ [4] (./ba.lof
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 19.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
 \tf@lof=\write6
 \openout6 = `ba.lof'.
 
@@ -1256,11 +1261,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 168.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 168.
-
-[9] <einleitung/stg.png, id=217, 301.125pt x 190.7125pt>
+ [9]
+<einleitung/stg.png, id=224, 301.125pt x 190.7125pt>
 File: einleitung/stg.png Graphic file (type png)
-
-<use einleitung/stg.png>
+ <use einleitung/stg.png>
 Package pdftex.def Info: einleitung/stg.png used on input line 177.
 (pdftex.def)             Requested size: 212.89546pt x 134.83936pt.
 
@@ -1290,7 +1294,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []$\T1/lmr/m/n/10.95 https : / / en . wikipedia . org / w / index . php ?
  []
 
-<einleitung/brodmann-41-42.png, id=219, 301.125pt x 190.7125pt>
+<einleitung/brodmann-41-42.png, id=226, 301.125pt x 190.7125pt>
 File: einleitung/brodmann-41-42.png Graphic file (type png)
 
 <use einleitung/brodmann-41-42.png>
@@ -1354,7 +1358,7 @@ f>
 (epstopdf)             \includegraphics on input line 249.
 Package epstopdf Info: Output file is already uptodate.
 
-<einleitung/koppelspule-eps-converted-to.pdf, id=274, 279.0425pt x 140.525pt>
+<einleitung/koppelspule-eps-converted-to.pdf, id=281, 279.0425pt x 140.525pt>
 File: einleitung/koppelspule-eps-converted-to.pdf Graphic file (type pdf)
 
 <use einleitung/koppelspule-eps-converted-to.pdf>
@@ -1461,7 +1465,7 @@ ps-converted-to.pdf einleitung/superposition.eps>
 (epstopdf)             \includegraphics on input line 359.
 Package epstopdf Info: Output file is already uptodate.
 
-<einleitung/superposition-eps-converted-to.pdf, id=351, 130.4875pt x 157.58875p
+<einleitung/superposition-eps-converted-to.pdf, id=358, 130.4875pt x 157.58875p
 t>
 File: einleitung/superposition-eps-converted-to.pdf Graphic file (type pdf)
  <use einleitung/superposition-eps-converted-to.pdf>
@@ -1477,7 +1481,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 372.
  [20]
-<einleitung/bem.png, id=362, 449.68pt x 337.26pt>
+<einleitung/bem.png, id=369, 449.68pt x 337.26pt>
 File: einleitung/bem.png Graphic file (type png)
  <use einleitung/bem.png>
 Package pdftex.def Info: einleitung/bem.png used on input line 377.
@@ -1628,12 +1632,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 642.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 642.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 646.
-
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 647.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1659,7 +1657,7 @@ converted-to.pdf methodik/verarbeitung.eps>
 (epstopdf)             \includegraphics on input line 670.
 Package epstopdf Info: Output file is already uptodate.
 
-<methodik/verarbeitung-eps-converted-to.pdf, id=506, 501.875pt x 484.81125pt>
+<methodik/verarbeitung-eps-converted-to.pdf, id=512, 501.875pt x 484.81125pt>
 File: methodik/verarbeitung-eps-converted-to.pdf Graphic file (type pdf)
 
 <use methodik/verarbeitung-eps-converted-to.pdf>
@@ -1745,7 +1743,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 744.
 
-<ergebnisse/frequenzanalye_raw.png, id=549, 973.74316pt x 720.41779pt>
+<ergebnisse/frequenzanalye_raw.png, id=555, 973.74316pt x 720.41779pt>
 File: ergebnisse/frequenzanalye_raw.png Graphic file (type png)
 
 <use ergebnisse/frequenzanalye_raw.png>
@@ -1757,7 +1755,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 756--757
 [][] 
  []
 
-<ergebnisse/frequenzanalye_ss.png, id=550, 973.74316pt x 701.39937pt>
+<ergebnisse/frequenzanalye_ss.png, id=556, 973.74316pt x 701.39937pt>
 File: ergebnisse/frequenzanalye_ss.png Graphic file (type png)
 
 <use ergebnisse/frequenzanalye_ss.png>
@@ -1816,13 +1814,13 @@ onverted-to.pdf ergebnisse/sensormap.eps>
 (epstopdf)             \includegraphics on input line 804.
 Package epstopdf Info: Output file is already uptodate.
 
-<ergebnisse/sensormap-eps-converted-to.pdf, id=568, 624.3325pt x 504.88625pt>
+<ergebnisse/sensormap-eps-converted-to.pdf, id=574, 624.3325pt x 504.88625pt>
 File: ergebnisse/sensormap-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ergebnisse/sensormap-eps-converted-to.pdf>
 Package pdftex.def Info: ergebnisse/sensormap-eps-converted-to.pdf used on inpu
 t line 804.
-(pdftex.def)             Requested size: 407.66833pt x 329.68213pt.
+(pdftex.def)             Requested size: 416.72963pt x 337.00858pt.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 817.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1842,100 +1840,670 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 854.
  [44]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 858.
+(babel)             in language  on input line 860.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 858.
+(babel)             in language  on input line 860.
+
+
+LaTeX Warning: Reference `img:pa10:zeit' on page 45 undefined on input line 866
+.
+
+
+LaTeX Warning: Reference `img:zeit:pa10:raw-lcmv' on page 45 undefined on input
+ line 866.
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 862.
+(babel)             in language  on input line 868.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 862.
+(babel)             in language  on input line 868.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 868.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 868.
+[45]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 870.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 870.
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_raw_lcmv_activit
+y.eps>
+(epstopdf)                    date: 2015-08-13 05:07:52
+(epstopdf)                    size: 746123 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_raw_lcmv_activit
+y-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:04:35
+(epstopdf)                    size: 124977 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+raw_lcmv_activity-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_raw_lcmv_activ
+ity.eps>
+(epstopdf)             \includegraphics on input line 881.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_raw_lcmv_activity-eps-converted-to.pdf, id=603, 425.
+59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_raw_lcmv_activity-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_raw_lcmv_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_raw_lcmv_activity-eps-conver
+ted-to.pdf used on input line 881.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 881--882
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_raw_mne_activity
+.eps>
+(epstopdf)                    date: 2015-08-13 05:07:56
+(epstopdf)                    size: 706481 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_raw_mne_activity
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:04:36
+(epstopdf)                    size: 118169 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+raw_mne_activity-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_raw_mne_activit
+y.eps>
+(epstopdf)             \includegraphics on input line 887.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_raw_mne_activity-eps-converted-to.pdf, id=604, 425.5
+9pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_raw_mne_activity-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_raw_mne_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_raw_mne_activity-eps-convert
+ed-to.pdf used on input line 887.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 887--888
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_sss_lcmv_activit
+y.eps>
+(epstopdf)                    date: 2015-08-13 05:07:58
+(epstopdf)                    size: 732718 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_sss_lcmv_activit
+y-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:04:36
+(epstopdf)                    size: 125783 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+sss_lcmv_activity-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_sss_lcmv_activ
+ity.eps>
+(epstopdf)             \includegraphics on input line 893.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_sss_lcmv_activity-eps-converted-to.pdf, id=605, 425.
+59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_sss_lcmv_activity-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_sss_lcmv_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_sss_lcmv_activity-eps-conver
+ted-to.pdf used on input line 893.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 893--894
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_sss_mne_activity
+.eps>
+(epstopdf)                    date: 2015-08-13 05:08:02
+(epstopdf)                    size: 705102 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_sss_mne_activity
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:04:37
+(epstopdf)                    size: 113638 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+sss_mne_activity-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_sss_mne_activit
+y.eps>
+(epstopdf)             \includegraphics on input line 899.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_sss_mne_activity-eps-converted-to.pdf, id=606, 425.5
+9pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_sss_mne_activity-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_sss_mne_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_sss_mne_activity-eps-convert
+ed-to.pdf used on input line 899.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 899--900
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_mc_lcmv_activity
+.eps>
+(epstopdf)                    date: 2015-08-13 05:07:48
+(epstopdf)                    size: 728765 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_mc_lcmv_activity
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:04:37
+(epstopdf)                    size: 122004 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+mc_lcmv_activity-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_mc_lcmv_activit
+y.eps>
+(epstopdf)             \includegraphics on input line 905.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_mc_lcmv_activity-eps-converted-to.pdf, id=607, 425.5
+9pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_mc_lcmv_activity-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_mc_lcmv_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_mc_lcmv_activity-eps-convert
+ed-to.pdf used on input line 905.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 905--906
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_mc_mne_activity.
+eps>
+(epstopdf)                    date: 2015-08-13 05:07:50
+(epstopdf)                    size: 702929 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_mc_mne_activity-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:04:38
+(epstopdf)                    size: 111265 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+mc_mne_activity-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_mc_mne_activity.
+eps>
+(epstopdf)             \includegraphics on input line 911.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_mc_mne_activity-eps-converted-to.pdf, id=608, 425.59
+pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_mc_mne_activity-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_mc_mne_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_mc_mne_activity-eps-converte
+d-to.pdf used on input line 911.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 911--912
+[][] 
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 880--917
+[]$[]$|  $[]$
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 880--917
+[]$|  $[]$
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_raw_lcmv_timecou
+rse.eps>
+(epstopdf)                    date: 2015-08-13 05:07:54
+(epstopdf)                    size: 86709 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_raw_lcmv_timecou
+rse-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:14:32
+(epstopdf)                    size: 11515 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+raw_lcmv_timecourse-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_raw_lcmv_tim
+ecourse.eps>
+(epstopdf)             \includegraphics on input line 926.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse-eps-converted-to.pdf, id=609, 42
+5.59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse-eps-converted-to.pdf Graphi
+c file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse-eps-conv
+erted-to.pdf used on input line 926.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_raw_mne_timecour
+se.eps>
+(epstopdf)                    date: 2015-08-13 05:07:58
+(epstopdf)                    size: 86705 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_raw_mne_timecour
+se-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:14:33
+(epstopdf)                    size: 11421 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+raw_mne_timecourse-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_raw_mne_timec
+ourse.eps>
+(epstopdf)             \includegraphics on input line 932.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_raw_mne_timecourse-eps-converted-to.pdf, id=610, 425
+.59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_raw_mne_timecourse-eps-converted-to.pdf Graphic
+ file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_raw_mne_timecourse-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_raw_mne_timecourse-eps-conve
+rted-to.pdf used on input line 932.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_sss_lcmv_timecou
+rse.eps>
+(epstopdf)                    date: 2015-08-13 05:08:00
+(epstopdf)                    size: 86951 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_sss_lcmv_timecou
+rse-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:14:33
+(epstopdf)                    size: 11478 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+sss_lcmv_timecourse-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_sss_lcmv_tim
+ecourse.eps>
+(epstopdf)             \includegraphics on input line 938.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_sss_lcmv_timecourse-eps-converted-to.pdf, id=611, 42
+5.59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_sss_lcmv_timecourse-eps-converted-to.pdf Graphi
+c file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_sss_lcmv_timecourse-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_sss_lcmv_timecourse-eps-conv
+erted-to.pdf used on input line 938.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_sss_mne_timecour
+se.eps>
+(epstopdf)                    date: 2015-08-13 05:08:02
+(epstopdf)                    size: 86710 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_sss_mne_timecour
+se-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:14:34
+(epstopdf)                    size: 11415 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+sss_mne_timecourse-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_sss_mne_timec
+ourse.eps>
+(epstopdf)             \includegraphics on input line 944.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_sss_mne_timecourse-eps-converted-to.pdf, id=612, 425
+.59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_sss_mne_timecourse-eps-converted-to.pdf Graphic
+ file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_sss_mne_timecourse-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_sss_mne_timecourse-eps-conve
+rted-to.pdf used on input line 944.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_mc_lcmv_timecour
+se.eps>
+(epstopdf)                    date: 2015-08-13 05:07:48
+(epstopdf)                    size: 86957 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_mc_lcmv_timecour
+se-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:14:35
+(epstopdf)                    size: 11468 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+mc_lcmv_timecourse-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_mc_lcmv_timec
+ourse.eps>
+(epstopdf)             \includegraphics on input line 950.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_mc_lcmv_timecourse-eps-converted-to.pdf, id=613, 425
+.59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_mc_lcmv_timecourse-eps-converted-to.pdf Graphic
+ file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_mc_lcmv_timecourse-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_mc_lcmv_timecourse-eps-conve
+rted-to.pdf used on input line 950.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+Package epstopdf Info: Source file: <ergebnisse/pa07/pa07_eve2_mc_mne_timecours
+e.eps>
+(epstopdf)                    date: 2015-08-13 05:07:52
+(epstopdf)                    size: 86711 bytes
+(epstopdf)             Output file: <ergebnisse/pa07/pa07_eve2_mc_mne_timecours
+e-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:14:36
+(epstopdf)                    size: 11423 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa07/pa07_eve2_
+mc_mne_timecourse-eps-converted-to.pdf ergebnisse/pa07/pa07_eve2_mc_mne_timecou
+rse.eps>
+(epstopdf)             \includegraphics on input line 956.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa07/pa07_eve2_mc_mne_timecourse-eps-converted-to.pdf, id=614, 425.
+59pt x 319.1925pt>
+File: ergebnisse/pa07/pa07_eve2_mc_mne_timecourse-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use ergebnisse/pa07/pa07_eve2_mc_mne_timecourse-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa07/pa07_eve2_mc_mne_timecourse-eps-conver
+ted-to.pdf used on input line 956.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Underfull \hbox (badness 1810) in paragraph at lines 925--962
+[]$[]$|  $[]$
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 925--962
+[]$|  $[]$
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa10/pa10_eve2_raw_lcmv_activit
+y.eps>
+(epstopdf)                    date: 2015-08-13 05:08:38
+(epstopdf)                    size: 701173 bytes
+(epstopdf)             Output file: <ergebnisse/pa10/pa10_eve2_raw_lcmv_activit
+y-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:09:53
+(epstopdf)                    size: 124940 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa10/pa10_eve2_
+raw_lcmv_activity-eps-converted-to.pdf ergebnisse/pa10/pa10_eve2_raw_lcmv_activ
+ity.eps>
+(epstopdf)             \includegraphics on input line 971.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa10/pa10_eve2_raw_lcmv_activity-eps-converted-to.pdf, id=615, 425.
+59pt x 319.1925pt>
+File: ergebnisse/pa10/pa10_eve2_raw_lcmv_activity-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use ergebnisse/pa10/pa10_eve2_raw_lcmv_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa10/pa10_eve2_raw_lcmv_activity-eps-conver
+ted-to.pdf used on input line 971.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 971--972
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa10/pa10_eve2_raw_mne_activity
+.eps>
+(epstopdf)                    date: 2015-08-13 05:08:38
+(epstopdf)                    size: 661283 bytes
+(epstopdf)             Output file: <ergebnisse/pa10/pa10_eve2_raw_mne_activity
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:09:53
+(epstopdf)                    size: 111885 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa10/pa10_eve2_
+raw_mne_activity-eps-converted-to.pdf ergebnisse/pa10/pa10_eve2_raw_mne_activit
+y.eps>
+(epstopdf)             \includegraphics on input line 977.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa10/pa10_eve2_raw_mne_activity-eps-converted-to.pdf, id=616, 425.5
+9pt x 319.1925pt>
+File: ergebnisse/pa10/pa10_eve2_raw_mne_activity-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ergebnisse/pa10/pa10_eve2_raw_mne_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa10/pa10_eve2_raw_mne_activity-eps-convert
+ed-to.pdf used on input line 977.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 977--978
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa10/pa10_eve2_sss_lcmv_activit
+y.eps>
+(epstopdf)                    date: 2015-08-13 05:08:40
+(epstopdf)                    size: 692430 bytes
+(epstopdf)             Output file: <ergebnisse/pa10/pa10_eve2_sss_lcmv_activit
+y-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:09:54
+(epstopdf)                    size: 119436 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa10/pa10_eve2_
+sss_lcmv_activity-eps-converted-to.pdf ergebnisse/pa10/pa10_eve2_sss_lcmv_activ
+ity.eps>
+(epstopdf)             \includegraphics on input line 983.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa10/pa10_eve2_sss_lcmv_activity-eps-converted-to.pdf, id=617, 425.
+59pt x 319.1925pt>
+File: ergebnisse/pa10/pa10_eve2_sss_lcmv_activity-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use ergebnisse/pa10/pa10_eve2_sss_lcmv_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa10/pa10_eve2_sss_lcmv_activity-eps-conver
+ted-to.pdf used on input line 983.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 983--984
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa10/pa10_eve2_sss_mne_activity
+.eps>
+(epstopdf)                    date: 2015-08-13 05:08:42
+(epstopdf)                    size: 661326 bytes
+(epstopdf)             Output file: <ergebnisse/pa10/pa10_eve2_sss_mne_activity
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:09:55
+(epstopdf)                    size: 113410 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa10/pa10_eve2_
+sss_mne_activity-eps-converted-to.pdf ergebnisse/pa10/pa10_eve2_sss_mne_activit
+y.eps>
+(epstopdf)             \includegraphics on input line 989.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa10/pa10_eve2_sss_mne_activity-eps-converted-to.pdf, id=618, 425.5
+9pt x 319.1925pt>
+File: ergebnisse/pa10/pa10_eve2_sss_mne_activity-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ergebnisse/pa10/pa10_eve2_sss_mne_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa10/pa10_eve2_sss_mne_activity-eps-convert
+ed-to.pdf used on input line 989.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 989--990
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa10/pa10_eve2_mc_lcmv_activity
+.eps>
+(epstopdf)                    date: 2015-08-13 05:08:34
+(epstopdf)                    size: 693357 bytes
+(epstopdf)             Output file: <ergebnisse/pa10/pa10_eve2_mc_lcmv_activity
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:09:55
+(epstopdf)                    size: 120884 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa10/pa10_eve2_
+mc_lcmv_activity-eps-converted-to.pdf ergebnisse/pa10/pa10_eve2_mc_lcmv_activit
+y.eps>
+(epstopdf)             \includegraphics on input line 995.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa10/pa10_eve2_mc_lcmv_activity-eps-converted-to.pdf, id=619, 425.5
+9pt x 319.1925pt>
+File: ergebnisse/pa10/pa10_eve2_mc_lcmv_activity-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ergebnisse/pa10/pa10_eve2_mc_lcmv_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa10/pa10_eve2_mc_lcmv_activity-eps-convert
+ed-to.pdf used on input line 995.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 995--996
+[][] 
+ []
+
+Package epstopdf Info: Source file: <ergebnisse/pa10/pa10_eve2_mc_mne_activity.
+eps>
+(epstopdf)                    date: 2015-08-13 05:08:36
+(epstopdf)                    size: 661539 bytes
+(epstopdf)             Output file: <ergebnisse/pa10/pa10_eve2_mc_mne_activity-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-20 19:09:56
+(epstopdf)                    size: 112655 bytes
+(epstopdf)             Command: <repstopdf --outfile=ergebnisse/pa10/pa10_eve2_
+mc_mne_activity-eps-converted-to.pdf ergebnisse/pa10/pa10_eve2_mc_mne_activity.
+eps>
+(epstopdf)             \includegraphics on input line 1001.
+Package epstopdf Info: Output file is already uptodate.
+
+<ergebnisse/pa10/pa10_eve2_mc_mne_activity-eps-converted-to.pdf, id=620, 425.59
+pt x 319.1925pt>
+File: ergebnisse/pa10/pa10_eve2_mc_mne_activity-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use ergebnisse/pa10/pa10_eve2_mc_mne_activity-eps-converted-to.pdf>
+Package pdftex.def Info: ergebnisse/pa10/pa10_eve2_mc_mne_activity-eps-converte
+d-to.pdf used on input line 1001.
+(pdftex.def)             Requested size: 212.89546pt x 159.67378pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1001--1002
+[][] 
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 970--1007
+[]$[]$|  $[]$
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 970--1007
+[]$|  $[]$
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 870.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 870.
- [45]
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 872.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 872.
+(babel)             in language  on input line 1060.
+[46]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 882.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 882.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 882.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 882.
- [46]
+(babel)             in language  on input line 1060.
+ [47 <./ergebnisse/pa07/pa07_eve2_raw_lcmv_activity-eps-converted-to.pdf> <./er
+gebnisse/pa07/pa07_eve2_raw_mne_activity-eps-converted-to.pdf> <./ergebnisse/pa
+07/pa07_eve2_sss_lcmv_activity-eps-converted-to.pdf> <./ergebnisse/pa07/pa07_ev
+e2_sss_mne_activity-eps-converted-to.pdf> <./ergebnisse/pa07/pa07_eve2_mc_lcmv_
+activity-eps-converted-to.pdf> <./ergebnisse/pa07/pa07_eve2_mc_mne_activity-eps
+-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 883.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 883.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1060.
+ [48 <./ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse-eps-converted-to.pdf> <./
+ergebnisse/pa07/pa07_eve2_raw_mne_timecourse-eps-converted-to.pdf> <./ergebniss
+e/pa07/pa07_eve2_sss_lcmv_timecourse-eps-converted-to.pdf> <./ergebnisse/pa07/p
+a07_eve2_sss_mne_timecourse-eps-converted-to.pdf> <./ergebnisse/pa07/pa07_eve2_
+mc_lcmv_timecourse-eps-converted-to.pdf> <./ergebnisse/pa07/pa07_eve2_mc_mne_ti
+mecourse-eps-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
- [47]
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1060.
+ [49 <./ergebnisse/pa10/pa10_eve2_raw_lcmv_activity-eps-converted-to.pdf> <./er
+gebnisse/pa10/pa10_eve2_raw_mne_activity-eps-converted-to.pdf> <./ergebnisse/pa
+10/pa10_eve2_sss_lcmv_activity-eps-converted-to.pdf> <./ergebnisse/pa10/pa10_ev
+e2_sss_mne_activity-eps-converted-to.pdf> <./ergebnisse/pa10/pa10_eve2_mc_lcmv_
+activity-eps-converted-to.pdf> <./ergebnisse/pa10/pa10_eve2_mc_mne_activity-eps
+-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1062.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
- [48]
+(babel)             in language  on input line 1062.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1070.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1070.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1070.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
- [49]
+(babel)             in language  on input line 1070.
+
+[50]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1071.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1071.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 885.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 885.
- [50]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 889.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 889.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 889.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 889.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 889.
+(babel)             in language  on input line 1073.
  [51]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 889.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1073.
+ [52]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1073.
+ [53]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1073.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1073.
+ [54]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1077.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1077.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1077.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1077.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1077.
+ [55]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1077.
  (./ba.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 889.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 889.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1077.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1077.
+
 Package rerunfilecheck Info: File `ba.out' has not changed.
-(rerunfilecheck)             Checksum: 3879C02063D092EF9F16483AFEEE1D00;1507.
+(rerunfilecheck)             Checksum: A3B721E62C5F49C1607264A580CAD65C;1507.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'ba.run.xml'.
 \openout1 = `ba.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16852 strings out of 494935
- 265183 string characters out of 6178121
- 740161 words of memory out of 5000000
- 19587 multiletter control sequences out of 15000+600000
+ 16992 strings out of 494935
+ 271803 string characters out of 6178121
+ 746663 words of memory out of 5000000
+ 19700 multiletter control sequences out of 15000+600000
  65312 words of font info for 52 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  43i,12n,57p,1863b,1654s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1951,10 +2519,10 @@ public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ba.pdf (51 pages, 527794 bytes).
+Output written on ba.pdf (55 pages, 1973271 bytes).
 PDF statistics:
- 712 PDF objects out of 1000 (max. 8388607)
- 624 compressed objects within 7 object streams
- 184 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 885 PDF objects out of 1000 (max. 8388607)
+ 714 compressed objects within 8 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 
