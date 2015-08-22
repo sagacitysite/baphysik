@@ -15,8 +15,8 @@
 \usepackage{pdfpages}
 \usepackage[backend=biber,style=apa]{biblatex}
 \usepackage[titles]{tocloft}
+\usepackage{caption}
 \usepackage{subcaption}
-\usepackage{nicefrac}
 
 \hypersetup{hidelinks}
 \usepackage{letltxmacro}
@@ -329,6 +329,8 @@ $\mx{S}_{\text{innen}}$ und $\mx{S}_{\text{außen}}$ werden mit den Basen $\mx{a
 \item Man kann zeigen, dass externe Quellen außerhalb des MEG-Helms mit den Termen in der zweiten Summe von Gleichung~\ref{eq:sss-magpot} zusammenhängen. Umgekehrt sind Signale, welche vom Inneren des MEG-Helmes (respektive vom Gehirn) stammen mit den Termen der ersten Summe verknüpft. Intuitiv wird dies in Gleichung~\ref{eq:sss-pot} deutlich. Der erste Term enthält - wie bereits angesprochen - eine Singularität im Ursprung, die zweite Summe divergiert für unendlich große~$l$. Durch einfaches Weglassen der zweiten Summe werden die Einflüsse der externen Quellen deutlich verringert.
 \end{compactitem}
 
+Beide Terme zusammen erklären die gesamt vorkommende Aktivität. Anschaulich erklärt jedoch die erste Summe die Aktivität von innen nach außen. Daher ist es sinnvoll hier nur eine begrenzten Anzahl an Termen zu verwenden. Die zweite Summe erklärt die Aktivität von außen nach innen, weshalb dieser ganz weggelassen werden kann, da hier fast ausschließlich äußere Aktivität zu erwarten ist.
+
 Die SSS-Methode ist zwar deutlich rechenaufwändiger als SSP, führt jedoch im Gegenzug zu deutlich rauschfreieren Ergebnissen. Zusätzlich ist keine Leerraummessung notwendig. Die Methode kann durch die angesprochene Movement Correction (MC) erweitert werden. Im normalen SSS-Verfahren wird angenommen, dass die Versuchsperson während eines Durchgangs bzw. Blocks unbewegt sitzen bleibt. Die Kopfpositionen werden nur zwischen den Blöcken auf die Position zu Beginn der gesamten Messung korrigiert. Bei der zusätzlichen MC-Berechnung wird die Kopfposition für jeden Zeitpunkt korrigiert. Zur Erfassung der Kopfposition sind Spulen am Kopf angebracht, welche zu jedem Zeitpunkt die Position der Versuchsperson erfassen. Eine zusätzliche nachträgliche Korrektur der Kopfposition ist vor allem dann sinnvoll, wenn sich die Versuchsperson sehr viel bewegt hat. Die Notwendigkeit dieses Rechenschritts kann mit Bewegungsprofilen abgeschätzt werden.
 
 % ####################################
@@ -618,34 +620,32 @@ Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben mit Rohdaten u
 
 \subsubsection{Verwendeter Datensatz}
 
-Die verwendeten Daten wurden aus einem Experiment übernommen, welches auf einer Studie von \textcite{maess2007localizing} basiert. Dabei wurden die neuronalen Ursachen der mismatch negativity untersucht, die in Abschnitt \nameref{sec:erf} auf Seite \pageref{sec:erf} eingeführt wurde. Verglichen wurden zwei Theorien zur Entstehung der MMNm. In einem früheren Experiment von \textcite{jacobsen2001there} wurden die Theorien bereits mit Hilfe einer EEG-Messung geprüft, es konnte damals jedoch kein ganz eindeutiges Ergebnis festgestellt werden.
+Die verwendeten Daten wurden aus einem Experiment übernommen, welches auf einer Studie von \textcite{maess2007localizing} basiert. Dabei wurden die neuronalen Ursachen der Mismatch Negativity untersucht, die in Abschnitt \nameref{sec:erf} auf Seite \pageref{sec:erf} eingeführt wurde. Verglichen wurden zwei Theorien zur Entstehung der MMNm. In einem früheren Experiment von \textcite{jacobsen2001there} wurden die Theorien bereits mit Hilfe einer EEG-Messung geprüft, es konnte damals jedoch keine eindeutige Schlussfolgerung gezogen werden.
 
 Die traditionelle Theorie geht davon aus, dass die regelmäßige Präsentation gleicher Töne im auditiven sensorischen Gedächtnis gespeichert bleibt. Jeder neue Ton wird mit dem Gedächtnis abgeglichen. Kommt es zu einer Abweichung des Stimulus, so kommt es zu einer Aktivierung von Nervenzellen, die von der vorherigen Aktivierung signifikant abweicht. Eine MMNm wird messbar \parencite{naatanen2001primitive}. Die andere Theorie geht davon aus, dass es frequenzspezifische afferente Nervenzellegruppen im Gehirn gibt. Eine Unterscheidung zwischen unterschiedlichen Tönen wird dann auf Basis der Erkennung unterschiedlicher Aktivierungsmuster getroffen und nicht durch einen Vergleich.
 
-Verwendet wurden Oddball-Blöcke, bei denen zu einem regelmäßigen gleichen Ton (Standard) mit einer bestimmten Wahrscheinlichkeit eine Abweichung vor kam (Deviant). Diese Abweichung erfolgte entweder mit einer höheren oder einer niedrigeren Frequenz. Zusätzlich wurden in Kontrollbedingungen zufällig mehrere verschiedene Frequenzen abgespielt, um die frequenzspezifische Verarbeitung zu überprüfen. Ein Ton wurde $50\,ms$ lang abgespielt. Innerhalb dieser $50\,ms$ wurden innerhalb der ersten $5\,ms$ eine Steigerung des Tons vorgenommen, die letzten $5\,ms$ wurde der Ton wieder ausklingen lassen. Die Versuchsperson wurde angehalten nicht auf die Töne zu achten. Es wurde ein Stummfilm ohne Untertitel gezeigt.
+Verwendet wurden Oddball-Blöcke, bei denen zu einem regelmäßigen gleichen Ton (Standard) mit einer bestimmten Wahrscheinlichkeit eine Abweichung vor kam (Deviant). Diese Abweichung erfolgte entweder mit einer höheren oder einer niedrigeren Frequenz. Zusätzlich wurden in Kontrollbedingungen zufällig mehrere verschiedene Frequenzen abgespielt, um die frequenzspezifische Verarbeitung zu überprüfen.
 
-Von den verwendeten Daten war für diese Untersuchung lediglich die MMNm von Interesse, die von den Deviants des Oddball-Paradigmas ausgelöst wurde und im auditorischen Kortex zu erwarten war (siehe auch Abschnitt \nameref{sec:audicort} auf Seite~\pageref{sec:audicort}).
+Ein Ton wurde $50\,ms$ lang abgespielt. Innerhalb dieser $50\,ms$ wurden innerhalb der ersten $5\,ms$ eine Steigerung des Tons vorgenommen, die letzten $5\,ms$ wurde der Ton wieder ausklingen lassen. Die Versuchsperson wurde angehalten nicht auf die Töne zu achten. Es wurde ein Stummfilm ohne Untertitel gezeigt.
+
+Von den verwendeten Daten war für diese Untersuchung lediglich die MMNm von Interesse, die von den Deviants des Oddball-Paradigmas ausgelöst wurde und im auditorischen Kortex zu erwarten war (siehe auch Abschnitt \nameref{sec:audicort} auf Seite~\pageref{sec:audicort}), die Kontrollbedingungen mit den unterschiedlichen Frequenzen wurden nicht verwendet.
 
 \subsubsection{Verwendete Geräte}
 
 Im verwendeten MEG, dem \emph{Vectorview} der Firma \emph{Elekta Neuromag, Elekta Oy, Helsinki, Finland}, werden insgesamt 306 Kanäle für die Messung der Gehirnsignale verwendet. Davon sind 204 planare Gradiometer und 102 Magnetometer. Die Sensoren bestehen aus DC SQUIDs, welche mittels flüssigem Helium auf~$-269^\circ\,C$ bzw.~$4\,K$ gekühlt werden.
 
-Das verwendete MRT ist ein \emph{TIM Trio} der Firma \emph{Siemens, Erlangen, Deutschland}, welches ein Magnetfeld von $3\,T$ aufbauen kann.
+Das verwendete MRT ist ein \emph{TIM Trio} der Firma \emph{Siemens, Erlangen, Deutschland}, welches mit einer magnetischen Flussdichte von $3\,T$ arbeitet.
 
 \subsubsection{Software zur Analyse}
 \label{sec:software}
 
-Zur Verarbeitung der vorliegenden Daten wurde verschiedene Software verwendet. Gearbeitet wurde auf einem \emph{GNU/Linux}-System mit \emph{Ubuntu} in Version 12.04.5 LTS. Die Auswertung der bildgebenden Daten des MRT erfolgte mit \emph{Freesurfer} in Version 5.3.0. Die Signal Space Separation (SSS) und Movement Correction (MC) wurde mit \emph{MNE} in Version 2.7.5-3435 durchgeführt (siehe auch Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}). MNE basiert auf dem \emph{Neuromag} Softwarepaket in Version 6. Alle weiteren Analysen erfolgten mit der Open Source Paket \emph{FieldTrip} in Version 20150225, welches in \emph{Matlab R2015a} verwendet wurde.
-
-%%% Ist das so korrekt ???
+Zur Verarbeitung der vorliegenden Daten wurde verschiedene Software verwendet. Gearbeitet wurde auf einem \emph{GNU/Linux}-System mit \emph{Ubuntu} in Version 12.04.5 LTS. Die Auswertung der bildgebenden Daten des MRT erfolgte mit \emph{Freesurfer} in Version 5.3.0. Die Signal Space Separation~(SSS) und Movement Correction~(MC) wurde mit MaxFilter als Teil des \emph{Neuromag} Softwarepaket in Version 6 durchgeführt (siehe auch Abschnitt \nameref{sec:maxfilter} auf Seite \pageref{sec:maxfilter}). Zur Unterstützung vieler Auswertungsschritte wurde \emph{MNE} in Version 2.7.5-3435 angewendet. Alle weiteren Analysen erfolgten mit der Open Source Paket \emph{FieldTrip} in Version 20150225, welches in \emph{Matlab R2015a} verwendet wurde.
 
 \subsection{Allgemeines Verfahren}
 
-%%% Grafik zum Verfahrensablauf
+Um die Hypothese zu überprüfen wurden die Daten aus dem oben genannten Datensatz verwendet. Die Quellrekonstruktion der MMNm-Aktivität sollte mit LCMV Beamformer und Minimum Norm Estimate durchgeführt werden. Dazu wurden die Daten von zwei Versuchspersonen verwendet. Versuchsperson \texttt{pa07}, wies ein eher ruhiges Verhalten auf. Es kam nur zu wenigen Kopfbewegungen während des Versuchs. Die andere ausgewählte Versuchsperson \texttt{pa10} bewegte ihren Kopf etwas mehr. Deren Daten dürften daher zu einer etwas fehlerhafteren Rekonstruktion führen. Die entsprechende Bewegungsanalyse wird im Abschnittes \nameref{sec:bewegung} auf Seite \pageref{sec:bewegung} beschrieben.
 
-Um die Hypothese zu überprüfen wurden die Daten aus dem oben genannten Datensatz verwendet. Die Quellrekonstruktion der MMNm-Aktivität sollte mit LCMV Beamformer und Minimum Norm Estimate durchgeführt werden. Dazu wurden die Daten von zwei Versuchspersonen verwendet. Eine Versuchsperson (im Folgenden als \texttt{pa07} bezeichnet), wies ein sehr ruhiges Verhalten auf. Es kam nur zu wenigen Kopfbewegungen während des Versuchs. Die andere ausgewählte Versuchsperson \texttt{pa10} bewegte ihren Kopf sehr viel. Deren Daten dürften daher zu einer fehlerhafteren Rekonstruktion führen. Die entsprechende Bewegungsanalyse wird im Abschnittes \nameref{sec:bewegung} auf Seite \pageref{sec:bewegung} beschrieben.
-
-Von beiden Versuchspersonen lagen 4 Blöcke in entsprechenden Versuchsbedingungen mit Oddball-Paradigma vor. Die Daten der 4 Blöcke wurden zusammen genommen und gemeinsam verrechnet. Dabei mussten die spezifischen Eigenschaften der Quellrekonstruktionsverfahren beachtet werden. Entsprechende Betrachtungen wurden in den folgenden Abschnitten \nameref{sec:lead-beam-mne} und \nameref{sec:amplitud} vorgenommen.
+Die beiden Versuchspersonen wurde im Jahr 2009 aufgenommen, beide sind rechtshändig. Eine Versuchsperson war zum Zeitpunkt der Messung 33~Jahre alt, die andere Person 22~Jahre. Von beiden Versuchspersonen lagen 4~von 6~Blöcken in entsprechenden Versuchsbedingungen mit Oddball-Paradigma vor. Verwendet wurden Block~1,~3,~4 und~6. Die Daten der 4~Blöcke wurden zusammen genommen und gemeinsam verrechnet. Dabei mussten die spezifischen Eigenschaften der Quellrekonstruktionsverfahren beachtet werden. Entsprechende Betrachtungen werden in den folgenden Abschnitten \nameref{sec:lead-beam-mne} und \nameref{sec:amplitud} vorgenommen.
 
 Die Rekonstruktion wurde in folgenden Bedingungen für beide Versuchspersonen durchgeführt:
 
@@ -658,7 +658,7 @@ Die Rekonstruktion wurde in folgenden Bedingungen für beide Versuchspersonen du
 \item Minimum Norm Estimate auf Basis von MC-korrigierten Daten
 \end{compactitem}
 
-Bei Versuchsperson \texttt{pa10} sollten auf Grund der Bewegungskorrektur deutlich bessere Ergebnisse bei MC-korrigierten Daten zu erwarten sein, im Vergleich zu Roh- und SSS-korrigierten Daten.
+Bei Versuchsperson~\texttt{pa10} sollten, im Vergleich zu SSS-korrigierten Daten auf Grund der erhöhten Bewegung deutlich bessere Ergebnisse bei MC-korrigierten Daten zu erwarten sein. Bei Versuchsperson~\texttt{pa07} sollte der Unterschied zwischen SSS- und MC-Daten keinen großen Unterschied machen.
 
 \subsection{Vorverarbeitung}
 
@@ -675,24 +675,13 @@ Bei Versuchsperson \texttt{pa10} sollten auf Grund der Bewegungskorrektur deutli
 
 Zusätzlich zum MEG-Datensatz mit den Aktivitätsdaten, wurde ein MRT-Datensatz verwendet, der einen einfachen Scan des Gehirns der Versuchspersonen enthielt. Für den MRT-Datensatz wurde zunächst eine Separation mittels Freesurfer durchgeführt. Aus den Daten wurde das BEM-Netz mit 10242 Punkten pro Hemisphäre berechnet. Da nur Aktivität am Außenbereich berechnet wird und nicht im Inneren des Gehirns ist die Berechnung des BEM-Netzes in diesem Fall ausreichen. Am Rand des Gehirns wird überwiegend graue Substanz mit isotroper Leitfähigkeit erwartet (siehe auch Abschnitt \nameref{sec:segment} auf Seite \pageref{sec:segment}).
 
-Die physiologischen Informationen des MRT-Datensatzes lagen in einem Koordinatensystem mit einer RAS-Orientierung vor (siehe auch Abschnitt~\nameref{sec:coreg} aus Seite~\pageref{sec:coreg}). Das Koordinatensystem wird anhand der Commissura anterior und der Commissura posterior definiert. Dabei liegt die $x$-$y$-Ebene so, dass die beiden Kommissuren geschnitten werden. Die z-Achse orientiert sich an der Fissura longitudinalis cerebri, also dem Interhemisphärenspalt. Das Koordinatensystem ist äquivalent zu Talairach und MNI (Montreal Neurological Institute). Die Einheiten liegen in Millimeter vor.
+Die physiologischen Informationen des MRT-Datensatzes lagen in einem Koordinatensystem mit einer RAS-Orientierung vor (siehe auch Abschnitt~\nameref{sec:coreg} aus Seite~\pageref{sec:coreg}). Das Koordinatensystem wird anhand der Commissura anterior und der Commissura posterior definiert. Dabei liegt die $x$-$y$-Ebene so, dass die beiden Kommissuren geschnitten werden. Die z-Achse orientiert sich an der Fissura longitudinalis cerebri, also dem Interhemisphärenspalt. Das Koordinatensystem ist äquivalent zu Talairach und MNI (Montreal Neurological Institute). Die Einheiten liegen in Millimeter vor. Die Aktivitätsdaten des MEG wurden ebenfalls in einem RAS-orientierten Koordinatensystem gespeichert. Zur Aufstellung des Koordinatensystems werden an den zwei Ohren die präaurikularen Punkte bestimmt (Tragus) und die Nase (Nasion). Diese drei Punkte bilden die $x$-$y$-Ebene. Im Zentrum der drei Punkte wird die $z$-Achse definiert. Die Einheiten werden in Meter angegeben. Nach der Koregistrierung lag die Abweichung für \texttt{pa07} bei $1,3\,mm$, die Abweichung von \texttt{pa10} bei $2,2,mm$.
 
-Die Aktivitätsdaten des MEG wurden ebenfalls in einem RAS-orientierten Koordinatensystem gespeichert. Zur Aufstellung des Koordinatensystems werden an den zwei Ohren die präaurikularen Punkte bestimmt (Tragus) und die Nase (Nasion). Diese drei Punkte bilden die $x$-$y$-Ebene. Im Zentrum der drei Punkte wird die $z$-Achse definiert. Die Einheiten werden in Meter angegeben.
+Jeder Durchgang (Trial) innerhalb der Blöcke, d.h. jedes Abspielen eines Tons und Aufzeichnen der Aktivitäten umfasste $500\,ms$. Die $100\,ms$ vor dem Abspiele eines Tons wurden als Baseline genutzt, es wurde das Gehirnrauschen aufgezeichnet. Weitere $400\,ms$ wurden nach dem Abspielen des Tons als Signal-Anteil verwendet. Innerhalb dieser $400\,ms$ erfolgte das Auftreten der MMNm. Pro Block wurden $1370$ Trials verwendet, was $685\,s$ dauerte. Von denen waren $901$ Standards und $225$ Deviants. Die Gesamte Sequenz des Blockes wurde in seine Trials zerlegt, von denen die Deviants verwendet wurde.
 
-Nach der Koregistrierung lag die Abweichung für \texttt{pa07} bei $???\,mm$, die Abweichung von \texttt{pa10} bei $???,mm$.
+Zusätzlich zur Auslese der gewünschten Trials, wurden alle Trials mit einem Hochpassfilter von $0,5\,Hz$ und einem Tiefpassfilter von $30\,Hz$ gefiltert. Um Trials in denen starke Störungen auftreten, wie heftige Augenbewegung oder starke Kopfbewegungen, zu verwerfen, wurde eine entsprechende Methode implementiert. In allen Daten sollten solche Signale gefunden werden, welche in den Magnetometern einen Ausschlag über $4\,pT$, in den Gradiometern über $200\,pT/m$ oder im EOG (Elektrookulografie, Erfassung der Augenbewegung) über $100\,\mu V$ aufwiesen. Sofern in einem Trial auch nur ein Datenpunkt mit einem höheren Wert auftrat, wurde der Trial verworfen. Eine Rauschunterdrückung mittels SSP, welche in FieldTrip enthalten ist, wurde deaktiviert.
 
-%%% Koregestirerung Abweichung
-
-Jeder Durchgang (Trial) innerhalb der Blöcke, d.h. jedes Abspielen eines Tons und Aufzeichnen der Aktivitäten umfasste $500\,ms$. Die ersten $100\,ms$ wurden als Baseline genutzt, es wurde das Gehirnrauschen aufgezeichnet. Anschließend wurde der Ton abgespielt. Die darauf folgende Aktivität wurde weitere $400\,ms$ aufgezeichnet. Innerhalb dieser $400\,ms$ erfolgte das Auftreten der MMNm. Pro Block wurden ??? Trials verwendet, was ca. $???\,s$ dauerte. Von denen waren ??? Standards und ??? Deviants. Die Deviant-Ereignisse wurden herausgesammelt, hier sollte die Aktivität gegenüber den Standard-Trials deutlich erhöht sein.
-
-%%% Anzahl Trials: Gesamt, Standard, Deviant
-%%% Dauer eines Blocks
-
-Zusätzlich zur Auslese der gewünschten Trials, wurden alle Trials mit einem Hochpassfilter von $0,5\,Hz$ und einem Tiefpassfilter von $30\,Hz$ gefiltert. Um Trials in denen starke Störungen auftreten, wie heftige Augenbewegung oder starke Kopfbewegungen, zu verwerfen, wurde eine entsprechende Methode implementiert. In allen Daten sollten solche Signale gefunden werden, welche in den Magnetometern einen Ausschlag über $4\,pT$, in den Gradiometern über $200\,pT/m$ oder im EOG (Elektrookulografie, Erfassung der Augenbewegung) über $100\,\mu V$ aufwiesen. Sofern in einem Trial auch nur ein Datenpunkt mit einem höheren Wert auftrat, wurde der Trial verworfen. Von den ??? Deviants wurden bei \texttt{pa07} insgesamt ??? verworfen, bei \texttt{pa10} insgesamt ???. Die höhere Zahl der verworfenen Trials bei \texttt{pa10} ist auf die stärkere Kopfbewegung zurück zu führen. Eine Rauschunterdrückung mittels SSP, welche in FieldTrip enthalten ist, wurde deaktiviert.
-
-%%% Verworfene Trials
-
-Auf Grund der Annahme, dass die Versuchsperson ihren Kopf während eines Blocks nicht ändert, wurde auch bei den nicht-bewegungskorrigierten Daten (Rohdaten und SSS-Daten) die Aktivität innerhalb eines Blocks einfach gemittelt. Zwischen den Blöcken ist dies nicht möglich, wie im folgenden Abschnitt detailliert erläutert wird.
+Auf Grund der Annahme, dass die Versuchsperson ihren Kopf während eines Blocks nicht ändert, wurde bei den nicht-bewegungskorrigierten Daten (Rohdaten und SSS-Daten) die Aktivität innerhalb eines Blocks einfach gemittelt. Zwischen den Blöcken ist dies nicht möglich, wie im folgenden Abschnitt detailliert erläutert wird.
 
 An dieser Stelle wurden die vorverarbeiteten Daten gespeichert und waren für die Quellrekonstruktion geeignet.
 
@@ -701,13 +690,11 @@ An dieser Stelle wurden die vorverarbeiteten Daten gespeichert und waren für di
 
 Zur Berechnung des Vorwärtsmodells, d.h. die Wirkung der Quellen auf die Sensoren wird die Leadfield-Matrix verwendet, die in Abschnitt \nameref{sec:lead} auf Seite \pageref{sec:lead} eingeführt wurde. Die Liedfield-Matrix wird für eine bestimmte Kopfposition bestimmt. Die Signale die aus dem Gehirn kommen müssen von der gleichen Quelle aus immer auch die gleichen Sensoren abgebildet werden, andernfalls kommt es in der späteren Berechnung zu Fehlern. Wird eine falsche Kopfposition angenommen, werden gemessene Signale an den Sensoren später einer falschen bzw. verschobenen Quelle zugeordnet.
 
-Innerhalb eines Blocks zwischen den Trials wird davon ausgegangen, dass sich die Versuchsperson bewegungslos verhält. Zwischen den Blöcken kommt es jedoch oft zu einer Unterbrechung der Messung und zu einem Neustart nach einer kurzen Pause. Eine deutliche Änderung der Kopfposition muss angenommen werden. Während bei SSS- und MC-Daten kein Problem auftritt, da hier die Kopfposition zwischen den Blöcken (SSS-Daten) bzw. sogar über die gesamten Daten (MC-Daten) korrigiert wird, ist dies bei den Rohdaten nicht der Fall. Eine Mittelung der Rohdaten über alle Blöcke hätte zur Folge, dass eigentlich vorhandene Aktivitäten verschwinden können oder nicht vorhandene Aktivitäten auftauchen. Würde die Leadfield-Matrix nur einmal beim ersten Block bestimmt würden, so wären die Rekonstruktionen in den drei weiteren Blöcken vermutlich stark fehlerbehaftet. Eine Mittelung der Trials über alle Blöcke kommt also zunächst nicht in Frage. Theoretisch gibt es zwei Möglichkeiten mit Rohdaten umzugehen:
+Innerhalb eines Blocks zwischen den Trials wird davon ausgegangen, dass sich die Versuchsperson bewegungslos verhält. Zwischen den Blöcken kommt es jedoch oft zu einer Unterbrechung der Messung und zu einem Neustart nach einer kurzen Pause. Eine deutliche Änderung der Kopfposition muss angenommen werden. Während bei SSS- und MC-Daten kein Problem auftritt, da hier die Kopfposition zwischen den Blöcken (SSS-Daten) bzw. sogar über die gesamten Daten (MC-Daten) korrigiert wird, ist dies bei den Rohdaten nicht der Fall. Eine Mittelung der Rohdaten über alle Blöcke hätte zur Folge, dass eigentlich vorhandene Aktivitäten verschwinden oder nicht vorhandene Aktivitäten auftauchen könnte. Würde die Leadfield-Matrix nur einmal beim ersten Block bestimmt würden, so wären die Rekonstruktionen in den drei weiteren Blöcken vermutlich stark fehlerbehaftet. Eine Mittelung der Trials über alle Blöcke kommt also zunächst nicht in Frage. Theoretisch gibt es zwei Möglichkeiten mit Rohdaten umzugehen:
 
-Eine Möglichkeit ist die Korrektur der Kopfpositionen, ohne jedoch eine Rauschunterdrückung vorzunehmen. So bietet FieldTrip z.B. die Funktion \texttt{ft\_megrealign}. Die Korrektur der Kopfposition erfolgt durch eine Projektion. Es wird zunächst eine grobe Quellrekonstruktion durchgeführt. Standard-Positionen der Sensoren werden festgelegt, zum Beispiel vom Beginn des ersten Blocks. Die zeit-gemittelten Daten werden dann mit Hilfe der rekonstruierten Quelle projiziert (???). Die dabei entstehenden Signale für die standardisierte Position werden anschließend neu berechnet. Bei diesem Verfahren kommt es wegen der enthaltenen vereinfachten Quellrekonstruktion zu Fehlern in den Daten, die Daten sind lediglich interpoliert und enthalten nach der Korrektur nicht mehr die vollständigen Informationen. Es handelt sich nicht mehr um reine Rohdaten, weshalb dieses Verfahren nur einen Kompromiss darstellen würde.
+Eine Möglichkeit ist die Korrektur der Kopfpositionen, ohne jedoch eine Rauschunterdrückung vorzunehmen. So bietet FieldTrip z.B. die Funktion \texttt{ft\_megrealign}. Die Korrektur der Kopfposition erfolgt durch eine Projektion der zeitgemittelten Daten (z.B. der Rohdaten) auf eine grobe Quellrekonstruktion. Standard-Positionen der Sensoren werden festgelegt, zum Beispiel vom Beginn des ersten Blocks. Die dabei entstehenden Signale für die standardisierte Position werden neu berechnet. Bei diesem Verfahren kommt es wegen der enthaltenen vereinfachten Quellrekonstruktion zu Fehlern in den Daten, die Daten sind lediglich interpoliert und enthalten nach der Korrektur nicht mehr die vollständigen Informationen. Es handelt sich nicht mehr um reine Rohdaten, weshalb dieses Verfahren nur einen Kompromiss darstellen würde.
 
-%%% Unsicherheit im oberen Abschnitt
-
-Eine zweite Möglichkeit ist das Mitteln der rekonstruierten Quellaktivität. Für jeden Block kann eine eigene Leadfield-Matrix für das Vorwärtsmodell bestimmt werden. Nach anschließender Quelllokalisation können die Aktivitäten an den Quellen gemittelt werden. Der Rechenaufwand ist zwar etwas erhöht, da für jeden Block die Leadfield-Matrix bestimmt werden muss, gleichzeitig bietet dieses Verfahren jedoch den Vorteil, dass es auch auf die rauschunterdrückten Daten von Maxfilter (SSS, MC) angewendet werden kann. Auch hier kann in der Vorverarbeitung absichtlich auf eine Mittelung über die Blöcke verzichtet werden. Die Leadfield-Matrizen können dann auch hier blockweise bestimmt und die Quellaktivitäten am Ende gemittelt werden. Diese Möglichkeit bietet damit eine optimale Vergleichbarkeit zwischen der Verwendung von Rodaten und rauschunterdrückten Daten, unabhängig vom verwendeten Lokalisationsverfahren.
+Eine zweite Möglichkeit ist das Mitteln der rekonstruierten Quellaktivität. Für jeden Block kann eine eigene Leadfield-Matrix für das Vorwärtsmodell bestimmt werden. Nach anschließender Quelllokalisation können die Aktivitäten an den Quellen gemittelt werden (siehe auch Abbildung~\ref{img:verfahren}). Der Rechenaufwand ist zwar etwas erhöht, da für jeden Block die Leadfield-Matrix bestimmt werden muss, gleichzeitig bietet dieses Verfahren jedoch den Vorteil, dass es auch auf die rauschunterdrückten Daten von Maxfilter (SSS, MC) angewendet werden kann. Auch hier kann in der Vorverarbeitung absichtlich auf eine Mittelung über die Blöcke verzichtet werden. Die Leadfield-Matrizen können dann auch hier blockweise bestimmt und die Quellaktivitäten am Ende gemittelt werden. Diese Möglichkeit bietet damit eine optimale Vergleichbarkeit zwischen der Verwendung von Rodaten und rauschunterdrückten Daten, unabhängig vom verwendeten Lokalisationsverfahren.
 
 Verwendet wurde auf Grund der besseren Vergleichbarkeit der Roh-, SSS- und MC-Daten die zweite Methode. Unabhängig vom Verfahren werden zunächst der Quellraum, der Volumenleiter und die vorverarbeiteten Aktivitätsdaten geladen. Wichtig ist, dass an dieser Stelle die Transformationsmatrix aus der Koregistrierung berücksichtigt wird, um die Koordinatensystem zu vereinen. Anschließend wird für jeden Block die Leadfield-Matrix berechnet. Abhängig von der Methode wird dann über \texttt{ft\_sourceanalysis} jeweils \texttt{beamformer\_lcmv} oder \texttt{minimumnormestimate} aufgerufen um die Quellen zu lokalisieren. Nach der Berechnung aller Blöcke für eine Versuchsperson für den jeweiligen Datensatz (Roh, SSS, MC) wurden die rekonstruierten Quellaktivitäten über alle Blöcke gemittelt und gespeichert. Der Auswertung der Daten erfolgte anschließend über die in Matlab enthaltene Funktion \texttt{plot} für die Zeitverläufe und die FieldTrip Methode \texttt{ft\_plot\_mesh} zur Darstellung der Aktivität.
 
@@ -715,16 +702,16 @@ Die gesamte Verarbeitung der Daten ist in Abbildung \ref{img:verfahren} in einem
 
 \subsection{Weitere Analysen}
 
-Zur Auswertung der Daten wurden weitere Analysen durchgeführt. Die mit Hilfe der Kopfspulen zur Bestimmung der Kopfposition aufgezeichneten Daten wurden in einem Zeitverlauf dargestellt, um das Bewegungsverhalten der Versuchspersonen einschätzen zu können. Eine Frequenzanalyse der Versuchsperson \texttt{pa07} in Block 1 wurde für Roh- und SSS-Daten durchgeführt um das Rauschverhalten abschätzen zu können. Mit dem selben Zweck wurde das Signal-Rausch-Verhältnis für beide Versuchspersonen und alle Blöcke bestimmt. Zuletzt wurde eine Anpassungsgüte der vorhergesagten Daten bestimmt (???).
+Zur Auswertung der Daten wurden weitere Analysen durchgeführt. Die mit Hilfe der Kopfspulen zur Bestimmung der Kopfposition aufgezeichneten Daten wurden in einem Zeitverlauf dargestellt, um das Bewegungsverhalten der Versuchspersonen einschätzen zu können. Eine Frequenzanalyse der Versuchsperson \texttt{pa07} in Block 1 wurde für Roh- und SSS-Daten durchgeführt um das Rauschverhalten abschätzen zu können. Mit dem selben Zweck wurde das Signal-Rausch-Verhältnis für beide Versuchspersonen und alle Blöcke bestimmt.
 
-%%% Kommt das wirklich noch?
+%%% Hier evtl. noch Anpassungsgüte erwähnen? Sofern noch durchgeführt..
 
-\subsection{Vergleichbarkeit der Einheiten}
+\subsection{Vergleichbarkeit der Lösungen}
 \label{sec:amplitud}
 
-Die Aktivität der Quellen aus den Rekonstruktionen von LCMV Beamformer und Minimum Norm Estimate unterscheiden sich in ihren Einheiten. Die Stärke der Dipole (Stromdipolmomente) wird in~$A \cdot m$ angegeben. Dies wird von Minimum Norm Estimate als solches berechnet und kann auch als solches interpretiert werden. Bei Beamformer werden die Aktivitäten durch den räumlichen Filter bestimmt. Dieser wirkt in drei Richtungen, entsprechend liegen drei Werte vor. Diese werden ebenfalls in~$A\cdot m$ angegeben. Es wird die Summe der Quadrate der drei Komponenten gebildet. Bei Beamformer ist die Interpretation der Aktivitäten jedoch schwierig, da es sich im Grunde genommen nur um eine Korrelation ???
+Die Aktivität der Quellen aus den Rekonstruktionen von LCMV Beamformer und Minimum Norm Estimate unterscheiden sich in ihren Lösungen. Die Stärke der Dipole (Stromdipolmomente) wird in~$Am$ angegeben. Dies wird von Minimum Norm Estimate als solches berechnet und kann auch als solches interpretiert werden. Bei Beamformer werden die Aktivitäten durch den räumlichen Filter bestimmt. Die Daten aus dem Beamformer-Verfahren müssen auf andere Weise interpretiert werden. Während bei Minimum Norm Estimate die Aktivität auf einer optimalen Gesamtlösung basiert und damit immer ein Kompromiss zwischen verschiedenen Aktivitäten gefunden werden muss, kann Beamformer für jeden einzelnen Dipol eine beliebige Aktivität ansetzen. Das führt dazu, dass vor allem im Zeitverlauf Amplituden auftreten können, die in ihrer Höhe über- oder unterschätzt werden können. Um eine vergleichbare Interpretation zu ermöglichen werden die Aktivitäten normiert. Aus den ersten $100\,ms$, der Baseline, wird ein Mittelwert gebildet, um den jede Aktivität im Zeitverlauf korrigiert wird.
 
-%%% Hier noch auf Antwort warten.
+Beiden Verfahren ist gemeinsam, dass die Lösung dreidimensional berechnet wird. Von Interesse ist aber lediglich der Betrag. Um eine eindimensionale Lösung zu erhalten, wurde die Summe der Quadrate der drei Komponenten gebildet.
 
 % #######################
 % ##### ERGEBNISSE  #####
@@ -734,38 +721,95 @@ Die Aktivität der Quellen aus den Rekonstruktionen von LCMV Beamformer und Mini
 \section{Ergebnisse}
 \label{sec:ergebnisse}
 
-Im Ergebnis zeigte sich überraschend das Gegenteil. Während Minimum Norm Estimate überraschend gut mit Rohdaten umgehen konnte und das Rauschen vergleichsweise gut unterdrückte, war Beamformer nicht in der Lage die Rohdaten gut zu verarbeiten. Grundlegender noch hatte Beamformer aber auch generell Probleme mit einer korrekten Rekonsturktion der Daten. Auch unter Verwendung der gefilterten Daten (SSS und MC) zeigte Minimum Norm Estimate deutlich bessere Ergebnisse.
+Im Ergebnis zeigte sich überraschend das Gegenteil. Während Minimum Norm Estimate überraschend gut mit Rohdaten umgehen konnte und das Rauschen vergleichsweise gut unterdrückte, war Beamformer nicht in der Lage die Rohdaten gut zu verarbeiten. Grundlegender noch hatte Beamformer aber auch generell Probleme mit einer korrekten Rekonsturktion der Daten. Auch unter Verwendung der gefilterten Daten (SSS und MC) zeigte Minimum Norm Estimate deutlich bessere Ergebnisse. Es werden zunächst einige Voranalysen betrachtet, bevor dann die eigentliche Quellrekonstruktion verglichen wird.
 
 \subsection{Bewegungsprofile}
 \label{sec:bewegung}
 
-Bewegungen
+Bewegungen der Versuchspersonen sind als Störfaktoren zu bewerten. Je mehr sich eine Versuchsperson bewegt, desto schlechter werden die Lösungen ausfallen. Um die Bewegung der Versuchspersonen abschätzen zu können, werden zusätzliche aktive Spulen am Kopf der Versuchsperson angebracht. Die Bewegungen können mit Hilfe der MEG-Sensoren erfasst werden. Bei der Korrektur der Daten mittels MC von MaxFilter werden diese Daten ausgewertet und können mittels eines einfachen Matlab-Skripts verarbeitet werden. In den Abbildungen \ref{img:bewegung} sind die Bewegungsprofile der beiden Versuchspersonen für alle Blöcke dargestellt. Während die Bewegungen von Versuchsperson \texttt{pa07} über die Blöcke hinweg im Bereich von ca. $2$-$4\,mm$ liegen, bewegt sich Versuchsperson \texttt{pa10} im Bereich von ca. $4$-$6\,mm$. Bei MEG-Messungen sind Bewegungen von mehr als $5\,mm$ nicht ungewöhnlich \parencite{wilson2007continuous}. Beide Versuchspersonen liegen also im Rahmen gewöhnlicher Messungen.
+
+\begin{figure}
+%  \centering
+  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa07}, Block 1}
+    \label{img:bewegung:pa07:1}
+  \end{subfigure}\hspace*{0.02\textwidth}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a3_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa07}, Block 3}
+    \label{img:bewegung:pa07:3}
+  \end{subfigure}\hspace*{0.02\textwidth}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a4_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa07}, Block 4}
+    \label{img:bewegung:pa07:4}
+  \end{subfigure}\hspace*{0.02\textwidth}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a6_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa07}, Block 6}
+    \label{img:bewegung:pa07:6}
+  \end{subfigure}\vspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa10}, Block 1}
+    \label{img:bewegung:pa10:1}
+  \end{subfigure}\hspace*{0.02\textwidth}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a3_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa10}, Block 3}
+    \label{img:bewegung:pa10:3}
+  \end{subfigure}\hspace*{0.02\textwidth}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a4_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa10}, Block 4}
+    \label{img:bewegung:pa10:4}
+  \end{subfigure}\hspace*{0.02\textwidth}
+  %
+  \begin{subfigure}[c]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a6_mc_dist_movement.eps}
+    \subcaption{VP \texttt{pa10}, Block 6}
+    \label{img:bewegung:pa10:6}
+  \end{subfigure}
+  %
+  \captionsetup{justification=justified}
+  \vspace*{3mm}
+  \caption[Bewegungsprofile der Versuchspersonen]{Bewegungsprofile der Versuchspersonen in allen 4 Blöcken.}
+  \label{img:bewegung}
+\end{figure}
 
 \subsection{Frequenzanalyse}
 \label{sec:freq-analy}
 
-Die Frequenzanalyse wurde nur für Versuchsperson \texttt{pa07} in Block 1 durchgeführt. Das Rauschverhalten sollte für alle Versuchspersonen in allen Blöcken sehr ähnlich sein. In Abbildung \ref{img:freq-analy} ist das Ergebnis dargestellt. In der Grafik \ref{img:freq-analy-raw} ist die Frequenzanalyse auf Basis der Rohdaten, in Grafik \ref{img:freq-analy-sss} auf Basis der SSS-Daten dargestellt. Während in den Rohdaten noch deutlich identifizierbare Artefakte enthalten sind, wie beispielsweise der Netzstrom mit $50\,Hz$ oder die Bahn-Oberleitung und deren Oberschwingungen bei $16\nicefrac{2}{3}\,Hz$, $33\nicefrac{1}{3}\,Hz$, etc., sind diese in den SSS-Daten nicht mehr oder deutlich vermindert. Die äußeren Quellen wurden herausgefiltert. Generell ist die untere Frequenzanalyse deutlich geglätteter, als die auf den Rohdaten basierende. Damit wird deutlich welche Herausforderung die Lokalisationverfahren zu leisten haben um adäquate Ergebnisse hervorzubringen.
-
-%%% Bilder Frequenzanalyse noch durch Schwarz/Weiß und .eps austauschen
+Die Frequenzanalyse wurde nur für Versuchsperson \texttt{pa07} in Block 1 durchgeführt. Das Rauschverhalten sollte für alle Versuchspersonen in allen Blöcken sehr ähnlich sein. In Abbildung \ref{img:freq-analy} ist das Ergebnis dargestellt. In der Grafik \ref{img:freq-analy-raw} ist die Frequenzanalyse auf Basis der Rohdaten, in Grafik \ref{img:freq-analy-sss} auf Basis der SSS-Daten dargestellt. Während in den Rohdaten noch deutlich identifizierbare Artefakte enthalten sind, wie beispielsweise der Netzstrom mit $50\,Hz$ oder die Bahn-Oberleitung und deren Oberschwingungen bei $16,67\,Hz$, $33,33\,Hz$, etc., sind diese in den SSS-Daten nicht mehr oder deutlich vermindert. Die äußeren Quellen wurden herausgefiltert. Generell ist die untere Frequenzanalyse deutlich geglätteter, als die auf den Rohdaten basierende. Damit wird deutlich welche Herausforderung die Lokalisationverfahren zu leisten haben um adäquate Ergebnisse hervorzubringen.
 
 \begin{figure}
   \centering
-%  \captionsetup{justification=centering}
+  \captionsetup{justification=centering}
   %
-  \begin{subfigure}[c]{0.8\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/frequenzanalye_raw.png}}
+  \begin{subfigure}[c]{0.43\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07a1_raw_freq.eps}
     \subcaption{Frequenzanalyse der Rohdaten}
     \label{img:freq-analy-raw}
-  \end{subfigure}\vspace*{3mm}
+  \end{subfigure}\hspace*{0.04\textwidth}
   %
-  \begin{subfigure}[c]{0.8\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/frequenzanalye_ss.png}}
+  \begin{subfigure}[c]{0.43\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07a1_sss_freq.eps}
     \subcaption{Frequenzanalyse der SSS-Daten}
     \label{img:freq-analy-sss}
   \end{subfigure}
   %
+  \captionsetup{justification=justified}
   \vspace*{3mm}
-  \caption[Frequenzanalyse auf Basis eines Blocks]{Frequenzanalyse auf Basis der Daten von Versuchsperson \texttt{pa07} von Block 1. Deutlich wird die Abnahme des Rauschens durch die SSS-Filterung. Vor allem bei $50\,Hz$ (Netzstrom), $16\nicefrac{2}{3}\,Hz$ (Bahn-Oberleitung) und deren Oberschwingungen ist eine Abnahme der Amplitude offensichtlich. Eine Abnahme des Rauschens ist aber bspw. auch im Bereich $0\,Hz$ bis $5\,Hz$ sehr effektiv.}
+  \caption[Frequenzanalyse auf Basis eines Blocks]{Frequenzanalyse auf Basis der Daten von Versuchsperson~\texttt{pa07} von Block~1. Deutlich wird die Abnahme des Rauschens durch die SSS-Filterung. Vor allem bei $50\,Hz$ (Netzstrom), $16,67\,Hz$ (Bahn-Oberleitung) und deren Oberschwingungen ist eine Abnahme der Amplitude offensichtlich. Eine Abnahme des Rauschens ist aber bspw. auch im Bereich $0\,Hz$ bis $5\,Hz$ sehr effektiv.}
   \label{img:freq-analy}
 \end{figure}
 
@@ -778,11 +822,9 @@ Das Signal-Rausch-Verhältnis (signal-noise-ration, SNR) gibt das Amplitudenverh
 SNR = \frac{P_S}{P_R}
 \end{equation}
 
-Als Rausch-Anteil wurden die ersten 100 ms gewählt. Dies entspricht der Baseline. Als Signal-Anteil wurde die MMN verwendet, welche im Bereich 150 ms bis 250 ms liegt. Damit ergeben sich zwei Zeitbereiche von je 100 ms, die in den Butterfly-Diagrammen der Rohdaten (siehe Abbildungen ???) dargestellt sind.
+Als Rausch-Anteil wurden die ersten 100 ms gewählt. Dies entspricht der Baseline. Als Signal-Anteil wurde die MMNm verwendet, welche im Bereich 150 ms bis 250 ms liegt (siehe auch Abbildungen~\ref{img:butterfly:grad} und~\ref{img:butterfly:mag}).
 
-%%% Butterfly-Diagramme
-
-Es wurden nur jene Kanäle für die Berechnung verwendet, welche am Ort der Entstehung der MMN entsprechende Signale messen. Dafür wurde zunächst das Amplitudenmaximum aus allen Trials und Zeitpunkten bestimmt. Für die zwei berechneten Versuchspersonen ergaben sich das Maximum an Kanal \texttt{MEG014} für \texttt{pa10} und Kanal \texttt{MEG151} für \texttt{pa07}. Das leicht verschobene Maximum ist auf eine unterschiedliche Position des Kopfes der Versuchsperson im MEG-Helm während des Versuchs zurück zu führen. Nachdem die Maxima bestimmt wurden, wurden die umliegenden Kanäle in die Berechnung des Signals integriert. Die verwendeten Kanäle sind:
+Es wurden nur jene Kanäle für die Berechnung verwendet, welche am Ort der Entstehung der MMNm entsprechende Signale messen. Dafür wurde zunächst das Amplitudenmaximum aus allen Trials und Zeitpunkten bestimmt. Für die zwei berechneten Versuchspersonen ergaben sich das Maximum an Kanal \texttt{MEG014} für \texttt{pa10} und Kanal \texttt{MEG151} für \texttt{pa07}. Das leicht verschobene Maximum ist auf eine unterschiedliche Position des Kopfes der Versuchsperson im MEG-Helm während des Versuchs zurück zu führen. Nachdem die Maxima bestimmt wurden, wurden die umliegenden Kanäle in die Berechnung des Signals integriert. Die verwendeten Kanäle sind:
 
 \texttt{MEG013}, \texttt{MEG014}, \texttt{MEG021}, \texttt{MEG024}, \texttt{MEG151}, \texttt{MEG154}, \texttt{MEG152}, \texttt{MEG161}
 
@@ -803,7 +845,7 @@ Dabei ist $i$ der Index der Kanäle, $j$ der Index der Zeitpunkte und $k$ der In
   \setlength{\fboxsep}{5mm}
   \fbox{\includegraphics[width=0.92\textwidth]{ergebnisse/sensormap.eps}}
   \vspace*{3mm}
-  \caption[Karte der Sensoren des \emph{Vectorview} MEG-Gerätes]{Karte der Sensoren des \emph{Vectorview} MEG-Gerätes in zweidimensionaler Darstellung. Im oberen Bereich liegt die Stirn, im unteren Bereich der Hinterkopf der Versuchsperson.}
+  \caption[Karte der Sensoren des \emph{Vectorview} MEG-Gerätes]{Karte der Sensoren des \emph{Vectorview} MEG-Gerätes in zweidimensionaler Darstellung. Dargestellt sind die Bezeichnungen der Magnetometer. Im oberen Bereich liegt die Stirn, im unteren Bereich der Hinterkopf der Versuchsperson.}
   \label{img:sensmap}
 \end{figure}
 
@@ -829,6 +871,7 @@ Die neuen Matrizen werden anschließend durch die Anzahl der Zeitpunkt geteilt. 
   \setlength{\tabcolsep}{1cm}
   \renewcommand{\arraystretch}{1.5}
   \begin{tabular}{ccc}
+  \hline
   Block & pa07 & pa10 \\
   \hline
   1 & $3.123$ & $3.915$\\
@@ -857,25 +900,145 @@ Die SNR sollte im Idealfall oberhalb von~$3$ liegen. Dieser Wert wird von der So
 
 %%% MNE Grenzwert bei 3?
 
+\subsection{Vorverarbeitung}
+\label{sec:ergebnis-vorverarbeitung}
+
+\begin{table}
+  \caption{}
+  \label{tab:rejecting}
+  \vspace*{3mm}
+  \centering
+  \setlength{\tabcolsep}{7mm}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{ccccccc}
+  \hline
+  & \multicolumn{3}{c}{pa07} & \multicolumn{3}{c}{pa10}\\
+  Block & Roh & SSS & MC & Roh & SSS & MC \\
+  \hline
+  1 & $193$ & $198$ & $198$ & $155$ & $155$ & $155$\\
+  3 & $192$ & $209$ & $208$ & $143$ & $145$ & $145$\\
+  4 & $57$ & $198$ & $195$ & $157$ & $158$ & $158$\\
+  6 & $163$ & $177$ & $175$ & $145$ & $145$ & $145$\\
+  \hline
+  \end{tabular}
+  \vspace*{3mm}
+  \caption*{Verwendete Trials innerhalb jeden Blocks für beide Versuchspersonen und alle verwendeten Daten. Es standen pro Block 225 Deviant-Trials zur Verfügung.}
+\end{table}
+
+In der Vorverarbeitung wurden bereits Trials mit hohen Abweichungen herausgefilter. Dies führte dazu, dass mehr Trials innerhalb der Rohdaten herausgefiltert wurden, da hier die Amplituden häufiger die Grenzwerte überschritten. In Tabelle \ref{tab:rejecting} sind die Anzahl der verwendeten Trials pro Block, Datenquelle und Versuchsperson aufgeführt. Leichte Verbesserungen ermöglicht das SSS-Verfahren, vor allem bei \texttt{pa07}. Sehr auffällig ist der Wert von \texttt{pa07} im vierten Block bei den Roh-Daten. Welche genauen Bedingungen zu diesem Ergebnis geführt haben sind nicht bekannt, da kein Protokoll darüber vorliegt. In Abbildung \ref{img:butterfly:pa07:4:raw} ist die Aktivität Magnetometer dargestellt. Deutlich wird, dass hier starke Störungen vorliegen, vor allem im Vergleich der Rohdaten anderer Blöcke (siehe Abbildungen~\ref{img:butterfly:grad} und~\ref{img:butterfly:mag}). Erstaunlich ist jedoch, dass SSS diese Störung nahezu vollständig eliminieren kann. Die Ursache der Störung liegt also mit hoher Wahrscheinlichkeit außerhalb des MEG-Helms. Die SSS-Korrigierten Daten der Magnetometer sind in Abbild \ref{img:butterfly:pa07:4:sss} im Vergleich dargestellt.
+
+Die Annahme, dass bei Versuchsperson~\texttt{pa10} ein erheblich größerer Unterschied zwischen SSS-Daten und MC-Daten vorliegen müsste, als bei \texttt{pa07}, da sich Versuchsperson~\texttt{pa10} mehr bewegt hat, scheint nicht zuzutreffen. Die Bewegung von \texttt{pa10} scheint keinen großen Einfluss zu haben. 
+
+%%% Referenz zu anderen Butterfly-Diagrammen!
+
+\begin{figure}
+%  \centering
+  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a4_eve2_raw_mag_butterfly.eps}
+    \subcaption{Rohdaten}
+    \label{img:butterfly:pa07:4:raw}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a4_eve2_sss_mag_butterfly.eps}
+    \subcaption{SSS-korrigierte Daten}
+    \label{img:butterfly:pa07:4:sss}
+  \end{subfigure}
+  %
+  \captionsetup{justification=justified}
+  \vspace*{3mm}
+  \caption{Kanalaktivität der Magnetometer der Rohdaten und der SSS-korrigierten Daten in Block 4 von Versuchsperson \texttt{pa07}.}
+  \label{img:butterfly:pa07:4}
+\end{figure}
+
+Im Folgenden soll noch eine letzte Vorbetrachtung erfolgen. In den Abbildungen \ref{img:butterfly:grad} und \ref{img:butterfly:mag} sind die Aktivitäten der Kanäle der Versuchspersonen für Block 1 für Rohdaten und SSS-Daten aufgetragen, getrennt für Gradiometer und Magnetometer. Da die Verläufe für MC-Daten eine hohe Ähnlichkeit mit denen der SSS-Daten aufweisen und sich die Aktivitäten auch in den anderen Blöcken analog verhalten, wurden sie hier nicht gezeigt, ein Vergleich zwischen Rohdaten und SSS-Daten für Block 1 soll an dieser Stelle genügen. Die Daten bilden bereits die vorverarbeiteten Daten ab. Vor allem bei den Rohdaten ist also zu berücksichtigen, dass die schlechtesten Trials bei der Mittelung nicht berücksichtigt wurden.
+
+Es ist zu erkennen, dass ein Maximum der Aktivität um ca. $210\,ms$ liegen muss. Diese Aktivität entspricht der MMNm. Weitere kleine Ausschläge können u.U. noch nach $300\,ms$ vorkommen, sollten jedoch nicht stärker relevant sein. Bei Versuchsperson \texttt{pa10} fällt auf, dass sowohl in den Gradiometern, also auch den Magnetometern, eine etwas verzerrte Aktivität zwischen $200\,ms$ und $300\,ms$ vorliegt (Abbildungen~\ref{img:butterfly:grad:raw:pa10},~\ref{img:butterfly:grad:sss:pa10},~\ref{img:butterfly:mag:raw:pa10} und~\ref{img:butterfly:mag:sss:pa10}). Möglicherweise ist dies mit der stärkeren Bewegung der Versuchsperson zu begründen. Außerdem wird in den Daten erneut deutlich (wie schon bei der Frequenzanalyse), dass die Rekonstruktionsverfahren bei den Rohdaten eine gewisse Leistung zu erbringen haben, da das Rauschen nicht unerheblich ist. Bei den Rohdaten kommt es zu auseinander laufenden Aktivitäten, die sich äußerst unsystematisch verhalten, vor allem bei den Gradiometern deutlich zu sehen (Abbildung~\ref{img:butterfly:grad:raw:pa07} und~\ref{img:butterfly:grad:raw:pa10}).
+
+\begin{figure}
+  \centering
+  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_raw_grad_butterfly.eps}
+    \subcaption{VP \texttt{pa07}, Rohdaten}
+    \label{img:butterfly:grad:raw:pa07}
+  \end{subfigure}\hspace*{0.08\textwidth}
+  %
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_sss_grad_butterfly.eps}
+    \subcaption{VP \texttt{pa07}, SSS-Daten}
+    \label{img:butterfly:grad:sss:pa07}
+  \end{subfigure}\vspace*{0.02\textwidth}
+  %  
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_raw_grad_butterfly.eps}
+    \subcaption{VP \texttt{pa10}, Rohdaten}
+    \label{img:butterfly:grad:raw:pa10}
+  \end{subfigure}\hspace*{0.08\textwidth}
+  %
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_sss_grad_butterfly.eps}
+    \subcaption{VP \texttt{pa10}, SSS-Daten}
+    \label{img:butterfly:grad:sss:pa10}
+  \end{subfigure}
+  %
+  \captionsetup{justification=justified}
+  \vspace*{3mm}
+  \caption[Gemessene Aktivität an den Gradiometern]{Gemessene Aktivität an den Gradiometern für beide Versuchspersonen, jeweils in Block 1 mit Rohdaten und SSS-Daten.}
+  \label{img:butterfly:grad}
+  %
+  \vspace*{5mm}
+  %
+  \centering
+  \captionsetup{justification=centering}
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_raw_mag_butterfly.eps}
+    \subcaption{VP \texttt{pa07}, Rohdaten}
+    \label{img:butterfly:mag:raw:pa07}
+  \end{subfigure}\hspace*{0.08\textwidth}
+  %
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_sss_mag_butterfly.eps}
+    \subcaption{VP \texttt{pa07}, SSS-Daten}
+    \label{img:butterfly:mag:sss:pa07}
+  \end{subfigure}\vspace*{0.02\textwidth}
+  %
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_raw_mag_butterfly.eps}
+    \subcaption{VP \texttt{pa10}, Rohdaten}
+    \label{img:butterfly:mag:raw:pa10}
+  \end{subfigure}\hspace*{0.08\textwidth}
+  %
+  \begin{subfigure}[c]{0.36\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_sss_mag_butterfly.eps}
+    \subcaption{VP \texttt{pa10}, SSS-Daten}
+    \label{img:butterfly:mag:sss:pa10}
+  \end{subfigure}
+  %
+  \vspace*{3mm}
+  \captionsetup{justification=justified}
+  \caption[Gemessene Aktivität an den Magnetometern]{Gemessene Aktivität an den Magnetometern für beide Versuchspersonen, jeweils in Block 1 mit Rohdaten und SSS-Daten.}
+  \label{img:butterfly:mag}
+\end{figure}
+
 \subsection{Quellrekonstruktionen und Zeitverläufe}
 
 In Abbildung~\ref{img:pa07:aktiv} und~\ref{img:pa10:aktiv} sind die Aktivitätsdaten der rekonstruierten Quellen für die Versuchspersonen \texttt{pa07} und \texttt{pa10} abgebildet. Recht/Linksseitig (???). Deutlich wird, dass Minimum Norm Estimate (Abbildungen auf der rechten Seite) durchweg eine wesentlich konzentrierte Verteilung aufweisen, als LCMV Beamformer. Zusätzlich scheint Beamformer fälschlicherweise eine Aktivität auf der Gehirnoberseite festzustellen (Warum ???). Diese Aktivität sinkt jedoch mit zunehmender Verwendung rauschunterdrückender Verfahren. Daran wird deutlich, dass Beamformer offensichtlich große Probleme hat Rohdaten korrekt zu verarbeiten. Die These, dass Beamformer gut darin ist Rohdaten zu verarbeiten muss an dieser Stelle verworfen werden.
 
-%%% Warum Aktivität auf der Gehirnoberseite?
+%%% Warum Aktivität auf der Gehirnoberseite? -> ghost sources
 
 Sehr deutlich wird dieses Verhalten auch in den Zeitverläufen in Abbildung~\ref{img:pa07:zeit} und~\ref{img:pa10:zeit}. Der Hauptausschlag der MMNm sollte bei ca. $200$-$250\,ms$ liegen. Während Minimum Norm Estimate selbst bei Verwendung von Rohdaten mit der Amplitude in diesem Bereich liegt und auch nur eine Haupt-Amplitude aufweist, zeigen sich bei Beamformer große Probleme bei der Verarbeitung der Rohdaten. Die Haupt-Amplitude in den Abbildungen~\ref{img:pa07:zeit:raw-lcmv} und~\ref{img:zeit:pa10:raw-lcmv} liegen noch vor $200\,ms$, außerdem kommt es zu einer großen Anzahl an hohen Ausschlägen, für die es auf Basis der zu erwartenden Aktivitäten keine Erklärung gibt. Etwas besser wird es bei Beamformer mit Verwendung von bereits rauschunterdrückten SSS- oder MC-Daten. Dies widerspricht jedoch der eigentlichen These.
 
 Bei pa10 ... Effekte der Bewegung? Ist Unterschied Roh/SSS zu MC größer bei pa10?
 
-\subsection{Anpassungsgüte}
-
-Nur für MNE?
-
 % ##### GRAFIKEN #####
 
 \begin{figure}
 %  \centering
-%  \captionsetup{justification=centering}
+  \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_lcmv_activity.eps}}
@@ -905,7 +1068,7 @@ Nur für MNE?
     \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_lcmv_activity.eps}}
     \subcaption{MC-Daten / LCMV Beamformer}
     \label{img:pa07:aktiv:mc-lcmv}
-  \end{subfigure}\hspace*{0.04\textwidth}
+  \end{subfigure}\hspace*{0.05\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_mne_activity.eps}}
@@ -913,6 +1076,7 @@ Nur für MNE?
     \label{img:pa07:aktiv:mc-mne}
   \end{subfigure}
   %
+  \captionsetup{justification=justified}
   \vspace*{3mm}
   \caption[Quellaktivität von Versuchsperson \texttt{pa07}]{Quellaktivität von Versuchsperson \texttt{pa07} in allen Bedingungen im linken temporalen Bereich bei $208\,ms$.}
   \label{img:pa07:aktiv}
@@ -920,7 +1084,7 @@ Nur für MNE?
 
 \begin{figure}
 %  \centering
-%  \captionsetup{justification=centering}
+  \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse.eps}
@@ -950,7 +1114,7 @@ Nur für MNE?
     \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_lcmv_timecourse.eps}
     \subcaption{MC-Daten / LCMV Beamformer}
     \label{img:pa07:zeit:mc-lcmv}
-  \end{subfigure}\hspace*{0.04\textwidth}
+  \end{subfigure}\hspace*{0.05\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_mne_timecourse.eps}
@@ -958,6 +1122,7 @@ Nur für MNE?
     \label{img:pa07:zeit:mc-mne}
   \end{subfigure}
   %
+  \captionsetup{justification=justified}
   \vspace*{3mm}
   \caption[Zeitverlauf der Aktivität von Versuchsperson \texttt{pa07}]{Zeitverlauf der Aktivität von Versuchsperson \texttt{pa07} in allen Bedingungen im Gyrus temporalis superior.}
   \label{img:pa07:zeit}
@@ -965,7 +1130,7 @@ Nur für MNE?
 
 \begin{figure}
 %  \centering
-%  \captionsetup{justification=centering}
+  \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_lcmv_activity.eps}}
@@ -995,7 +1160,7 @@ Nur für MNE?
     \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_lcmv_activity.eps}}
     \subcaption{MC-Daten / LCMV Beamformer}
     \label{img:pa10:aktiv:mc-lcmv}
-  \end{subfigure}\hspace*{0.04\textwidth}
+  \end{subfigure}\hspace*{0.05\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
     \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_mne_activity.eps}}
@@ -1003,6 +1168,7 @@ Nur für MNE?
     \label{img:pa10:aktiv:mc-mne}
   \end{subfigure}
   %
+  \captionsetup{justification=justified}
   \vspace*{3mm}
   \caption[Quellaktivität von Versuchsperson \texttt{pa10}]{Quellaktivität von Versuchsperson \texttt{pa10} in allen Bedingungen im rechten (???) temporalen Bereich  bei $208\,ms$.}
   \label{img:pa10:aktiv}
@@ -1010,7 +1176,7 @@ Nur für MNE?
 
 %\begin{figure}
 %%  \centering
-%%  \captionsetup{justification=centering}
+%  \captionsetup{justification=centering}
 %  %
 %  \begin{subfigure}[c]{0.47\textwidth}
 %    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_lcmv_timecourse.eps}
@@ -1040,7 +1206,7 @@ Nur für MNE?
 %    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_lcmv_timecourse.eps}
 %    \subcaption{MC-Daten / LCMV Beamformer}
 %    \label{img:pa10:zeit:mc-lcmv}
-%  \end{subfigure}\hspace*{0.04\textwidth}
+%  \end{subfigure}\hspace*{0.05\textwidth}
 %  %
 %  \begin{subfigure}[c]{0.47\textwidth}
 %    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_mne_timecourse.eps}
@@ -1048,6 +1214,7 @@ Nur für MNE?
 %    \label{img:pa10:zeit:mc-mne}
 %  \end{subfigure}
 %  %
+%  \captionsetup{justification=justified}
 %  \vspace*{3mm}
 %  \caption[Zeitverlauf der Aktivität von Versuchsperson \texttt{pa10}]{Zeitverlauf der Aktivität von Versuchsperson \texttt{pa10} in allen Bedingungen im Gyrus temporalis superior.}
 %  \label{img:pa10:zeit}
@@ -1064,10 +1231,17 @@ Nur für MNE?
 
 Die Ergebnisse haben Fragen aufgeworfen über die Eigenschaften der Verfahren. Eine Interpretation der Ergebnisse 
 
+Die Ergebnisse scheinen unabhängig von der Bewegung zu sein. Keine der beiden Modell scheint die Daten einer der Versuchspersonen besser verarbeiten zu können. Eventuell waren die Bewegungen von Versuchsperson~\texttt{pa10} aber auch nicht stark genug, um wirkliche Unterschiede feststellen zu können. Die Ergebnisse im Abschnitt \nameref{sec:ergebnis-vorverarbeitung} auf Seite~\pageref{sec:ergebnis-vorverarbeitung} bestätigen die Annahme. Der Mehrwert der MC-Korrektur ist bei beiden Versuchspersonen eher als gering einzuschätzen. Möglich wäre es für zukünftige Untersuchungen, dass eine Versuchsperson gebeten wird sich absichtlich während einer Messung viel zu bewegen. Aus den vorliegenden Daten können jedoch keine Zusammenhänge zwischen den Bewegungsprofilen und den verwendeten Modellen abgeleitet werden.
+
+Wichtig bei der Interpretation der Ergebnisse ist außerdem die Tatsache, dass Trials mit einer magnetischen Flussdichte, einem Gradienten oder einer Augenaktivität (gemessen mittels EOG) über einem gewissen Grenzwert verworfen wurden. Die in Tabelle \ref{tab:rejecting} war die entsprechende Anzahl der verwendeten Trials aufgelistet. Da innerhalb der Rohdaten häufiger Abweichungen über die Grenzwerte hinaus auftraten, wurden hier entsprechend mehr Trials verworfen. Es ist nicht falsch zu behaupten, dass dies einer gewissen Rauschunterdrückung, wenn auch äußerst vereinfachten, Rauschunterdrückung entspricht. Zeitpunkte an denen besonders hohes Rauschen auftrat wurden einfach nicht berücksichtigt. Da es sich um ein Standardverfahren für die Verarbeitung der SSS- und MC-Daten handelt, war es aus Gründen der Vergleichbarkeit angebracht, auch die Rohdaten entsprechend zu verarbeiten. Trotzdem wäre es auch an dieser Stelle interessant zu untersuchen, wie sich die Verfahren verhalten, wenn ausnahmslos alle Trials verwendet werden. Vermutlich würde im Vergleich trotzdem Minimum Norm Estimate die besseren Ergebnisse liefern. Ob die Lösungen jedoch immer noch hohe Ähnlichkeit mit denen einer Lösung auf SSS-Daten basierend haben würde, wäre eine mögliche Fragestellung.
+
 Präsentation: Therefore, uncorrelated noise (e.g., random system noise) will be amplified by the weights in a non-uniform manner, with increasing distortion with increasing distance from the sensors 
 
 MEG-Buch S. 164: Since the adaptive spatial fi lters computed using Equation (7–3) are dependent on the leadfi eld matrix G , beamforming—like the MNE/MCE methods for distributed source modeling—does not provide accurate estimates of deep sources. This is essentially due to the fact that the fi eld patterns at the scalp of neighboring dipole sources approaching the center of the head are generally more similar to each other (i.e., more spatially correlated) than164
 MEG: An Introduction to Methods the fi elds of neighboring dipoles close to the surface. Particularly in the presence of noise, this leads to larger localization errors. Primarily because of this “spatial leakage,” beamformers tend to overestimate the signal power of deeplying sources, which makes it diffi cult to interpret the “raw” beamformer signal amplitude estimates.
+
+
+%%% Hier Ghost Sources erwähnen und auch Bilder dazu innerhalb der Diskussion einfügen.
 
 \newpage
 \section{Literaturverzeichnis}

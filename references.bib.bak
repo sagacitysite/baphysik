@@ -321,6 +321,18 @@
   Publisher                = {Tohoku University Press, Sendai}
 }
 
+@Article{poghosyan2007precise,
+  Title                    = {Precise mapping of early visual responses in space and time},
+  Author                   = {Poghosyan, Vahe and Ioannides, Andreas A},
+  Journal                  = {Neuroimage},
+  Year                     = {2007},
+  Number                   = {2},
+  Pages                    = {759--770},
+  Volume                   = {35},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{sarvas1987basic,
   Title                    = {Basic mathematical and electromagnetic concepts of the biomagnetic inverse problem},
   Author                   = {Sarvas, Jukka},

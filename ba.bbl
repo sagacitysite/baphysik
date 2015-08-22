@@ -1146,6 +1146,34 @@
       \field{volume}{329}
       \field{year}{2012}
     \endentry
+    \entry{wilson2007continuous}{inproceedings}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=aaf5e910b7113c7b27f8430e3c08a0e7}{Wilson}{W\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=238fb333d025cfef15d8482c144de8a8}{Moiseev}{M\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bf11772293ee70c27dfbe808db264dfb}{Podin}{P\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6412304dc0af300337a832b0479fa0a8}{Quraan}{Q\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=aaf5e910b7113c7b27f8430e3c08a0e7}{Wilson}{W\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=238fb333d025cfef15d8482c144de8a8}{Moiseev}{M\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bf11772293ee70c27dfbe808db264dfb}{Podin}{P\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6412304dc0af300337a832b0479fa0a8}{Quraan}{Q\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7720dd4cc18d00b77a2ac4e1986b74d8}
+      \strng{fullhash}{cb02cac7264488412b34304526dd6281}
+      \field{sortinit}{W}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Continuous head localization and data correction in MEG}
+      \field{booktitle}{International Congress Series}
+      \field{title}{Continuous head localization and data correction in MEG}
+      \field{volume}{1300}
+      \field{year}{2007}
+      \field{pages}{623\bibrangedash 626}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput
