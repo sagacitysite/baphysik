@@ -1,14 +1,14 @@
 [0] Config.pm:318> INFO - This is Biber 1.8
 [0] Config.pm:321> INFO - Logfile is 'ba.blg'
-[47] biber:275> INFO - === Sa Aug 22, 2015, 16:48:16
-[47] Biber.pm:333> INFO - Reading 'ba.bcf'
-[97] Biber.pm:630> INFO - Found 43 citekeys in bib section 0
-[111] Biber.pm:3053> INFO - Processing section 0
-[126] Biber.pm:3190> INFO - Looking for bibtex format file 'references.bib' for section 0
-[130] bibtex.pm:933> INFO - Decoding LaTeX character macros into UTF-8
-[136] bibtex.pm:808> INFO - Found BibTeX data source 'references.bib'
-[395] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[396] Biber.pm:2945> INFO - Sorting 'entry' list 'apa' keys
-[396] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[562] bbl.pm:482> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
-[569] bbl.pm:555> INFO - Output to ba.bbl
+[62] biber:275> INFO - === So Aug 23, 2015, 23:14:01
+[63] Biber.pm:333> INFO - Reading 'ba.bcf'
+[154] Biber.pm:630> INFO - Found 44 citekeys in bib section 0
+[172] Biber.pm:3053> INFO - Processing section 0
+[188] Biber.pm:3190> INFO - Looking for bibtex format file 'references.bib' for section 0
+[191] bibtex.pm:933> INFO - Decoding LaTeX character macros into UTF-8
+[197] bibtex.pm:808> INFO - Found BibTeX data source 'references.bib'
+[458] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[458] Biber.pm:2945> INFO - Sorting 'entry' list 'apa' keys
+[458] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[642] bbl.pm:482> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
+[649] bbl.pm:555> INFO - Output to ba.bbl

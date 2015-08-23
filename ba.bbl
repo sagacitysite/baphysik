@@ -1012,6 +1012,33 @@
       \field{year}{2004}
       \field{pages}{269\bibrangedash 275}
     \endentry
+    \entry{trujillo2004bayesian}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=64a912ba146365b9426c3f23583dfb79}{Trujillo-Barreto}{T\bibinithyphendelim B\bibinitperiod}{Nelson\bibnamedelima J}{N\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a4ceb6b1bc5e6881c0097d8335512fef}{Aubert-Vázquez}{A\bibinithyphendelim V\bibinitperiod}{Eduardo}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=50640114a79ebb699b3bf14dd9bdc1cb}{Valdés-Sosa}{V\bibinithyphendelim S\bibinitperiod}{Pedro\bibnamedelima A}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=64a912ba146365b9426c3f23583dfb79}{Trujillo-Barreto}{T\bibinithyphendelim B\bibinitperiod}{Nelson\bibnamedelima J}{N\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a4ceb6b1bc5e6881c0097d8335512fef}{Aubert-Vázquez}{A\bibinithyphendelim V\bibinitperiod}{Eduardo}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=50640114a79ebb699b3bf14dd9bdc1cb}{Valdés-Sosa}{V\bibinithyphendelim S\bibinitperiod}{Pedro\bibnamedelima A}{P\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7ae7d5b6a1268512b2051a5ad19bf977}
+      \strng{fullhash}{82dea39510904e4b38cb4ac4d62d27cb}
+      \field{sortinit}{T}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Bayesian model averaging in EEG/MEG imaging}
+      \field{journaltitle}{NeuroImage}
+      \field{number}{4}
+      \field{title}{Bayesian model averaging in EEG/MEG imaging}
+      \field{volume}{21}
+      \field{year}{2004}
+      \field{pages}{1300\bibrangedash 1319}
+    \endentry
     \entry{uusitalo1997signal}{article}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=bf92bdbd52c68ab9214ee955530571e8}{Uusitalo}{U\bibinitperiod}{MA}{M\bibinitperiod}{}{}{}{}}%

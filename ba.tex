@@ -789,7 +789,7 @@ Bewegungen der Versuchspersonen sind als Störfaktoren zu bewerten. Je mehr sich
 \subsection{Frequenzanalyse}
 \label{sec:freq-analy}
 
-Die Frequenzanalyse wurde nur für Versuchsperson \texttt{pa07} in Block 1 durchgeführt. Das Rauschverhalten sollte für alle Versuchspersonen in allen Blöcken sehr ähnlich sein. In Abbildung \ref{img:freq-analy} ist das Ergebnis dargestellt. In der Grafik \ref{img:freq-analy-raw} ist die Frequenzanalyse auf Basis der Rohdaten, in Grafik \ref{img:freq-analy-sss} auf Basis der SSS-Daten dargestellt. Während in den Rohdaten noch deutlich identifizierbare Artefakte enthalten sind, wie beispielsweise der Netzstrom mit $50\,Hz$ oder die Bahn-Oberleitung und deren Oberschwingungen bei $16,67\,Hz$, $33,33\,Hz$, etc., sind diese in den SSS-Daten nicht mehr oder deutlich vermindert. Die äußeren Quellen wurden herausgefiltert. Generell ist die untere Frequenzanalyse deutlich geglätteter, als die auf den Rohdaten basierende. Damit wird deutlich welche Herausforderung die Lokalisationverfahren zu leisten haben um adäquate Ergebnisse hervorzubringen.
+Die Frequenzanalyse wurde nur für Versuchsperson \texttt{pa07} in Block 1 durchgeführt. Das Rauschverhalten sollte für alle Versuchspersonen in allen Blöcken sehr ähnlich sein. In Abbildung \ref{img:freq-analy} ist das Ergebnis dargestellt. In der Grafik \ref{img:freq-analy-raw} ist die Leistungsdichtespektrum auf Basis der Rohdaten, in Grafik \ref{img:freq-analy-sss} auf Basis der SSS-Daten dargestellt. Gezeigt wird exemplarisch die Analyse für die Kanäle \texttt{MEG1511}, \texttt{MEG2611}, \texttt{MEG1011} und \texttt{MEG2111} (siehe auch Abbildung~\ref{img:sensmap}). Während in den Rohdaten noch deutlich identifizierbare Artefakte enthalten sind, wie beispielsweise der Netzstrom mit $50\,Hz$ oder die Bahn-Oberleitung und deren Oberschwingungen bei $16,67\,Hz$, $33,33\,Hz$, etc., sind diese in den SSS-Daten nicht mehr oder deutlich vermindert. Die äußeren Quellen wurden herausgefiltert. Generell ist die untere Frequenzanalyse deutlich geglätteter, als die auf den Rohdaten basierende. Damit wird deutlich welche Herausforderung die Lokalisationverfahren zu leisten haben um adäquate Ergebnisse hervorzubringen.
 
 \begin{figure}
   \centering
@@ -797,19 +797,19 @@ Die Frequenzanalyse wurde nur für Versuchsperson \texttt{pa07} in Block 1 durch
   %
   \begin{subfigure}[c]{0.43\textwidth}
     \includegraphics[width=\textwidth]{ergebnisse/pa07a1_raw_freq.eps}
-    \subcaption{Frequenzanalyse der Rohdaten}
+    \subcaption{Leistungsdichtespektrum der Rohdaten}
     \label{img:freq-analy-raw}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.43\textwidth}
     \includegraphics[width=\textwidth]{ergebnisse/pa07a1_sss_freq.eps}
-    \subcaption{Frequenzanalyse der SSS-Daten}
+    \subcaption{Leistungsdichtespektrum der SSS-Daten}
     \label{img:freq-analy-sss}
   \end{subfigure}
   %
   \captionsetup{justification=justified}
   \vspace*{3mm}
-  \caption[Frequenzanalyse auf Basis eines Blocks]{Frequenzanalyse auf Basis der Daten von Versuchsperson~\texttt{pa07} von Block~1. Deutlich wird die Abnahme des Rauschens durch die SSS-Filterung. Vor allem bei $50\,Hz$ (Netzstrom), $16,67\,Hz$ (Bahn-Oberleitung) und deren Oberschwingungen ist eine Abnahme der Amplitude offensichtlich. Eine Abnahme des Rauschens ist aber bspw. auch im Bereich $0\,Hz$ bis $5\,Hz$ sehr effektiv.}
+  \caption[Leistungsdichtespektrum auf Basis eines Blocks]{Leistungsdichtespektrum auf Basis der Daten von Versuchsperson~\texttt{pa07} von Block~1 für die Kanäle \texttt{MEG1511}, \texttt{MEG2611}, \texttt{MEG1011} und \texttt{MEG2111}. Deutlich wird die Abnahme des Rauschens durch die SSS-Filterung. Vor allem bei $50\,Hz$ (Netzstrom), $16,67\,Hz$ (Bahn-Oberleitung) und deren Oberschwingungen ist eine Abnahme der Amplitude offensichtlich. Eine Abnahme des Rauschens ist aber bspw. auch im Bereich $0\,Hz$ bis $5\,Hz$ sehr effektiv.}
   \label{img:freq-analy}
 \end{figure}
 
@@ -953,10 +953,6 @@ Die Annahme, dass bei Versuchsperson~\texttt{pa10} ein erheblich größerer Unte
   \label{img:butterfly:pa07:4}
 \end{figure}
 
-Im Folgenden soll noch eine letzte Vorbetrachtung erfolgen. In den Abbildungen \ref{img:butterfly:grad} und \ref{img:butterfly:mag} sind die Aktivitäten der Kanäle der Versuchspersonen für Block 1 für Rohdaten und SSS-Daten aufgetragen, getrennt für Gradiometer und Magnetometer. Da die Verläufe für MC-Daten eine hohe Ähnlichkeit mit denen der SSS-Daten aufweisen und sich die Aktivitäten auch in den anderen Blöcken analog verhalten, wurden sie hier nicht gezeigt, ein Vergleich zwischen Rohdaten und SSS-Daten für Block 1 soll an dieser Stelle genügen. Die Daten bilden bereits die vorverarbeiteten Daten ab. Vor allem bei den Rohdaten ist also zu berücksichtigen, dass die schlechtesten Trials bei der Mittelung nicht berücksichtigt wurden.
-
-Es ist zu erkennen, dass ein Maximum der Aktivität um ca. $210\,ms$ liegen muss. Diese Aktivität entspricht der MMNm. Weitere kleine Ausschläge können u.U. noch nach $300\,ms$ vorkommen, sollten jedoch nicht stärker relevant sein. Bei Versuchsperson \texttt{pa10} fällt auf, dass sowohl in den Gradiometern, also auch den Magnetometern, eine etwas verzerrte Aktivität zwischen $200\,ms$ und $300\,ms$ vorliegt (Abbildungen~\ref{img:butterfly:grad:raw:pa10},~\ref{img:butterfly:grad:sss:pa10},~\ref{img:butterfly:mag:raw:pa10} und~\ref{img:butterfly:mag:sss:pa10}). Möglicherweise ist dies mit der stärkeren Bewegung der Versuchsperson zu begründen. Außerdem wird in den Daten erneut deutlich (wie schon bei der Frequenzanalyse), dass die Rekonstruktionsverfahren bei den Rohdaten eine gewisse Leistung zu erbringen haben, da das Rauschen nicht unerheblich ist. Bei den Rohdaten kommt es zu auseinander laufenden Aktivitäten, die sich äußerst unsystematisch verhalten, vor allem bei den Gradiometern deutlich zu sehen (Abbildung~\ref{img:butterfly:grad:raw:pa07} und~\ref{img:butterfly:grad:raw:pa10}).
-
 \begin{figure}
   \centering
   \captionsetup{justification=centering}
@@ -1024,9 +1020,17 @@ Es ist zu erkennen, dass ein Maximum der Aktivität um ca. $210\,ms$ liegen muss
   \label{img:butterfly:mag}
 \end{figure}
 
+Im Folgenden soll noch eine letzte Vorbetrachtung erfolgen. In den Abbildungen \ref{img:butterfly:grad} und \ref{img:butterfly:mag} sind die Aktivitäten der Kanäle der Versuchspersonen für Block 1 für Rohdaten und SSS-Daten aufgetragen, getrennt für Gradiometer und Magnetometer. Da die Verläufe für MC-Daten eine hohe Ähnlichkeit mit denen der SSS-Daten aufweisen und sich die Aktivitäten auch in den anderen Blöcken analog verhalten, wurden sie hier nicht gezeigt, ein Vergleich zwischen Rohdaten und SSS-Daten für Block 1 soll an dieser Stelle genügen. Die Daten bilden bereits die vorverarbeiteten Daten ab. Vor allem bei den Rohdaten ist also zu berücksichtigen, dass die schlechtesten Trials bei der Mittelung nicht berücksichtigt wurden.
+
+Es ist zu erkennen, dass ein Maximum der Aktivität um ca. $210\,ms$ liegen muss. Diese Aktivität entspricht der MMNm. Weitere kleine Ausschläge können u.U. noch nach $300\,ms$ vorkommen, sollten jedoch nicht stärker relevant sein. Bei Versuchsperson \texttt{pa10} fällt auf, dass sowohl in den Gradiometern, also auch den Magnetometern, eine etwas verzerrte Aktivität zwischen $200\,ms$ und $300\,ms$ vorliegt (Abbildungen~\ref{img:butterfly:grad:raw:pa10},~\ref{img:butterfly:grad:sss:pa10},~\ref{img:butterfly:mag:raw:pa10} und~\ref{img:butterfly:mag:sss:pa10}). Möglicherweise ist dies mit der stärkeren Bewegung der Versuchsperson zu begründen. Außerdem wird in den Daten erneut deutlich (wie schon bei der Frequenzanalyse), dass die Rekonstruktionsverfahren bei den Rohdaten eine gewisse Leistung zu erbringen haben, da das Rauschen nicht unerheblich ist. Bei den Rohdaten kommt es zu auseinander laufenden Aktivitäten, die sich äußerst unsystematisch verhalten, vor allem bei den Gradiometern deutlich zu sehen (Abbildung~\ref{img:butterfly:grad:raw:pa07} und~\ref{img:butterfly:grad:raw:pa10}).
+
 \subsection{Quellrekonstruktionen und Zeitverläufe}
 
-In Abbildung~\ref{img:pa07:aktiv} und~\ref{img:pa10:aktiv} sind die Aktivitätsdaten der rekonstruierten Quellen für die Versuchspersonen \texttt{pa07} und \texttt{pa10} abgebildet. Recht/Linksseitig (???). Deutlich wird, dass Minimum Norm Estimate (Abbildungen auf der rechten Seite) durchweg eine wesentlich konzentrierte Verteilung aufweisen, als LCMV Beamformer. Zusätzlich scheint Beamformer fälschlicherweise eine Aktivität auf der Gehirnoberseite festzustellen (Warum ???). Diese Aktivität sinkt jedoch mit zunehmender Verwendung rauschunterdrückender Verfahren. Daran wird deutlich, dass Beamformer offensichtlich große Probleme hat Rohdaten korrekt zu verarbeiten. Die These, dass Beamformer gut darin ist Rohdaten zu verarbeiten muss an dieser Stelle verworfen werden.
+In Abbildung~\ref{img:pa07:aktiv} und~\ref{img:pa10:aktiv} sind die Aktivitätsdaten der rekonstruierten Quellen für die Versuchspersonen \texttt{pa07} und \texttt{pa10} abgebildet. Recht/Linksseitig (???). Deutlich wird, dass Minimum Norm Estimate (Abbildungen auf der rechten Seite) durchweg eine wesentlich konzentrierte Verteilung aufweisen, als LCMV Beamformer.
+
+%%% Verteilungskenngröße
+
+Zusätzlich scheint Beamformer fälschlicherweise eine Aktivität auf der Gehirnoberseite festzustellen. Diese Aktivität sinkt jedoch mit zunehmender Verwendung rauschunterdrückender Verfahren. Daran wird deutlich, dass Beamformer offensichtlich große Probleme hat Rohdaten korrekt zu verarbeiten. Die These, dass Beamformer gut darin ist Rohdaten zu verarbeiten muss an dieser Stelle verworfen werden.
 
 %%% Warum Aktivität auf der Gehirnoberseite? -> ghost sources
 
@@ -1231,17 +1235,28 @@ Bei pa10 ... Effekte der Bewegung? Ist Unterschied Roh/SSS zu MC größer bei pa
 
 Die Ergebnisse haben Fragen aufgeworfen über die Eigenschaften der Verfahren. Eine Interpretation der Ergebnisse 
 
+%%% Einleitung zur Diskussion fehlt noch
+
 Die Ergebnisse scheinen unabhängig von der Bewegung zu sein. Keine der beiden Modell scheint die Daten einer der Versuchspersonen besser verarbeiten zu können. Eventuell waren die Bewegungen von Versuchsperson~\texttt{pa10} aber auch nicht stark genug, um wirkliche Unterschiede feststellen zu können. Die Ergebnisse im Abschnitt \nameref{sec:ergebnis-vorverarbeitung} auf Seite~\pageref{sec:ergebnis-vorverarbeitung} bestätigen die Annahme. Der Mehrwert der MC-Korrektur ist bei beiden Versuchspersonen eher als gering einzuschätzen. Möglich wäre es für zukünftige Untersuchungen, dass eine Versuchsperson gebeten wird sich absichtlich während einer Messung viel zu bewegen. Aus den vorliegenden Daten können jedoch keine Zusammenhänge zwischen den Bewegungsprofilen und den verwendeten Modellen abgeleitet werden.
 
 Wichtig bei der Interpretation der Ergebnisse ist außerdem die Tatsache, dass Trials mit einer magnetischen Flussdichte, einem Gradienten oder einer Augenaktivität (gemessen mittels EOG) über einem gewissen Grenzwert verworfen wurden. Die in Tabelle \ref{tab:rejecting} war die entsprechende Anzahl der verwendeten Trials aufgelistet. Da innerhalb der Rohdaten häufiger Abweichungen über die Grenzwerte hinaus auftraten, wurden hier entsprechend mehr Trials verworfen. Es ist nicht falsch zu behaupten, dass dies einer gewissen Rauschunterdrückung, wenn auch äußerst vereinfachten, Rauschunterdrückung entspricht. Zeitpunkte an denen besonders hohes Rauschen auftrat wurden einfach nicht berücksichtigt. Da es sich um ein Standardverfahren für die Verarbeitung der SSS- und MC-Daten handelt, war es aus Gründen der Vergleichbarkeit angebracht, auch die Rohdaten entsprechend zu verarbeiten. Trotzdem wäre es auch an dieser Stelle interessant zu untersuchen, wie sich die Verfahren verhalten, wenn ausnahmslos alle Trials verwendet werden. Vermutlich würde im Vergleich trotzdem Minimum Norm Estimate die besseren Ergebnisse liefern. Ob die Lösungen jedoch immer noch hohe Ähnlichkeit mit denen einer Lösung auf SSS-Daten basierend haben würde, wäre eine mögliche Fragestellung.
 
-Präsentation: Therefore, uncorrelated noise (e.g., random system noise) will be amplified by the weights in a non-uniform manner, with increasing distortion with increasing distance from the sensors 
+Ein weiteres Phänomen ist das der Aktivität im hinteren und vorderen Bereich, welches von Beamformer erkannt wurde, von Minimum Norm Estimate aber nicht. In einer kleinen Post-hoc-Analyse wurden die Aktivitäten der Kanäle in einer topografischen Darstellung abgebildet. Die entsprechende Abbildung~\ref{??} zeigt die Aktivität für Versuchsperson ??? in Block ???. Die Stärke der Signale liegt ...
 
-MEG-Buch S. 164: Since the adaptive spatial fi lters computed using Equation (7–3) are dependent on the leadfi eld matrix G , beamforming—like the MNE/MCE methods for distributed source modeling—does not provide accurate estimates of deep sources. This is essentially due to the fact that the fi eld patterns at the scalp of neighboring dipole sources approaching the center of the head are generally more similar to each other (i.e., more spatially correlated) than164
-MEG: An Introduction to Methods the fi elds of neighboring dipoles close to the surface. Particularly in the presence of noise, this leads to larger localization errors. Primarily because of this “spatial leakage,” beamformers tend to overestimate the signal power of deeplying sources, which makes it diffi cult to interpret the “raw” beamformer signal amplitude estimates.
+%%% Topo-Plot's
 
+Die Aktivität an den Sensoren gibt einen sinnvollen Zusammenhang mit den Abbildungen in~\ref{??} der Quellrekonstruktionen bei Versuchsperson ???. Die Ursache der \glqq Scheinaktivität\grqq liegt also nicht in einer verschobenen Position des Kopfes. Möglich wäre jedoch das Phänomen der \emph{Ghost Sources} \parencite{trujillo2004bayesian}. Sie bezeichnen Dipole, die zwar aus Sicht des Rekonstruktionsverfahrens logisch sind, aber nicht real existieren. In Abbildung~\ref{??} lässt sich gut erkennen, dass auf jeder Seite oben und unten jeweils Pole sind. Zwischen diesen Polen in horizontaler Richtung liegen die entsprechenden Aktivitäten. Theoretisch wäre es aber auch möglich das Gehirn oben und unten zu teilen. Dann wären die Dipole und damit die Quellen in vertikale Richtung oben und unten. Beide Rekonstruktionsverfahren dürften alle 4 Dipole erkennen. Während jedoch Minimum Norm Estimate durch den Ansatz der minimalen Energie richtigerweise die vertikalen Dipole verwirft, übernimmt Beamformer diese Dipole, da hier nur jeder Dipol einzeln betrachtet wird. Jede mögliche Aktivität wird als solche nicht ganzheitlich betrachtet und akzeptiert, es kommt zu einer Scheinaktivität am oberen Bereich des Kopfes.
 
-%%% Hier Ghost Sources erwähnen und auch Bilder dazu innerhalb der Diskussion einfügen.
+%%% Topo-Plot's
+
+Zuletzt waren die Annahmen der Verfahren in der Hypothesenbildung nicht ganz vollständig, was vermutlich zu der falschen Vorhersage geführt hat. Ein Problem des Beamformer-Verfahrens ist die Annahme der Unkorreliertheit der Quellaktivität. Dies wurde im Abschnitt \nameref{sec:beam} ab Seite~\pageref{sec:beam} zwar ausführlich diskutiert, nicht aber in der Hypothese berücksichtigt. Die Quellen der Aktivitäten sind entgegen der Annahme vermutlich sogar sehr stark korreliert. Dabei liegt eine Korrelation nicht nur bei nächsten Nachbarn vor, sondern auch auf beiden Hemisphären, da beide Ohren gleichzeitig stimuliert wurden. Gleichzeitig ist ein großer Teils des Rauschen mit den Quellen unkorreliert. Dies führt dazu, dass vermutlich zum einen die eigentliche Aktivität unterschätzt, zum anderen das Rauschen überschätzt wurde. Dies dürfte die Ursache für die höhere Glätte der Aktivitätsverteilung sein, im Vergleich zu Minimum Norm Estimate. Auf der anderen Seite wurde bei Minimum Norm Estimate die Eigenschaft des Ansatzes der minimalen Energie unterschätzt. Wahrscheinlich führt gerade diese Annahme dazu, dass der Einfluss weit entfernter Störquellen eher unterdrückt wird.
+
+Zusammenfassend lässt sich schließen, dass Minimum Norm Estimate ein überraschend mächtiges Modell bereit stellt um die Quellen der Aktivitäten im Gehirn zu lokalisieren, sogar wenn direkt mit verrauschten Daten gearbeitet wird. Gleichzeitig hat sich herausgestellt, dass LCMV Beamformer den Erwartungen nicht gerecht geworden ist und nicht nur unabhängig von den Daten mit generellen Problemen wie den Ghost Sources konfrontiert war, sondern auch bei der Verwendung mit Rohdaten im Zeitverlauf Amplituden hervorbrachte, die praktisch nicht begründbar waren.
+
+Um die Fähigkeit beider Verfahren genauer zu analysieren sollten weitere Vergleiche angestellt werden. Vor allem der Einfluss der Bewegung einer Versuchsperson ist noch nicht zufriedenstellend geklärt. Auch wäre es denkbar Quellen zu simulieren um herauszufinden, welches der Verfahren geringere Abweichungen zu den echten Quellen liefert. In einer Quellsimulation könnte auch überprüft werden, wie die Verfahren mit eng beieinander liegenden bzw. weit entfernten oder vielen bzw. wenigen Quellen umgehen können. Aber trotz des großen Potentials weiterer möglicher Analyse kann nach dieser Arbeit bereits mit hoher Sicherheit festgehalten werden, dass für den gegebenen Untersuchungsgegenstand am gegebenen Standort das Modell Minimum Norm Estimate das deutlich Stabilere ist.
+
+%Präsentation: Therefore, uncorrelated noise (e.g., random system noise) will be amplified by the weights in a non-uniform manner, with increasing distortion with increasing distance from the sensors
+%MEG-Buch S. 164: Since the adaptive spatial filters computed using Equation (7–3) are dependent on the leadfield matrix G , beamforming—like the MNE/MCE methods for distributed source modeling—does not provide accurate estimates of deep sources. This is essentially due to the fact that the field patterns at the scalp of neighboring dipole sources approaching the center of the head are generally more similar to each other (i.e., more spatially correlated) than  the fields of neighboring dipoles close to the surface. Particularly in the presence of noise, this leads to larger localization errors. Primarily because of this “spatial leakage,” beamformers tend to overestimate the signal power of deeplying sources, which makes it difficult to interpret the “raw” beamformer signal amplitude estimates.
 
 \newpage
 \section{Literaturverzeichnis}
