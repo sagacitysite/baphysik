@@ -2,88 +2,108 @@
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Einleitung}{6}{section*.5}
+\contentsline {section}{Einleitung}{7}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Biologische Grundlagen}{8}{section*.6}
+\contentsline {subsection}{Biologische Grundlagen}{9}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Kopf- und Gehirnstruktur}{8}{section*.7}
+\contentsline {subsubsection}{Kopf- und Gehirnstruktur}{9}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elektrische und magnetische Eigenschaften der Nervenzellen}{8}{section*.8}
+\contentsline {subsubsection}{Elektrische und magnetische Eigenschaften der Nervenzellen}{9}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ERP und ERF}{9}{section*.9}
+\contentsline {subsubsection}{ERP und ERF}{10}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Auditorischer Kortex}{10}{figure.caption.11}
+\contentsline {subsubsection}{Auditorischer Kortex}{11}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Grundlagen der Magnetenzephalographie}{11}{section*.12}
+\contentsline {subsection}{Grundlagen der Magnetenzephalographie}{12}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{SQUIDs}{12}{section*.13}
+\contentsline {subsubsection}{SQUIDs}{13}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Flux-Transformator}{14}{figure.caption.15}
+\contentsline {subsubsection}{Flux-Transformator}{15}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Magnetometer und Gradiometer}{14}{section*.16}
+\contentsline {subsubsection}{Magnetometer und Gradiometer}{15}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Artefakte und Rauschen}{15}{section*.17}
+\contentsline {subsection}{Artefakte und Rauschen}{16}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Allgemeine Rauschunterdr\IeC {\"u}ckung}{15}{section*.18}
+\contentsline {subsubsection}{Allgemeine Rauschunterdr\IeC {\"u}ckung}{16}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Softwareseitige Rauschunterdr\IeC {\"u}ckung}{16}{section*.19}
+\contentsline {subsubsection}{Softwareseitige Rauschunterdr\IeC {\"u}ckung}{17}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Hintergrund zur Quelllokalisation}{20}{section*.20}
+\contentsline {section}{Hintergrund zur Quelllokalisation}{21}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Grundlagen und Vorw\IeC {\"a}rtsmodell}{20}{section*.21}
+\contentsline {subsection}{Grundlagen und Vorw\IeC {\"a}rtsmodell}{21}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Superposition}{20}{section*.22}
+\contentsline {subsubsection}{Superposition}{21}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Segmentierung und Volumenleiter}{20}{section*.24}
+\contentsline {subsubsection}{Segmentierung und Volumenleiter}{21}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Koregistrierung}{23}{section*.26}
+\contentsline {subsubsection}{Koregistrierung}{24}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Quellraum und Vorw\IeC {\"a}rtsmodell}{23}{section*.27}
+\contentsline {subsubsection}{Quellraum und Vorw\IeC {\"a}rtsmodell}{24}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{24}{section*.28}
+\contentsline {subsection}{R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{25}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Methoden zur Bestimmung des R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{25}{section*.29}
+\contentsline {subsubsection}{Methoden zur Bestimmung des R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{26}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Einfache und multiple Dipolmodelle}{25}{section*.30}
+\contentsline {subsubsection}{Einfache und multiple Dipolmodelle}{26}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verteilte Dipolmodelle}{26}{section*.31}
+\contentsline {subsubsection}{Verteilte Dipolmodelle}{27}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{R\IeC {\"a}umliche Filterung}{27}{section*.32}
+\contentsline {subsubsection}{R\IeC {\"a}umliche Filterung}{28}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Hypothese}{30}{section*.33}
+\contentsline {subsection}{Hypothese}{31}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Methodik}{32}{section*.34}
+\contentsline {section}{Methodik}{33}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Grundlage}{32}{section*.35}
+\contentsline {subsection}{Grundlage}{33}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verwendeter Datensatz}{32}{section*.36}
+\contentsline {subsubsection}{Verwendeter Datensatz}{33}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verwendete Ger\IeC {\"a}te}{33}{section*.37}
+\contentsline {subsubsection}{Verwendete Ger\IeC {\"a}te}{34}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Software zur Analyse}{33}{section*.38}
+\contentsline {subsubsection}{Software zur Analyse}{34}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Allgemeines Verfahren}{33}{section*.39}
+\contentsline {subsection}{Allgemeines Verfahren}{34}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Vorverarbeitung}{34}{section*.40}
+\contentsline {subsection}{Vorverarbeitung}{35}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Quellrekonstruktion}{37}{section*.42}
+\contentsline {subsection}{Quellrekonstruktion}{38}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Weitere Analysen}{39}{section*.43}
+\contentsline {subsection}{Weitere Analysen}{40}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Vergleichbarkeit der L\IeC {\"o}sungen}{39}{section*.44}
+\contentsline {subsection}{Vergleichbarkeit der L\IeC {\"o}sungen}{40}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Ergebnisse}{41}{section*.45}
+\contentsline {section}{Ergebnisse}{42}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Bewegungsprofile}{41}{section*.46}
+\contentsline {subsection}{Bewegungsprofile}{42}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Frequenzanalyse}{41}{section*.48}
+\contentsline {subsection}{Frequenzanalyse}{42}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Signal-Rausch-Verh\IeC {\"a}ltnis}{42}{section*.50}
+\contentsline {subsection}{Signal-Rausch-Verh\IeC {\"a}ltnis}{43}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Vorverarbeitung}{46}{section*.53}
+\contentsline {subsection}{Vorverarbeitung}{47}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Quellrekonstruktionen und Zeitverl\IeC {\"a}ufe}{49}{section*.57}
+\contentsline {subsection}{Quellrekonstruktionen und Zeitverl\IeC {\"a}ufe}{50}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Diskussion}{54}{section*.61}
+\contentsline {subsubsection}{Lateralit\IeC {\"a}t}{50}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literaturverzeichnis}{57}{section*.62}
+\contentsline {subsubsection}{Scheinquellen}{51}{section*.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Aktivit\IeC {\"a}tsverteilung}{53}{section*.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Rauschunterdr\IeC {\"u}ckte Daten}{53}{section*.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Zeitverl\IeC {\"a}ufe}{53}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Diskussion}{57}{section*.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Scheinaktivit\IeC {\"a}t}{57}{section*.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Korreliertheit der Aktivit\IeC {\"a}t}{58}{section*.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Einfluss der Bewegung}{58}{section*.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Vorverarbeitung}{58}{section*.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Fazit und Ausblick}{59}{section*.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literaturverzeichnis}{60}{section*.73}

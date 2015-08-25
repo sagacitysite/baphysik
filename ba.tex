@@ -709,7 +709,7 @@ Zur Auswertung der Daten wurden weitere Analysen durchgeführt. Die mit Hilfe de
 \subsection{Vergleichbarkeit der Lösungen}
 \label{sec:amplitud}
 
-Die Aktivität der Quellen aus den Rekonstruktionen von LCMV Beamformer und Minimum Norm Estimate unterscheiden sich in ihren Lösungen. Die Stärke der Dipole (Stromdipolmomente) wird in~$Am$ angegeben. Dies wird von Minimum Norm Estimate als solches berechnet und kann auch als solches interpretiert werden. Bei Beamformer werden die Aktivitäten durch den räumlichen Filter bestimmt. Die Daten aus dem Beamformer-Verfahren müssen auf andere Weise interpretiert werden. Während bei Minimum Norm Estimate die Aktivität auf einer optimalen Gesamtlösung basiert und damit immer ein Kompromiss zwischen verschiedenen Aktivitäten gefunden werden muss, kann Beamformer für jeden einzelnen Dipol eine beliebige Aktivität ansetzen. Das führt dazu, dass vor allem im Zeitverlauf Amplituden auftreten können, die in ihrer Höhe über- oder unterschätzt werden können. Um eine vergleichbare Interpretation zu ermöglichen werden die Aktivitäten normiert. Aus den ersten $100\,ms$, der Baseline, wird ein Mittelwert gebildet, um den jede Aktivität im Zeitverlauf korrigiert wird.
+Die Aktivität der Quellen aus den Rekonstruktionen von LCMV Beamformer und Minimum Norm Estimate unterscheiden sich in ihren Lösungen. Die Stärke der Dipole (Stromdipolmomente) wird in~$Am$ angegeben. Dies wird von Minimum Norm Estimate als solches berechnet und kann auch als solches interpretiert werden. Bei Beamformer werden die Aktivitäten durch den räumlichen Filter bestimmt und sind Einheitenlos. Die Daten aus dem Beamformer-Verfahren müssen auf andere Weise interpretiert werden. Während bei Minimum Norm Estimate die Aktivität auf einer optimalen Gesamtlösung basiert und damit immer ein Kompromiss zwischen verschiedenen Aktivitäten gefunden werden muss, kann Beamformer für jeden einzelnen Dipol eine beliebige Aktivität ansetzen. Das führt dazu, dass vor allem im Zeitverlauf Amplituden auftreten können, die in ihrer Höhe über- oder unterschätzt werden können. Um eine vergleichbare Interpretation zu ermöglichen werden die Aktivitäten normiert. Aus den ersten $100\,ms$, der Baseline, wird ein Mittelwert gebildet, um den jede Aktivität im Zeitverlauf korrigiert wird.
 
 Beiden Verfahren ist gemeinsam, dass die Lösung dreidimensional berechnet wird. Von Interesse ist aber lediglich der Betrag. Um eine eindimensionale Lösung zu erhalten, wurde die Summe der Quadrate der drei Komponenten gebildet.
 
@@ -721,7 +721,7 @@ Beiden Verfahren ist gemeinsam, dass die Lösung dreidimensional berechnet wird.
 \section{Ergebnisse}
 \label{sec:ergebnisse}
 
-Im Ergebnis zeigte sich überraschend das Gegenteil. Während Minimum Norm Estimate überraschend gut mit Rohdaten umgehen konnte und das Rauschen vergleichsweise gut unterdrückte, war Beamformer nicht in der Lage die Rohdaten gut zu verarbeiten. Grundlegender noch hatte Beamformer aber auch generell Probleme mit einer korrekten Rekonsturktion der Daten. Auch unter Verwendung der gefilterten Daten (SSS und MC) zeigte Minimum Norm Estimate deutlich bessere Ergebnisse. Es werden zunächst einige Voranalysen betrachtet, bevor dann die eigentliche Quellrekonstruktion verglichen wird.
+Im Ergebnis zeigte sich, dass die Hypothese nicht bestätigt werden konnte. Im Gegenteil scheint LCMV Beamformer große Probleme mit der Auswertung von Rohdaten zu haben. Auch Minimum Norm Estimate hat Schwierigkeiten in der Auswertung von Rohdaten, zeigt im Vergleich jedoch bessere Ergebnisse. Unter Verwendung der gefilterten Daten (SSS und MC) zeigte Minimum Norm Estimate deutlich bessere Ergebnisse. Es werden im Folgenden zunächst einige Voranalysen betrachtet, bevor dann die eigentliche Quellrekonstruktion verglichen wird.
 
 \subsection{Bewegungsprofile}
 \label{sec:bewegung}
@@ -733,49 +733,49 @@ Bewegungen der Versuchspersonen sind als Störfaktoren zu bewerten. Je mehr sich
   \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa07a1_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa07}, Block 1}
     \label{img:bewegung:pa07:1}
   \end{subfigure}\hspace*{0.02\textwidth}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a3_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa07a3_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa07}, Block 3}
     \label{img:bewegung:pa07:3}
   \end{subfigure}\hspace*{0.02\textwidth}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a4_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa07a4_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa07}, Block 4}
     \label{img:bewegung:pa07:4}
   \end{subfigure}\hspace*{0.02\textwidth}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a6_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa07a6_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa07}, Block 6}
     \label{img:bewegung:pa07:6}
   \end{subfigure}\vspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa10a1_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa10}, Block 1}
     \label{img:bewegung:pa10:1}
   \end{subfigure}\hspace*{0.02\textwidth}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a3_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa10a3_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa10}, Block 3}
     \label{img:bewegung:pa10:3}
   \end{subfigure}\hspace*{0.02\textwidth}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a4_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa10a4_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa10}, Block 4}
     \label{img:bewegung:pa10:4}
   \end{subfigure}\hspace*{0.02\textwidth}
   %
   \begin{subfigure}[c]{0.23\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a6_mc_dist_movement.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/movement/pa10a6_mc_dist_movement.eps}
     \subcaption{VP \texttt{pa10}, Block 6}
     \label{img:bewegung:pa10:6}
   \end{subfigure}
@@ -795,13 +795,13 @@ Die Frequenzanalyse wurde nur für Versuchsperson \texttt{pa07} in Block 1 durch
   \centering
   \captionsetup{justification=centering}
   %
-  \begin{subfigure}[c]{0.43\textwidth}
+  \begin{subfigure}[c]{0.47\textwidth}
     \includegraphics[width=\textwidth]{ergebnisse/pa07a1_raw_freq.eps}
     \subcaption{Leistungsdichtespektrum der Rohdaten}
     \label{img:freq-analy-raw}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
-  \begin{subfigure}[c]{0.43\textwidth}
+  \begin{subfigure}[c]{0.47\textwidth}
     \includegraphics[width=\textwidth]{ergebnisse/pa07a1_sss_freq.eps}
     \subcaption{Leistungsdichtespektrum der SSS-Daten}
     \label{img:freq-analy-sss}
@@ -936,13 +936,13 @@ Die Annahme, dass bei Versuchsperson~\texttt{pa10} ein erheblich größerer Unte
   \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a4_eve2_raw_mag_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa07a4_eve2_raw_mag_butterfly.eps}
     \subcaption{Rohdaten}
     \label{img:butterfly:pa07:4:raw}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a4_eve2_sss_mag_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa07a4_eve2_sss_mag_butterfly.eps}
     \subcaption{SSS-korrigierte Daten}
     \label{img:butterfly:pa07:4:sss}
   \end{subfigure}
@@ -958,25 +958,25 @@ Die Annahme, dass bei Versuchsperson~\texttt{pa10} ein erheblich größerer Unte
   \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_raw_grad_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa07a1_eve2_raw_grad_butterfly.eps}
     \subcaption{VP \texttt{pa07}, Rohdaten}
     \label{img:butterfly:grad:raw:pa07}
   \end{subfigure}\hspace*{0.08\textwidth}
   %
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_sss_grad_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa07a1_eve2_sss_grad_butterfly.eps}
     \subcaption{VP \texttt{pa07}, SSS-Daten}
     \label{img:butterfly:grad:sss:pa07}
   \end{subfigure}\vspace*{0.02\textwidth}
   %  
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_raw_grad_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa10a1_eve2_raw_grad_butterfly.eps}
     \subcaption{VP \texttt{pa10}, Rohdaten}
     \label{img:butterfly:grad:raw:pa10}
   \end{subfigure}\hspace*{0.08\textwidth}
   %
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_sss_grad_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa10a1_eve2_sss_grad_butterfly.eps}
     \subcaption{VP \texttt{pa10}, SSS-Daten}
     \label{img:butterfly:grad:sss:pa10}
   \end{subfigure}
@@ -991,25 +991,25 @@ Die Annahme, dass bei Versuchsperson~\texttt{pa10} ein erheblich größerer Unte
   \centering
   \captionsetup{justification=centering}
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_raw_mag_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa07a1_eve2_raw_mag_butterfly.eps}
     \subcaption{VP \texttt{pa07}, Rohdaten}
     \label{img:butterfly:mag:raw:pa07}
   \end{subfigure}\hspace*{0.08\textwidth}
   %
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07a1_eve2_sss_mag_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa07a1_eve2_sss_mag_butterfly.eps}
     \subcaption{VP \texttt{pa07}, SSS-Daten}
     \label{img:butterfly:mag:sss:pa07}
   \end{subfigure}\vspace*{0.02\textwidth}
   %
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_raw_mag_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa10a1_eve2_raw_mag_butterfly.eps}
     \subcaption{VP \texttt{pa10}, Rohdaten}
     \label{img:butterfly:mag:raw:pa10}
   \end{subfigure}\hspace*{0.08\textwidth}
   %
   \begin{subfigure}[c]{0.36\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10a1_eve2_sss_mag_butterfly.eps}
+    \includegraphics[width=\textwidth]{ergebnisse/butterfly/pa10a1_eve2_sss_mag_butterfly.eps}
     \subcaption{VP \texttt{pa10}, SSS-Daten}
     \label{img:butterfly:mag:sss:pa10}
   \end{subfigure}
@@ -1026,103 +1026,172 @@ Es ist zu erkennen, dass ein Maximum der Aktivität um ca. $210\,ms$ liegen muss
 
 \subsection{Quellrekonstruktionen und Zeitverläufe}
 
-In Abbildung~\ref{img:pa07:aktiv} und~\ref{img:pa10:aktiv} sind die Aktivitätsdaten der rekonstruierten Quellen für die Versuchspersonen \texttt{pa07} und \texttt{pa10} abgebildet. Recht/Linksseitig (???). Deutlich wird, dass Minimum Norm Estimate (Abbildungen auf der rechten Seite) durchweg eine wesentlich konzentrierte Verteilung aufweisen, als LCMV Beamformer.
+Bei der Quellrekonstruktion waren die Ergebnisse von den Versuchspersonen \texttt{pa07} und \texttt{pa10} weitestgehend analog. Es wird im folgenden überwiegende auf die Ergebnisse von \texttt{pa07} zurückgegriffen und nur in nötigen Fällen ein Vergleich mit \texttt{pa10} angestellt.
 
-%%% Verteilungskenngröße
+\subsubsection{Lateralität}
 
-Zusätzlich scheint Beamformer fälschlicherweise eine Aktivität auf der Gehirnoberseite festzustellen. Diese Aktivität sinkt jedoch mit zunehmender Verwendung rauschunterdrückender Verfahren. Daran wird deutlich, dass Beamformer offensichtlich große Probleme hat Rohdaten korrekt zu verarbeiten. Die These, dass Beamformer gut darin ist Rohdaten zu verarbeiten muss an dieser Stelle verworfen werden.
+Die zentrale Amplitude der MMNm konnte bei $208\,ms$ registriert werden. Bei beiden Versuchspersonen kam es zu einer rechtsseitigen Lateralität. In der topografischen Darstellung der Sensoren in den Abbildungen~\ref{img:topolot} wird die bevorzugte rechtsseitige Aktivität im Intervall $(203,\,212)\,ms$ deutlich.
 
-%%% Warum Aktivität auf der Gehirnoberseite? -> ghost sources
+\begin{figure}
+  \centering
+  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/topoplot/pa07a1_raw.eps}
+    \subcaption{Versuchsperson \texttt{pa07}}
+    \label{img:topolot:pa07a1}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/topoplot/pa10a1_raw.eps}
+    \subcaption{Versuchsperson \texttt{pa10}}
+    \label{img:topolot:pa10a1}
+  \end{subfigure}
+  %
+  \captionsetup{justification=justified}
+  \vspace*{3mm}
+  \caption[Topografische Darstellung der Sensoraktivität zum Zeitpunkt des Auftretens der MMNm]{Topografische Darstellung der Sensoraktivität zum Zeitpunkt des Auftretens der MMNm. Es wurde ein Intervall von $\pm5\,ms$ um den Zeitpunkt $208\,ms$ gemittelt. Verwendet wurden Rohdaten und die Aktivität ist jeweils für Block~1 gezeigt. Blaue Bereiche kennzeichnen Gebiete mit negativer magnetischer Flussdichte, in die das Magnetfeld eindringt. Rote Bereiche kennzeichnen Gebiete mit positiver Flussdichte, aus denen das Magnetfeld heraus tritt.}
+  \label{img:topolot}
+\end{figure}
 
-Sehr deutlich wird dieses Verhalten auch in den Zeitverläufen in Abbildung~\ref{img:pa07:zeit} und~\ref{img:pa10:zeit}. Der Hauptausschlag der MMNm sollte bei ca. $200$-$250\,ms$ liegen. Während Minimum Norm Estimate selbst bei Verwendung von Rohdaten mit der Amplitude in diesem Bereich liegt und auch nur eine Haupt-Amplitude aufweist, zeigen sich bei Beamformer große Probleme bei der Verarbeitung der Rohdaten. Die Haupt-Amplitude in den Abbildungen~\ref{img:pa07:zeit:raw-lcmv} und~\ref{img:zeit:pa10:raw-lcmv} liegen noch vor $200\,ms$, außerdem kommt es zu einer großen Anzahl an hohen Ausschlägen, für die es auf Basis der zu erwartenden Aktivitäten keine Erklärung gibt. Etwas besser wird es bei Beamformer mit Verwendung von bereits rauschunterdrückten SSS- oder MC-Daten. Dies widerspricht jedoch der eigentlichen These.
+Die lateralisierte Aktivität an den Sensoren sollte sich auch in der rekonstruierten Aktivität zeigen. Unter Verwendung von Minimum Norm Estimate wird die Lateralisierung deutlich. Abbildungen~\ref{img:activity-latera:mne:left} und~\ref{img:activity-latera:mne:right} zeigen die rekonstruierte Aktivität von Minimum Norm Estimate bei Versuchsperson \texttt{pa07} auf Basis der Rohdaten. Beamformer scheint hier Probleme zu haben die lateralisierte Aktivität zu erkennen. Abbildungen~\ref{img:activity-latera:lcmv:left} und~\ref{img:activity-latera:lcmv:right} zeigen eine eher gleichmäßige Aktivität auf beiden Hemisphären. Etwas mehr Aktivität scheint laut Beamformer sogar in der linken Hemisphäre zu sein, was den gemessene Aktivitäten an den Sensoren widerspricht.
 
-Bei pa10 ... Effekte der Bewegung? Ist Unterschied Roh/SSS zu MC größer bei pa10?
+\begin{figure}
+  \centering
+  \captionsetup{justification=centering}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_raw_lcmv_activity_left.eps}
+    \subcaption{LCMV Beamformer, linke Hemisphäre}
+    \label{img:activity-latera:lcmv:left}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_raw_lcmv_activity_right.eps}
+    \subcaption{LCMV Beamformer, rechte Hemisphäre}
+    \label{img:activity-latera:lcmv:right}
+  \end{subfigure}  
+  \vspace*{0.04\textwidth}
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_raw_mne_activity_left.eps}
+    \subcaption{Minimum Norm Estimate, links Hemisphäre}
+    \label{img:activity-latera:mne:left}
+  \end{subfigure}\hspace*{0.04\textwidth}
+  %
+  \begin{subfigure}[c]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_raw_mne_activity_right.eps}
+    \subcaption{Minimum Norm Estimate, rechte Hemisphäre}
+    \label{img:activity-latera:mne:right}
+  \end{subfigure}
+  %
+  \captionsetup{justification=justified}
+%  \vspace*{3mm}
+  \caption[Quellaktivität bei Versuchsperson \texttt{pa07} auf Basis der Rohdaten.]{Quellaktivität bei Versuchsperson \texttt{pa07} auf Basis der Rohdaten. Jeweils die rechte und linke Hemisphäre, berechnet von LCMV Beamformfer und Minimum Norm Estimate.}
+  \label{img:activity-lateral}
+\end{figure}
 
-% ##### GRAFIKEN #####
+\subsubsection{Scheinquellen}
+
+Während Minimum Norm Estimate eine Quellaktivität nur rechts und links errechnet, erscheint in den Ergebnissen der Beamformer-Lösung auch an der oberen Seite des Kopfes Aktivität. Deutlich zu sehen in Abbildungen~\ref{img:activity-latera:lcmv:left} und Abbildungen~\ref{img:activity-latera:lcmv:right}. Aber auch in unter Verwendung von SSS- und Rohdaten bleibt diese Aktivität bei der Beamformer-Lösung bestehen, wie in Abbildungen~\ref{img:pa07:aktiv:raw-lcmv},~\ref{img:pa07:aktiv:sss-lcmv} und~\ref{img:pa07:aktiv:mc-lcmv} zu sehen. Die Studie, auf der die Daten basieren, gibt keinen Hinweis auf eine Aktivität im Frontal- oder Parietallappen. MMNm-Aktivität ist nur im Temporallappen zu erwarten.
+
+Eine mögliche Erklärung für diese Quellen sind das Auftreten von Scheinquellen bzw. \emph{Ghost Sources} \parencite{trujillo2004bayesian}. Sie bezeichnen Dipole, die zwar aus Sicht des Rekonstruktionsverfahrens logisch sind, aber nicht real existieren. Dipole, d.h. mögliche Quellen, liegen senkrecht zu den Gradienten des Magnetfeldes. Besonders an denen Stellen, an denen der Gradient sehr steil ist. In der Abbildung sind das die Bereiche in denen sehr rote (positive magnetische Flussdichte) und sehr blaue (negative magnetische Flussdichte) Bereiche nah aneinander liegen. In den roten Bereichen treten die Feldlinien des Magnetfeldes aus dem Gehirn aus, in den blauen Bereichen treten sie wieder ein. Eine starke Quelle (bzw. ein Strom) sollte also in der genannten Abbildung beispielsweise im rechten temporalen Bereich entlang der Höhenlinien von unten nach oben liegen. Diese wurde sowohl von Beamformer, als auch von Minimum Norm Estimate zuverlässig gefunden. Eine weitere reale Quelle liegt im linken Bereich von innen nach außen, an der Grenze zwischen hellblau und dunkelblau. Diese Quelle sollte eher schwach sein. In diesem Fall errechnet Minimum Norm Estimate eine relativ präzise Voraussage, Beamformer überschätzt die Aktivität in diesem Bereich deutlich, wenn die entsprechenden Annahmen über das Auftreten der MMNm korrekt sind. Im mittleren vorderen Bereich kommt es ebenfalls zu einer Grenze. Diese Grenze entsteht aber in der Realität nicht durch einen Strom, sondern durch die nicht-gleichgerichteten Ströme auf der rechten und linken Seite. Während Minimum Norm Estimate hier korrekt erkennt, dass es sich nicht um eine wirklich Quelle handelt, schätzt Beamformer hier eine Quelle. Tatsächlich wäre eine Quelle theoretisch begründbar, es kann aber begründet davon ausgegangen werden, dass sie in der Realität nicht vorliegt. Es handelt sich um eine durch Ghost Sources ausgelöste Scheinaktivität.
 
 \begin{figure}
 %  \centering
   \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_lcmv_activity.eps}}
-    \subcaption{Rohdaten / LCMV Beamformer}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_raw_lcmv_activity_right.eps}
+    \subcaption{LCMV Beamformer, Rohdaten}
     \label{img:pa07:aktiv:raw-lcmv}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_mne_activity.eps}}
-    \subcaption{Rohdaten / Minimum Norm Estimate}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_raw_mne_activity_right.eps}
+    \subcaption{Minimum Norm Estimate, Rohdaten}
     \label{img:pa07:aktiv:raw-mne}
   \end{subfigure}\vspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_lcmv_activity.eps}}
-    \subcaption{SSS-Daten / LCMV Beamformer}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_sss_lcmv_activity_right.eps}
+    \subcaption{LCMV Beamformer, SSS-Daten}
     \label{img:pa07:aktiv:sss-lcmv}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_mne_activity.eps}}
-    \subcaption{SSS-Daten / Minimum Norm Estimate}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_sss_mne_activity_right.eps}
+    \subcaption{Minimum Norm Estimate, SSS-Daten}
     \label{img:pa07:aktiv:sss-mne}
   \end{subfigure}\vspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_lcmv_activity.eps}}
-    \subcaption{MC-Daten / LCMV Beamformer}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_mc_lcmv_activity_right.eps}
+    \subcaption{LCMV Beamformer, MC-Daten}
     \label{img:pa07:aktiv:mc-lcmv}
   \end{subfigure}\hspace*{0.05\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_mne_activity.eps}}
-    \subcaption{MC-Daten / Minimum Norm Estimate}
+    \includegraphics[width=\textwidth]{ergebnisse/activity/pa07_eve2_mc_mne_activity_right.eps}
+    \subcaption{Minimum Norm Estimate, MC-Daten}
     \label{img:pa07:aktiv:mc-mne}
   \end{subfigure}
   %
   \captionsetup{justification=justified}
   \vspace*{3mm}
-  \caption[Quellaktivität von Versuchsperson \texttt{pa07}]{Quellaktivität von Versuchsperson \texttt{pa07} in allen Bedingungen im linken temporalen Bereich bei $208\,ms$.}
+  \caption[Quellaktivität von Versuchsperson \texttt{pa07}]{Quellaktivität von Versuchsperson \texttt{pa07} in allen Bedingungen in der linken Hemisphäre bei $208\,ms$ zum Zeitpunkt des Auftretens der MMNm.}
   \label{img:pa07:aktiv}
 \end{figure}
+
+\subsubsection{Aktivitätsverteilung}
+%%% Verteilung/Konzentrationsgrad für pa07, pa10
+
+Die Verteilung der Aktivität bei Beamformer und Minimum Norm Estimate weisen unterschiedliche Eigenschaften auf. Während bei Minimum Norm Estimate der Bereich der Aktivität sehr konzentriert Auftritt, weist Beamformer ein großes Areal an Aktivität auf. Mit Hilfe ...
+
+%%% Verteilungskenngröße ergänzen, wie berechnet? Was sagt das Maß aus?
+
+\subsubsection{Rauschunterdrückte Daten}
+
+Unter Verwendung rauschunterdrückter Daten zeigen beide Verfahren bessere Ergebnisse. Während die Verbesserungen bei Minimum Norm Estimate eher minimal sind, nimmt bei Beamformer die Scheinaktivität im Parietallappen ab. Dieses Verhalten wird in den Abbildungen~\ref{img:pa07:aktiv:raw-lcmv} bis~\ref{img:pa07:aktiv:mc-mne} deutlich. Die Ergebnisse würde also an dieser Stelle der Hypothese widersprechen. Nach Auswertung der Verteilung der Quellaktivität zum Zeitpunkt des Auftretens der MMNm scheint Beamformer unter Verwendung der Rohdaten keine guten Lösungen zu liefern, während Minimum Norm Estimate entgegen der Nebenhypothese relativ gute Lösung errechnen kann. Da die Aktivitäten in den Abbildungen nicht einheitlich skaliert sind, ist eine weitere Betrachtung unter Normierung nötig. Außerdem ist es nötig auch die anderen Zeitpunkt zu betrachten.
+
+\subsubsection{Zeitverläufe}
 
 \begin{figure}
 %  \centering
   \captionsetup{justification=centering}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_lcmv_timecourse.eps}
-    \subcaption{Rohdaten / LCMV Beamformer}
+    \includegraphics[width=\textwidth]{ergebnisse/timecourse/pa07_eve2_raw_lcmv_timecourse_right.eps}
+    \subcaption{LCMV Beamformer, Rohdaten}
     \label{img:pa07:zeit:raw-lcmv}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_raw_mne_timecourse.eps}
-    \subcaption{Rohdaten / Minimum Norm Estimate}
+    \includegraphics[width=\textwidth]{ergebnisse/timecourse/pa07_eve2_raw_mne_timecourse_right.eps}
+    \subcaption{Minimum Norm Estimate, Rohdaten}
     \label{img:pa07:zeit:raw-mne}
   \end{subfigure}\vspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_lcmv_timecourse.eps}
-    \subcaption{SSS-Daten / LCMV Beamformer}
+    \includegraphics[width=\textwidth]{ergebnisse/timecourse/pa07_eve2_sss_lcmv_timecourse_right.eps}
+    \subcaption{LCMV Beamformer, SSS-Daten}
     \label{img:pa07:zeit:sss-lcmv}
   \end{subfigure}\hspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_sss_mne_timecourse.eps}
-    \subcaption{SSS-Daten / Minimum Norm Estimate}
+    \includegraphics[width=\textwidth]{ergebnisse/timecourse/pa07_eve2_sss_mne_timecourse_right.eps}
+    \subcaption{Minimum Norm Estimate, SSS-Daten}
     \label{img:pa07:zeit:sss-mne}
   \end{subfigure}\vspace*{0.04\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_lcmv_timecourse.eps}
-    \subcaption{MC-Daten / LCMV Beamformer}
+    \includegraphics[width=\textwidth]{ergebnisse/timecourse/pa07_eve2_mc_lcmv_timecourse_right.eps}
+    \subcaption{LCMV Beamformer, MC-Daten}
     \label{img:pa07:zeit:mc-lcmv}
   \end{subfigure}\hspace*{0.05\textwidth}
   %
   \begin{subfigure}[c]{0.47\textwidth}
-    \includegraphics[width=\textwidth]{ergebnisse/pa07/pa07_eve2_mc_mne_timecourse.eps}
-    \subcaption{MC-Daten / Minimum Norm Estimate}
+    \includegraphics[width=\textwidth]{ergebnisse/timecourse/pa07_eve2_mc_mne_timecourse_right.eps}
+    \subcaption{Minimum Norm Estimate, MC-Daten}
     \label{img:pa07:zeit:mc-mne}
   \end{subfigure}
   %
@@ -1132,97 +1201,11 @@ Bei pa10 ... Effekte der Bewegung? Ist Unterschied Roh/SSS zu MC größer bei pa
   \label{img:pa07:zeit}
 \end{figure}
 
-\begin{figure}
-%  \centering
-  \captionsetup{justification=centering}
-  %
-  \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_lcmv_activity.eps}}
-    \subcaption{Rohdaten / LCMV Beamformer}
-    \label{img:pa10:aktiv:raw-lcmv}
-  \end{subfigure}\hspace*{0.04\textwidth}
-  %
-  \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_mne_activity.eps}}
-    \subcaption{Rohdaten / Minimum Norm Estimate}
-    \label{img:pa10:aktiv:raw-mne}
-  \end{subfigure}\vspace*{0.04\textwidth}
-  %
-  \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_lcmv_activity.eps}}
-    \subcaption{SSS-Daten / LCMV Beamformer}
-    \label{img:pa10:aktiv:sss-lcmv}
-  \end{subfigure}\hspace*{0.04\textwidth}
-  %
-  \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_mne_activity.eps}}
-    \subcaption{SSS-Daten / Minimum Norm Estimate}
-    \label{img:pa10:aktiv:sss-mne}
-  \end{subfigure}\vspace*{0.04\textwidth}
-  %
-  \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_lcmv_activity.eps}}
-    \subcaption{MC-Daten / LCMV Beamformer}
-    \label{img:pa10:aktiv:mc-lcmv}
-  \end{subfigure}\hspace*{0.05\textwidth}
-  %
-  \begin{subfigure}[c]{0.47\textwidth}
-    \fbox{\includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_mne_activity.eps}}
-    \subcaption{MC-Daten / Minimum Norm Estimate}
-    \label{img:pa10:aktiv:mc-mne}
-  \end{subfigure}
-  %
-  \captionsetup{justification=justified}
-  \vspace*{3mm}
-  \caption[Quellaktivität von Versuchsperson \texttt{pa10}]{Quellaktivität von Versuchsperson \texttt{pa10} in allen Bedingungen im rechten (???) temporalen Bereich  bei $208\,ms$.}
-  \label{img:pa10:aktiv}
-\end{figure}
+Für die Berechnung der Zeitverläufe wurde zunächst die Aktivität aller Quellen gemittelt. Dabei wurden nur solche Quellen berücksichtigt, die im auditiven Kortex, d.h. im Gyrus temporalis superior liegen (siehe auch Abschnitt \nameref{sec:audicort} auf Seite~\pageref{sec:audicort}). Da die Quellaktivität der beiden Lösungen unterschiedlich zu interpretieren ist und in unterschiedlichen Größenordnungen liegt (siehe auch Abschnitt \nameref{sec:amplitud} auf Seite~\pageref{sec:amplitud}), wurde der Zeitverlauf zusätzlich normiert. Dafür wurde der Mittelwert der Aktivität in der Baseline verwendet, d.h. in den ersten $100\,ms$. Jeder Wert im Zeitverlauf wurde durch die mittlere Baseline geteilt. Die Signalaktivität wurde ins Verhältnis zur Rauschaktivität gesetzt. Die Ergebnisse für Versuchsperson \texttt{pa07} für alle Bedingungen sind in Abbildung~\ref{img:pa07:zeit} dargestellt.
 
-%\begin{figure}
-%%  \centering
-%  \captionsetup{justification=centering}
-%  %
-%  \begin{subfigure}[c]{0.47\textwidth}
-%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_lcmv_timecourse.eps}
-%    \subcaption{Rohdaten / LCMV Beamformer}
-%    \label{img:pa10:zeit:raw-lcmv}
-%  \end{subfigure}\hspace*{0.04\textwidth}
-%  %
-%  \begin{subfigure}[c]{0.47\textwidth}
-%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_raw_mne_timecourse.eps}
-%    \subcaption{Rohdaten / Minimum Norm Estimate}
-%    \label{img:pa10:zeit:raw-mne}
-%  \end{subfigure}\vspace*{0.04\textwidth}
-%  %
-%  \begin{subfigure}[c]{0.47\textwidth}
-%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_lcmv_timecourse.eps}
-%    \subcaption{SSS-Daten / LCMV Beamformer}
-%    \label{img:pa10:zeit:sss-lcmv}
-%  \end{subfigure}\hspace*{0.04\textwidth}
-%  %
-%  \begin{subfigure}[c]{0.47\textwidth}
-%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_sss_mne_timecourse.eps}
-%    \subcaption{SSS-Daten / Minimum Norm Estimate}
-%    \label{img:pa10:zeit:sss-mne}
-%  \end{subfigure}\vspace*{0.04\textwidth}
-%  %
-%  \begin{subfigure}[c]{0.47\textwidth}
-%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_lcmv_timecourse.eps}
-%    \subcaption{MC-Daten / LCMV Beamformer}
-%    \label{img:pa10:zeit:mc-lcmv}
-%  \end{subfigure}\hspace*{0.05\textwidth}
-%  %
-%  \begin{subfigure}[c]{0.47\textwidth}
-%    \includegraphics[width=\textwidth]{ergebnisse/pa10/pa10_eve2_mc_mne_timecourse.eps}
-%    \subcaption{MC-Daten / Minimum Norm Estimate}
-%    \label{img:pa10:zeit:mc-mne}
-%  \end{subfigure}
-%  %
-%  \captionsetup{justification=justified}
-%  \vspace*{3mm}
-%  \caption[Zeitverlauf der Aktivität von Versuchsperson \texttt{pa10}]{Zeitverlauf der Aktivität von Versuchsperson \texttt{pa10} in allen Bedingungen im Gyrus temporalis superior.}
-%  \label{img:pa10:zeit}
-%\end{figure}
+In den Zeitverläufen werden zwei Ergebnisse deutlich. Zum einen weist Minimum Norm Estimate im Zeitverlauf keine MMNm-Amplitude auf. Zwar ist die Aktivität wie oben beschrieben genauer, der Zeitverlauf weist jedoch nicht das Verhalten auf, was im Gyrus temporalis superior für eine MMNm zu erwarten wäre. Die Nebenhypothese kann an dieser Stelle also teilweise bestätigt werden. Minimum Norm Estimate zeigt keine gute Lösung unter Verwendung von Rohdaten. Zum anderen kann Beamformer einen typischen Zeitverlauf auch unter Verwendung von rauschunterdrückten Daten nicht errechnen. 
+
+Ein drittes Merkmal ist der Unterschied zwischen der Verwendung von SSS- und MC-Daten. In der Minimum Norm Estimate Lösung zeigen sich Unterschiede, die konsistent auch bei Versuchsperson \texttt{pa10} auftreten. Nach der Amplitude kommt es bei der Verwendung von SSS-Daten zu einer bleibenden Aktivität auf relativ hohem Niveau (siehe Abbildung~\ref{img:pa07:zeit:sss-mne}). Bei der Verwendung von MC-Daten ist dieses Plateau unterdrückt (siehe Abbildung~\ref{img:pa07:zeit:mc-mne}). Dies könnte mit der Bewegung der Versuchsperson innerhalb eines Blocks zusammen hängen, die nur bei MC korrigiert wird. Da diesbezüglich jedoch zu wenige Daten vorliegen und eine systematische Bewegung im Versuch nicht durchgeführt wurde, kann eine weitere Analyse dieses Merkmals an der Stelle nicht erfolgen.
 
 % #######################
 % ##### DISKUSSION  #####
@@ -1233,27 +1216,31 @@ Bei pa10 ... Effekte der Bewegung? Ist Unterschied Roh/SSS zu MC größer bei pa
 \section{Diskussion}
 \label{sec:diskussion}
 
-Die Ergebnisse haben Fragen aufgeworfen über die Eigenschaften der Verfahren. Eine Interpretation der Ergebnisse 
+Die Ergebnisse zeigen deutlich, dass LCMV Beamformer, aber auch Minimum Norm Estimate ohne Anwendung eines vorhergehenden Rauschunterdrückungsverfahrens keine adäquaten Lösungen liefern. Die Hypothese kann verworfen, die Nebenhypothese größtenteils aufrecht erhalten werden. Zusätzlich zu diesem Ergebnis wurde deutlich, dass Beamformer auch unter Verwendung rauschunterdrückter Daten keine guten Lösungen liefert. Um zu verstehen, warum Beamformer bei der Berechnung der Lösungen so große Probleme hatte, müssen die Annahmen über Beamformer genauer analysiert werden.
 
-%%% Einleitung zur Diskussion fehlt noch
+Zunächst waren die Annahmen der Verfahren in der Hypothesenbildung nicht ganz vollständig, was vermutlich zu der falschen Vorhersage geführt hat. Ein Problem des Beamformer-Verfahrens ist die Annahme der Unkorreliertheit der Quellaktivität. Dies wurde im Abschnitt \nameref{sec:beam} ab Seite~\pageref{sec:beam} zwar ausführlich diskutiert, nicht aber in der Hypothese berücksichtigt. Die Quellen der Aktivitäten sind entgegen der Annahme vermutlich sogar sehr stark korreliert. Dabei liegt eine Korrelation nicht nur bei nächsten Nachbarn vor, sondern auch auf beiden Hemisphären, da beide Ohren gleichzeitig stimuliert wurden. Gleichzeitig ist ein großer Teils des Rauschens mit den Quellen unkorreliert. Dies führt dazu, dass vermutlich zum einen die eigentliche Aktivität unterschätzt, zum anderen das Rauschen überschätzt wurde. Dies dürfte die Ursache für die niedrigere Konzentration der Aktivitätsverteilung sein, im Vergleich zu Minimum Norm Estimate (??). Auf der anderen Seite wurde bei Minimum Norm Estimate die Eigenschaft des Ansatzes der minimalen Energie unterschätzt. Wahrscheinlich führt gerade diese Annahme dazu, dass der Einfluss weit entfernter Störquellen eher unterdrückt wird.
 
-Die Ergebnisse scheinen unabhängig von der Bewegung zu sein. Keine der beiden Modell scheint die Daten einer der Versuchspersonen besser verarbeiten zu können. Eventuell waren die Bewegungen von Versuchsperson~\texttt{pa10} aber auch nicht stark genug, um wirkliche Unterschiede feststellen zu können. Die Ergebnisse im Abschnitt \nameref{sec:ergebnis-vorverarbeitung} auf Seite~\pageref{sec:ergebnis-vorverarbeitung} bestätigen die Annahme. Der Mehrwert der MC-Korrektur ist bei beiden Versuchspersonen eher als gering einzuschätzen. Möglich wäre es für zukünftige Untersuchungen, dass eine Versuchsperson gebeten wird sich absichtlich während einer Messung viel zu bewegen. Aus den vorliegenden Daten können jedoch keine Zusammenhänge zwischen den Bewegungsprofilen und den verwendeten Modellen abgeleitet werden.
+\subsection{Scheinaktivität}
 
-Wichtig bei der Interpretation der Ergebnisse ist außerdem die Tatsache, dass Trials mit einer magnetischen Flussdichte, einem Gradienten oder einer Augenaktivität (gemessen mittels EOG) über einem gewissen Grenzwert verworfen wurden. Die in Tabelle \ref{tab:rejecting} war die entsprechende Anzahl der verwendeten Trials aufgelistet. Da innerhalb der Rohdaten häufiger Abweichungen über die Grenzwerte hinaus auftraten, wurden hier entsprechend mehr Trials verworfen. Es ist nicht falsch zu behaupten, dass dies einer gewissen Rauschunterdrückung, wenn auch äußerst vereinfachten, Rauschunterdrückung entspricht. Zeitpunkte an denen besonders hohes Rauschen auftrat wurden einfach nicht berücksichtigt. Da es sich um ein Standardverfahren für die Verarbeitung der SSS- und MC-Daten handelt, war es aus Gründen der Vergleichbarkeit angebracht, auch die Rohdaten entsprechend zu verarbeiten. Trotzdem wäre es auch an dieser Stelle interessant zu untersuchen, wie sich die Verfahren verhalten, wenn ausnahmslos alle Trials verwendet werden. Vermutlich würde im Vergleich trotzdem Minimum Norm Estimate die besseren Ergebnisse liefern. Ob die Lösungen jedoch immer noch hohe Ähnlichkeit mit denen einer Lösung auf SSS-Daten basierend haben würde, wäre eine mögliche Fragestellung.
+Während jedoch Minimum Norm Estimate durch den Ansatz der minimalen Energie richtigerweise die vertikalen Dipole verwirft, übernimmt Beamformer diese Dipole, da hier nur jeder Dipol einzeln betrachtet wird. Jede mögliche Aktivität wird als solche nicht ganzheitlich betrachtet und akzeptiert, es kommt zu einer Scheinaktivität am oberen Bereich des Kopfes.
 
-Ein weiteres Phänomen ist das der Aktivität im hinteren und vorderen Bereich, welches von Beamformer erkannt wurde, von Minimum Norm Estimate aber nicht. In einer kleinen Post-hoc-Analyse wurden die Aktivitäten der Kanäle in einer topografischen Darstellung abgebildet. Die entsprechende Abbildung~\ref{??} zeigt die Aktivität für Versuchsperson ??? in Block ???. Die Stärke der Signale liegt ...
+\subsection{Korreliertheit der Aktivität}
 
-%%% Topo-Plot's
+% Beamformer Problem mit evozierten Daten -> MEG Buch
 
-Die Aktivität an den Sensoren gibt einen sinnvollen Zusammenhang mit den Abbildungen in~\ref{??} der Quellrekonstruktionen bei Versuchsperson ???. Die Ursache der \glqq Scheinaktivität\grqq liegt also nicht in einer verschobenen Position des Kopfes. Möglich wäre jedoch das Phänomen der \emph{Ghost Sources} \parencite{trujillo2004bayesian}. Sie bezeichnen Dipole, die zwar aus Sicht des Rekonstruktionsverfahrens logisch sind, aber nicht real existieren. In Abbildung~\ref{??} lässt sich gut erkennen, dass auf jeder Seite oben und unten jeweils Pole sind. Zwischen diesen Polen in horizontaler Richtung liegen die entsprechenden Aktivitäten. Theoretisch wäre es aber auch möglich das Gehirn oben und unten zu teilen. Dann wären die Dipole und damit die Quellen in vertikale Richtung oben und unten. Beide Rekonstruktionsverfahren dürften alle 4 Dipole erkennen. Während jedoch Minimum Norm Estimate durch den Ansatz der minimalen Energie richtigerweise die vertikalen Dipole verwirft, übernimmt Beamformer diese Dipole, da hier nur jeder Dipol einzeln betrachtet wird. Jede mögliche Aktivität wird als solche nicht ganzheitlich betrachtet und akzeptiert, es kommt zu einer Scheinaktivität am oberen Bereich des Kopfes.
+\subsection{Einfluss der Bewegung}
 
-%%% Topo-Plot's
+Die Ergebnisse scheinen weitestgehend unabhängig von der Bewegung zu sein. Keine der beiden Modell scheint die Daten einer der Versuchspersonen besser verarbeiten zu können. Eventuell waren die Bewegungen aber auch nicht stark genug, um wirkliche Unterschiede feststellen zu können. Beide Versuchspersonen lagen im Bereich gewöhnlicher Bewegung, wie bereits im Abschnitt \nameref{sec:ergebnis-vorverarbeitung} auf Seite~\pageref{sec:ergebnis-vorverarbeitung} diskutiert. Der Mehrwert der MC-Korrektur ist bei beiden Versuchspersonen eventuell vorhanden, aus den vorliegenden Daten können jedoch keine Zusammenhänge zwischen den Bewegungsprofilen und den verwendeten Modellen abgeleitet werden. Möglich wäre es für zukünftige Untersuchungen, dass eine Versuchsperson gebeten wird sich absichtlich während einer Messung viel zu bewegen.
 
-Zuletzt waren die Annahmen der Verfahren in der Hypothesenbildung nicht ganz vollständig, was vermutlich zu der falschen Vorhersage geführt hat. Ein Problem des Beamformer-Verfahrens ist die Annahme der Unkorreliertheit der Quellaktivität. Dies wurde im Abschnitt \nameref{sec:beam} ab Seite~\pageref{sec:beam} zwar ausführlich diskutiert, nicht aber in der Hypothese berücksichtigt. Die Quellen der Aktivitäten sind entgegen der Annahme vermutlich sogar sehr stark korreliert. Dabei liegt eine Korrelation nicht nur bei nächsten Nachbarn vor, sondern auch auf beiden Hemisphären, da beide Ohren gleichzeitig stimuliert wurden. Gleichzeitig ist ein großer Teils des Rauschen mit den Quellen unkorreliert. Dies führt dazu, dass vermutlich zum einen die eigentliche Aktivität unterschätzt, zum anderen das Rauschen überschätzt wurde. Dies dürfte die Ursache für die höhere Glätte der Aktivitätsverteilung sein, im Vergleich zu Minimum Norm Estimate. Auf der anderen Seite wurde bei Minimum Norm Estimate die Eigenschaft des Ansatzes der minimalen Energie unterschätzt. Wahrscheinlich führt gerade diese Annahme dazu, dass der Einfluss weit entfernter Störquellen eher unterdrückt wird.
+\subsection{Vorverarbeitung}
 
-Zusammenfassend lässt sich schließen, dass Minimum Norm Estimate ein überraschend mächtiges Modell bereit stellt um die Quellen der Aktivitäten im Gehirn zu lokalisieren, sogar wenn direkt mit verrauschten Daten gearbeitet wird. Gleichzeitig hat sich herausgestellt, dass LCMV Beamformer den Erwartungen nicht gerecht geworden ist und nicht nur unabhängig von den Daten mit generellen Problemen wie den Ghost Sources konfrontiert war, sondern auch bei der Verwendung mit Rohdaten im Zeitverlauf Amplituden hervorbrachte, die praktisch nicht begründbar waren.
+Wichtig bei der Interpretation der Ergebnisse ist außerdem die Tatsache, dass Trials mit einer magnetischen Flussdichte, einem Gradienten oder einer Augenaktivität (gemessen mittels EOG) über einem gewissen Grenzwert verworfen wurden. In Tabelle \ref{tab:rejecting} war die entsprechende Anzahl der verwendeten Trials aufgelistet. Da innerhalb der Rohdaten häufiger Abweichungen über die Grenzwerte hinaus auftraten, wurden hier entsprechend mehr Trials verworfen. Es ist nicht falsch zu behaupten, dass dies einer gewissen, wenn auch äußerst vereinfachten, Rauschunterdrückung entspricht. Zeitpunkte an denen besonders hohes Rauschen auftrat wurden einfach nicht berücksichtigt. Die deutlich geringere Anzahl der verwendeten Trials in den Rohdaten könnte einen Einfluss auf die Berechnung der Lösungen beider Verfahren gehabt haben. Da es sich um ein Standardverfahren für die Verarbeitung der SSS- und MC-Daten handelt, war es aus Gründen der Vergleichbarkeit angebracht, auch die Rohdaten entsprechend zu verarbeiten. Trotzdem wäre es auch an dieser Stelle interessant zu untersuchen, wie sich die Verfahren verhalten würden, wenn ausnahmslos alle Trials verwendet werden oder der Grenzwert liberaler gewählt wird.
 
-Um die Fähigkeit beider Verfahren genauer zu analysieren sollten weitere Vergleiche angestellt werden. Vor allem der Einfluss der Bewegung einer Versuchsperson ist noch nicht zufriedenstellend geklärt. Auch wäre es denkbar Quellen zu simulieren um herauszufinden, welches der Verfahren geringere Abweichungen zu den echten Quellen liefert. In einer Quellsimulation könnte auch überprüft werden, wie die Verfahren mit eng beieinander liegenden bzw. weit entfernten oder vielen bzw. wenigen Quellen umgehen können. Aber trotz des großen Potentials weiterer möglicher Analyse kann nach dieser Arbeit bereits mit hoher Sicherheit festgehalten werden, dass für den gegebenen Untersuchungsgegenstand am gegebenen Standort das Modell Minimum Norm Estimate das deutlich Stabilere ist.
+\subsection{Fazit und Ausblick}
+
+Zusammenfassend lässt sich schließen, dass Minimum Norm Estimate ein überraschend mächtiges Modell bereit stellt um die Quellen der Aktivitäten im Gehirn zu lokalisieren, sogar wenn direkt mit verrauschten Daten gearbeitet wird, ist es zumindest in der Lokalisationsleistung noch relativ erfolgreich, auch wenn sich über den Zeitverlauf Defizite zeigen. Gleichzeitig hat sich herausgestellt, dass LCMV Beamformer den Erwartungen nicht gerecht geworden ist und nicht nur unabhängig von den Daten mit generellen Problemen wie den Ghost Sources konfrontiert war, sondern auch bei der Verwendung rauschunterdrückter Daten im Zeitverlauf Amplituden hervorbrachte, die praktisch nicht begründbar waren.
+
+Um die Fähigkeit beider Verfahren genauer zu analysieren sollten weitere Vergleiche angestellt werden. Vor allem der Einfluss der Bewegung einer Versuchsperson ist noch nicht zufriedenstellend geklärt. Variationen in den Grenzwerten der Vorverarbeitung wären ebenfalls eine weitere Untersuchung wert. Auch wäre es denkbar Quellen zu simulieren um herauszufinden, welches der Verfahren geringere Abweichungen zu den echten Quellen liefert. In einer Quellsimulation könnte auch überprüft werden, wie die Verfahren mit eng beieinander liegenden bzw. weit entfernten oder vielen bzw. wenigen Quellen umgehen können. Aber trotz des großen Potentials weiterer möglicher Analyse kann nach dieser Arbeit bereits mit hoher Sicherheit festgehalten werden, dass für den gegebenen Untersuchungsgegenstand am gegebenen Standort das Modell Minimum Norm Estimate das deutlich Stabilere ist.
 
 %Präsentation: Therefore, uncorrelated noise (e.g., random system noise) will be amplified by the weights in a non-uniform manner, with increasing distortion with increasing distance from the sensors
 %MEG-Buch S. 164: Since the adaptive spatial filters computed using Equation (7–3) are dependent on the leadfield matrix G , beamforming—like the MNE/MCE methods for distributed source modeling—does not provide accurate estimates of deep sources. This is essentially due to the fact that the field patterns at the scalp of neighboring dipole sources approaching the center of the head are generally more similar to each other (i.e., more spatially correlated) than  the fields of neighboring dipoles close to the surface. Particularly in the presence of noise, this leads to larger localization errors. Primarily because of this “spatial leakage,” beamformers tend to overestimate the signal power of deeplying sources, which makes it difficult to interpret the “raw” beamformer signal amplitude estimates.
