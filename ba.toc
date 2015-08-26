@@ -96,14 +96,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Diskussion}{57}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Scheinaktivit\IeC {\"a}t}{57}{section*.68}
+\contentsline {subsection}{Vorverarbeitung}{57}{section*.68}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Korreliertheit der Aktivit\IeC {\"a}t}{58}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Einfluss der Bewegung}{58}{section*.70}
+\contentsline {subsection}{Regularisierung der Kovarianzmatrix}{58}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Vorverarbeitung}{58}{section*.71}
+\contentsline {subsection}{Scheinaktivit\IeC {\"a}t}{59}{section*.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Fazit und Ausblick}{59}{section*.72}
+\contentsline {subsection}{Einfluss der Bewegung}{59}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literaturverzeichnis}{60}{section*.73}
+\contentsline {subsection}{Fazit und Ausblick}{59}{section*.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literaturverzeichnis}{61}{section*.74}

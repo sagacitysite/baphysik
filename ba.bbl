@@ -145,6 +145,35 @@
       \field{title}{The neurocognition of language}
       \field{year}{1999}
     \endentry
+    \entry{cheyne2007event}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=cd59cb704b7490bc6a800f8c4bb80058}{Cheyne}{C\bibinitperiod}{Douglas}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7f109b97aefc8c6dca1f02c1cd6bb17f}{Bostan}{B\bibinitperiod}{Andreea\bibnamedelima C}{A\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=af7ea9885c1095d91a1aafcf7fcc0f2c}{Gaetz}{G\bibinitperiod}{William}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=319c66938faf7c2f1210ee0d7df8efde}{Pang}{P\bibinitperiod}{Elizabeth\bibnamedelima W}{E\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=cd59cb704b7490bc6a800f8c4bb80058}{Cheyne}{C\bibinitperiod}{Douglas}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7f109b97aefc8c6dca1f02c1cd6bb17f}{Bostan}{B\bibinitperiod}{Andreea\bibnamedelima C}{A\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=af7ea9885c1095d91a1aafcf7fcc0f2c}{Gaetz}{G\bibinitperiod}{William}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=319c66938faf7c2f1210ee0d7df8efde}{Pang}{P\bibinitperiod}{Elizabeth\bibnamedelima W}{E\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3e70e08c552391ccb296df00fb6e1f48}
+      \strng{fullhash}{da8b6ae0f6fb0577e302bcb0125b96c1}
+      \field{sortinit}{C}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Event-related beamforming: a robust method for presurgical functional mapping using MEG}
+      \field{journaltitle}{Clinical Neurophysiology}
+      \field{number}{8}
+      \field{title}{Event-related beamforming: a robust method for presurgical functional mapping using MEG}
+      \field{volume}{118}
+      \field{year}{2007}
+      \field{pages}{1691\bibrangedash 1704}
+    \endentry
     \entry{ciresan2012multi}{inproceedings}{}
       \name{labelname}{3}{}{%
         {{uniquename=0,hash=cd6ef5fb82fb12a1d0800140a64d272e}{Ciresan}{C\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
