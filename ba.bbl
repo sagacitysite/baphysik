@@ -989,6 +989,32 @@
       \field{year}{1975}
       \field{pages}{387\bibrangedash 401}
     \endentry
+    \entry{stenroos2014comparison}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=18246861d33b4232e1319954a6f48a92}{Stenroos}{S\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b2da35454f22dd77968e264b4d94ab33}{Hunold}{H\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=501d816c0004d4f33cbde0458589cd29}{Haueisen}{H\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=18246861d33b4232e1319954a6f48a92}{Stenroos}{S\bibinitperiod}{Matti}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b2da35454f22dd77968e264b4d94ab33}{Hunold}{H\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=501d816c0004d4f33cbde0458589cd29}{Haueisen}{H\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{de27c8db6c8573654b67544492e013b8}
+      \strng{fullhash}{d263885c13d5424d9c4be2e74e0bc655}
+      \field{sortinit}{S}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Comparison of three-shell and simplified volume conductor models in magnetoencephalography}
+      \field{journaltitle}{NeuroImage}
+      \field{title}{Comparison of three-shell and simplified volume conductor models in magnetoencephalography}
+      \field{volume}{94}
+      \field{year}{2014}
+      \field{pages}{337\bibrangedash 348}
+    \endentry
     \entry{taulu2005presentation}{article}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=844ebae575295c63805015ebcdc66be1}{Taulu}{T\bibinitperiod}{Samu}{S\bibinitperiod}{}{}{}{}}%

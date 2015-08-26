@@ -16,9 +16,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Grundlagen der Magnetenzephalographie}{12}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{SQUIDs}{13}{section*.13}
+\contentsline {subsubsection}{SQUIDs}{12}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Flux-Transformator}{15}{figure.caption.15}
+\contentsline {subsubsection}{Flux-Transformator}{14}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Magnetometer und Gradiometer}{15}{section*.16}
 \defcounter {refsection}{0}\relax 
@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Quellraum und Vorw\IeC {\"a}rtsmodell}{24}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{25}{section*.28}
+\contentsline {subsection}{R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{26}{section*.28}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Methoden zur Bestimmung des R\IeC {\"u}ckw\IeC {\"a}rtsmodell}{26}{section*.29}
 \defcounter {refsection}{0}\relax 

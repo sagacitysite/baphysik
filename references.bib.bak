@@ -45,6 +45,18 @@
   Year                     = {1999}
 }
 
+@Article{cheyne2007event,
+  Title                    = {Event-related beamforming: a robust method for presurgical functional mapping using MEG},
+  Author                   = {Cheyne, Douglas and Bostan, Andreea C and Gaetz, William and Pang, Elizabeth W},
+  Journal                  = {Clinical Neurophysiology},
+  Year                     = {2007},
+  Number                   = {8},
+  Pages                    = {1691--1704},
+  Volume                   = {118},
+
+  Publisher                = {Elsevier}
+}
+
 @InProceedings{ciresan2012multi,
   Title                    = {Multi-column deep neural networks for image classification},
   Author                   = {Ciresan, Dan and Meier, Ueli and Schmidhuber, J{\"u}rgen},
