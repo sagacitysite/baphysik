@@ -747,20 +747,20 @@
     \endentry
     \entry{naatanen1978early}{article}{}
       \name{labelname}{3}{}{%
-        {{uniquename=2,hash=09692f3d39fa058597fdcb696c976872}{Näätänen}{N\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=27c59ce46d525685b84bf1e1626e1179}{Gaillard}{G\bibinitperiod}{Anthony\bibnamedelima WK}{A\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=7ad0bdb331fa6b099ca9a565d70ccd44}{Mäntysalo}{M\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{3}{}{%
-        {{uniquename=2,hash=09692f3d39fa058597fdcb696c976872}{Näätänen}{N\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=27c59ce46d525685b84bf1e1626e1179}{Gaillard}{G\bibinitperiod}{Anthony\bibnamedelima WK}{A\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=7ad0bdb331fa6b099ca9a565d70ccd44}{Mäntysalo}{M\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
       }
-      \strng{namehash}{7191cea7f07b03d85566977b2abca1f6}
-      \strng{fullhash}{b402baf46ded868ca2e97b97d8efe18e}
+      \strng{namehash}{fec651ab65aaa01709911b8392492c7b}
+      \strng{fullhash}{82e4e3902c849af7cdc07c85f22f2821}
       \field{sortinit}{N}
       \field{labelyear}{1978}
       \field{datelabelsource}{year}
@@ -774,14 +774,14 @@
     \endentry
     \entry{naatanen1989event}{article}{}
       \name{labelname}{5}{}{%
-        {{uniquename=2,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=b6eab4b63dd3c60819554fa9e94189d7}{Paavilainen}{P\bibinitperiod}{Petri}{P\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=ed05df0292b2654394f83d56ef372667}{Alho}{A\bibinitperiod}{Kimmo}{K\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=283e65e9b745e72f8853b6d40ae76e94}{Reinikainen}{R\bibinitperiod}{Kalevi}{K\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=20eaf79e195d226c4d8ffca06b1e14ef}{Sams}{S\bibinitperiod}{Mikko}{M\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{5}{}{%
-        {{uniquename=2,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=b6eab4b63dd3c60819554fa9e94189d7}{Paavilainen}{P\bibinitperiod}{Petri}{P\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=ed05df0292b2654394f83d56ef372667}{Alho}{A\bibinitperiod}{Kimmo}{K\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=283e65e9b745e72f8853b6d40ae76e94}{Reinikainen}{R\bibinitperiod}{Kalevi}{K\bibinitperiod}{}{}{}{}}%
@@ -805,14 +805,14 @@
     \endentry
     \entry{naatanen2001primitive}{article}{}
       \name{labelname}{5}{}{%
-        {{uniquename=2,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=a4e6f92b223c02dc13d0e846443846a0}{Tervaniemi}{T\bibinitperiod}{Mari}{M\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=03687ca93514ab09536d0a9f6dc785ab}{Sussman}{S\bibinitperiod}{Elyse}{E\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=b6eab4b63dd3c60819554fa9e94189d7}{Paavilainen}{P\bibinitperiod}{Petri}{P\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=99910f30a98a769646fd81d93f05e6b9}{Winkler}{W\bibinitperiod}{István}{I\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{5}{}{%
-        {{uniquename=2,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a45dbd4fca1fc6426ee99751faa0cbc8}{Näätänen}{N\bibinitperiod}{Risto}{R\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=a4e6f92b223c02dc13d0e846443846a0}{Tervaniemi}{T\bibinitperiod}{Mari}{M\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=03687ca93514ab09536d0a9f6dc785ab}{Sussman}{S\bibinitperiod}{Elyse}{E\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=b6eab4b63dd3c60819554fa9e94189d7}{Paavilainen}{P\bibinitperiod}{Petri}{P\bibinitperiod}{}{}{}{}}%

@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Magnetometer und Gradiometer}{15}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Artefakte und Rauschen}{16}{section*.17}
+\contentsline {subsection}{Artefakte und Rauschen}{15}{section*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Allgemeine Rauschunterdr\IeC {\"u}ckung}{16}{section*.18}
 \defcounter {refsection}{0}\relax 
@@ -88,24 +88,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Scheinquellen}{51}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Aktivit\IeC {\"a}tsverteilung}{53}{section*.63}
+\contentsline {subsubsection}{Rauschunterdr\IeC {\"u}ckte Daten}{53}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Rauschunterdr\IeC {\"u}ckte Daten}{53}{section*.64}
+\contentsline {subsubsection}{Aktivit\IeC {\"a}tsverteilung}{53}{table.caption.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Zeitverl\IeC {\"a}ufe}{53}{figure.caption.66}
+\contentsline {subsubsection}{Zeitverl\IeC {\"a}ufe}{56}{figure.caption.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Diskussion}{57}{section*.67}
+\contentsline {section}{Diskussion}{59}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Vorverarbeitung}{57}{section*.68}
+\contentsline {subsection}{Vorverarbeitung}{59}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Korreliertheit der Aktivit\IeC {\"a}t}{58}{section*.69}
+\contentsline {subsection}{Korreliertheit der Aktivit\IeC {\"a}t}{60}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Regularisierung der Kovarianzmatrix}{58}{section*.70}
+\contentsline {subsection}{Regularisierung der Kovarianzmatrix}{60}{section*.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Scheinaktivit\IeC {\"a}t}{59}{section*.71}
+\contentsline {subsection}{Scheinaktivit\IeC {\"a}t}{61}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Einfluss der Bewegung}{59}{section*.72}
+\contentsline {subsection}{Einfluss der Bewegung}{61}{section*.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Fazit und Ausblick}{59}{section*.73}
+\contentsline {subsection}{Fazit und Ausblick}{61}{section*.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literaturverzeichnis}{61}{section*.74}
+\contentsline {section}{Literaturverzeichnis}{63}{section*.75}
