@@ -342,7 +342,7 @@ Die SSS-Methode ist zwar deutlich rechenaufwändiger als SSP, führt jedoch im G
 \section{Hintergrund zur Quelllokalisation}
 \label{sec:hinter}
 
-Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhalb des Kopfes befindlichen Sensoren. Die entscheidende Frage ist also: Wie ist es möglich anhand der magnetischen Signale außerhalb des Gehirns auf die physiologischen Quellen innerhalb des Gehirns zu schließen? Um diese Frage zu beantworten wird zunächst etwas Theorie eingeführt und anschließend das Vorwärtsmodell, sowie verschiedene Methoden zur Schätzung der Lösung des inversen Problems erläutert.
+Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhalb des Kopfes befindlichen Sensoren. Die entscheidende Frage ist also: Wie ist es möglich, anhand der magnetischen Signale außerhalb des Gehirns auf die physiologischen Quellen innerhalb des Gehirns zu schließen? Um diese Frage zu beantworten, wird zunächst grundlegende Theorie eingeführt und anschließend das Vorwärtsmodell sowie verschiedene Rückwärtsmodelle zur Schätzung der Lösung des inversen Problems erläutert.
 
 % ###########################
 % ##### VORWÄRTSMODELL  #####
@@ -352,7 +352,7 @@ Die Messung der magnetischen Signale erfolgt ausschließlich über die außerhal
 
 \subsubsection{Superposition}
 
-Jede Quelle im Gehirn wirkt auf alle Sensoren an der Kopfoberfläche, jeder Sensor empfängt also Signale jeder einzelnen Aktivität im Gehirn. Es liegt eine Superposition der Quellaktivität vor, wie sie in Abbildung \ref{img:superposition} dargestellt ist. Ähnlich einer Unterhaltung mit 10 sprechenden Personen und 5 aufnehmenden Mikrofonen. Jedes Mikrofon empfängt aus einer anderen Perspektive alle 10 Gespräche. Wünschenswert wäre es nun ein einzelnes Gespräch zu isolieren \emph{und} zu lokalisieren. Übertragen auf das Gehirn soll versucht werden die Quellen der Aktivitäten zu identifizieren und deren spezifische Aktivitäten über die Zeit zu erhalten. Die Quellen werden durch Dipole beschrieben und diskretisiert. Entsprechend soll für jeden angenommenen Dipol an einem bestimmten Ort im Gehirn ein Aktivitätsverlauf über die Zeit berechnet werden.
+Jede Quelle im Gehirn wirkt auf alle Sensoren an der Kopfoberfläche, jeder Sensor empfängt also Signale jeder einzelnen Aktivität im Gehirn. Es liegt eine Superposition der Quellaktivität vor, wie sie in Abbildung \ref{img:superposition} dargestellt ist, ähnlich einer Unterhaltung mit zehn sprechenden Personen und fünf aufnehmenden Mikrofonen. Jedes Mikrofon empfängt aus einer anderen Perspektive alle zehn Gespräche. Wünschenswert wäre es, ein einzelnes Gespräch zu isolieren \emph{und} zu lokalisieren. Übertragen auf das Gehirn soll versucht werden, die Quellen der Aktivitäten zu identifizieren und deren spezifische Aktivitäten über die Zeit zu erhalten. Die Quellen werden durch Dipole beschrieben und diskretisiert. Entsprechend soll für jeden angenommenen Dipol an einem bestimmten Ort im Gehirn ein Aktivitätsverlauf über die Zeit berechnet werden.
 
 \begin{figure}
   \centering
@@ -369,7 +369,7 @@ Jede Quelle im Gehirn wirkt auf alle Sensoren an der Kopfoberfläche, jeder Sens
 \subsubsection{Segmentierung und Volumenleiter}
 \label{sec:segment}
 
-Die Quellbestimmung ist nur an bestimmten Stellen innerhalb des Kopfes wirklich sinnvoll, außerhalb des Gehirns ist bspw. keine elektrischen Stromdipole zu erwarten. Außerdem ist es wünschenswert die Aktivität im Gehirn nicht auf eine standardisierte mathematische Form (z.B. auf eine Kugel) zu berechnen, sondern ein echtes Gehirn zu verwenden, im Idealfall das tatsächliche Gehirn der entsprechenden Versuchsperson. Dafür muss zunächst ein bildgebendes Verfahren eingesetzt werden. Üblicherweise eignet sich dafür ein MRT-Scan des Kopfes.
+Die Quellbestimmung ist nur an bestimmten Stellen innerhalb des Kopfes sinnvoll, außerhalb des Gehirns sind bspw. keine elektrischen Stromdipole zu erwarten. Außerdem ist es wünschenswert, die Aktivität im Gehirn nicht auf eine standardisierte mathematische Form (z.B. auf eine Kugel) zu berechnen, sondern ein echtes Gehirn zu verwenden, im Idealfall das tatsächliche Gehirn der entsprechenden Versuchsperson. Dafür muss zunächst ein bildgebendes Verfahren eingesetzt werden. Üblicherweise eignet sich dafür ein MRT-Scan des Kopfes.
 
 Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologische Bestandteile. Mit dem Softwarepaket \emph{Freesurfer} kann das Bild des Kopfes in seine Segmente zerlegt werden (siehe auch \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct}). Es wird unterschieden zwischen der Kopfoberfläche bzw. Kopfhaut, dem Schädel und dem Gehirn. Innerhalb des Gehirns werden graue und weiße Substanz getrennt.
 
@@ -384,27 +384,27 @@ Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologi
   \label{img:bem}
 \end{figure}
 
-Anschließend wird ein Kopfmodell (Head Model) berechnet, welches die verschiedenen Gewebetypen beinhaltet. Dafür können numerische Verfahren wie z.B. das \emph{Boundary Element Model} (BEM) verwendet werden. Das BEM-Verfahren modelliert die Ränder der segmentierten Volumina mit Dreiecksflächen. Dabei wird angenommen, dass die Leitfähigkeit innerhalb des Volumens isotrop ist. Dies stellt eine Idealisierung da. Im Abschnitt \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct} wurde bereits deutlich, dass eine vollständige homogene Leitfähigkeit nicht der Realität entspricht. Die graue Substanz, die sich vor allem an der zu betrachtenden Oberfläche befindet, kann damit jedoch sehr gut genähert werden.
+Anschließend wird ein Kopfmodell (Head Model) berechnet, welches die verschiedenen Gewebetypen beinhaltet. Dafür können numerische Verfahren wie z.B. das \emph{Boundary Element Model} (BEM) verwendet werden. Das BEM-Verfahren modelliert die Ränder der segmentierten Volumina mit Dreiecksflächen. Dabei wird angenommen, dass die Leitfähigkeit innerhalb des Volumens isotrop ist. Dies stellt eine Idealisierung dar. Im Abschnitt \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct} wurde bereits deutlich, dass eine vollständige homogene Leitfähigkeit nicht der Realität entspricht. Die graue Substanz, die sich vor allem an der zu betrachtenden Oberfläche befindet, kann damit jedoch sehr gut genähert werden.
 
-Die Diskretisierung der Oberfläche im BEM-Modell wirkt sich auf die Quellrekonstruktion aus. Wird die Dichte der Netzpunkte zu gering gewählt kommt es zu Fehlern in der numerischen Berechnung, die Quellen werden fehlerhaft geschätzt. Die Seitenlängen der Dreiecke sollten unterhalb von $10\,mm$ liegen. Zusätzlich sollte das Verhältnis von Dipoltiefe zur Seitenlänge der Dreiecke nicht kleiner als $0,5$ sein \parencite{haueisen1997effect}. Die Anzahl der Netzpunkte muss entsprechend hoch genug gewählt werden.
+Die Diskretisierung der Oberfläche im BEM-Modell wirkt sich auf die Quellrekonstruktion aus. Wird die Dichte der Netzpunkte zu gering gewählt, kommt es zu Fehlern in der numerischen Berechnung, die Quellen werden fehlerhaft geschätzt. Die Seitenlängen der Dreiecke sollten unterhalb von $10\,mm$ liegen. Zusätzlich sollte das Verhältnis von Dipoltiefe zur Seitenlänge der Dreiecke nicht kleiner als $0,5$ sein \parencite{haueisen1997effect}. Die Anzahl der Netzpunkte muss entsprechend hoch genug gewählt werden.
 
-Im Gegensatz zum BEM-Modell wird im FEM-Modell (\emph{Finite Element Model}) das gesamte Volumen modelliert. Im FEM-Modell können demnach auch Bereiche mit anisotroper Leitfähigkeit berücksichtigt werden. Dies entspricht mehr der Realität und lohnt sich vor allem bei einer Lokalisation, welche auch das innere des Gehirns berücksichtigt, da die weiße Substanz mit ihrer anisotropen Leitfähigkeit präziser modelliert werden kann.
+Im Gegensatz zum BEM-Modell wird im FEM-Modell (\emph{Finite Element Model}) das gesamte Volumen modelliert. Im FEM-Modell können demnach auch Bereiche mit anisotroper Leitfähigkeit berücksichtigt werden. Dies entspricht mehr der Realität und lohnt sich vor allem bei einer Lokalisation, welche auch das Innere des Gehirns berücksichtigt, da die weiße Substanz mit ihrer anisotropen Leitfähigkeit präziser modelliert werden kann.
 
-Nach der Berechnung des Kopfmodells liegt der Volumenleiter (volume conductor) vor, der in Abbildung \ref{img:bem} dargestellt ist. Dabei wird nur beschrieben wie sich elektrische Aktivität im Gehirn verteilen kann, der Volumenleiter trifft keine Aussage über mögliche Ursprünge elektrischer oder magnetischer Aktivität.
+Nach der Berechnung des Kopfmodells liegt der \emph{Volumenleiter} (\emph{Volume Conductor}) vor, der in Abbildung \ref{img:bem} dargestellt ist. Dabei wird nur beschrieben, wie sich elektrische Aktivität im Gehirn verteilen kann; der Volumenleiter trifft keine Aussage über mögliche Ursprünge elektrischer oder magnetischer Aktivität.
 
 \subsubsection{Koregistrierung}
 \label{sec:coreg}
 
-Die Daten der Physiologie aus der MRT-Messung und die Daten der Aktivität aus der MEG-Messung werden in unterschiedlichen Koordinatensystemen erhoben, da beide Verfahren mit unterschiedlichen Geräten und unterschiedlichen Standards arbeiten (auch herstellerspezifisch). Bei der \emph{Koregistrierung} wird eine Koordinatentransformation durchgeführt, so dass beide Datensätze möglichst gut zueinander passen. Die Transformation kann nicht fehlerfrei durchgeführt werden, die Abweichungen nach der Transformation liegen im Bereich von wenigen Millimeter \parencite{adjamian2004co,poghosyan2007precise}.
+Die Daten der Physiologie aus der MRT-Messung und die Daten der Aktivität aus der MEG-Messung werden in unterschiedlichen Koordinatensystemen erhoben, da beide Verfahren mit unterschiedlichen Geräten und unterschiedlichen Standards arbeiten (auch herstellerspezifisch). Bei der \emph{Koregistrierung} wird eine Koordinatentransformation durchgeführt, so dass beide Datensätze möglichst gut zueinander passen. Die Transformation kann nicht fehlerfrei durchgeführt werden, die Abweichungen nach der Transformation liegen im Bereich von wenigen Millimetern \parencite{adjamian2004co,poghosyan2007precise}.
 
-Die Koordinatensysteme bei MEG- und EEG-Messungen orientieren sich meist an äußeren anatomischen Merkmalen, wie dem Nasion oder den präaurikularen  Punkten. Bei bildgebenden Verfahren werden üblicherweise innere anatomische Merkmale, wie die Commissura anterior und Commissura posterior. Um eine Vergleichbarkeit zwischen unterschiedlichen Gehirnen zu gewährleisten wird zusätzlich häufig eine Standardisierung der Gehirn-Größe vorgenommen. Dafür wird das Talairach-Tournoux Gehirn oder Vorlagen vom Montreal Neurological Institute (MNI) verwendet, die entsprechende Koordinatensystem-Definitionen besitzen. Unabhängig von der Messmethode werden Koordinatensysteme anhand ihrer Orientierung klassifiziert. Üblich ist bspw. eine RAS-Orientierung. Die jeweiligen Buchstaben bedeuten anterior/posterior (A/P), links/rechts (L/R) und superior/inferior (S/I).
+Die Koordinatensysteme bei MEG- und EEG-Messungen orientieren sich meist an äußeren anatomischen Merkmalen, wie dem Nasion oder den präaurikularen Punkten. Bei bildgebenden Verfahren werden zur Definition üblicherweise innere anatomische Merkmale, wie die Commissura anterior und Commissura posterior verwendet. Um eine Vergleichbarkeit zwischen unterschiedlichen Gehirnen zu gewährleisten, wird zusätzlich häufig eine Standardisierung der Gehirn-Größe vorgenommen. Dafür werden das Talairach-Tournoux-Gehirn oder Vorlagen vom Montreal Neurological Institute (MNI) verwendet, die entsprechende Koordinatensystem-Definitionen besitzen. Unabhängig von der Messmethode werden Koordinatensysteme anhand ihrer Orientierung klassifiziert. Üblich ist bspw. eine RAS-Orientierung. Die jeweiligen Buchstaben bedeuten anterior/posterior (A/P), links/rechts (L/R) und superior/inferior (S/I).
 
 \subsubsection{Quellraum und Vorwärtsmodell}
 \label{sec:lead}
 
-Das \emph{Vorwärtsmodell} (\emph{forward solution}) berechnet aus angenommenen Quellen innerhalb des Gehirns die Auswirkung auf die Sensoren außerhalb des Gehirns. Innerhalb des Gehirns werden Dipole modelliert. Das sich ergebende Modell des Gehirns mit den Dipolen wird als \emph{Quellraum} (source space) bezeichnet. Für jeden der gesetzten Dipole wird unter Berücksichtigung der Leitfähigkeit und des Randes (BEM-Netz) die Wirkung auf die Sensoren außerhalb des Gehirns bestimmt. Somit kann für die Aktivitäten im Gehirn die Aktivität außerhalb des Gehirns abgeschätzt werden.
+Das \emph{Vorwärtsmodell} (\emph{Forward Solution}) berechnet aus angenommenen Quellen innerhalb des Gehirns die Auswirkung auf die Sensoren außerhalb des Gehirns. Innerhalb des Gehirns werden Dipole modelliert. Das sich ergebende Modell des Gehirns mit den Dipolen wird als \emph{Quellraum} (\emph{Source Space}) bezeichnet. Für jeden der gesetzten Dipole wird unter Berücksichtigung der Leitfähigkeit und des Randes (BEM-Netz) die Wirkung auf die Sensoren außerhalb des Gehirns bestimmt. Somit kann für die Aktivitäten innerhalb des Gehirn die Aktivität außerhalb des Gehirns abgeschätzt werden.
 
-Die Daten des Vorwärtsmodells werden in einer \emph{Leadfield-Matrix} dargestellt. Sie enthält die Abbildung der Dipole auf die Sensoren. Zur Bestimmung könne wir von folgender Gleichung ausgehen \parencite{maurits2011neurology}:
+Die Daten des Vorwärtsmodells werden in einer \emph{Leadfield-Matrix} dargestellt. Sie enthält die Abbildung der Dipole auf die Sensoren. Zur Bestimmung kann von folgender Gleichung ausgegangen werden \parencite{maurits2011neurology}:
 
 \begin{equation}
 y_i = \int_V \mx{L}_i (\mx{r}) \cdot \mx{j} (\mx{r})\, dV
@@ -439,35 +439,35 @@ Dabei bezeichnet~$\mx{s}(\mx{r}_S)$ die Stärke des Dipols am Ort der Quelle~$\m
 
 \subsection{Rückwärtsmodell}
 
-Das \emph{Rückwärtsmodell} (\emph{inverse model}) schätzt auf Basis der Leadfield-Matrix die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt entsprechend das Vorwärtsmodell voraus. Nur wenn bekannt ist wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden wie umgekehrt bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. Besondere Aufmerksamkeit wird den Methoden \emph{Minimum Norm Estimate} und \emph{Beamforming} gewidmet. Gleichung~\ref{eq:leadfield2} bildet den Ausgangspunkt für das Datenmodell der inversen Lösung.
+Das \emph{Rückwärtsmodell} (\emph{Inverse Model}) schätzt auf Basis der Leadfield-Matrix die Aktivitätsquellen im Gehirn. Die Berechnung des Rückwärtsmodells setzt entsprechend das Vorwärtsmodell voraus. Nur wenn bekannt ist, wie sich bestimmte Quellen im Gehirn auf die Sensoren außerhalb des Gehirns auswirken, kann berechnet werden, wie umgekehrt bestimmte Aktivitätsmuster an den Sensoren mit Quellen im Gehirn zusammenhängen. Für das Rückwärtsmodell können verschiedene Verfahren verwendet werden. Besondere Aufmerksamkeit wird den Methoden \emph{Minimum Norm Estimate} und \emph{Beamforming} gewidmet. Gleichung~\ref{eq:leadfield2} bildet den Ausgangspunkt für das Datenmodell zur Schätzung der inversen Lösung.
 
 \subsubsection{Methoden zur Bestimmung des Rückwärtsmodell}
 
 Es existieren prinzipiell drei Verfahren zur Bestimmung des Rückwärtsmodells:
 
 \begin{compactitem}
-\item Einfache und multiple Dipolmodelle (single and multiple dipole models)
-\item Verteilte Dipolmodelle (distributed dipole models)
-\item Räumliche Filterung (spatial filtering)
+\item Einfache und multiple Dipolmodelle (Single and Multiple Dipole Models)
+\item Verteilte Dipolmodelle (Distributed Dipole Models)
+\item Räumliche Filterung (Spatial Filtering)
 \end{compactitem}
 
 \subsubsection{Einfache und multiple Dipolmodelle}
 
-In den \emph{einfachen und multiplen Dipolmodellen} (single and multiple dipole models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklärt \parencite{scherg1990fundamentals}. Es wird zunächst ein Dipol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Quellen können bestimmt werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden neuen einzelnen Dipol immer geringer, weshalb es sich nur lohnt eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen. In dieser Methode wird zusätzlich zu Gleichung~\ref{eq:leadfield2} ein Fehler~$\mx{R}$ berücksichtigt. Des Weiteren wird der gesamte Zeitverlauf berücksichtigt.
+In den \emph{einfachen und multiplen Dipolmodellen} (Single and Multiple Dipole Models) werden nur wenige Quellen angenommen, die einen großen Teil der Varianz in den Daten erklären \parencite{scherg1990fundamentals}. Es wird zunächst ein Dipol innerhalb des Volumenleiters betrachtet und so lange variiert, bis er einen großen Teil der Varianz der Aktivität an der Kopfoberfläche bzw. an den Sensoren erklärt. Dieses Verfahren wird für einige wenige Dipole wiederholt. Je mehr Dipole verwendet werden, desto höher wird die erklärbare Varianz und desto mehr Quellen können bestimmt werden. Gleichzeitig ist die zusätzlich erklärte Varianz für jeden einzelnen neuen Dipol immer geringer, weshalb es sich nur lohnt, eine überschaubare Anzahl an Dipolen zu betrachten und im Umkehrschluss nur von einer geringen Anzahl an Dipolen auszugehen. In dieser Methode wird zusätzlich zu Gleichung~\ref{eq:leadfield2} ein Fehler~$R$ berücksichtigt. Des Weiteren wird der gesamte Zeitverlauf berücksichtigt.
 
 \begin{equation}
 \label{eq:leadfield-error}
-\mx{y}_i(t) = \mx{S}(\mx{r},t) \cdot \mx{L}_i(\mx{r}) + \mx{R}(t)
+y_i(t) = S(\mx{r},t) \cdot L_i(\mx{r}) + R(t)
 \end{equation}
 
-In Summenschreibweise ergibt sich:
+In dieser Schreibweise werden die jeweiligen Variablen deutlich. Kürzer kann es auch in der Matrixschreibweise als $\mx{y}_i = \mx{S} \cdot \mx{L}_i + \mx{R}$ oder der im Folgenden formulierten Summenschreibweise angegeben werden.
 
 \begin{equation}
 \label{eq:leadfield-error-sum}
 \mx{y}_i = \left( \sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij} \right) + \mx{R}
 \end{equation}
 
-Es wird versucht den Fehler~$\mx{R}$ zwischen Daten~$\mx{y}_i$ und Modell $\sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij}$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Es wird versucht $n$ klein zu halten.
+Es wird versucht, den Fehler~$\mx{R}$ zwischen Daten~$\mx{y}_i$ und Modell $\sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij}$ so gering wie möglich zu halten. Dafür wird das Ergebnis des Modells von den Daten abgezogen, der Fehler bzw. das Rauschen bleibt übrig. Es wird versucht $n$ klein zu halten.
 
 \begin{equation}
 \mx{R} = \mx{y}_i - \left( \sum_{j=1}^n \mx{S}_j \cdot \mx{L}_{ij} \right)
@@ -477,20 +477,14 @@ Es wird versucht den Fehler~$\mx{R}$ zwischen Daten~$\mx{y}_i$ und Modell $\sum_
 
 \subsubsection{Verteilte Dipolmodelle}
 
-In verteilten Dipolmodellen (distributed dipole models) wird davon ausgegangen, dass die Aktivität überall auftritt. Es wird nach der Verteilung der Aktivität im gesamten Gehirn gesucht. Erste Vorschläge zum \emph{Minimum Norm Estimate} (MNE) wurden von \textcite{hamalainen1984interpreting}, \textcite{ilmoniemi1985forward}, \textcite{sarvas1987basic}, sowie \textcite{hamalainen1994interpreting} ausgearbeitet. Einen Überblick gibt \textcite{hamalainen1993magnetoencephalography}.
+In verteilten Dipolmodellen (Distributed Dipole Models) wird davon ausgegangen, dass die Aktivität überall auftritt. Es wird nach der Verteilung der Aktivität im gesamten Gehirn gesucht. Erste Vorschläge zum \emph{Minimum Norm Estimate} (MNE) wurden von \textcite{hamalainen1984interpreting}, \textcite{ilmoniemi1985forward}, \textcite{sarvas1987basic}, sowie \textcite{hamalainen1994interpreting} ausgearbeitet. Einen Überblick gibt \textcite{hamalainen1993magnetoencephalography}.
 
-Wird Gleichung \ref{eq:leadfield-error} umgestellt nach der Quellaktivitätsmatrix~$\mx{S}$ ergibt sich folgende Form:
-
-\begin{equation}
-\mx{S} = \mx{L}_i^{-1} ( \mx{y}_i - \mx{R} )
-\end{equation}
-
-Es werden sehr viele Quellen betrachtet, deutlich mehr als Sensoren verfügbar sind. Damit ergeben sich unendlich viele exakte Lösungen. Um physikalisch sinnvolle und vor allem eindeutige Lösungen zu finden müssen Nebenbedingungen aufgestellt werden. Übliche Nebenbedingungen sind:
+Es werden deutlich mehr Quellen betrachtet als Sensoren verfügbar sind. Damit ergeben sich unendlich viele exakte Lösungen. Um physikalisch sinnvolle und vor allem eindeutige Lösungen zu finden, müssen Nebenbedingungen aufgestellt werden. Übliche Nebenbedingungen sind:
 
 \begin{compactitem}
-\item Maximale Glättung, LORETA (maximal smoothness)
-\item Minimale Energie, L2 (minimum power)
-\item Minimale Amplitude, L1 (minimum amplitude)
+\item Maximale Glättung, LORETA (Maximal Smoothness)
+\item Minimale Energie, L2 (Minimum Power)
+\item Minimale Amplitude, L1 (Minimum Amplitude)
 \end{compactitem}
 
 Dabei entspricht $L2$ der $L2$- bzw. der euklidischen Norm:
@@ -499,7 +493,7 @@ Dabei entspricht $L2$ der $L2$- bzw. der euklidischen Norm:
 \|\mx{S}\|_2 = \sqrt{\sum_{k=1}^n |\mx{S}_k|^2}
 \end{equation}
 
-Wobei $\mx{S}_k$ dem Dipol am Ort $k$ entspricht. Es wird anschließend diejenige Lösung genommen, für die die euklidische Norm bzw. anschaulich die Gesamtenergie des Gehirns minimal wird.
+$\mx{S}_k$ beschreibt den Dipol am Ort $k$. Es wird anschließend diejenige Lösung gewählt, für die die euklidische Norm bzw. anschaulich die Gesamtenergie des Gehirns minimal wird.
 
 $L1$ entspricht der $L1$- bzw. Betragssummen-Norm:
 
@@ -507,21 +501,21 @@ $L1$ entspricht der $L1$- bzw. Betragssummen-Norm:
 \|\mx{S}\|_1 = \sum_{k=1}^n |\mx{S}_k|
 \end{equation}
 
-Es wird anschließend diejenige Lösung genommen, für die die Betragssummen-Norm bzw. anschaulich die Gesamtamplitude des Gehirns minimal wird.
+Es wird anschließend diejenige Lösung gewählt, für die die Betragssummen-Norm bzw. anschaulich die Gesamtamplitude des Gehirns minimal wird.
 
 \subsubsection{Räumliche Filterung}
 \label{sec:beam}
 
-Bei der \emph{räumlichen Filterung} (spatial filtering) werden die Zeitverläufe der Aktivitäten der einzelnen Dipole als unkorreliert betrachtet, es wird davon ausgegangen, dass die Dipole sich nicht gegenseitig beeinflussen. Gesucht wird dann nach der Aktivitätswahrscheinlichkeit an jedem Punkt. Für jede Quelle im Gehirn wird der Zeitverlauf der Aktivität einzeln berechnet. Kernidee ist ein Verfahren aus der allgemeinen Signaltechnik (z.B. bei Radar- oder Sonarsignalen) auch bei der Lokalisation von Gehirnsignalen einzusetzen. Unterschiedliche Verfahren stehen zur Verfügung:
+Bei der \emph{räumlichen Filterung} (\emph{Spatial Filtering}) werden die Zeitverläufe der Aktivitäten der einzelnen Dipole als unkorreliert betrachtet; es wird davon ausgegangen, dass die Dipole sich nicht gegenseitig beeinflussen. Gesucht wird dann nach der Aktivitätswahrscheinlichkeit an jedem Punkt. Für jede Quelle im Gehirn wird der Zeitverlauf der Aktivität einzeln berechnet. Kernidee ist, ein Verfahren aus der allgemeinen Signaltechnik (z.B. bei Radar- oder Sonarsignalen) auch bei der Lokalisation von Gehirnsignalen einzusetzen. Unterschiedliche Verfahren stehen zur Verfügung:
 
 \begin{compactitem}
 \item Beamforming, z.B. LCMV, DICS, SAM
 \item Multiple Signal Classification, MUSIC
 \end{compactitem}
 
-Die Beamforming-Verfahren werden in Reviews von \textcite{hillebrand2005beamformer}, sowie \textcite{hillebrand2005new} betrachtet. Bei der LCMV Methode \parencite{van1997localization} wird der gesamte Zeitbereich (time domain) erfasst. Ähnlich wie bei der Minimum Norm Lösung wird für jeden Zeitpunkt eine Lokalisierung über das gesamte Frequenzspektrum durchgeführt. Bei der DICS (Dynamic Imaging of Coherent Sources) Methode wird nur eine einzige Quelllösung berechnet. Es wird ein bestimmtes Zeit/Frequenz-Intervall (siehe Zeit-Frequenz-Analyse) ausgewählt. Für diesen Bereich lässt sich eine Lokalisierung bestimmen. Der Vorteil dieses Verfahrens liegt darin, dass bestimmte Bänder (z.B. Alpha-Band) genau betrachtet werden können bzgl. Lokalisierung und Aktivität.
+Die Beamforming-Verfahren werden in Reviews von \textcite{hillebrand2005beamformer} sowie \textcite{hillebrand2005new} betrachtet. Bei der LCMV-Methode \parencite{van1997localization} wird der gesamte Zeitbereich (Time Domain) erfasst. Ähnlich wie bei der Minimum-Norm-Lösung wird für jeden Zeitpunkt eine Lokalisierung über das gesamte Frequenzspektrum durchgeführt. Bei der DICS (Dynamic Imaging of Coherent Sources) Methode wird nur eine einzige Quelllösung berechnet. Es wird ein bestimmtes Zeit-/Frequenz-Intervall ausgewählt. Für diesen Bereich lässt sich eine Lokalisierung bestimmen. Der Vorteil dieses Verfahrens liegt darin, dass bestimmte Bänder (z.B. Alpha-Band) bzgl. Lokalisierung und Aktivität genau betrachtet werden können.
 
-Die folgende Betrachtung wird sich auf \emph{LCMV Beamforming} (Linearly Constrained Minimum Variance Beamforming) beschränken, da diese mit Minimum Norm Estimate vergleichbar ist. Entscheidend dabei ist, dass nur ein Quellort zu einem Zeitpunkt betrachtet wird, die anderen Orte werden nicht berücksichtigt. Für den ersten Ort ergibt sich mit der Summenschreibweise aus Gleichung \ref{eq:leadfield-error-sum} entsprechend:
+Die folgende Betrachtung wird sich auf \emph{LCMV Beamforming} (\emph{Linearly Constrained Minimum Variance Beamforming}) beschränken, da diese wegen der Berechnung des gesamten Zeitverlaufs mit Minimum Norm Estimate vergleichbar ist. Entscheidend bei LCMV Beamforming ist, dass nur ein Quellort zu einem Zeitpunkt betrachtet wird, die anderen Orte werden nicht berücksichtigt. Für den ersten Ort ergibt sich mit der Summenschreibweise aus Gleichung \ref{eq:leadfield-error-sum} entsprechend:
 
 \begin{equation}
 \mx{y}_i = \mx{L}_{i1} \cdot \mx{S}_1 + \mx{N}
@@ -543,8 +537,8 @@ Jeder beliebige Dipol kann nun als Ausgangspunkt zur Beschreibung der Gesamtakti
 Um jede einzelne räumliche Position betrachten bzw. berechnen zu können, wird ein räumlicher Filter benötigt. Mit diesem lässt sich die Quellaktivität mit den Daten bestimmen. Der räumliche Filter erfüllt maßgeblich zwei Funktionen:
 
 \begin{compactitem}
-\item Alle Aktivität $\mx{S}_j$ am betrachteten Ort $j$ soll vollständig durchgelassen werden
-\item Rauschen und andere Aktivitäten anderer Orte $\mx{N}$ soll vollständig unterdrückt werden
+\item Alle Aktivität $\mx{S}_j$ am betrachteten Ort $j$ soll vollständig durchgelassen werden.
+\item Rauschen und andere Aktivitäten anderer Orte $\mx{N}$ soll vollständig unterdrückt werden.
 \end{compactitem}
 
 Die Zeitverläufe der Aktivität an der Quelle $\mx{S}_j$ und die der Aktivitäten an allen anderen Quellen~$\mx{N}$ müssen unkorreliert sein. Die Annahmen des Filters werden im Fall von Korrelationen nicht mehr erfüllt und die Quellen können nicht mehr hinreichend getrennt werden \parencite{van1997localization}, es kommt zu Unschärfe.
@@ -555,7 +549,7 @@ Wird der Filter~$\mx{w}^T$ auf die Daten~$\mx{y}_i$ angewendet, so führt dies z
 
 \begin{equation}
 \label{eq:beam-filter}
-\mx{w}_i^T(\mx{r}) \cdot \mx{y}_i = \mx{\hat S}(\mx{r})
+\mx{w}_i^T \cdot \mx{y}_i = \mx{\hat S}
 \end{equation}
 
 Entgegen den vorigen Modellen muss das Rauschen hier nicht explizit berücksichtigt werden, das Signal wird als Ganzes verrechnet. Gleichung \ref{eq:leadfield} kann geschrieben werden als:
@@ -576,13 +570,11 @@ Werden die Bedingungen des räumlichen Filters als Ideal angenommen, dann entspr
 \mx{w}_i^T \cdot \mx{L}_i = 1
 \end{equation}
 
-Anschaulich bedeutet dies ein maximales Signal am betrachteten Ort. Für alle anderen Orte wird die Gleichung Null. Allgemein gilt:
+Anschaulich bedeutet dies ein maximales Signal am betrachteten Ort. Für alle anderen Orte wird die Gleichung Null. Mit den Indizes $j,k$ für die Orte gilt allgemein:
 
 \begin{equation}
-w^T_{ij} \cdot L_{ik} = \delta_{jk}
+\mx{w}^T_{ij} \cdot \mx{L}_{ik} = \delta_{jk}
 \end{equation}
-
-Wobei $j,k$ die Indizes entsprechender Orte darstellen.
 
 Die Bestimmung des Filters erfordert eine gute lineare Schätzung des Zeitverlaufs der Aktivität an einem gegebenen Ort. Eine optimale Gewichtung \parencite[z.B.][]{haykin2008adaptive} wird durch folgenden Filter erreicht:
 
@@ -591,22 +583,22 @@ Die Bestimmung des Filters erfordert eine gute lineare Schätzung des Zeitverlau
 \mx{w}_i = \frac{\mx{C}^{-1} \mx{L}_i}{\mx{L}^T_i \mx{C}^{-1} \mx{L}_i}
 \end{equation}
 
-$\mx{C}^{-1}$ bezeichnet die Inverse der Kovarianzmatrix der gemessenen Signale $\mx{y}(t)$. Sie wird mit der verlaufenen Zeit $T$ normiert (???).
+$\mx{C}^{-1}$ bezeichnet die Inverse der Kovarianzmatrix der gemessenen Signale $\mx{y}_i$. Sie wird mit der verlaufenen Zeit $T$ normiert.
 
 \begin{equation}
-\mx{C} = \frac{\mx{y}(t)\,\mx{y}(t)^T}{T-1}
+\mx{C} = \frac{\mx{y}_i\,\mx{y}_i^T}{T-1}
 \end{equation}
 
 \subsection{Hypothese}
 \label{sec:hypo}
 
-Wie in der Einleitung bereits erwähnt, sagt die Hypothese eine relativ hohe Stabilität des LCMV Beamformer-Vefahrens gegen Rauschen voraus. Grundlage der Hypothese ist die Eigenschaft des Beamforer-Vefahrens, dass nur die Zeitverläufe innerer Quellorte betrachtet wird \parencite{van1997localization}. Durch den räumlichen Filter wird die Quellaktivität kontrolliert nur an Orten innerhalb des Gehirns rekonstruiert, Orte außerhalb des Gehirns, welche das Rauschen beinhalten, werden nicht berücksichtigt.
+Wie in der Einleitung bereits erwähnt, sagt die Hypothese eine relativ hohe Stabilität des LCMV Beamformer-Vefahrens gegen Rauschen voraus. Grundlage der Hypothese ist die Eigenschaft des Beamformer-Vefahrens, dass nur die Zeitverläufe innerer Quellorte betrachtet werden \parencite{van1997localization}. Durch den räumlichen Filter wird die Quellaktivität kontrolliert nur an Orten innerhalb des Gehirns rekonstruiert, Orte außerhalb des Gehirns, welche das Rauschen beinhalten, werden nicht berücksichtigt.
 
-Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben mit Rohdaten umgehen zu können. Die in den Rohdaten nicht unterdrückten äußeren Quellen dürften den Versuch der Minimierung der Energie (bzw. der L2-Norm) deutlich verfälschen. Äußere Signale könnten bei der Kalkulation berücksichtigt werden, obwohl sie eigentlich nicht berücksichtigt werden sollen. Zusammengefasst:
+Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben, mit Rohdaten umgehen zu können. Die in den Rohdaten nicht unterdrückten äußeren Quellen dürften den Versuch der Minimierung der Energie (bzw. der L2-Norm) deutlich verfälschen. Äußere Signale könnten bei der Kalkulation berücksichtigt werden, obwohl sie eigentlich nicht berücksichtigt werden sollen. Zusammengefasst:
 
 \begin{compactitem}
-\item Hauptthese: LCMV Beamformer ist robust gegen Rauschen (intrinsische Rauschunterdrückung)
-\item Nebenthese: Minimum Norm Estimate ist nicht robust gegen Rauschen
+\item Hauptthese: LCMV Beamformer ist robust gegen Rauschen (intrinsische Rauschunterdrückung).
+\item Nebenthese: Minimum Norm Estimate ist nicht robust gegen Rauschen.
 \end{compactitem}
 
 % #####################
