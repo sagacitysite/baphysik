@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.17)  2 SEP 2015 12:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.17)  2 SEP 2015 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2878,6 +2878,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1245.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1245.
+
+Overfull \hbox (17.84653pt too wide) in paragraph at lines 1247--1248
+\T1/lmr/m/n/12 stän-dig, was ver-mut-lich zu der falschen Vor-her-sa-ge ge-führ
+t hat. Ein Pro-blem des Beamformer-
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1248.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2886,7 +2892,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1248.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1248.
- [59]
+[59]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1249.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2979,8 +2985,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1277.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1277.
-
-[67]
+ [67]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1277.
  (./ba.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1277.
@@ -3013,7 +3018,7 @@ e/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt
 12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on ba.pdf (67 pages, 5633685 bytes).
+Output written on ba.pdf (67 pages, 5633726 bytes).
 PDF statistics:
  1181 PDF objects out of 1200 (max. 8388607)
  968 compressed objects within 10 object streams
