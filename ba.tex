@@ -338,7 +338,6 @@ Die SSS-Methode ist zwar deutlich rechenaufwändiger als SSP, führt jedoch im G
 % ##### GRUNDLAGEN LOKALISATION  #####
 % ####################################
 
-\newpage
 \section{Hintergrund zur Quelllokalisation}
 \label{sec:hinter}
 
@@ -605,8 +604,6 @@ Auf der anderen Seite sollte Minimum Norm Estimate Probleme haben, mit Rohdaten 
 % ##### METHODIK  #####
 % #####################
 
-\newpage
-
 \section{Methodik}
 \label{sec:methodik}
 
@@ -711,7 +708,6 @@ Beiden Verfahren ist gemeinsam, dass die Lösung dreidimensional berechnet wird.
 % ##### ERGEBNISSE  #####
 % #######################
 
-\newpage
 \section{Ergebnisse}
 \label{sec:ergebnisse}
 
@@ -1086,6 +1082,8 @@ Während Minimum Norm Estimate eine Quellaktivität nur rechts und links errechn
 
 Eine mögliche Erklärung für diese Quellen ist das Auftreten von Scheinquellen bzw. \emph{Ghost Sources} \parencite{trujillo2004bayesian}. Sie bezeichnen Dipole, die zwar aus Sicht des Rekonstruktionsverfahrens logisch sind, aber nicht real existieren. Dipole, d.h. mögliche Quellen, liegen senkrecht zu den Gradienten des Magnetfeldes, besonders an jenen Stellen, an denen der Gradient sehr steil ist. In Abbildung~\ref{img:topolot} sind das diejenigen Bereiche, in denen dunkelrote (positive magnetische Flussdichte) und dunkelblaue (negative magnetische Flussdichte) Bereiche nah aneinander liegen. In den roten Bereichen treten die Feldlinien des Magnetfeldes aus dem Gehirn aus, in den blauen Bereichen treten sie wieder ein. Eine starke Quelle (bzw. ein Strom) sollte also in der genannten Abbildung beispielsweise im rechten temporalen Bereich entlang der Höhenlinien von unten nach oben liegen. Diese Quelle wurde sowohl von Beamformer als auch von Minimum Norm Estimate zuverlässig gefunden. Eine weitere reale Quelle liegt im linken Bereich von innen nach außen, an der Grenze zwischen hellblau und dunkelblau. Diese Quelle sollte eher schwach sein. In diesem Fall errechnet Minimum Norm Estimate eine relativ präzise Voraussage, Beamformer dagegen überschätzt die Aktivität in diesem Bereich deutlich, wenn die entsprechenden Annahmen über das Auftreten der MMNm korrekt sind. Im mittleren vorderen Bereich kommt es ebenfalls zu einer Grenze. Diese Grenze entsteht aber in der Realität nicht durch einen Strom, sondern durch die entgegengesetzten Ströme auf der rechten und linken Seite. Während Minimum Norm Estimate hier korrekt erkennt, dass es sich nicht um eine wirkliche Quelle handelt, schätzt Beamformer hier eine Quelle. Tatsächlich wäre eine Quelle physikalisch möglich, es kann aber begründet davon ausgegangen werden, dass sie in der Realität nicht vorliegt. Es handelt sich um eine durch Ghost Sources ausgelöste Scheinaktivität.
 
+\subsubsection{Rauschunterdrückte Daten}
+
 \begin{figure}
 %  \centering
   \captionsetup{justification=centering}
@@ -1132,12 +1130,18 @@ Eine mögliche Erklärung für diese Quellen ist das Auftreten von Scheinquellen
   \label{img:pa07:aktiv}
 \end{figure}
 
-\subsubsection{Rauschunterdrückte Daten}
-
 Unter Verwendung rauschunterdrückter Daten zeigen beide Verfahren bessere Ergebnisse. Während die Verbesserungen bei Minimum Norm Estimate eher minimal sind, nimmt bei Beamformer die Scheinaktivität im Parietallappen ab. Dieses Verhalten wird in den Abbildungen~\ref{img:pa07:aktiv:raw-lcmv} bis~\ref{img:pa07:aktiv:mc-mne} deutlich. Die Ergebnisse würde also an dieser Stelle der Hypothese widersprechen. Nach Auswertung der Verteilung der Quellaktivität zum Zeitpunkt des Auftretens der MMNm scheint Beamformer unter Verwendung der Rohdaten keine guten Lösungen zu liefern, während Minimum Norm Estimate entgegen der Nebenhypothese relativ gute Lösungen errechnen kann. Da die Aktivitäten in den Abbildungen nicht einheitlich skaliert sind, ist eine weitere Betrachtung unter Normierung nötig. Außerdem ist es nötig, auch die anderen Zeitpunkte zu betrachten, um die Qualität der Lösungen abschätzen zu können.
 
 \subsubsection{Aktivitätsverteilung}
 \label{sec:akti-verteilung}
+
+Die Verteilungen der Aktivität bei Beamformer und Minimum Norm Estimate weisen unterschiedliche Eigenschaften auf. Während bei Minimum Norm Estimate der Bereich der Aktivität sehr konzentriert auftritt, weist Beamformer eine größere Streuung der Aktivität auf. Dies wird bereits in Abbildung~\ref{img:pa07:aktiv} deutlich. Um den Grad der Streuuung vergleichen zu können, wurde ein normiertes Varianzmaß eingeführt. Aktivität welche durch einen Ton z.B. am rechten Ohr verursacht wird, wird auch primär nur in der rechten Hemisphäre zu einer Aktivität führt. Diese Annahme führt dazu, dass die Hemisphären getrennt betrachtet wurden. Da im Folgenden der Schwerpunkt auf der Betrachtung der rechten Hemisphäre liegt, wurden die Maße auch hier nur für die rechte Hemisphäre bestimmt. Für das normierte Varianzmaß wurde zunächst das Maximum der Aktivität in der Hemisphäre bestimmt, welches in allen Fällen wie zu erwarten im Temporallappen lag. Anschließend wurde für jeden Punkt in der Hemisphäre der Abstand zum Punkt der maximalen Aktivität bestimmt und quadriert. Der Abstand wurde mit der Stärke der Quellaktivität gewichtet. Die sich ergebenden Terme wurden für jeden Punkt $i$ innerhalb der rechten Hemisphäre summiert.
+
+\begin{equation}
+\sigma^2 = \frac{1}{s_{\text{max}}} \sum_i \|\mx{r}_i - \mx{r}_{\text{max}}\|^2 \cdot s_i
+\end{equation}
+
+Dabei ist $\mx{r}_i$ ein Punkt in der rechten Hemisphäre, $\mx{r}_{\text{max}}$ der Punkt in der rechten Hemisphäre, an dem die Aktivität maximal ist und $s_i$ die Quellaktivität am betrachteten Punkt. Normiert wurde mit dem Wert der maximalen Aktivität $s_{\text{max}}$. Ein Wert größer $1$ bedeutet, dass die Varianz größer ist, als der Wert des Aktivitätsmaximums.
 
 \begin{table}[t]
   \caption{}
@@ -1160,14 +1164,6 @@ Unter Verwendung rauschunterdrückter Daten zeigen beide Verfahren bessere Ergeb
   \vspace*{3mm}
   \caption*{Streuwerte der Quellaktivitätsverteilungen für Versuchspersonen \texttt{pa07} und \texttt{pa10} für Minimum Norm Estimate (MNE) und Beamformer (LCMV) unter Verwendung von Roh-, SSS- und MC-Daten. Die Streumaße beziehen sich auf die Aktivität in der rechten Hemisphäre. Ein hoher Wert entspricht einer hohen Streuung.}
 \end{table}
-
-Die Verteilungen der Aktivität bei Beamformer und Minimum Norm Estimate weisen unterschiedliche Eigenschaften auf. Während bei Minimum Norm Estimate der Bereich der Aktivität sehr konzentriert auftritt, weist Beamformer eine größere Streuung der Aktivität auf. Dies wird bereits in Abbildung~\ref{img:pa07:aktiv} deutlich. Um den Grad der Streuuung vergleichen zu können, wurde ein normiertes Varianzmaß eingeführt. Aktivität welche durch einen Ton z.B. am rechten Ohr verursacht wird, wird auch primär nur in der rechten Hemisphäre zu einer Aktivität führt. Diese Annahme führt dazu, dass die Hemisphären getrennt betrachtet wurden. Da im Folgenden der Schwerpunkt auf der Betrachtung der rechten Hemisphäre liegt, wurden die Maße auch hier nur für die rechte Hemisphäre bestimmt. Für das normierte Varianzmaß wurde zunächst das Maximum der Aktivität in der Hemisphäre bestimmt, welches in allen Fällen wie zu erwarten im Temporallappen lag. Anschließend wurde für jeden Punkt in der Hemisphäre der Abstand zum Punkt der maximalen Aktivität bestimmt und quadriert. Der Abstand wurde mit der Stärke der Quellaktivität gewichtet. Die sich ergebenden Terme wurden für jeden Punkt $i$ innerhalb der rechten Hemisphäre summiert.
-
-\begin{equation}
-\sigma^2 = \frac{1}{s_{\text{max}}} \sum_i \|\mx{r}_i - \mx{r}_{\text{max}}\|^2 \cdot s_i
-\end{equation}
-
-Dabei ist $\mx{r}_i$ ein Punkt in der rechten Hemisphäre, $\mx{r}_{\text{max}}$ der Punkt in der rechten Hemisphäre, an dem die Aktivität maximal ist und $s_i$ die Quellaktivität am betrachteten Punkt. Normiert wurde mit dem Wert der maximalen Aktivität $s_{\text{max}}$. Ein Wert größer $1$ bedeutet, dass die Varianz größer ist, als der Wert des Aktivitätsmaximums.
 
 In Tabelle \ref{tab:distribution} sind die Ergebnisse dargestellt. Die Aktivitätsstreuung der Beamformer-Lösung ist durchgehend höher, als die der Minimum Norm Estimate Lösung. Minimum Norm Estimate kann die Quellaktivität am entsprechenden Bereich konzentriert erfassen und ist zusätzlich sehr robust gegen verrauschte Daten. Die Lösungen mit SSS- und MC-Daten führt bei der Minimum Norm Estimate Lösung nur zu minimalen Verbesserungen. Beamformer hingegen hat mit der Verwendung der Rohdaten größere Probleme, unter Verwendung rauschunterdrückter Daten reduziert sich die Streuung bei Beamformer deutlich mehr, als das bei Minimum Norm Estimate der Fall ist. Die Streuung der Quellaktivität spricht dafür, dass Minimum Norm Estimate nicht nur generell eine konzentriertere Lokalisation durchführt, das Verfahren kann diesbezüglich auch mit Rohdaten besser umgehen als Beamformer.
 
@@ -1228,8 +1224,6 @@ Ein drittes Merkmal ist der Unterschied zwischen der Verwendung von SSS- und MC-
 % #######################
 % ##### DISKUSSION  #####
 % #######################
-
-\newpage
 
 \section{Diskussion}
 \label{sec:diskussion}
