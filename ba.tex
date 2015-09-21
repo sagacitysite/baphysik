@@ -389,9 +389,9 @@ Das Bild des Kopfes enthält zunächst noch keine Informationen über physiologi
 
 Anschließend wird ein Kopfmodell (Head Model) berechnet, welches die verschiedenen Gewebetypen beinhaltet. Dafür können numerische Verfahren wie z.B. das \emph{Boundary Element Model} (BEM) verwendet werden. Das BEM-Verfahren modelliert die Oberflächen der segmentierten Volumina mit Dreiecksflächen. Dabei wird angenommen, dass die Leitfähigkeit innerhalb des Volumens isotrop ist. Dies stellt eine Idealisierung dar. Im Abschnitt \nameref{sec:head-struct} auf Seite \pageref{sec:head-struct} wurde bereits deutlich, dass eine vollständige homogene Leitfähigkeit nicht der Realität entspricht. Die graue Substanz, die sich vor allem an der zu betrachtenden Oberfläche befindet, kann damit jedoch sehr gut genähert werden.
 
-Die Diskretisierung der Oberfläche im BEM-Modell wirkt sich auf die Quellrekonstruktion aus. Wird die Dichte der Netzpunkte zu gering gewählt, kommt es zu Fehlern in der numerischen Berechnung, die Quellen werden fehlerhaft geschätzt. Die Seitenlängen der Dreiecke sollten unterhalb von $10\,mm$ liegen. Zusätzlich sollte das Verhältnis von Dipoltiefe zur Seitenlänge der Dreiecke nicht kleiner als $0,5$ sein \parencite{haueisen1997effect}. Die Anzahl der Netzpunkte muss entsprechend hoch genug gewählt werden. Gleichzeitig führt eine zu hohe Anzahl an Netzpunkten zu einer numerischen Ungenauigkeit, da die entsprechenden Matrizen zur Berechnung zu groß werden. Überlicherweise wird eine Kantenlänge von $3$--$8\,mm$ verwendet (Studie ???).
+Die Diskretisierung der Oberfläche im BEM-Modell wirkt sich auf die Quellrekonstruktion aus. Wird die Dichte der Netzpunkte zu gering gewählt, kommt es zu Fehlern in der numerischen Berechnung, die Quellen werden fehlerhaft geschätzt. Die Seitenlängen der Dreiecke sollten unterhalb von $10\,mm$ liegen. Zusätzlich sollte das Verhältnis von Dipoltiefe zur Seitenlänge der Dreiecke nicht kleiner als $0,5$ sein \parencite{haueisen1997effect}. Die Anzahl der Netzpunkte muss entsprechend hoch genug gewählt werden. Gleichzeitig führt eine zu hohe Anzahl an Netzpunkten zu einer numerischen Ungenauigkeit, da die entsprechenden Matrizen zur Berechnung zu groß werden. Überlicherweise wird eine Kantenlänge von $3$--$8\,mm$ verwendet \parencite[z.B.][]{haueisen2002evaluation,tarkiainen20033d}.
 
-Soll die Kantenlänge noch kleiner gewählt werden, muss auf andere Verfahren zurück gegriffen werden. Für Längen im Bereich von $1\,mm$ kann das FEM-Modell (\emph{Finite Element Model}) verwendet werden (Studie ???), welches das gesamte Volumen modelliert. Im FEM-Modell können demnach auch Bereiche mit anisotroper Leitfähigkeit berücksichtigt werden. Dies entspricht mehr der Realität und lohnt sich vor allem bei einer Lokalisation, welche auch das Innere des Gehirns berücksichtigt, da die weiße Substanz mit ihrer anisotropen Leitfähigkeit präziser modelliert werden kann.
+Soll die Kantenlänge noch kleiner gewählt werden, muss auf andere Verfahren zurück gegriffen werden, wie das \emph{FEM}-Modell (\emph{Finite Element Model}). Dieses Verfahren modelliert das gesamte Volumen. Im FEM-Modell können demnach auch Bereiche mit anisotroper Leitfähigkeit berücksichtigt werden. Dies entspricht mehr der Realität und lohnt sich vor allem bei einer Lokalisation, welche auch das Innere des Gehirns berücksichtigt, da die weiße Substanz mit ihrer anisotropen Leitfähigkeit präziser modelliert werden kann.
 
 Nach der Berechnung des Kopfmodells liegt der \emph{Volumenleiter} (\emph{Volume Conductor}) vor, der in Abbildung \ref{img:bem} dargestellt ist. Dabei wird nur beschrieben, wie sich elektrische Aktivität im Gehirn verteilen kann; der Volumenleiter trifft keine Aussage über mögliche Ursprünge elektrischer oder magnetischer Aktivität.
 
@@ -415,11 +415,6 @@ y_i = \int_V \mx{L}_i (\mx{r}) \cdot \mx{j} (\mx{r})\, dV
 \end{equation}
 
 Das Potential~$y_i$ am Sensor~$i$ ergibt sich durch Integration des Leadfield-Operators~$\mx{L}_i(\mx{r})$ multipliziert mit der elektrischen Stromdichteverteilung~$\mx{j}(\mx{r})$, jeweils an der Stelle~$\mx{r}$. $\mx{j}(\mx{r})$~ergibt sich aus der Aktivität einer Nervenzelle bzw. der Nervenzellen in unmittelbarer Nähe des betrachteten Punktes und bildet die Ursache für die entstehenden elektrischen und magnetischen Felder.
-
-???
-
-%%% Hier nochmal nachbessern !!! siehe Anmerlung von Burkhard
-% Nochmal im Buch (Link) nachschauen
 
 Die Quelle kann durch diskrete Dipole modelliert werden. Mit Hilfe diese Modellierung kann die Stromdichteverteilung mit Delta-Distributonen beschrieben werden:
 
@@ -707,7 +702,7 @@ Die gesamte Verarbeitung der Daten ist in Abbildung \ref{img:verfahren} in einem
 
 Zur Auswertung der Daten wurden weitere Analysen durchgeführt.
 
-Während der gesamten Messungen waren die Lokalisationsspulen (HPI, ???) aktiv. Jede der Spulen erzeugt ein zeitlich veränderliches Magnetfeld mit einer festen Frequenz. Mittels phasenrichtiger Gleichrichtung werden die Magnetfelder aus den Meßdaten extrahiert und die Spulenorte lokalisiert. Die Position des Kopfes kann damit im Zeitverlauf dargestellt werden, um das Bewegungsverhalten der Versuchspersonen einschätzen zu können.
+Während der gesamten Messungen waren die Lokalisationsspulen (HPI, Head Position Indicator) aktiv. Jede der Spulen erzeugt ein zeitlich veränderliches Magnetfeld mit einer festen Frequenz. Mittels phasenrichtiger Gleichrichtung werden die Magnetfelder aus den Meßdaten extrahiert und die Spulenorte lokalisiert. Die Position des Kopfes kann damit im Zeitverlauf dargestellt werden, um das Bewegungsverhalten der Versuchspersonen einschätzen zu können.
 
 Eine Frequenzanalyse der Versuchsperson \texttt{pa07} in Block~1 wurde für Roh- und SSS-Daten durchgeführt, um das Rauschverhalten abschätzen zu können. Mit demselben Zweck wurde das Signal-Rausch-Verhältnis für beide Versuchspersonen und alle Blöcke bestimmt.
 

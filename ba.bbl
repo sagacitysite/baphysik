@@ -344,14 +344,14 @@
     \endentry
     \entry{haueisen1997effect}{article}{}
       \name{labelname}{5}{}{%
-        {{uniquename=0,hash=d198197ff8f3f42702d4c3d5fea8477b}{Haueisen}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=d198197ff8f3f42702d4c3d5fea8477b}{Haueisen}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=e0805a90d68d937edf79704e9b697366}{Boettner}{B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=38ef3f81594ae2b5ee48ae47e1bef91c}{Funke}{F\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=28df81dc672f4278fd8abf94a938cefb}{Brauer}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=cfd414b017e2413e688916b01544104e}{Nowak}{N\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{5}{}{%
-        {{uniquename=0,hash=d198197ff8f3f42702d4c3d5fea8477b}{Haueisen}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=d198197ff8f3f42702d4c3d5fea8477b}{Haueisen}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=e0805a90d68d937edf79704e9b697366}{Boettner}{B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=38ef3f81594ae2b5ee48ae47e1bef91c}{Funke}{F\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=28df81dc672f4278fd8abf94a938cefb}{Brauer}{B\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
@@ -369,6 +369,35 @@
       \field{volume}{42}
       \field{year}{1997}
       \field{pages}{240\bibrangedash 248}
+    \endentry
+    \entry{haueisen2002evaluation}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=2,hash=501d816c0004d4f33cbde0458589cd29}{Haueisen}{H\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dca321f1eea31d07123ec274f1dedcd8}{Unger}{U\bibinitperiod}{Ralf}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bce0d9d644bb6e41930d65b240f5f563}{Beuker}{B\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=40cd621e81b39a21e08c28b2d05a4568}{Bellemann}{B\bibinitperiod}{Matthias\bibnamedelima E}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=2,hash=501d816c0004d4f33cbde0458589cd29}{Haueisen}{H\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dca321f1eea31d07123ec274f1dedcd8}{Unger}{U\bibinitperiod}{Ralf}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bce0d9d644bb6e41930d65b240f5f563}{Beuker}{B\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=40cd621e81b39a21e08c28b2d05a4568}{Bellemann}{B\bibinitperiod}{Matthias\bibnamedelima E}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{cf4ecadd5367e89e8ce951c747f8a941}
+      \strng{fullhash}{c8eee72bcc9cc10694d2bafcc1c65689}
+      \field{sortinit}{H}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Evaluation of inverse algorithms in the analysis of magnetic flux leakage data}
+      \field{journaltitle}{Magnetics, IEEE Transactions on}
+      \field{number}{3}
+      \field{title}{Evaluation of inverse algorithms in the analysis of magnetic flux leakage data}
+      \field{volume}{38}
+      \field{year}{2002}
+      \field{pages}{1481\bibrangedash 1488}
     \endentry
     \entry{haykin2008adaptive}{book}{}
       \name{labelname}{1}{}{%
@@ -1014,6 +1043,35 @@
       \field{volume}{94}
       \field{year}{2014}
       \field{pages}{337\bibrangedash 348}
+    \endentry
+    \entry{tarkiainen20033d}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=8f319f2353fc27a5c971612c2c8f5ca0}{Tarkiainen}{T\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3d377742b9c097efd9af69e007277da4}{Liljeström}{L\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=009a0d82b2c084d1362296fe080fee23}{Seppä}{S\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0cecab5412fd5a1747b83283ffed44d2}{Salmelin}{S\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=8f319f2353fc27a5c971612c2c8f5ca0}{Tarkiainen}{T\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3d377742b9c097efd9af69e007277da4}{Liljeström}{L\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=009a0d82b2c084d1362296fe080fee23}{Seppä}{S\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0cecab5412fd5a1747b83283ffed44d2}{Salmelin}{S\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{315dfa38001b9f3d2d2e582dc062be27}
+      \strng{fullhash}{248c8c93b641263500fe01d10c04256a}
+      \field{sortinit}{T}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{The 3D topography of MEG source localization accuracy: effects of conductor model and noise}
+      \field{journaltitle}{Clinical Neurophysiology}
+      \field{number}{10}
+      \field{title}{The 3D topography of MEG source localization accuracy: effects of conductor model and noise}
+      \field{volume}{114}
+      \field{year}{2003}
+      \field{pages}{1977\bibrangedash 1992}
     \endentry
     \entry{taulu2005presentation}{article}{}
       \name{labelname}{2}{}{%

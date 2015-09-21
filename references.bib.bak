@@ -127,6 +127,18 @@
   Volume                   = {42}
 }
 
+@Article{haueisen2002evaluation,
+  Title                    = {Evaluation of inverse algorithms in the analysis of magnetic flux leakage data},
+  Author                   = {Haueisen, Jens and Unger, Ralf and Beuker, Thomas and Bellemann, Matthias E},
+  Journal                  = {Magnetics, IEEE Transactions on},
+  Year                     = {2002},
+  Number                   = {3},
+  Pages                    = {1481--1488},
+  Volume                   = {38},
+
+  Publisher                = {IEEE}
+}
+
 @Book{haykin2008adaptive,
   Title                    = {Adaptive filter theory},
   Author                   = {Haykin, Simon S},
@@ -277,7 +289,7 @@
 
 @Article{naatanen1978early,
   Title                    = {Early selective-attention effect on evoked potential reinterpreted},
-  Author                   = {N{\"a}{\"a}t{\"a}nen, R and Gaillard, Anthony WK and M{\"a}ntysalo, S},
+  Author                   = {N{\"a}{\"a}t{\"a}nen, Risto and Gaillard, Anthony WK and M{\"a}ntysalo, S},
   Journal                  = {Acta psychologica},
   Year                     = {1978},
   Number                   = {4},
