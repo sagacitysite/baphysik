@@ -70,15 +70,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Weitere Analysen}{39}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Vergleichbarkeit der L\IeC {\"o}sungen}{40}{section*.44}
+\contentsline {subsection}{Vergleichbarkeit der L\IeC {\"o}sungen}{39}{section*.44}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Ergebnisse}{40}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Bewegungsprofile}{41}{section*.46}
+\contentsline {subsection}{Bewegungsprofile}{40}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Frequenzanalyse}{42}{section*.48}
+\contentsline {subsection}{Frequenzanalyse}{41}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Signal-Rausch-Verh\IeC {\"a}ltnis}{43}{section*.50}
+\contentsline {subsection}{Signal-Rausch-Verh\IeC {\"a}ltnis}{42}{section*.50}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Vorverarbeitung}{46}{section*.53}
 \defcounter {refsection}{0}\relax 
@@ -86,7 +86,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Lateralit\IeC {\"a}t}{49}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Scheinquellen}{50}{section*.61}
+\contentsline {subsubsection}{Scheinquellen}{51}{section*.61}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Rauschunterdr\IeC {\"u}ckte Daten}{52}{figure.caption.63}
 \defcounter {refsection}{0}\relax 
@@ -100,12 +100,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Korreliertheit der Aktivit\IeC {\"a}t}{58}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Regularisierung der Kovarianzmatrix}{59}{section*.71}
+\contentsline {subsection}{Regularisierung der Kovarianzmatrix}{58}{section*.71}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Scheinaktivit\IeC {\"a}t}{59}{section*.72}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Einfluss der Bewegung}{59}{section*.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Fazit und Ausblick}{60}{section*.74}
+\contentsline {subsection}{Fazit und Ausblick}{59}{section*.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literaturverzeichnis}{62}{section*.75}
+\contentsline {section}{Literaturverzeichnis}{61}{section*.75}
